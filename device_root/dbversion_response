@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+CONTENT-LENGTH: 292
+CONTENT-TYPE: text/xml; charset="utf-8"
+DATE: Mon, 25 Jun 2018 12:57:14 GMT
+EXT:
+SERVER: Unspecified, UPnP/1.0, Unspecified
+X-User-Agent: redsonic
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body>
+<u:GetRulesDBVersionResponse xmlns:u="urn:Belkin:service:rules:1">
+<RulesDBVersion>2</RulesDBVersion>
+</u:GetRulesDBVersionResponse>
+</s:Body> </s:Envelope>
