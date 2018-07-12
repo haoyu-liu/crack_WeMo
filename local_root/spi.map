@@ -1,0 +1,64 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x00000000a1000000                . = 0xa1000000
+                0x00000000a1000000                __image_begin__ = .
+
+.text           0x00000000a1000000     0x1b10
+ header.o(.text)
+ .text          0x00000000a1000000       0x50 header.o
+                0x00000000a1000000                _start
+ *(.text)
+ .text          0x00000000a1000050     0x1ac0 spi.o
+                0x00000000a1000a4c                enable_write
+                0x00000000a1000ae4                erase_sector
+                0x00000000a1000be8                write_page
+                0x00000000a1000f58                strncmp
+                0x00000000a10009f4                delay
+                0x00000000a1000e30                atoui
+                0x00000000a1001060                meat
+                0x00000000a1001b10                . = ALIGN (0x4)
+
+.rodata         0x00000000a1001b10      0x1d0
+ *(.rodata)
+ .rodata        0x00000000a1001b10      0x1d0 spi.o
+
+.reginfo        0x00000000a1001ce0       0x18
+ .reginfo       0x00000000a1001ce0       0x18 header.o
+                0x00000000a1001cf8                . = ALIGN (0x4)
+
+.data           0x00000000a1001d00       0x10
+ *(.data)
+ .data          0x00000000a1001d00       0x10 spi.o
+ *(.data.stack)
+                0x00000000a1001d10                _gp = ALIGN (0x10)
+
+.got            0x00000000a1001d10       0x38
+                0x00000000a1001d10                __got_start = .
+ *(.got)
+ .got           0x00000000a1001d10       0x38 header.o
+                0x00000000a1001d10                _GLOBAL_OFFSET_TABLE_
+                0x00000000a1001d48                __got_end = .
+                0x00000000a1001d48                __image_end__ = .
+
+.bss            0x00000000a1001d50     0x1010
+ .bss           0x00000000a1001d50     0x1010 spi.o
+
+.rel.dyn        0x00000000a1002d60        0x0
+LOAD header.o
+LOAD spi.o
+OUTPUT(spi.elf elf32-tradlittlemips)
+
+.pdr            0x0000000000000000      0x280
+ .pdr           0x0000000000000000       0x20 header.o
+ .pdr           0x0000000000000020      0x260 spi.o
+
+.mdebug.abi32   0x0000000000000000        0x0
+
+.comment        0x0000000000000000       0x12
+ .comment       0x0000000000000000       0x12 spi.o

@@ -1,0 +1,709 @@
+U-Boot 1.1.3 (Oct 14 2011 - 16:53:20)
+
+Board: Ralink APSoC DRAM:  32 MB
+relocate_code Pointer at: 81fb4000
+spi_wait_nsec: 21 
+spi device id: c2 20 18 c2 20 (2018c220)
+find flash: MX25L12805D
+raspi_read: from:30000 len:1000 
+.raspi_read: from:30000 len:1000 
+.============================================ 
+Ralink UBoot Version: 3.5.0.0
+-------------------------------------------- 
+ASIC 5350_MP (Port5<->None)
+DRAM_CONF_FROM: Boot-Strapping 
+DRAM_TYPE: SDRAM 
+DRAM_SIZE: 256 Mbits
+DRAM_WIDTH: 16 bits
+DRAM_TOTAL_WIDTH: 16 bits
+TOTAL_MEMORY_SIZE: 32 MBytes
+Flash component: SPI Flash
+Date:Oct 14 2011  Time:16:53:20
+============================================ 
+icache: sets:256, ways:4, linesz:32 ,total:32768
+dcache: sets:128, ways:4, linesz:32 ,total:16384 
+
+ ##### The CPU freq = 360 MHZ #### 
+ estimate memory size =32 Mbytes
+set GPIO 7, 9, 11, 13 to 1 Output
+set GPIO 10, 12, 14 to 0 Iutput
+
+Please choose the operation: 
+   1: Load system code to SDRAM via TFTP. 
+   2: Load system code then write to Flash via TFTP. 
+   3: Boot system code via Flash (default).
+   4: Entr boot command line interface.
+   7: Load Boot Loader code then write to Flash via Serial. 
+   9: Load Boot Loader code then write to Flash via TFTP. 
+ 0 
+   
+3: System Boot system code via Flash.
+Trying to boot from A...bootstate=[0]
+Boot A addr_str=[0xBC050000]
+## Booting image at bc050000 ...
+raspi_read: from:50000 len:40 
+.   Image Name:   MIPS OpenWrt Linux-2.6.21
+   Created:      2015-02-17   4:54:18 UTC
+   Image Type:   MIPS Linux Kernel Image (lzma compressed)
+   Data Size:    975974 Bytes = 953.1 kB
+   Load Address: 80000000
+   Entry Point:  802f6000
+raspi_read: from:50040 len:ee466 
+...............   Verifying Checksum ... OK
+   Uncompressing Kernel Image ... OK
+No initrd
+## Transferring control to Linux (at address 802f6000) ...
+## Giving linux memsize in MB, 32
+
+Starting kernel ...
+
+
+LINUX started...
+
+ THIS IS ASIC
+Linux version 2.6.21 (sulfur@bad-debian01.cics.belkin) (gcc version 4.3.3 (GCC) ) #1 Tue Feb 17 04:53:37 GMT 2015
+
+ The CPU frequency set to 360 MHz
+CPU revision is: 0001964c
+Determined physical RAM map:
+ memory: 02000000 @ 00000000 (usable)
+Initrd not found or empty - disabling initrd
+Built 1 zonelists.  Total pages: 8128
+Kernel command line: console=ttyS1,57600n8 root=/dev/mtdblock2
+root_dev_setup: line=[/dev/mtdblock2]
+Primary instruction cache 32kB, physically tagged, 4-way, linesize 32 bytes.
+Primary data cache 16kB, 4-way, linesize 32 bytes.
+Synthesized TLB refill handler (20 instructions).
+Synthesized TLB load handler fastpath (32 instructions).
+Synthesized TLB store handler fastpath (32 instructions).
+Synthesized TLB modify handler fastpath (31 instructions).
+Cache parity protection disabled
+cause = 40808014, status = 11000000
+PID hash table entries: 128 (order: 7, 512 bytes)
+calculating r4koff... 0015f900(1440000)
+CPU frequency 360.00 MHz
+Using 180.000 MHz high precision timer.
+Console: colour du\FF\00
+
+U-Boot 1.1.3 (Oct 14 2011 - 16:53:20)
+
+Board: Ralink APSoC DRAM:  32 MB
+relocate_code Pointer at: 81fb4000
+spi_wait_nsec: 21 
+spi device id: c2 20 18 c2 20 (2018c220)
+find flash: MX25L12805D
+raspi_read: from:30000 len:1000 
+.raspi_read: from:30000 len:1000 
+.============================================ 
+Ralink UBoot Version: 3.5.0.0
+-------------------------------------------- 
+ASIC 5350_MP (Port5<->None)
+DRAM_CONF_FROM: Boot-Strapping 
+DRAM_TYPE: SDRAM 
+DRAM_SIZE: 256 Mbits
+DRAM_WIDTH: 16 bits
+DRAM_TOTAL_WIDTH: 16 bits
+TOTAL_MEMORY_SIZE: 32 MBytes
+Flash component: SPI Flash
+Date:Oct 14 2011  Time:16:53:20
+============================================ 
+icache: sets:256, ways:4, linesz:32 ,total:32768
+dcache: sets:128, ways:4, linesz:32 ,total:16384 
+
+ ##### The CPU freq = 360 MHZ #### 
+ estimate memory size =32 Mbytes
+set GPIO 7, 9, 11, 13 to 1 Output
+set GPIO 10, 12, 14 to 0 Iutput
+
+Please choose the operation: 
+   1: Load system code to SDRAM via TFTP. 
+   2: Load system code then write to Flash via TFTP. 
+   3: Boot system code via Flash (default).
+   4: Entr boot command line interface.
+   7: Load Boot Loader code then write to Flash via Serial. 
+   9: Load Boot Loader code then write to Flash via TFTP. 
+ 0 
+   
+3: System Boot system code via Flash.
+Trying to boot from A...bootstate=[0]
+Boot A addr_str=[0xBC050000]
+## Booting image at bc050000 ...
+raspi_read: from:50000 len:40 
+.   Image Name:   MIPS OpenWrt Linux-2.6.21
+   Created:      2015-02-17   4:54:18 UTC
+   Image Type:   MIPS Linux Kernel Image (lzma compressed)
+   Data Size:    975974 Bytes = 953.1 kB
+   Load Address: 80000000
+   Entry Point:  802f6000
+raspi_read: from:50040 len:ee466 
+...............   Verifying Checksum ... OK
+   Uncompressing Kernel Image ... OK
+No initrd
+## Transferring control to Linux (at address 802f6000) ...
+## Giving linux memsize in MB, 32
+
+Starting kernel ...
+
+
+LINUX started...
+
+ THIS IS ASIC
+Linux version 2.6.21 (sulfur@bad-debian01.cics.belkin) (gcc version 4.3.3 (GCC) ) #1 Tue Feb 17 04:53:37 GMT 2015
+
+ The CPU frequency set to 360 MHz
+CPU revision is: 0001964c
+Determined physical RAM map:
+ memory: 02000000 @ 00000000 (usable)
+Initrd not found or empty - disabling initrd
+Built 1 zonelists.  Total pages: 8128
+Kernel command line: console=ttyS1,57600n8 root=/dev/mtdblock2
+root_dev_setup: line=[/dev/mtdblock2]
+Primary instruction cache 32kB, physically tagged, 4-way, linesize 32 bytes.
+Primary data cache 16kB, 4-way, linesize 32 bytes.
+Synthesized TLB refill handler (20 instructions).
+Synthesized TLB load handler fastpath (32 instructions).
+Synthesized TLB store handler fastpath (32 instructions).
+Synthesized TLB modify handler fastpath (31 instructions).
+Cache parity protection disabled
+cause = c080807c, status = 11000000
+PID hash table entries: 128 (order: 7, 512 bytes)
+calculating r4koff... 0015f900(1440000)
+CPU frequency 360.00 MHz
+Using 180.000 MHz high precision timer.
+Console: colour dummy device 80x25
+Dentry cache hash table entries: 4096 (order: 2, 16384 bytes)
+Inode-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Memory: 29224k/32768k available (2620k kernel code, 3544k reserved, 408k data, 120k init, 0k highmem)
+Mount-cache hash table entries: 512
+NET: Registered protocol family 16
+Time: MIPS clocksource has been installed.
+deice id : c2 20 18 c2 20 (2018c220)
+MX25L12805D(c2 2018c220) (16384 Kbytes)
+mtd .name = raspi, .size = 0x01000000 (16M) .erasesize = 0x00010000 (64K) .numeraseregions = 0
+Creating 12 MTD partitions on "raspi":
+0x00000000-0x00050000 : "uboot"
+0x00050000-0x00150000 : "Kernel_1"
+0x00150000-0x007c0000 : "rootfs_1"
+mtd: partition "rootfs_1" set to be root filesystem
+mtd: partition "rootfs_data" created automatically, ofs=440000, len=380000 
+0x00440000-0x007c0000 : "rootfs_data"
+0x007c0000-0x008c0000 : "Kernel_2"
+0x008c0000-0x00f30000 : "rootfs_2"
+0x00fe0000-0x00ff0000 : "nvram"
+0x00ff0000-0x01000000 : "User_Factory"
+0x00040000-0x00050000 : "Factory"
+0x00f30000-0x00fd0000 : "Belkin_settings"
+0x00030000-0x00040000 : "Uboot_env"
+0x00050000-0x007c0000 : "Firmware_1"
+0x007c0000-0x00f30000 : "Firmware_2"
+NET: Registered protocol family 2
+IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+TCP: Hash tables configured (established 1024 bind 1024)
+TCP reno registered
+squashfs: version 3.0 (2006/03/15) Phillip Lougher
+Registering mini_fo version $Id$
+JFFS2 version 2.2. (NAND) (C) 2001-2006 Red Hat, Inc.
+io scheduler noop registered (default)
+reg1_gpio_dir ori = [0x003FABFF]
+ ################################################
+ #                                              #
+ #            SDK - PLUGIN_BOARD_DVT            #
+ #                                              #
+ ################################################
+reg1_gpio_dir after 1 = [0x003FABFF]
+reg1_gpio_dir after 2 = [0x003FABFF]
+Ralink gpio driver initialized
+Gemtek LED init...
+################## Don't Restore to Factory Defaults ###################
+################## restoreValue= 0 ##################
+Serial: 8250/16550 driver $Revision: 1.90 $ 2 ports, IRQ sharing disabled
+serial8250: ttyS0 at I/O 0xb0000500 (irq = 37) is a 16550A
+serial8250: ttyS1 at I/O 0xb0000c00 (irq = 12) is a 16550A
+RAMDISK driver initialized: 16 RAM disks of 8192K size 1024 blocksize
+loop: loaded (max 8 devices)
+rdm_major = 253
+MAC_ADRH -- : 0x00000000
+MAC_ADRL -- : 0x00000000
+Ralink APSoC Ethernet Driver Initilization. v2.0  256 rx/tx descriptors allocated, mtu = 1500!
+MAC_ADRH -- : 0x00009610
+MAC_ADRL -- : 0x3e69ad18
+PROC INIT OK!
+
+
+=== pAd = c004f000, size = 859992 ===
+
+<-- RTMPAllocAdapterBlock, Status=0
+block2mtd: version $Revision: 1.30 $
+TCP cubic registered
+NET: Registered protocol family 1
+NET: Registered protocol family 17
+saved_root_name is [/dev/mtdblock2]
+root_device_name is [/dev/mtdblock2]
+name is [/dev/root]
+fs_names is [squashfs]
+fs_names p is [squashfs], flags is 0x8001
+VFS: [/dev/root] Mounted root (squashfs filesystem) readonly.
+mount_fail 0 is 0
+Freeing unused kernel memory: 120k freed
+Please be patient, while OpenWrt loads ...
+- preinit -
+- regular preinit -
+switching to jffs2
+mini_fo: using base directory: /
+mini_fo: using storage directory: /overlay
+- init -
+
+
+(none) login:  
+********************************************************************
+ Copyright (c) 2013 by Belkin, Inc. All Rights Reserved.
+ 02/17/15 04:02:19
+WeMo_WW_2.00.8095.PVT-OWRT-SNS
+********************************************************************
+##### nvram SerialNumber : 221531K11004A3
+##### nvram target_country : uk
+##### nvram country_code : 0
+##### nvram wl0_macaddr : 94:10:3E:69:AD:18
+##### nvram cwf_serial_number : 221531K11004A3
+##### nvram hwVersion : 1
+##### factory product.name : WeMo_sns
+##### WiFi setup for uk
+Jan  1 00:00:09 syslogd started: BusyBox v1.22.1
+Jan  1 00:00:09 kernel: klogd started: BusyBox v1.22.1 (2015-02-17 04:04:20 GMT)
+Jan  1 00:00:09 kernel: Linux version 2.6.21 (sulfur@bad-debian01.cics.belkin) (gcc version 4.3.3 (GCC) ) #1 Tue Feb 17 04:53:37 GMT 2015
+Jan  1 00:00:09 kernel:  The CPU frequency set to 360 MHz
+Jan  1 00:00:09 kernel: CPU revision is: 0001964c
+Jan  1 00:00:09 kernel: Determined physical RAM map:
+Jan  1 00:00:09 kernel:  memory: 02000000 @ 00000000 (usable)
+Jan  1 00:00:09 kernel: Initrd not found or empty - disabling initrd
+
+phy_tx_ring = 0x01873000, tx_ring = 0xa1873000
+
+phy_rx_ring0 = 0x01874000, rx_ring0 = 0xa1874000
+RT305x_ESW: Link Status Changed
+RX DESC a195f000  size = 2048
+<-- RTMPAllocTxRxRingMemory, Status=0
+Key2Str is Invalid key length(0) or Type(0)
+Key3Str is Invalid key length(0) or Type(0)
+Key4Str is Invalid key length(0) or Type(0)
+2a:55:44:e4:05:1a:cb:eb:01:93:83:88:b2:c3:4f:8f:
+50:b2:65:62:c1:a3:cb:f9:52:8e:b0:b1:79:c9:b6:97:
+
+1. Phy Mode = 9
+2. Phy Mode = 9
+3. Phy Mode = 9
+MCS Set = ff 00 00 00 01
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+@@@ ed_monitor_init : ===>
+@@@ ed_monitor_init : <===
+Main bssid = 94:10:3e:69:ad:18
+<==== rt28xx_init, Status=0
+0x1300 = 00064320
+@@@ APPeerBeaconAction : BssChannelAPCount=2, ed_ap_threshold=1,  go to ed_monitor_exit()!!
+@@@ ed_monitor_exit : ===>
+@@@ ed_monitor_exit : <===
+Software Watchdog Timer: 0.07 initialized. soft_noboot=0 soft_margin=310 sec (nowayout= 0)
+thready: make_tname_key key now "0"
+thready: Setting thread name to "main" (tid:715849728).
+@@@ ed_monitor_init : ===>
+@@@ ed_monitor_init : <===
+@@@ APPeerBeaconAction : BssChannelAPCount=2, ed_ap_threshold=1,  go to ed_monitor_exit()!!
+@@@ ed_monitor_exit : ===>
+@@@ ed_monitor_exit : <===
+[Set_SiteSurvey_Proc] g_SiteSurvey_SSID = 1
+[Set_SiteSurvey_Proc] g_SiteSurvey_SSID = 1
+SetBelkinParameter - ParameterName = import_pkey_name , ParameterValue = WeMoPubKey.asc
+The timeout was SoftDog: Unexpected close, not stopping watchdog!
+set to 300 seconds
+GETTIMEOUT Returned 300 seconds
+SoftDog: Unexpected close, not stopping watchdog!
+thready: Setting thread name to "watchDogTask" (tid:724067616).
+ApCliSsid - SSID string = ApCliSsid= ""
+SoftDog: Unexpected close, not stopping watchdog!
+SyncWatchDogTimer Success
+thready: Setting thread name to "detectProcessParams" (tid:724067616).
+SetBelkinParameter - ParameterName = settime_sec , ParameterValue = 
+timezone_index: 31, lastTimeZone: 0.000000 and lastDstEnable: 0
+Updated pj_timezone_index: 31, pj_lastTimeZone: 0.000000 and pj_lastDstEnable: 0
+SetBelkinParameter - ParameterName = NotificationFlag , ParameterValue = 1
+SetBelkinParameter - ParameterName = WeMo_version , ParameterValue = 2.00.8095
+MAC Address: 94:10:3E:69:AD:18
+thready: Setting thread name to "PowerButtonTask" (tid:726164768).
+thready: Setting thread name to "RelayControlTask" (tid:728261920).
+thready: Setting thread name to "ButtonTaskMonitorThread" (tid:730359072).
+[Set_SiteSurvey_Proc] g_SiteSurvey_SSID = 1
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B@@@ ed_monitor_init : ===>
+@@@ ed_monitor_init : <===
+PLUGIN_LED_GPIO_proc ledcount=5
+getIPAddress : address for ra0: 10.22.22.1
+[Set_SiteSurvey_Proc] g_SiteSurvey_SSID = 1
+thready: Setting thread name to "RulesNtpTimeCheckTask" (tid:789079328).
+thready: Setting thread name to "remoteInitNatClient24" (tid:791176480).
+thready: Setting thread name to "sendRemoteAccessUpdateStatusThread" (tid:793273632).
+thready: Setting thread name to "sendRemAccessUpdStatusThdMonitor" (tid:795370784).
+thready: Setting thread name to "sendConfigChangeStatusThread" (tid:797467936).
+thready: Setting thread name to "rcvSendstatusRspThread" (tid:799565088).
+thready: Setting thread name to "systemRestore" (tid:801662240).
+\00
+
+U-Boot 1.1.3 (Oct 14 2011 - 16:53:20)
+
+Board: Ralink APSoC DRAM:  32 MB
+relocate_code Pointer at: 81fb4000
+spi_wait_nsec: 21 
+spi device id: c2 20 18 c2 20 (2018c220)
+find flash: MX25L12805D
+raspi_read: from:30000 len:1000 
+.raspi_read: from:30000 len:1000 
+.============================================ 
+Ralink UBoot Version: 3.5.0.0
+-------------------------------------------- 
+ASIC 5350_MP (Port5<->None)
+DRAM_CONF_FROM: Boot-Strapping 
+DRAM_TYPE: SDRAM 
+DRAM_SIZE: 256 Mbits
+DRAM_WIDTH: 16 bits
+DRAM_TOTAL_WIDTH: 16 bits
+TOTAL_MEMORY_SIZE: 32 MBytes
+Flash component: SPI Flash
+Date:Oct 14 2011  Time:16:53:20
+============================================ 
+icache: sets:256, ways:4, linesz:32 ,total:32768
+dcache: sets:128, ways:4, linesz:32 ,total:16384 
+
+ ##### The CPU freq = 360 MHZ #### 
+ estimate memory size =32 Mbytes
+set GPIO 7, 9, 11, 13 to 1 Output
+set GPIO 10, 12, 14 to 0 Iutput
+
+Please choose the operation: 
+   1: Load system code to SDRAM via TFTP. 
+   2: Load system code then write to Flash via TFTP. 
+   3: Boot system code via Flash (default).
+   4: Entr boot command line interface.
+   7: Load Boot Loader code then write to Flash via Serial. 
+   9: Load Boot Loader code then write to Flash via TFTP. 
+\00\00\00\00
+
+U-Boot 1.1.3 (Oct 14 2011 - 16:53:20)
+
+Board: Ralink APSoC DRAM:  32 MB
+relocate_code Pointer at: 81fb4000
+spi_wait_nsec: 21 
+spi device id: c2 20 18 c2 20 (2018c220)
+find flash: MX25L12805D
+raspi_read: from:30000 len:1000 
+.raspi_read: from:30000 len:1000 
+.============================================ 
+Ralink UBoot Version: 3.5.0.0
+-------------------------------------------- 
+ASIC 5350_MP (Port5<->None)
+DRAM_CONF_FROM: Boot-Strapping 
+DRAM_TYPE: SDRAM 
+DRAM_SIZE: 256 Mbits
+DRAM_WIDTH: 16 bits
+DRAM_TOTAL_WIDTH: 16 bits
+TOTAL_MEMORY_SIZE: 32 MBytes
+Flash component: SPI Flash
+Date:Oct 14 2011  Time:16:53:20
+============================================ 
+icache: sets:256, ways:4, linesz:32 ,total:32768
+dcache: sets:128, ways:4, linesz:32 ,total:16384 
+
+ ##### The CPU freq = 360 MHZ #### 
+ estimate memory size =32 Mbytes
+set GPIO 7, 9, 11, 13 to 1 Output
+set GPIO 10, 12, 14 to 0 Iutput
+
+Please choose the operation: 
+   1: Load system code to SDRAM via TFTP. 
+   2: Load system code then write to Flash via TFTP. 
+   3: Boot system code via Flash (default).
+   4: Entr boot command line interface.
+   7: Load Boot Loader code then write to Flash via Serial. 
+   9: Load Boot Loader code then write to Flash via TFTP. 
+ 0 
+   
+3: System Boot system code via Flash.
+Trying to boot from A...bootstate=[0]
+Boot A addr_str=[0xBC050000]
+## Booting image at bc050000 ...
+raspi_read: from:50000 len:40 
+.   Image Name:   MIPS OpenWrt Linux-2.6.21
+   Created:      2015-02-17   4:54:18 UTC
+   Image Type:   MIPS Linux Kernel Image (lzma compressed)
+   Data Size:    975974 Bytes = 953.1 kB
+   Load Address: 80000000
+   Entry Point:  802f6000
+raspi_read: from:50040 len:ee466 
+...............   Verifying Checksum ... OK
+   Uncompressing Kernel Image ... OK
+No initrd
+## Transferring control to Linux (at address 802f6000) ...
+## Giving linux memsize in MB, 32
+
+Starting kernel ...
+
+
+LINUX started...
+
+ THIS IS ASIC
+Linux version 2.6.21 (sulfur@bad-debian01.cics.belkin) (gcc version 4.3.3 (GCC) ) #1 Tue Feb 17 04:53:37 GMT 2015
+
+ The CPU frequency set to 360 MHz
+CPU revision is: 0001964c
+Determined physical RAM map:
+ memory: 02000000 @ 00000000 (usable)
+Initrd not found or empty - disabling initrd
+Built 1 zonelists.  Total pages: 8128
+Kernel command line: console=ttyS1,57600n8 root=/dev/mtdblock2
+root_dev_setup: line=[/dev/mtdblock2]
+Primary instruction cache 32kB, physically tagged, 4-way, linesize 32 bytes.
+Primary data cache 16kB, 4-way, linesize 32 bytes.
+Synthesized TLB refill handler (20 instructions).
+Synthesized TLB load handler fastpath (32 instructions).
+Synthesized TLB store handler fastpath (32 instructions).
+Synthesized TLB modify handler fastpath (31 instructions).
+Cache parity protection disabled
+cause = c080807c, status = 11000000
+PID hash table entries: 128 (order: 7, 512 bytes)
+calculating r4koff... 0015f900(1440000)
+CPU frequency 360.00 MHz
+Using 180.000 MHz high precision timer.
+Console: colour dummy device 80x25
+Dentry cache hash table entries: 4096 (order: 2, 16384 bytes)
+Inode-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Memory: 29224k/32768k available (2620k kernel code, 3544k reserved, 408k data, 120k init, 0k highmem)
+Mount-cache hash table entries: 512
+NET: Registered protocol family 16
+Time: MIPS clocksource has been installed.
+deice id : c2 20 18 c2 20 (2018c220)
+MX25L12805D(c2 2018c220) (16384 Kbytes)
+mtd .name = raspi, .size = 0x01000000 (16M) .erasesize = 0x00010000 (64K) .numeraseregions = 0
+Creating 12 MTD partitions on "raspi":
+0x00000000-0x00050000 : "uboot"
+0x00050000-0x00150000 : "Kernel_1"
+0x00150000-0x007c0000 : "rootfs_1"
+mtd: partition "rootfs_1" set to be root filesystem
+mtd: partition "rootfs_data" created automatically, ofs=440000, len=380000 
+0x00440000-0x007c0000 : "rootfs_data"
+0x007c0000-0x008c0000 : "Kernel_2"
+0x008c0000-0x00f30000 : "rootfs_2"
+0x00fe0000-0x00ff0000 : "nvram"
+0x00ff0000-0x01000000 : "User_Factory"
+0x00040000-0x00050000 : "Factory"
+0x00f30000-0x00fd0000 : "Belkin_settings"
+0x00030000-0x00040000 : "Uboot_env"
+0x00050000-0x007c0000 : "Firmware_1"
+0x007c0000-0x00f30000 : "Firmware_2"
+NET: Registered protocol family 2
+IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+TCP: Hash tables configured (established 1024 bind 1024)
+TCP reno registered
+squashfs: version 3.0 (2006/03/15) Phillip Lougher
+Registering mini_fo version $Id$
+JFFS2 version 2.2. (NAND) (C) 2001-2006 Red Hat, Inc.
+io scheduler noop registered (default)
+reg1_gpio_dir ori = [0x003FABFF]
+ ################################################
+ #                                              #
+ #            SDK - PLUGIN_BOARD_DVT            #
+ #                                              #
+ ################################################
+reg1_gpio_dir after 1 = [0x003FABFF]
+reg1_gpio_dir after 2 = [0x003FABFF]
+Ralink gpio driver initialized
+Gemtek LED init...
+################## Don't Restore to Factory Defaults ###################
+################## restoreValue= 0 ##################
+Serial: 8250/16550 driver $Revision: 1.90 $ 2 ports, IRQ sharing disabled
+serial8250: ttyS0 at I/O 0xb0000500 (irq = 37) is a 16550A
+serial8250: ttyS1 at I/O 0xb0000c00 (irq = 12) is a 16550A
+RAMDISK driver initialized: 16 RAM disks of 8192K size 1024 blocksize
+loop: loaded (max 8 devices)
+rdm_major = 253
+MAC_ADRH -- : 0x00000000
+MAC_ADRL -- : 0x00000000
+Ralink APSoC Ethernet Driver Initilization. v2.0  256 rx/tx descriptors allocated, mtu = 1500!
+MAC_ADRH -- : 0x00009610
+MAC_ADRL -- : 0x3e69ad18
+PROC INIT OK!
+
+
+=== pAd = c004f000, size = 859992 ===
+
+<-- RTMPAllocAdapterBlock, Status=0
+block2mtd: version $Revision: 1.30 $
+TCP cubic registered
+NET: Registered protocol family 1
+NET: Registered protocol family 17
+saved_root_name is [/dev/mtdblock2]
+root_device_name is [/dev/mtdblock2]
+name is [/dev/root]
+fs_names is [squashfs]
+fs_names p is [squashfs], flags is 0x8001
+VFS: [/dev/root] Mounted root (squashfs filesystem) readonly.
+mount_fail 0 is 0
+Freeing unused kernel memory: 120k freed
+Please be patient, while OpenWrt loads ...
+- preinit -
+- regular preinit -
+switching to jffs2
+mini_fo: using base directory: /
+mini_fo: using storage directory: /overlay
+- init -
+
+
+(none) login:  
+********************************************************************
+ Copyright (c) 2013 by Belkin, Inc. All Rights Reserved.
+ 02/17/15 04:02:19
+WeMo_WW_2.00.8095.PVT-OWRT-SNS
+********************************************************************
+##### nvram SerialNumber : 221531K11004A3
+##### nvram target_country : uk
+##### nvram country_code : 0
+##### nvram wl0_macaddr : 94:10:3E:69:AD:18
+##### nvram cwf_serial_number : 221531K11004A3
+##### nvram hwVersion : 1
+##### factory product.name : WeMo_sns
+##### WiFi setup for uk
+Jan  1 00:00:09 syslogd started: BusyBox v1.22.1
+
+phy_tx_ring = 0x01873000, tx_ring = 0xa1873000
+
+phy_rx_ring0 = 0x01874000, rx_ring0 = 0xa1874000
+RT305x_ESW: Link Status Changed
+RX DESC a037d000  size = 2048
+<-- RTMPAllocTxRxRingMemory, Status=0
+Key2Str is Invalid key length(0) or Type(0)
+Key3Str is Invalid key length(0) or Type(0)
+Key4Str is Invalid key length(0) or Type(0)
+2a:55:44:e4:05:1a:cb:eb:01:93:83:88:b2:c3:4f:8f:
+50:b2:65:62:c1:a3:cb:f9:52:8e:b0:b1:79:c9:b6:97:
+
+1. Phy Mode = 9
+2. Phy Mode = 9
+3. Phy Mode = 9
+MCS Set = ff 00 00 00 01
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+@@@ ed_monitor_init : ===>
+@@@ ed_monitor_init : <===
+Main bssid = 94:10:3e:69:ad:18
+<==== rt28xx_init, Status=0
+0x1300 = 00064320
+@@@ APPeerBeaconAction : BssChannelAPCount=2, ed_ap_threshold=1,  go to ed_monitor_exit()!!
+@@@ ed_monitor_exit : ===>
+@@@ ed_monitor_exit : <===
+Software Watchdog Timer: 0.07 initialized. soft_noboot=0 soft_margin=310 sec (nowayout= 0)
+thready: make_tname_key key now "0"
+thready: Setting thread name to "main" (tid:715849728).
+@@@ ed_monitor_init : ===>
+@@@ ed_monitor_init : <===
+@@@ APPeerBeaconAction : BssChannelAPCount=3, ed_ap_threshold=1,  go to ed_monitor_exit()!!
+@@@ ed_monitor_exit : ===>
+@@@ ed_monitor_exit : <===
+[Set_SiteSurvey_Proc] g_SiteSurvey_SSID = 1
+[Set_SiteSurvey_Proc] g_SiteSurvey_SSID = 1
+SetBelkinParameter - ParameterName = import_pkey_name , ParameterValue = WeMoPubKey.asc
+The timeout was SoftDog: Unexpected close, not stopping watchdog!
+set to 300 seconds
+GETTIMEOUT RSoftDog: Unexpected close, not stopping watchdog!
+eturned 300 seconds
+thready: Setting thread name to "watchDogTask" (tid:724067616).
+ApCliSsid - SSID string = ApCliSsid= ""
+SoftDog: Unexpected close, not stopping watchdog!
+SyncWatchDogTimer Success
+thready: Setting thread name to "detectProcessParams" (tid:724067616).
+SetBelkinParameter - ParameterName = settime_sec , ParameterValue = 
+timezone_index: 31, lastTimeZone: 0.000000 and lastDstEnable: 0
+Updated pj_timezone_index: 31, pj_lastTimeZone: 0.000000 and pj_lastDstEnable: 0
+SetBelkinParameter - ParameterName = NotificationFlag , ParameterValue = 1
+SetBelkinParameter - ParameterName = WeMo_version , ParameterValue = 2.00.8095
+MAC Address: 94:10:3E:69:AD:18
+thready: Setting thread name to "PowerButtonTask" (tid:726164768).
+thready: Setting thread name to "RelayControlTask" (tid:728261920).
+thready: Setting thread name to "ButtonTaskMonitorThread" (tid:730359072).
+[Set_SiteSurvey_Proc] g_SiteSurvey_SSID = 1
+@@@ ed_monitor_init : ===>
+@@@ ed_monitor_init : <===
+PLUGIN_LED_GPIO_proc ledcount=5
+getIPAddress : address for ra0: 10.22.22.1
+[Set_SiteSurvey_Proc] g_SiteSurvey_SSID = 1
+thready: Setting thread name to "RulesNtpTimeCheckTask" (tid:793273632).
+thready: Setting thread name to "remoteInitNatClient24" (tid:795370784).
+thready: Setting thread name to "sendRemoteAccessUpdateStatusThread" (tid:797467936).
+thready: Setting thread name to "sendRemAccessUpdStatusThdMonitor" (tid:799565088).
+thready: Setting thread name to "sendConfigChangeStatusThread" (tid:801662240).
+thready: Setting thread name to "rcvSendstatusRspThread" (tid:803759392).
+thready: Setting thread name to "systemRestore" (tid:805856544).
+root
+Password: 
+Login incorrect
+OpenWrt login: root
+Password: 
+Login incorrect
+OpenWrt login: root
+Password: 
+Login incorrect
+
+OpenWrt login: 
+
+
+OpenWrt login: 
+
+
+bootcmd=tftp
+bootdelay=1
+baudrate=57600
+ethaddr="00:AA:BB:CC:DD:10"
+ramargs=setenv bootargs root=/dev/ram rw
+addip=setenv bootargs $(bootargs) ip=$(ipaddr):$(serverip):$(gatewayip):$(netmask):$(hostname):$(netdev):off
+addmisc=setenv bootargs $(bootargs) console=ttyS0,$(baudrate) ethaddr=$(ethaddr) panic=1
+flash_self=run ramargs addip addmisc;bootm $(kernel_addr) $(ramdisk_addr)
+kernel_addr=BFC40000
+u-boot=u-boot.bin
+load=tftp 8A100000 $(u-boot)
+u_b=protect off 1:0-1;era 1:0-1;cp.b 8A100000 BC400000 $(filesize)
+loadfs=tftp 8A100000 root.cramfs
+u_fs=era bc540000 bc83ffff;cp.b 8A100000 BC540000 $(filesize)
+test_tftp=tftp 8A100000 root.cramfs;run test_tftp
+ethact=Eth0 (10/100-M)
+SerialNumber=221215K0100050
+filesize=5c3bda
+fileaddr=80800000
+ipaddr=10.22.22.1
+serverip=10.22.22.2
+autostart=no
+bootfile=Switch_Test_FW_v1.2.bin
+bootpart=1
+bootstate=0
+check_boot=0
+bootargs=console=ttyS1,57600n8 root=/dev/mtdblock2
+stdin=serial
+stdout=serial
+stderr=serial

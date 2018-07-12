@@ -1,0 +1,4 @@
+/usr/sbin/dnsmasq
+/etc/config/dhcp
+/etc/dnsmasq.conf
+/etc/init.d/dnsmasq

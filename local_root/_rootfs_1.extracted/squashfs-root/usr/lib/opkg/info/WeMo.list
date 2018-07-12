@@ -1,0 +1,6 @@
+/sbin/startWemo.sh
+/sbin/wemoApp
+/etc/ver.txt
+/etc/sensor.jpg
+/etc/icon.jpg
+/etc/init.d/wemo

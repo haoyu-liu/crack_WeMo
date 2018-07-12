@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+   <s:Body>
+      <u:GetExtMetaInfo xmlns:u="urn:Belkin:service:metainfo:1"></u:GetExtMetaInfo>
+   </s:Body>
+</s:Envelope>

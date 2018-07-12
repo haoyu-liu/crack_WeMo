@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+   <s:Body>
+      <u:RemoteAccess xmlns:u="urn:Belkin:service:remoteaccess:1">
+         <DeviceId>13841a67af3a0fa</DeviceId>
+         <dst>1</dst>
+         <HomeId></HomeId>
+         <DeviceName>MotoG3</DeviceName>
+         <MacAddr></MacAddr>
+         <pluginprivateKey></pluginprivateKey>
+         <smartprivateKey></smartprivateKey>
+         <smartUniqueId></smartUniqueId>
+         <numSmartDev></numSmartDev>
+      </u:RemoteAccess>
+   </s:Body>
+</s:Envelope>

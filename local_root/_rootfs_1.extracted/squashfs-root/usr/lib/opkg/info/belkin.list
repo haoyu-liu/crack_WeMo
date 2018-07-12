@@ -1,0 +1,4 @@
+/sbin/nvram_get
+/sbin/nvram
+/sbin/nvram_set
+/lib/libbelkin_nvram.so

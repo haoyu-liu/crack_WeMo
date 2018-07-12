@@ -1,0 +1,4 @@
+/root/.gnupg/WeMoPubKey.asc
+/sbin/firmware_update.sh
+/sbin/update_test.sh
+/etc/product.name
