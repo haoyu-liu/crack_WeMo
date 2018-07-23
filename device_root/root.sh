@@ -18,7 +18,7 @@ python getdbpath.py | nc ${IP} 49153 > dbpath_response
 python parse_response.py 'dbpath_response' 	
 
 echo "Sending rules file"
-python postfile.py $(cat dbpath) 'test.zip'
+python postfile.py $(cat dbpath) 'path.zip'
 
 python setdbversion.py $(cat dbversion) | nc ${IP} 49153 > /dev/null
 echo "Waiting for rules to update"
