@@ -1,0 +1,35 @@
+{
+    "labels": {
+        "autoOff": "Auto-off in"
+    },
+    "defaultFriendlyName": "WeMo Mini",
+    "hardwareError":{
+        "status" : "Cooling off",
+        "banner":{
+            "1" : "Problem Detected",
+            "2" : "There's still a problem"
+        },
+        "title":{
+            "1": "Overheated",
+            "2": "Overheated"
+        },
+        "description":{
+            "1" : "Yikes, your Wemo Mini has overheated. There's no danger, but the Wemo Mini is in cool-down mode, so you won't be able to use it for a few minutes. Please check that it is firmly plugged in and that the brass prongs are not exposed.",
+            "2" : "Your Wemo Mini is still overheating. Please try moving it to a different outlet."
+        },
+        "descriptionAria":{
+            "1" : "Yikes, your Wemo Mini has overheated. There's no danger, but the Wemo Mini is in cool-down mode, so you won't be able to use it for a few minutes. Please check that it is firmly plugged in and that the brass prongs are not exposed.",
+            "2" : "Your Wemo Mini is still overheating. Please try moving it to a different outlet."
+        },
+        "buttonLabels":{
+            "primary":{
+                "1":"Dismiss",
+                "2":"Dismiss"
+            },
+            "secondary":{
+                "1":"Learn More",
+                "2":"Learn More"
+            }
+        }
+    }
+}

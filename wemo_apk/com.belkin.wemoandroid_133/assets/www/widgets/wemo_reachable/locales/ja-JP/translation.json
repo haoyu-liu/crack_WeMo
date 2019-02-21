@@ -1,0 +1,7 @@
+{
+    "reachable": {
+        "airplaneMode" : "機内モードをオフにすると WeMo を利用できます。",
+        "remoteDiabaledMode" : "外出先で WeMo を使用するには、リモート アクセスをオンにしてください。リモート アクセスはホーム ネットワーク内でのみオンにできます。",
+        "radiosOffMode" : "Wi-Fi または携帯電話のデータ サービスに接続すると WeMo を利用できます。"
+    }
+}

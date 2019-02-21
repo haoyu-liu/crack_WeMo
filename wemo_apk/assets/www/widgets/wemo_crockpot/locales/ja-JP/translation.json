@@ -1,0 +1,49 @@
+{
+    "labels": {
+        "mealReady": "食事の準備",
+        "warmTimeLeft": "左暖かい時間",
+        "onWarm": "On Warm",
+        "onLow": "On Low",
+        "onHigh": "On High"
+    },
+    "mode": {
+        "0": "オフ",
+        "1": "アイドル",
+        "2": "利用できない",
+        "50": "暖かい",
+        "51": "低い",
+        "52": "高い"
+    },
+    "summary": {
+        "title": "まとめ調理",
+        "btnModify": "修正する",
+        "btnReset": "タイマーをリセット",
+        "onForZero": "<p>少数</p><p>秒</p>"
+    },
+    "staysafe": {
+        "title": "安全に滞在",
+        "message": "食品の安全性を確保するために、あなたのスロークッカーは、スタートボタンを押した後すぐに調理を開始します。",
+        "setTimerButton": "タイマーをセットする"
+    },
+    "settings": {
+        "title": "クッキングタイマーを設定",
+        "cancelButton": "タイマーをDELETE",
+        "doneBtn": "スタート",
+        "cancelBtn": "タイマーを解除",
+        "mealSetText": "での準備ができた食事：",
+        "mealFinishedText": "食事はで終了。",
+        "cookTimer": "クックタイマー",
+        "setTimerDialogHeader": "設定した時間",
+        "confirmMessage": "終了するには、調理開始するか、キャンセルするには、[開始]を選択してください。",
+        "clearMessage": "タイマーをキャンセルしますか？",
+        "clearLabels": "はい,いいえ",
+        "clearTitle": "ちょうどチェック"
+    },
+    "tile": {
+        "finishedTitle": "丁！",
+        "finishedMessage": "クックタイマーfinished.Iが「ウォーム物事を維持llは持っています。",
+        "failedTitle": "失われた接続",
+        "failedMessage": "あなたのスロークッカーは、時間の未知の期間、オフとなっている。あなたの食糧は消費のために安全ではないかもしれません。"
+    },
+    "defaultFriendlyName": "Crock-Pot®スロークッカー"
+}

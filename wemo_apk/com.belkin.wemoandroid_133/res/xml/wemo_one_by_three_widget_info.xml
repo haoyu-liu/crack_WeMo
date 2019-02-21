@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="180.0dip" android:minHeight="40.0dip" android:updatePeriodMillis="1800000" android:initialLayout="@layout/wemo_one_by_three_widget" android:configure="com.belkin.widgets.WemoWidgetConfigurationActivity" android:previewImage="@drawable/widget_preview_1x3" android:resizeMode="none"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

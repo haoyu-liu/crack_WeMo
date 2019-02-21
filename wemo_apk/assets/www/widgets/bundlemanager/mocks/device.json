@@ -1,0 +1,23 @@
+{
+    "state": "OFF",
+    "uniqueId": null,
+    "isUnavailable": "NO",
+    "firmwareDownloadStartTime": null,
+    "ruleDBPath": null,
+    "friendlyName": "WeMo ec3",
+    "modelCode": null,
+    "iconVersion": null,
+    "isPreviousStateUnavailable": "NO",
+    "firmwareUpgradeStatus": 2,
+    "privateKey": "6ffe2660-7d3f-4bf0-881e-c0a7c491c72c",
+    "firmwareVersion": "WeMo_US_2.00.2769.PVT",
+    "macAddr": "EC1A5975E440",
+    "serialNumber": "221250K0100EC3",
+    "iconURL": "http://192.168.1.119:49154/icon.jpg",
+    "plugID": null,
+    "signalStrength": null,
+    "alive": true,
+    "pluginSSID": "WeMo.Switch.EC3",
+    "udn": "uuid:Socket-1_0-221250K0100EC3",
+    "deviceType": "urn:Belkin:device:controllee:1"
+}

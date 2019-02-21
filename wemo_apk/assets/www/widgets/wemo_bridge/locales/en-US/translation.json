@@ -1,0 +1,11 @@
+{
+    "fwUpdateInProgress": {
+        "header": "Updating WeMo Link",
+        "message": "Please do not unplug the WeMo Link until the update is complete."
+    },
+    "unavailable": {
+        "header": "The WeMo Link isn't responding.",
+        "message": "Try unplugging it and plugging it back in."
+    },
+    "defaultFriendlyName": "WeMo Link"
+}

@@ -1,0 +1,9 @@
+{
+    "banner": {
+        "message": "FIRE ALARM DETECTED"
+    },
+    "emergencyContact" : {
+        "header": "Fire Alarm Detected",
+        "since": "開始日時"
+    }
+}

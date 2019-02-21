@@ -1,0 +1,110 @@
+{
+    "labels": {
+        "onFor": "Ult. uso:",
+        "onForNow": "En uso:",
+        "offSince": "Apagado:",
+        "since": "Desde:",
+        "standby": "En espera:",
+        "onToday": "Encendido hoy:",
+        "onAvgDay": "Encendido diario:",
+        "avgDay": "Promedio diario:",
+        "estimatedMonthly": "Estimado mensual:",
+        "avg": "Promedio:",
+        "now": "Ahora:",
+        "defaultAvg": "- -",
+        "defaultNow": "---",
+        "reset": "Reiniciar",
+        "today": "Hoy",
+        "autoOff": "Auto-off in"
+    },
+    "timeUnit": {
+        "0": "seg",
+        "1": "min",
+        "2": "h",
+        "3": "día",
+        "4": "días"
+    },
+    "currency": {
+        "1": "$",
+        "3": "&pound;",
+        "4": "&euro;",
+        "7": "&#8369;",
+        "10": "&yen;",
+        "13": "&#8361;",
+        "15": "&#3647;"
+    },
+    "date": {
+        "tomorrow": "Tomorrow",
+        "yesterday": "Yesterday",
+        "today": "Hoy"
+    },
+    "editContext": {
+        "title": {
+            "on&standbythreshold": "Umbral de encendido/en espera:",
+            "costPerKwh": "Gasto por kWh: ",
+            "dataExport": "Exportación de datos",
+            "scheduleExpo": "Exportación programada",
+            "interval": "Intervalo",
+            "currency": "Divisa",
+            "threshold": "Umbral",
+            "powerThreshold": "Umbral de corriente",
+            "enterEmail": "Introduzca su dirección de correo electrónico",
+            "confirm": "Confirmar"
+        },
+        "buttons": {
+            "autoReset": "Restablecimiento automático",
+            "exportNow": "Exportar ahora",
+            "detect&set": "Detectar y establecer",
+            "set": "Establecer",
+            "send": "Enviar",
+            "reset": "Reiniciar",
+            "cancel": "Cancelar",
+            "save": "Guardar",
+            "ok": "Aceptar"
+        },
+        "intros": {
+            "dataExport": "Le podemos enviar todos los datos de uso y corriente relativos a este interruptor por un periodo de hasta 30 días.",
+            "cost1": "Esto nos permitirá calcular las estimaciones del coste de sus dispositivos. Utilice su factura de electricidad para determinar su gasto medio por kWh.",
+            "cost2": "Los cambios realizados aquí se aplicarán a todos los dispositivos.",
+            "threshold1": "Su dispositivo aparece como \"Encendido\" cuando la corriente actual está por encima del umbral, y como \"En espera\" cuando está por debajo.",
+            "threshold2": "Corriente actual:",
+            "threshold3": "Estado:"
+        },
+        "intervals": {
+            "1" : "Diariamente ",
+            "2" : "Semanalmente",
+            "3" : "Mensualmente"
+        },
+        "currencyName": {
+            "1": "Dólares",
+            "3": "Libras",
+            "4": "Euros",
+            "7": "Pesos",
+            "10": "Yenes",
+            "13": "Wones",
+            "15": "Bitcoin"
+        },
+        "alertMessage": {
+            "autoSet": "Configuración automática",
+            "autoReset-desc": "Apague el dispositivo mientras el interruptor Insight esté encendido y, a continuación, pulse Detectar y establecer",
+            "reset-desc": "¿Restablecer umbral de corriente?",
+            "exportInterval": "Intervalo de exportación de programación",
+            "resetDefault": "Restablecer valores predeterminados",
+            "messageResetCost": "¿Está seguro? Esta acción restablece el coste por kWh predeterminado.",
+            "messageExport": "Enviar datos ahora a"
+        },
+        "intervalInfo": {
+            "info": "Su siguiente correo de exportación llegará en "
+        },
+        "errors": {
+            "notDetected": "No detectado"
+        }
+    },
+    "buttons": {
+        "cancel": "Cancelar",
+        "hide": "Ocultar",
+        "reset": "Reiniciar",
+        "ok": "Aceptar"
+    },
+    "defaultFriendlyName": "WeMo Insight"
+}

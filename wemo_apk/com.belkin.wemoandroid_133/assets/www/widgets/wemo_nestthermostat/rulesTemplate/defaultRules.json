@@ -1,0 +1,96 @@
+[
+    {
+        "enabled": "true",
+        "min_version": "20",
+        "max_version": "29",
+        "id":"heater-off",
+        "name":"heater-off",
+        "template":"do_if",
+        "parameters": {
+            "conditions": {
+                "condition": [
+                    [
+                        {
+                            "method": "attribute_changes_to",
+                            "key": "Mode",
+                            "value": "0"
+                        }
+                    ]
+                ]
+            },
+            "action-start": {
+                "notifications": [
+                    {
+                        "platform": "BOTH",
+                        "message": "HeaterOff",
+                        "replacements": []
+                    }
+                ]
+            },
+            "when-days": ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+        }
+    },
+    {
+        "enabled": "true",
+        "min_version": "20",
+        "max_version": "29",
+        "id":"heater-disabled",
+        "name":"heater-disabled",
+        "template":"do_if",
+        "parameters": {
+            "conditions": {
+                "condition": [
+                    [
+                        {
+                            "method": "attribute_changes_to",
+                            "key": "WemoDisabled",
+                            "value": "1"
+                        }
+                    ]
+                ]
+            },
+            "action-start": {
+                "notifications": [
+                    {
+                        "platform": "BOTH",
+                        "message": "HeaterDisabled",
+                        "replacements": []
+                    }
+                ]
+            },
+            "when-days": ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+        }
+    },
+    {
+        "enabled": "true",
+        "min_version": "20",
+        "max_version": "29",
+        "id":"heater-90",
+        "name":"heater-90",
+        "template":"do_if",
+        "parameters": {
+            "conditions": {
+                "condition": [
+                    [
+                        {
+                            "method": "attribute_changes_to",
+                            "key": "Temperature",
+                            "value": "90"
+                        }
+                    ]
+                ]
+            },
+            "action-start": {
+                "notifications": [
+                    {
+                        "platform": "BOTH",
+                        "message": "Heater90",
+                        "replacements": []
+                    }
+                ]
+            },
+            "when-days": ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+        }
+    }
+]
+

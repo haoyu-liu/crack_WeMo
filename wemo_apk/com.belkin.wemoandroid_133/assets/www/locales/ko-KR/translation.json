@@ -1,0 +1,102 @@
+{
+    "app": {
+        "name": "test"
+    },
+    "navigation": {
+        "back": "뒤로"
+    },
+    "errors": {
+        "title": "WeMo can’t complete your request",
+        "message": "If this continues, please restart the app.",
+        "unavailable": "Unavailable",
+        "notDetected": "감지되지 않음",
+        "rulesTitle": "Schedule cannot be saved",
+        "rulesMessage": "Having trouble saving this schedule now. Please check the status of all your WeMo devices and try again."
+    },
+    "validation": {
+        "title": "입력 사항을 확인하십시오"
+    },
+    "buttons": {
+        "okay": "Okay",
+        "ok": "확인",
+        "done": "완료",
+        "cancel": "취소",
+        "save": "저장",
+        "hide": "숨김",
+        "continue": "계속",
+        "reset": "리셋"
+    },
+    "hide": {
+        "title": "이것을 숨기시겠습니까?",
+        "message": "디바이스가 다시 활성화될 때까지 표시되지 않습니다."
+    },
+    "firmware": {
+        "update": "Updating new firmware..."
+    },
+    "date": {
+        "tomorrow": "내일",
+        "yesterday": "어제",
+        "today": "오늘",
+        "months": {
+            "0": "1월",
+            "1": "2월",
+            "2": "3월",
+            "3": "4월",
+            "4": "5월",
+            "5": "6월",
+            "6": "7월",
+            "7": "8월",
+            "8": "9월",
+            "9": "10월",
+            "10": "11월",
+            "11": "12월"
+        },
+        "days": {
+            "0": "일요일",
+            "1": "월요일",
+            "2": "화요일",
+            "3": "수요일",
+            "4": "목요일",
+            "5": "금요일",
+            "6": "토요일"
+        },
+        "scheduleDays": {
+            "0": "일",
+            "1": "월",
+            "2": "화",
+            "3": "수",
+            "4": "목",
+            "5": "금",
+            "6": "토"
+        }
+    },
+    "timeUnits": {
+        "0": "s",
+        "1": "m",
+        "2": "h"
+    },
+    "labels": {
+        "autoOff": "Auto-off in",
+        "onFor": "On for",
+        "enable": "Enable",
+        "schedule": "Schedule",
+        "dailySchedule": "Daily Schedule",
+        "confirm": "확인",
+        "batteryReplace": "Unavailable - Replace battery",
+        "batteryLevel": "Low Battery",
+        "signalStrength": "Low Signal",
+        "ago": "ago",
+        "remaining": "남은",
+        "temperature": "온도"
+    },
+    "mode": {
+        "off": "끄기",
+        "on": "켜기"
+    },
+    "messages": {
+        "orderNewFilter": "Order new filters",
+        "replaceFilter": "Replace filter",
+        "timeReplaceFilter": "Time to replace filters...",
+        "timeOrderFilter": "Time to order filters..."
+    }
+}

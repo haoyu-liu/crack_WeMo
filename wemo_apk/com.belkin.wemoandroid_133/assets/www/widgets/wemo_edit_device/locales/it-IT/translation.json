@@ -1,0 +1,62 @@
+{
+    "headers": {
+        "editDevice": "Modifica dispositivo",
+        "picture": "Foto",
+        "ID": "WeMo ID: ",
+        "reset": "Opzioni di ripristino",
+        "enterName": "Nome",
+        "groupIcon": "Icona del gruppo",
+        "groupName": "Nome del gruppo",
+        "groupSubHeader": "in questo gruppo",
+        "alert": "Allarme"
+    },
+    "resetButtons": {
+        "1": "Cancella dati utilizzo",
+        "2": "Cancella info prodotto",
+        "3": "Ripristina impostazioni Wi-Fi",
+        "4": "Cancella tutti i contenuti e impostazioni"
+    },
+    "resetDescriptions": {
+        "1": "Cancella dati di alimentazione, orario e costi.",
+        "2": "Cancella nome, icona e regole.",
+        "3": "Cancellare le impostazioni Wi-Fi del dispositivo. (dovrai effettuare di nuovo l'installazione)",
+        "4": "Questo pulsante ripristinerà TUTTI i dati e le impostazioni di fabbrica."
+    },
+    "validation": {
+        "friendlyNameRequired": "È richiesto un nome descrittivo.",
+        "friendlyNameMaxLength": "Il nome descrittivo deve essere più corto di 30 caratteri.",
+        "friendlyNameValidation": "Si prega di inserire un nome di 30 caratteri o meno che utilizza solo lettere, numeri, spazi, trattini, punti o sottolineare.",
+        "groupNameRequired": "È richiesto un nome per il gruppo.",
+        "groupNameMaxLength": "Il nome del gruppo deve essere più corto di 30 caratteri."
+    },
+    "iconPopup": {
+        "title": "Carica una foto",
+        "option1": "Scatta una foto",
+        "option2": "Scegli una foto dalla galleria",
+        "option3": "Ripristina foto"
+    },
+    "resetPopupMessage": {
+        "resetUsageData": "Cancellare tutti i dati sul consumo energetico e l'orario per questo dispositivo?",
+        "fnIconRules": "Cancellare il nome, l'icona e le regole per il dispositivo?",
+        "wifi": "Cancellare le impostazioni Wi-Fi del dispositivo? (dovrai effettuare di nuovo l'installazione)",
+        "all": "Cancellare tutte le impostazioni e ripristinare il dispositivo ai valori di fabbrica?"
+    },
+    "messages": {
+        "errorMessageEdit": "Impossibile modificare il nome e l'icona. Riprova.",
+        "errorMessageReset": "Riprova.",
+        "iconChangeDisabledMessage": "Spiacenti, le icone personalizzate non sono attualmente supportate. Verifica aggiornamenti su Play Store."
+    },
+    "buttons": {
+        "okay": "OK",
+        "ok": "OK",
+        "done": "Fatto",
+        "cancel": "Annulla",
+        "save": "Salva",
+        "hide": "Nascondi",
+        "continue": "Continua",
+        "reset": "Ripristina"
+    },
+    "labels": {
+        "confirm": "Conferma"
+    }
+}

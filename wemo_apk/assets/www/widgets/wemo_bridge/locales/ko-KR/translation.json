@@ -1,0 +1,11 @@
+{
+    "fwUpdateInProgress": {
+        "header": "WeMo Link 업데이트 중",
+        "message": "업데이트가 완료될 때까지 WeMo Link의 플러그를 뽑지 마십시오."
+    },
+    "unavailable": {
+        "header": "WeMo Link가 응답하지 않습니다.",
+        "message": "플러그를 뽑은 후 다시 끼우십시오."
+    },
+    "defaultFriendlyName": "WeMo 링크"
+}

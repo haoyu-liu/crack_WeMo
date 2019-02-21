@@ -1,0 +1,19 @@
+{
+    "state": {
+        "0": "Conmutador",
+        "1": "Conexión momentánea",
+        "2": "Sensor no accionado",
+        "3": "Sensor ha sido accionado"
+    },
+    "editContext": {
+        "title": {
+            "switchType": "Tipo de interruptor",
+            "toggle": "Conmutador",
+            "momentary": "Momentáneamente",
+            "sensor": "Sensor",
+            "yes": "Sí",
+            "no": "No"
+        }
+    },
+    "defaultFriendlyName": "WeMo Maker"
+}

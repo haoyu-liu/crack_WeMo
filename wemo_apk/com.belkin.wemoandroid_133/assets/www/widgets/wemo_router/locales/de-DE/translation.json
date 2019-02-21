@@ -1,0 +1,13 @@
+{
+    "errors": {
+        "notDetected": "Nicht Erkannt"
+    },
+    "buttons": {
+        "cancel": "Abbrechen",
+        "hide": "Ausblenden"
+    },
+    "hide": {
+        "title": "Ausblenden?",
+        "message": "Dieses Gerät wird erst wieder eingeblendet, wenn es aktiviert wird."
+    }
+}

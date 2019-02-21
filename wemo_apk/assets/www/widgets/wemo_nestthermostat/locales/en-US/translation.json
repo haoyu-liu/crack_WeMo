@@ -1,0 +1,53 @@
+{
+  "HVAC": {
+    "heating": "Heating",
+    "cooling": "Cooling",
+    "fanrunning": "Fan Running",
+    "heat": "Heat",
+    "cool": "Cool",
+    "heatcool": "Heat / Cool",
+    "eco" : "ECO",
+    "on" : "ON",
+    "off": "OFF",
+    "rhrHeader": "Rush Hour Rewards Active",
+    "rhrMessage": "Adjusting your temperature may affect your rewards",
+    "headerTemperature": "SET TEMPERATURE",
+    "headerHeatTemperature": "Heat Temp",
+    "headerCoolTemperature": "Cool Temp",
+    "headerMode": "SET MODE",
+    "drawerLabelCurrent": "Current",
+    "drawerLabelTemp": "Temp",
+    "drawerLabelHumidity": "Humidity",
+    "drawerLabelTempAway": "To view and adjust temperature, set your Nest Thermostat to Home",
+    "serviceUnavailable": "The Nest service is currently unavailable."
+  },
+
+  "error": {
+    "energy-saving-event-on":{
+      "heading": "Unable to Adjust Remotely",
+      "message": "A Rush Hour Reward event is in effect. To make adjustments, please use the Nest App or the Nest Thermostat."
+    },
+    "lock-enabled":{
+      "heading":"Unable to Adjust Remotely",
+      "message":"Your Nest Thermostat is locked. To make adjustments, please unlock from the Nest Thermostat."
+    },
+    "emergency-heat-is-on":{
+      "heading":"Away Mode Unavailable",
+      "message":"Emergency Heat is currently on. Away mode is unavailable at this time."
+    },
+    "blocked":{
+      "heading":"Nest Needs a Rest",
+      "message":"For the safety of your Nest and HVAC system, the Nest service prevents too many changes in a short period of time. Please try again in a few minutes, or adjust the Nest thermostat directly."
+    },
+    "default":{
+      "heading":"Sorry",
+      "message":"Something unexpected went wrong. Please try again, or try adjusting from the Nest App."
+    }
+  },
+
+  "nestAlerts":{
+    "notConnected": "This thermostat is no longer connected to your Nest account.",
+    "noInternet": "Access to the Nest service is currently unavailable.  Please try again later."
+  }
+}
+

@@ -1,0 +1,25 @@
+{
+    "state": {
+        "0": "モーションなし",
+        "1": "モーション",
+        "2": "モーションを感知しました！",
+        "3": "検出されたモーション:",
+        "4": "検出されたモーション: %@ 昨日"
+    },
+    "defaultFriendlyName": "WeMo NetCam",
+    "editContext": {
+        "title": {
+            "advanceOptions": "詳細オプション"
+        }
+    },
+    "headers": {
+        "downloadNetcam": "NetCamをダウンロード"
+    },
+    "descriptions": {
+        "getApp": "このカメラにアクセスするには、BelkinのNetCamアプリを取得",
+        "availablePlayStore": "App Storeからダウンロードすることができます。"
+    },
+    "buttons": {
+        "getItNow": "今すぐ取得"
+    }
+}

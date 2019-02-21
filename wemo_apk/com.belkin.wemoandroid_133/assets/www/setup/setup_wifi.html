@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<!--
+    setup_wifi.html 
+
+    Created by Belkin International, Software Engineering on 10/04/2013. 
+    Copyright (c) 2012-2013 Belkin International, Inc. and/or its affiliates. All rights reserved. 
+    
+    Belkin International, Inc. retains all right, title and interest (including all 
+    intellectual property rights) in and to this computer program, which is 
+    protected by applicable intellectual property laws.  Unless you have obtained 
+    a separate written license from Belkin International, Inc., you are not authorized 
+    to utilize all or a part of this computer program for any purpose (including 
+    reproduction, distribution, modification, and compilation into object code), 
+    and you must immediately destroy or return to Belkin International, Inc. all copies 
+    of this computer program.  If you are licensed by Belkin International, Inc., your 
+    rights to utilize this computer program are limited by the terms of that license.  
+
+    To obtain a license, please contact Belkin International, Inc. 
+  
+    This computer program contains trade secrets owned by Belkin International, Inc. 
+    and, unless unauthorized by Belkin International, Inc. in writing, you agree to 
+    maintain the confidentiality of this computer program and related information 
+    and to not disclose this computer program and related information to any 
+    other person or entity. 
+  
+    THIS COMPUTER PROGRAM IS PROVIDED AS IS WITHOUT ANY WARRANTIES, AND BELKIN INTERNATIONAL, INC. 
+    EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF 
+    MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. 
+-->
+     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Setup wifi</title>
+		<meta name="description" content="">
+
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		
+		<link rel="stylesheet" href="../css/jquery.mobile-1.4.2.min.css">
+		<link rel="stylesheet" href="../css/AndroidHoloDarkLight.css" />
+	    <link rel="stylesheet" href="../css/style.css" />
+		<script type="text/javascript" src="../js/vendor/jquery-1.8.3.js"></script>
+		<script src="../js/vendor/jquery.mobile-1.4.2.js"></script><script src="../js/vendor/jquery.transit.js"></script><script src="../js/vendor/pointer.js"></script>
+		<script type="text/javascript" src="../cordova.js"></script>
+		<script type="text/javascript" src="../lang/en.js"></script>
+		<script type="text/javascript" src="../lang/ru.js"></script>
+		<script type="text/javascript" src="../lang/fr.js"></script>
+		<script type="text/javascript" src="../lang/zh.js"></script>
+		<script type="text/javascript" src="../lang/de.js"></script>
+		<script type="text/javascript" src="../lang/es.js"></script>
+		<script type="text/javascript" src="../lang/it.js"></script>
+		<script type="text/javascript" src="../lang/ko.js"></script>
+		<script type="text/javascript" src="../lang/ja.js"></script> 
+		<script type="text/javascript" src="../lang/lang.js"></script>
+		<script type="text/javascript" src="../js/wemo.js"></script>
+		<script type="text/javascript" src="../js/constants.js"></script>
+        <script type="text/javascript" src="../js/wemo_util.js"></script>
+		<script type="text/javascript" src="../js/plugins/setup_plugin.js"></script>
+		<script type="text/javascript" src="../js/plugins/wemo_plugin.js"></script>
+		<script type="text/javascript" src="../js/setup/setup_wifi.js"></script>
+		
+	</head>
+	    <body>
+			<div data-role="page" id="setup_wifi" class="overflow settings_page setup_wifi_page">
+                <header data-role="header" data-theme="b" class="main_header" data-position="fixed" data-tap-toggle="false">
+			        <div class="backbutton"></div>
+			        <span localString="true" _key="WiFi"></span>
+					<span class="more_tab_icon">
+						<img src="../img/actionbar/ic_more.png" />
+					</span>
+                </header>
+                <!--<div class="sub_header"><span id="setup_sub_header" localString="true" _key="WeMoBridgeSetUp"></span></div>-->
+                <div class="sub_header"><span id="setup_sub_header" localString="true" _key="SelectHomenetwork"></span></div> <!-- wemo_smart_slowcooker -->
+				<div class="more_tab"></div>
+				<div data-role="content" class="setup_wifi_page" >					
+					<ul id="wifi_ap_list" class="setup_wifi_listContainer" data-theme="b">
+            		</ul>
+				</div>
+				
+				
+            
+			<!-- Multiple Bridge popup -->
+		
+		        <div id="multiple_bridge_popup" data-role="popup" class="pop_up" data-overlay-theme="a" data-position-to="window" data-dismissible="false" data-go-forward="false">
+		            <header data-role="header" data-theme="a">
+		                <h3 id="multiple_bridge_header"></h3>
+		            </header>
+		            <article data-role="content" data-theme="b">
+		                <p id="multiple_bridge_body"></p>
+		                <fieldset>
+		                    <a href="#" id="multiple_bridge_no_btn" class="full_length" data-role="button" data-theme="b" localString="true"><span localString="true" class="multiple_bridge_popup" _key="Continue_Existing"></span></a>
+	                        <a href="#" id="multiple_bridge_yes_btn" class="full_length" data-role="button" data-theme="b" localString="true"><span localString="true" class="multiple_bridge_popup" _key="Delete_Existing"></span></a>
+	                        <a href="#" id="multiple_bridge_cancel_btn" class="full_length" data-role="button" data-theme="b" localString="true"><span localString="true" class="multiple_bridge_popup" _key="Cancel_Setup"></span></a>
+		                </fieldset>
+		            </article>
+		        </div>
+		
+		     <!-- End Multiple Bridge popup -->
+			
+	</div>
+			
+</body>
+</html>
+

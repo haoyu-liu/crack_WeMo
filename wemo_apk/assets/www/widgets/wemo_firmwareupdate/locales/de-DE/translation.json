@@ -1,0 +1,43 @@
+{
+    "popup": {
+        "title": "Neue Firmware verfügbar",
+        "message": "Ihre WeMo-Ger&auml;te laufen am besten mit der neuesten Version der Firmware.<br><br>Wollen Sie sie aktualisieren?",
+        "labels": "Ja,Jetzt nicht"
+    },
+    "completePopup":{
+        "title": "Aktualisierung abgeschlossen",
+        "message": "All Ihre WeMo-Geräte laufen einwandfrei mit der neuesten Firmware.",
+        "button": "Hurra!"
+    },
+    "firmwareupdate": {
+        "title": "Firmware-Upgrade",
+        "updateBtn": "Jetzt aktualisieren",
+        "header": "Neue Firmware verfügbar für",
+        "updateWarning": "Aktualisieren Sie alle Smartphones und Tablets mit der neuesten Version der App.",
+        "inProgress": "Firmware upgrade",
+        "inProgressMessage": "Ihre Geräte führen das Update selbstständig aus. Sie können die App schließen und Angry Birds spielen.",
+        "notes1": "Dies kann eine Weile dauern, aber Sie brauchen nicht zu warten. Sie können die App schließen. Wir kümmern uns um die Aktualisierung.",
+        "notes2": "Wenn Ihre WeMo-Produkte immer noch nicht angezeigt werden, wenn Sie zurück sind, ist die Aktualisierung möglicherweise noch nicht abgeschlossen. Bitte haben Sie noch etwas Geduld.",
+        "notes3": "Ihre WeMo-Geräte werden zum Abschließen der Aktualisierung kurz ausgeschaltet. Möglicherweise blinken Sie während der Aktualisierung blau oder grün. Wenn die Leuchten aufhören zu blinken, ist die Aktualisierung abgeschlossen.",
+        "ugradeInProgress": "Aktualisierung wird ausgeführt...",
+        "releaseNotes": "Versionshinweise:"
+    },
+    "wifistatus": {
+        "0": "wird herunterladen...",
+        "1": "wurde herunterladen",
+        "2": "Download fehlgeschlagen",
+        "3": "wird aktualisiert...",
+        "4": "Wurde aktualisiert",
+        "5": "Upgrade fehlgeschlagen",
+        "6": "Upgrade fehlgeschlagen",
+        "7": "wartet...",
+        "90": "Link wird heruntergeladen...",
+        "91": "Link wurde heruntergeladen...",
+        "92": "Herunterladen des Links fehlgeschlagen",
+        "93": "Link wird aktualisiert...",
+        "94": "Link wurde aktualisiert...",
+        "95": "Upgrade des Links ist fehlgeschlagen",
+        "96": "Upgrade des Links ist fehlgeschlagen",
+        "97": "Link wartet..."
+    }
+}

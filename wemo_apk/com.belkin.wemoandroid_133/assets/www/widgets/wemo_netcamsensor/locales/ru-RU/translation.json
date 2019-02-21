@@ -1,0 +1,25 @@
+{
+    "state": {
+        "0": "Отсутствие движения",
+        "1": "Движение",
+        "2": "Движение регистрируется!",
+        "3": "Обнаружено движение:",
+        "4": "Обнаружено движение: %@ вчера"
+    },
+    "defaultFriendlyName": "WeMo NetCam",
+    "editContext": {
+        "title": {
+            "advanceOptions": "Дополнительные Настройки"
+        }
+    },
+    "headers": {
+        "downloadNetcam": "Скачайте NetCam"
+    },
+    "descriptions": {
+        "getApp": "Чтобы получить доступ к этой камере скачайте приложение Belkin NetCam",
+        "availablePlayStore": "Доступно в App Store."
+    },
+    "buttons": {
+        "getItNow": "Получить Cейчас"
+    }
+}

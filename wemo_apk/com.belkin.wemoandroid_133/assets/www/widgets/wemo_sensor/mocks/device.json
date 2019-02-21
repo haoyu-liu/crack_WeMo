@@ -1,0 +1,16 @@
+{
+    "privateKey": "7495d475-6ea9-4fb5-8d81-3198100861eb",
+    "firmwareVersion": "WeMo_WW_2.00.2776.DVT",
+    "udn": "uuid:motion-1_0-221322S0000056",
+    "pluginSSID": "WeMo.Motion.069",
+    "macAddr": "EC1A59C095E6",
+    "serialNumber": "221322S0000056",
+    "plugID": null,
+    "pluginId":4456,
+    "signalStrength": null,
+    "ruleDBPath": null,
+    "friendlyName": "WeMo Motion",
+    "deviceType": "urn:Belkin:device:motion:1",
+    "iconVersion": null,
+    "firmwareUpgradeStatus": 2
+}

@@ -1,0 +1,49 @@
+{
+    "labels": {
+        "mealReady": "Repas prêt",
+        "warmTimeLeft": "Temps de chaleur restant",
+        "onWarm": "On Warm",
+        "onLow": "On Low",
+        "onHigh": "On High"
+    },
+    "mode": {
+        "0": "Désactivé",
+        "1": "Inactif",
+        "2": "Non Disponible",
+        "50": "Chaud",
+        "51": "Mode Bas",
+        "52": "Mode Élevé"
+    },
+    "summary": {
+        "title": "Résumé de cuisson",
+        "btnModify": "Modifier",
+        "btnReset": "Réinitialiser la minuterie",
+        "onForZero": "<p>quelques</p><p>secondes</p>"
+    },
+    "staysafe": {
+        "title": "Pensez salubrité",
+        "message": "Pour assurer l'innocuité des aliments, votre mijoteuse commencera la cuisson dès que vous aurez appuyé sur le bouton de départ.",
+        "setTimerButton": "Régler la minuterie"
+    },
+    "settings": {
+        "title": "Régler la minuterie de cuisson",
+        "cancelButton": "ANNULER LE MINUTEUR",
+        "doneBtn": "Débuter",
+        "cancelBtn": "Annuler le minuteur",
+        "mealSetText": "Repas prêt à:",
+        "mealFinishedText": "Repas terminé à:",
+        "cookTimer": "Minuterie de cuisson",
+        "setTimerDialogHeader": "Régler le temps",
+        "confirmMessage": "Choisissez « Débuter » pour amorcer la cuisson ou « Annuler » pour quitter.",
+        "clearMessage": "Annuler la minuterie?",
+        "clearLabels": "Oui,Non",
+        "clearTitle": "Simple vérification"
+    },
+    "tile": {
+        "finishedTitle": "Ding!",
+        "finishedMessage": "Le temps est écoulé. Je vais garder le mets à point.",
+        "failedTitle": "Connexion perdue",
+        "failedMessage": "Vérifiez les voyants sur votre mijoteuse. S'il y a eu panne de courant, il pourrait ne pas être sécuritaire de manger les aliments."
+    },
+    "defaultFriendlyName": "Mijoteuse Crock-Potᴹᴰ"
+}

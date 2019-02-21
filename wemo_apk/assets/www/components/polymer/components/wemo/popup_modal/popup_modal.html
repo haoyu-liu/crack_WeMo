@@ -1,0 +1,97 @@
+<link href="../../polymer/polymer.html" rel="import">
+<link href="../../paper-button/paper-button.html" rel="import">
+<link href="../../core-overlay/core-overlay.html" rel="import">
+<link href="../../core-transition/core-transition-css.html" rel="import">
+
+<style>
+    .core-overlay-backdrop.core-opened {
+        opacity: 0.4;
+    }
+</style>
+<polymer-element name="popup-modal" extends="core-overlay" attributes="heading description description2 cancelBtn doneBtn">
+    <template>
+        <style>
+            :host {
+                width: 90%;
+                padding-top: 10px;
+                background-color: #fff;
+                border-radius: 2px;
+                text-align: center;
+                color: #444;
+            }
+
+            h1 {
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            .description {
+                padding: 0 15px 15px 15px;
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+            .description p {
+                margin: 0 0 10px 0;
+            }
+
+            #actions {
+                background-color: #69a6ff;
+            }
+
+            paper-button.popupBtn::shadow {
+                margin: 0;
+            }
+
+            paper-button.popupBtn::shadow .button-content {
+                color: #fff;
+                font-weight: 400;
+                text-transform: none;
+            }
+
+            paper-button.done::shadow .button-content{
+                border-left: 1px solid #fff;
+                font-weight: 500;
+            }
+
+        </style>
+
+        <paper-shadow z="1" fit></paper-shadow>
+
+        <template if="{{heading}}">
+            <h1>{{heading}}</h1>
+        </template>
+
+        <template if="{{description}}">
+            <div class="description">
+                <p>{{description}}</p>
+
+                <template if="{{description2}}">
+                    <p>{{description2}}</p>
+                </template>
+            </div>
+        </template>
+
+        <div id="actions" horizontal layout>
+            <paper-button flex self-start class="popupBtn cancel" on-tap="{{closePopup}}" aria-label="{{cancelBtn}}" role="button">{{cancelBtn}}</paper-button>
+            <paper-button flex self-end class="popupBtn done" on-tap="{{confirm}}" aria-label="{{doneBtn}}" role="button">{{doneBtn}}</paper-button>
+        </div>
+
+    </template>
+
+    <script>
+        Polymer('popup-modal',{
+            backdrop : true,
+            autoCloseDisabled : true,
+            transition: 'core-transition-center',
+            closePopup: function() {
+                this.fire('close');
+                this.close();
+            },
+            confirm: function() {
+                this.fire('confirm');
+                this.close();
+            }
+        });
+    </script>
+</polymer-element>

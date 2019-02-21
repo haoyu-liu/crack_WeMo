@@ -1,0 +1,32 @@
+{
+    "labels": {
+        "sleepFader": "睡眠灯光调节器",
+        "customOption": "自定义",
+        "btn": "输入",
+        "sleep": "进入睡眠模式",
+        "color": "颜色",
+        "checkBulb": "检查灯泡",
+        "custom" : "自定义",
+        "temperature": "温度",
+        "remaining": "剩余的"
+    },
+    "mode": {
+        "off": "关",
+        "on": "开"
+    },
+    "unavailable": {
+        "devices": "__count__个不可用设备",
+        "devices_plural": "__count__个不可用设备"
+    },
+    "defaultFriendlyName": {
+        "MZ100": "灯泡",
+        "iQBR30": "Osram Lightify BR30",
+        "LIGHTIFY A19 Tunable White": "Osram Lightify TW60",
+        "LIGHTIFY Flex RGBW": "Osram Lightify Flex RGBW",
+        "LIGHTIFY Gardenspot RGB": "Osram Lightify Garden RGB",
+        "Classic A60 TW": "Osram Lightify TW60",
+        "Flex RGBW": "Osram Lightify Flex RGBW",
+        "Gardenspot RGB": "Osram Lightify Garden RGB",
+        "Connected A-19 60W Equivalent": "CREE Connected LED bulb"
+    }
+}

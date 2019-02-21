@@ -1,0 +1,32 @@
+{
+    "labels": {
+        "sleepFader": "SCHLAFREGLER",
+        "customOption": "benutzerdefiniert",
+        "btn": "Eingeben",
+        "sleep": "Schlafmodus",
+        "color": "Farbe",
+        "checkBulb": "Lampe Markieren",
+        "custom" : "Benutzerdefiniert",
+        "temperature": "Temperatur",
+        "remaining": "Verbleibend"
+    },
+    "mode": {
+        "off": "Aus",
+        "on": "Ein"
+    },
+    "unavailable": {
+        "devices": "__count__ nicht verfügbares Gerät",
+        "devices_plural": "__count__ nicht verfügbare Geräte"
+    },
+    "defaultFriendlyName": {
+        "MZ100": "Lampe",
+        "iQBR30": "Osram Lightify BR30",
+        "LIGHTIFY A19 Tunable White": "Osram Lightify TW60",
+        "LIGHTIFY Flex RGBW": "Osram Lightify Flex RGBW",
+        "LIGHTIFY Gardenspot RGB": "Osram Lightify Garden RGB",
+        "Classic A60 TW": "Osram Lightify TW60",
+        "Flex RGBW": "Osram Lightify Flex RGBW",
+        "Gardenspot RGB": "Osram Lightify Garden RGB",
+        "Connected A-19 60W Equivalent": "CREE Connected LED bulb"
+    }
+}

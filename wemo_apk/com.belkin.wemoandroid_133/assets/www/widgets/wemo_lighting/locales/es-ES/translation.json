@@ -1,0 +1,32 @@
+{
+    "labels": {
+        "sleepFader": "ATENUADOR DE SUSPENSIÓN",
+        "customOption": "Personalizado",
+        "btn": "Introducir",
+        "sleep": "Activar suspensión",
+        "color": "Color",
+        "checkBulb": "Chequear Bombilla",
+        "custom" : "Personalizado",
+        "temperature": "Temperatura",
+        "remaining": "Queda(n)"
+    },
+    "mode": {
+        "off": "Desactivado",
+        "on": "Activado"
+    },
+    "unavailable": {
+        "devices": "__count__ dispositivo no disponible",
+        "devices_plural": "__count__ dispositivos no disponibles"
+    },
+    "defaultFriendlyName": {
+        "MZ100": "Lightbulb",
+        "iQBR30": "Osram Lightify BR30",
+        "LIGHTIFY A19 Tunable White": "Osram Lightify TW60",
+        "LIGHTIFY Flex RGBW": "Osram Lightify Flex RGBW",
+        "LIGHTIFY Gardenspot RGB": "Osram Lightify Garden RGB",
+        "Classic A60 TW": "Osram Lightify TW60",
+        "Flex RGBW": "Osram Lightify Flex RGBW",
+        "Gardenspot RGB": "Osram Lightify Garden RGB",
+        "Connected A-19 60W Equivalent": "CREE Connected LED bulb"
+    }
+}

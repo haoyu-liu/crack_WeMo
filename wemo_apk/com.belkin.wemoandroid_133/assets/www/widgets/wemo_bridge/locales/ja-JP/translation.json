@@ -1,0 +1,11 @@
+{
+    "fwUpdateInProgress": {
+        "header": "WeMo Link を更新しています",
+        "message": "更新が完了するまで WeMo Link をコンセントから抜かないでください。"
+    },
+    "unavailable": {
+        "header": "WeMo Link が応答していません。",
+        "message": "コンセントから外して、もう一度差し込んでください。"
+    },
+    "defaultFriendlyName": "WeMo Link"
+}

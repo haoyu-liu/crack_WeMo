@@ -1,0 +1,189 @@
+/* Header */
+.sub_header{
+	background: #73d44c;
+	font-weight: lighter;
+	text-align: center;
+	line-height: 56px;
+	font-size: 17px;
+	padding: 0;
+	color: white;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
+.sub_header .save_email {
+	position: absolute;
+	font-weight: 400;
+	color: white;
+	text-decoration: none;
+	right: 17px;
+}
+
+.sub_header .save_email:visited{
+	color: white;
+}
+
+body.ui-overlay-a{
+	background: #ededed !important;
+}
+
+.email_opt_in_page {
+	overflow: hidden !important;
+	font-size: 14px;
+}
+
+.email_opt_in_page .ui-content{
+	background: transparent;
+	padding: 8px;
+	padding-top: 68px;
+}
+
+.email_opt_in_page .sub_header span {
+	font-size: 17px;
+	    font-weight: 400;
+}
+
+.card{
+	box-shadow: 0 1px 1px #e0e0e0;
+	background: white;
+	margin-top: 6px;
+	padding: 15px 12px 5px 15px;
+}
+
+.card .ui-checkbox{
+	margin: 0;
+}
+
+.card .ui-checkbox label{
+	background: transparent;
+	border: 0;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 0;
+	height: 34px;
+	line-height: 34px;
+	z-index: 0;
+	position: relative;
+}
+
+.ui-page-theme-a .ui-btn:hover{
+	background-color: transparent;
+}
+
+.card .ui-input-text{
+	border: 0;
+	text-shadow: none;
+	box-shadow: none;
+}
+
+.card ::-webkit-input-placeholder{
+	color: #73d44c;
+	font-weight: 400;
+}
+
+.card input:focus::-webkit-input-placeholder{
+	color: transparent;
+}
+
+.card hr{
+	opacity: 0.5;
+}
+
+.card p{
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	font-weight: lighter;
+	color: #777777;
+}
+
+.email_input{
+	border-bottom: 1px solid #e0e0e0;
+	margin: 0 0 10px;
+	padding: 0 0 12px;
+	display: flex;
+}
+
+.email_input .ui-input-text {
+	flex-basis: 95%;
+}
+
+#enter_email{
+	color: #73d44c;
+	font-size: 16px;
+    font-weight: bold;
+}
+
+.error_mark{
+	color:#d0021b;
+	font-size: 24px;
+	padding: 6px 0;
+	height: 15px;
+	display:none;
+}
+
+.email_disclaimer{
+	color: #68a2f6;
+}
+
+#opt_in {
+	display: flex;
+	align-items: center;
+	padding: 20px 18px;
+	color: #777;
+}
+
+.opt_in_label {
+	flex-basis: 80%;
+	margin-right: 10%;
+}
+
+.opt_in_check{
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+}
+
+.opt_in_check.selected{
+	background: url("../img/ic_checkcircle.png") no-repeat center center;
+	background-size: 25px 25px;
+	width: 25px;
+	height: 25px;
+	border: none;
+}
+
+#email_validation_error{
+	min-height: 40px;
+	color:#d0021b;
+	padding: 10px 15px;
+}
+
+.email_validation_error_message{
+	display:none;
+}
+
+.pageBtn.save_email  {
+	background: #73d44c;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+	border: 0;
+	text-shadow: none;
+	border-radius: 2px;
+	padding: 10px 0;
+	text-align: center;
+	margin: 7px 0;
+}
+
+.pageBtn.save_email .button_text {
+	color: white;
+	text-transform: uppercase;
+}
+
+.error .email_validation_error_message, .error .error_mark {
+	display:block;
+}
+
+.error .pageBtn.save_email{
+	background: #e1e1e1;
+}

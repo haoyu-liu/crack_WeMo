@@ -1,0 +1,129 @@
+<link rel="import" href="../../paper-dialog/paper-action-dialog.html">
+
+
+<polymer-element name="emergency-contact-popup" extends="paper-action-dialog" role="dialog" >
+
+    <style>
+        .core-overlay-backdrop.core-opened {
+            opacity: 0.4;
+        }
+    </style>
+    <template>
+        <style>
+            :host {
+                text-align: center;
+                border-radius: 2px;
+                width:275px;
+            }
+
+            h1 {
+                font-size: 19px;
+                font-weight: 500;
+                border-bottom: 1px solid #777;
+                padding: 23px 5% 20px 5%;
+                margin: 0;
+                color: #444;
+            }
+
+            #actions paper-button {
+                padding: 15px;
+                border-bottom: 1px #e1e1e1 solid;
+                color: #73d44c;
+                font-size: 17px;
+            }
+
+            #actions paper-button.cancel {
+                color: #777;
+                border: none;
+            }
+
+            #actions paper-button .btnIcons {
+                width: 23px;
+                height: 23px;
+                display: block;
+                position: absolute;
+                background-size: 23px;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-top: -2px;
+            }
+
+            #actions paper-button .callIcon {
+                background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABV0RVh0Q3JlYXRpb24gVGltZQAxMi82LzE02f2SbAAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAANhSURBVGiB7ZvNTeNAGECfV3snHWwKwAIqIJHMGVJBnLP3wFZASlgkfI7pIHcsESpYkLcASggVsAdPhNfM2PNjO8bwJASyk8n38s2MZz4b7/X1lc/Et30H0DVfwkPne/mA53n7iKMx6uakd8IqoiwIgRXwAlzGfpq4BLYvvPI3IstwQbbIoo/SdRmuHcMKWYCVOPehqBSukN3x4aTrMvwIbGte86GklcJRFiyBZ2DKgKSlwlEWXABXwIaBSasyHIrfRwxMWiU8Kfw9KOl3wlEWjIGD0uHBSMsyPFa81kZ6YhlXa5huHkylJ8YRtYzNbklXegskNkG1iUz4WeN9ddJbYBr7qU5bnSLdPERZoFv3eSLvtmPgHhjxJvvYXJj62G4eHjTbL2d6wx5ldVDthx+BU802dtKT2E+nTQTVJqoMJ4btHAG/3ULpBqmw6JLPhm0lrsF0QdVl6bazKDqkSjgxbGtsH0Z3KIXFNdQky0vXYLqgbqW1NGjrhyga9JpKYYssX/Vxw1BEZy19Sf0mochabDF7Sa1w7Kdb4JdBmwfk0iPrqFpEqxAPEGXBPWbbvSfy1ZdJ73DGuRBfYIZZ1+7l6ktbWGRqYdj+PMqCxPA9rWJUAIj9dA1cG35Gr6S1x3ARi/EMHY3pJsdwkRn5FtKEI2BjO3tHWbCMsmAjbhIo8TyvMmlWGRYBHPNW5TDhhTzT2l+YGBLzwqHaW7WqTFs/8iAC1qlcljkgz3So82KJLDjUvZ2e8XCUXkVZUHnZUsjusJK27tKlwEKq7yNX8QSE5S4ulqd/qB8y0u6t6tKNCIsAQ+ylId+kbMgFR+SLljF688Q76daFwWkikyErAVfxn3Tjk5YMhzEto5UbeI0/mNYD6WXVCxrt0kXEAuMeOG6gOdPufXtzeBfKTrT26KFYQk6BdQPNmWZ6/vPvWSg70eqzlrGfbmM/nZFXTVwxlQ5lBzt5uDT202vgBPPifhkTaWnP6uxpWjGZneBeFNCRTm4O76Sf09qkVYWobK5wK96rJrIk9tNFJwsPU6IsmJPXvseWTZSl17GfLqCjlZYN4vJ1jr34TnpUfOKgt8JFoiw4By7Ej+7ydAPMdpWUuopHr4SLRFlwylt3HZdOb8lFH8q7LGPhofPp/snjS3jofDrhfzs/jma9XExCAAAAAElFTkSuQmCC")
+            }
+
+            #actions paper-button .phoneIcon {
+                background-image: url("data:image/png;base64,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")            }
+
+            #actions paper-button.btnHighlight {
+                font-weight: 500;
+            }
+
+        </style>
+        <paper-shadow z="1" fit></paper-shadow>
+
+        <h1 class="header">
+            {{header}}<br>
+            {{since}} {{time}}
+        </h1>
+        
+        <div id="actions" relative layout vertical>
+            <paper-button class="btnHighlight" data-contact="911" on-tap="{{callContact}}"><span class="callIcon btnIcons"></span>Call Fire Dept</paper-button>
+            <paper-button class="btnHighlight" data-contact="+919999999999" on-tap="{{callContact}}"><span class="callIcon btnIcons"></span>Call Peter</paper-button>
+            <paper-button data-contact="" on-tap="{{callContact}}"><span class="phoneIcon btnIcons"></span>Go To Phone</paper-button>
+            <paper-button class="cancel" on-tap="{{closePopup}}">Dismiss</paper-button>
+        </div>
+
+    </template>
+    <script>
+        Polymer('emergency-contact-popup',{
+            time: '7:51PM',
+            backdrop : true,
+            autoCloseDisabled : true,
+            transition: 'core-transition-center',
+            domReady: function() {
+                var self = this;
+                var lang;
+                if (window.location.protocol === "file:") {
+                    navigator.globalization.getLocaleName(
+                            function(locale) {
+                                DEBUG && console.log("i18next locale info: " + locale.value);
+                                lang = locale.value;
+                                lang = (lang.indexOf('_')) ? lang.replace('_', '-') : lang;
+                            },
+                            function() {
+                                DEBUG && console.log("i18next locale info else: " + locale.value);
+                                lang = 'en-US';
+                            }
+                    );
+                } else {
+                    lang = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
+                    DEBUG && console.log("i18next locale info for browser: " + lang);
+                }
+
+                setTimeout(function(){
+                    i18n.init({
+                        lng: lang,
+                        fallbackLng: 'en-US',
+                        resGetPath: "components/polymer/components/wemo/emergency-message/locales/__lng__/__ns__.json"
+                    }, function(t) {
+                        self.header = t('emergencyContact.header');
+                        self.since = t('emergencyContact.since');
+                    });
+                }, 500);
+            },
+			callContact: function(event, detail, target){
+                var emergencyNumber = target.attributes["data-contact"].nodeValue;
+                window.cordova.exec(this.success, this.error, 'SmartDevicePlugin', 'callEmeregencyContact', [{"Number" : emergencyNumber}]);
+            },
+			success: function() {
+			},
+			error: function(){
+			},
+            closePopup: function() {
+                this.opened = false;
+            }
+
+        });
+    </script>
+</polymer-element>

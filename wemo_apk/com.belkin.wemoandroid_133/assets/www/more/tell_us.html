@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<!--
+    tell_us.html 
+
+    Created by Belkin International, Software Engineering on 10/04/2013. 
+    Copyright (c) 2012-2013 Belkin International, Inc. and/or its affiliates. All rights reserved. 
+    
+    Belkin International, Inc. retains all right, title and interest (including all 
+    intellectual property rights) in and to this computer program, which is 
+    protected by applicable intellectual property laws.  Unless you have obtained 
+    a separate written license from Belkin International, Inc., you are not authorized 
+    to utilize all or a part of this computer program for any purpose (including 
+    reproduction, distribution, modification, and compilation into object code), 
+    and you must immediately destroy or return to Belkin International, Inc. all copies 
+    of this computer program.  If you are licensed by Belkin International, Inc., your 
+    rights to utilize this computer program are limited by the terms of that license.  
+
+    To obtain a license, please contact Belkin International, Inc. 
+  
+    This computer program contains trade secrets owned by Belkin International, Inc. 
+    and, unless unauthorized by Belkin International, Inc. in writing, you agree to 
+    maintain the confidentiality of this computer program and related information 
+    and to not disclose this computer program and related information to any 
+    other person or entity. 
+  
+    THIS COMPUTER PROGRAM IS PROVIDED AS IS WITHOUT ANY WARRANTIES, AND BELKIN INTERNATIONAL, INC. 
+    EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF 
+    MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. 
+-->
+     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>tell us</title>
+		<meta name="description" content="">
+
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		
+		<link rel="stylesheet" href="../css/jquery.mobile-1.4.2.min.css">
+		<link rel="stylesheet" href="../css/style.css" />
+		<script type="text/javascript" src="../js/vendor/jquery-1.8.3.js"></script>
+		<script src="../js/vendor/jquery.mobile-1.4.2.js"></script><script src="../js/vendor/jquery.transit.js"></script><script src="../js/vendor/pointer.js"></script>
+		<script type="text/javascript" src="../lang/en.js"></script>
+		<script type="text/javascript" src="../lang/ru.js"></script>
+		<script type="text/javascript" src="../lang/fr.js"></script>
+		<script type="text/javascript" src="../lang/zh.js"></script>
+		<script type="text/javascript" src="../lang/de.js"></script>
+		<script type="text/javascript" src="../lang/es.js"></script>
+		<script type="text/javascript" src="../lang/it.js"></script>
+		<script type="text/javascript" src="../lang/ko.js"></script>
+		<script type="text/javascript" src="../lang/ja.js"></script> 
+		<script type="text/javascript" src="../lang/lang.js"></script>
+		<script type="text/javascript" src="../js/wemo.js"></script>
+        <script type="text/javascript" src="../cordova.js"></script>
+		<script type="text/javascript" src="../js/constants.js"></script>
+        <script type="text/javascript" src="../js/wemo_util.js"></script>
+        <script type="text/javascript" src="../js/vendor/json2.js"></script>
+		<script type="text/javascript" src="../js/more/tell_us.js"></script>
+         <script type="text/javascript" src="../js/plugins/wemo_plugin.js"></script>
+
+	</head>
+	    <body>
+            <div data-role="page" id="mainPage" style="display:none">
+                <header data-role="header" data-theme="b" class="main_header" data-position="fixed" data-tap-toggle="false">
+                    <div class="backbutton"></div>
+                    <span localString="true" _key="TellUsWhatYouThink"></span>
+                </header>
+                <div class="sub_header">
+                </div>
+
+                <div class="more_tab"></div>	
+                <div class="margin_top25">&nbsp;</div>
+                <div class="ui-grid-solo" data-role="content">
+                    <div class="more_li_clone more_li_clone_no_img">
+                        <span id="tellus_rate_wemo_app" class="tellus_div_text text_strong" localString="true" _key="RateWeMoontheAppStore" _innerString="true"></span>
+                    </div>
+                    <div class="margin_top25"></div>
+                    <div class="more_li_clone more_li_clone_no_img">
+                        <span id="tellus_report_problem" class="tellus_div_text text_strong" localString="true" _key="ReportaProblem" _innerString="true"></span>
+                    </div>
+                    <div class="margin_top25"></div>
+                    <div class="more_li_clone more_li_clone_no_img">
+                        <span id="tellus_not_now" class="tellus_div_text text_strong" localString="true" _key="NotRateNow" _innerString="true"></span>
+                    </div>
+                </div>
+			</div>
+            
+            <div data-role="page" id="reportaproblem" class="reportaproblem settings_page">
+                <header data-role="header" data-theme="b" class="main_header" data-position="fixed" data-tap-toggle="false">
+                    <div class="backbutton"></div>
+                    <span localString="true" _key="ReportaProblem"></span>
+                </header>
+                <div class="sub_header">
+                    
+                </div>
+
+                <form id="reportaproblem_form" class="rapf-form-wrapper">
+                    <div id="rapf_yourname" class="rapf-yourname-wrapper">
+                        <input name="yourname" type="text" data-l10n="ReportaProblem_YourName" placeholder="" maxlength="120" data-role="none" class="rapf-input" required>
+                        <div class="error hide"></div>
+                    </div>
+                    <div id="rapf_email" class="rapf-email-wrapper">
+                        <input name="email" type="email" data-l10n="ReportaProblem_Email" placeholder="" maxlength="80" data-role="none" class="rapf-input" required>
+                        <div class="error hide"></div>
+                    </div>
+                    <div id="rapf_product" class="rapf-product-wrapper">
+                        <div class="rapf-dropdown-wrapper">
+                            <span class="rapf-dropdown-label" localString="true" _key="ReportaProblem_Product"></span>
+                            <select name="product" data-role="none" class="rapf-dropdown" required>
+                            	<option value='' selected disabled hidden></option>
+                                <option value="Mini" localString="true" _key="ReportaProblem_Product_Mini"></option>
+                                <option value="Switch" localString="true" _key="ReportaProblem_Product_Switch"></option>
+                                <option value="Insight" localString="true" _key="ReportaProblem_Product_Insight"></option>
+                                <option value="Dimmer" localString="true" _key="ReportaProblem_Product_Dimmer"></option>
+                                <option value="Light Switch" localString="true" _key="ReportaProblem_Product_LightSwitch"></option>
+                                <option value="Motion" localString="true" _key="ReportaProblem_Product_Motion"></option>
+                                <option value="LED Bulb" localString="true" _key="ReportaProblem_Product_LEDBulb"></option>
+                                <option value="Maker" localString="true" _key="ReportaProblem_Product_Maker"></option>
+                                <option value="Coffee Maker" localString="true" _key="ReportaProblem_Product_CoffeeMaker"></option>
+                                <option value="Slow Cooker" localString="true" _key="ReportaProblem_Product_Cooker"></option>
+                                <option value="Humidifier" localString="true" _key="ReportaProblem_Product_Humidifier"></option>
+                                <option value="Heater" localString="true" _key="ReportaProblem_Product_Heater"></option>
+                                <option value="Air Purifier" localString="true" _key="ReportaProblem_Product_Purifier"></option>
+                                <option value="App" localString="true" _key="ReportaProblem_Product_App"></option>
+                                <option value="Link" localString="true" _key="ReportaProblem_Product_Link"></option>
+                                <option value="Multiple Products" localString="true" _key="ReportaProblem_Product_MultipleProducts"></option>
+                            </select>
+                        </div>
+                        <div class="error hide"></div>
+                    </div>
+                    <div id="rapf_problem" class="rapf-problem-wrapper">
+                        <div class="rapf-dropdown-wrapper">
+                            <span class="rapf-dropdown-label" localString="true" _key="ReportaProblem_Problem"></span>
+                            <select name="problem" data-role="none" class="rapf-dropdown" required>
+                            	<option value='' selected disabled hidden></option>
+                                <option value="Remote Access" localString="true" _key="ReportaProblem_Problem_RemoteAccess"></option>
+                                <option value="Local Access" localString="true" _key="ReportaProblem_Problem_LocalAccess"></option>
+                                <option value="Rules Not Working" localString="true" _key="ReportaProblem_Problem_RulesNotWorking"></option>
+                                <option value="IFTTT Issue" localString="true" _key="ReportaProblem_Problem_IFTTT"></option>
+                                <option value="Setup Issue" localString="true" _key="ReportaProblem_Problem_Setup"></option>
+                                <option value="Product Question" localString="true" _key="ReportaProblem_Problem_ProductQuestion"></option>
+                            </select>
+                        </div>
+                        <div class="error hide"></div>
+                    </div>
+                    <div id="rapf_comment" class="rapf-comment-wrapper">
+                        <textarea name="comment" data-l10n="ReportaProblem_Comment" placeholder="" maxlength="1000" data-role="none" class="rapf-textarea"></textarea>
+                        <div class="error hide"></div>
+                    </div>
+                    <div id="rapf_phone" class="rapf-phone-wrapper">
+                        <input name="phone" type="tel" data-l10n="ReportaProblem_Phone" placeholder="" maxlength="15" data-role="none" class="rapf-input">
+                        <div class="error hide"></div>
+                    </div>
+                </form>
+                
+                <div data-role="footer" data-position="fixed" class="rapf-submit-wrapper">		
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="#" id="reportaproblem_form_submit" class="rapf-submit-link"><span localString="true" _key="Submit"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Error Popup-->
+                <div data-role="popup" id="error_popup" data-position-to="window" class="pop_up error_popup" data-overlay-theme="a" data-dismissible="false">
+                    <div class="popup_content">
+                        <span localString="true" _key="salesForceError"></span>
+                        <div class="bottom_buttons">
+                            <a id="error_popup_ok" data-role="button" data-theme="a" localString="true" _key="AlertOK"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Error Popup-->
+	        </div>
+            
+            <div data-role="page" id="reportaproblem_thankyou" class="rapthankyou">
+                <header data-role="header" data-theme="b" class="main_header" data-position="fixed" data-tap-toggle="false">
+                    <span class="wemo_logo"></span>
+                </header>
+                <div class="sub_header">
+                    <span localString="true" _key="ReportaProblem"></span>
+                </div>
+                
+                <div class="rapty_wrapper">
+                    <div class="rapty_head"><span localString="true" _key="ReportaProblem_Thankyou_Heading"></span></div>
+                    <div class="rapty_para"><span localString="true" _key="ReportaProblem_Thankyou_Acknowledgement"></span></div>
+                    <div id="rapty_forminfo" class="rapty_para"><span localString="true" _key="ReportaProblem_Thankyou_Suggession"></span></div>
+                </div>
+                
+                <ul data-role="listview" data-inset="false" data-divider-theme="b">
+                    <li id="rapty_wemosupportcenter" class="rapty_link"><span localString="true" _key="ReportaProblem_Thankyou_ExternalLink"></span><span class="icon-arrow"></span></li>
+                </ul>
+                
+                <div id="rapty_done" class="rapty_footerlink"><span localString="true" _key="Done"></span></div>                
+			</div>
+			
+			
+</body>
+</html>

@@ -1,0 +1,108 @@
+{
+    "labels": {
+        "onFor": "Ultima volta acceso per:",
+        "onForNow": "Acceso per:",
+        "offSince": "Spento dalle:",
+        "since": "Dalle:",
+        "standby": "In standby dalle:",
+        "onToday": "Acceso oggi:",
+        "onAvgDay": "Media acceso oggi:",
+        "avgDay": "Media di oggi:",
+        "estimatedMonthly": "Stima mensile:",
+        "avg": "Media:",
+        "now": "Ora:",
+        "defaultAvg": "- -",
+        "defaultNow": "---",
+        "reset": "Ripristina",
+        "today": "Oggi",
+        "autoOff": "Auto-spegnimento in"
+    },
+    "timeUnit": {
+        "0": "sec",
+        "1": "min",
+        "2": "h",
+        "3": "giorno",
+        "4": "giorni"
+    },
+    "currency": {
+        "1": "$",
+        "3": "&pound;",
+        "4": "&euro;",
+        "7": "&#8369;",
+        "10": "&yen;",
+        "13": "&#8361;",
+        "15": "&#3647;"
+    },
+    "date": {
+        "tomorrow": "Domani",
+        "yesterday": "Ieri",
+        "today": "Oggi"
+    },
+    "editContext": {
+        "title": {
+            "on&standbythreshold": "Soglia acceso/standby",
+            "costPerKwh": "Costo per Kwh: ",
+            "dataExport": "Esportazione dei dati",
+            "scheduleExpo": "Esportazione programmata",
+            "interval": "Intervallo",
+            "currency": "Valuta",
+            "threshold": "Soglia",
+            "powerThreshold": "Soglia potenza",
+            "enterEmail": "Inserisci il tuo indirizzo e-mail",
+            "confirm": "Conferma"
+        },
+        "buttons": {
+            "autoReset": "Ripristino automatico",
+            "exportNow": "Esporta ora",
+            "detect&set": "Rileva e imposta",
+            "set": "Imposta",
+            "send": "Invia",
+            "reset": "Ripristina",
+            "cancel": "Annulla",
+            "save": "Salva",
+            "ok": "OK"
+        },
+        "intros": {
+            "dataExport": "Possiamo inviarti tutti i dati sull'utilizzo e il consumo energetico per questo interruttore fino a 30 giorni fa.",
+            "cost1": "Ciò ci permette di calcolare la media dei costi per i tuoi dispositivi. Usa la tua bolletta dell'elettricità per determinare il costo medio per kWH.",
+            "cost2": "Tali modifiche saranno applicate a tutti i dispositivi.",
+            "threshold1": "Il tuo dispositivo sembra essere \"acceso\", quando il campo \"Potenza ora\" è oltre la soglia, e \"in standby\" quando è sotto la soglia di potenza.",
+            "threshold2": "Potenza ora:",
+            "threshold3": "Stato:"
+        },
+        "intervals": {
+            "1" : "Quotidiano",
+            "2" : "Settimanale",
+            "3" : "Mensile"
+        },
+        "currencyName": {
+            "1": "Dollari",
+            "3": "Pounds",
+            "4": "Euro",
+            "7": "Pesos",
+            "10": "Yen",
+            "13": "Won",
+            "15": "Bitcoin"
+        },
+        "alertMessage": {
+            "autoSet": "Impostazione automatica",
+            "autoReset-desc": "Spegni il tuo dispositivo mentre l'Interruttore Insight è acceso, quindi tocca Rileva e imposta",
+            "reset-desc": "Ripristinare soglia potenza?",
+            "exportInterval": "Programma intervallo esportazioni",
+            "resetDefault": "Ripristina i valori predefiniti",
+            "messageResetCost": "Sei sicuro? L'azione ripristinerà i costi predefiniti per Kwh.",
+            "messageExport": "Invia ora i dati a"
+        },
+        "intervalInfo": {
+            "info": "La tua prossima e-mail dell'esportazione arriverà in ",
+            "exportSent":"Esportazione inviata."
+        }
+    },
+    "buttons": {
+        "cancel": "Annulla",
+        "hide": "Nascondi",
+        "reset": "Ripristina",
+        "ok": "OK"
+    },
+    "defaultFriendlyName": "WeMo Insight"
+}

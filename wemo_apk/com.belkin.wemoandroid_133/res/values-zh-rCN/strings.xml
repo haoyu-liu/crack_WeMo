@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="crop__saving">正在保存照片…</string>
+    <string name="crop__wait">请等待…</string>
+    <string name="crop__pick_error">无效的图片</string>
+    <string name="crop__done">完成</string>
+    <string name="crop__cancel">取消</string>
+    <string name="rate_me_title">喜欢WeMo吗？</string>
+    <string name="rate_me_text">如果您喜欢使用WeMo，您能否花点时间给我们作出评分？ 感谢您的支持！</string>
+    <string name="btn_rate_me_now_label">马上评分</string>
+    <string name="btn_rate_no_thanks_label">不了，谢谢</string>
+    <string name="btn_report_problem_label">报告问题</string>
+    <string name="btn_rate_later_label">稍后提醒我</string>
+</resources>

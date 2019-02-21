@@ -1,0 +1,19 @@
+{
+    "popup": {
+        "heading": "Ulteriori Funzionalità",
+        "description": "Raggruppa le lampadine per farle funzionare nello stesso modo o aggiungi dispositivi alla rete tramite WeMo Link. Ecco una guida passo per passo per farlo.",
+        "description2": "Vuoi procedere?",
+        "cancelBtn": "Non ora",
+        "doneBtn": "Visualizza"
+    },
+    "title": {
+        "1": "Raggruppare le lampadine a LED"
+    },
+    "desc": {
+        "1": "Seleziona \"Modifica dispositivo\" nel menu a tendina.",
+        "2": "Tracina una lampadina sull'altra per raggrupparle.",
+        "3": "I numeri sulle icone delle lampadine indicano il numero delle lampadine in un gruppo.",
+        "4": "Select Settings in the navigation bar.",
+        "5": "To add a WeMo Link-enabled device, select 'Add WeMo Link Devices' in the More tab."
+    }
+}

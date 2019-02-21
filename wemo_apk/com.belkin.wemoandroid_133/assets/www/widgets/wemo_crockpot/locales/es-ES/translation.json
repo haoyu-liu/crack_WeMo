@@ -1,0 +1,49 @@
+{
+    "labels": {
+        "mealReady": "Comida lista",
+        "warmTimeLeft": "Tiempo restante para mantener caliente",
+        "onWarm": "Caliente",
+        "onLow": "Bajo",
+        "onHigh": "Alto"
+    },
+    "mode": {
+        "0": "Apagado",
+        "1": "Ocioso",
+        "2": "Indisponible",
+        "50": "Caliente",
+        "51": "Bajo",
+        "52": "Alto"
+    },
+    "summary": {
+        "title": "Resumen Cocción",
+        "btnModify": "Modificar",
+        "btnReset": "Restablecer Temporizador",
+        "onForZero": "<p>unos pocos</p><p>segundos</p>"
+    },
+    "staysafe": {
+        "title": "Mantenga la seguridad",
+        "message": "Para garantizar la seguridad alimentaria, la olla de cocción lenta comenzará a cocinar inmediatamente después de pulsar el botón de inicio.",
+        "setTimerButton": "Ajustar temporizador"
+    },
+    "settings": {
+        "title": "Ajustar temporizador de cocción",
+        "cancelButton": "Eliminar temporizador",
+        "doneBtn": "Inicio",
+        "cancelBtn": "Cancelar Timer",
+        "mealSetText": "Comida lista a las:",
+        "mealFinishedText": "Comida acabada a las:",
+        "cookTimer": "Temporizador de cocción",
+        "setTimerDialogHeader": "Establecer hora",
+        "confirmMessage": "Elija Iniciar para iniciar la cocción o Cancelar para salir.",
+        "clearMessage": "¿Cancelar temporizador?",
+        "clearLabels": "Sí,No",
+        "clearTitle": "Solo quería comprobarlo"
+    },
+    "tile": {
+        "finishedTitle": "¡Ding! ",
+        "finishedMessage": "Temporizador de cocción terminado. Lo mantendré caliente.",
+        "failedTitle": "Conexión perdida",
+        "failedMessage": "Comprueba las luces de la olla. Si ha habido apagón, la comida podría no ser segura."
+    },
+    "defaultFriendlyName": "Olla de cocción lenta Crock-Pot®"
+}

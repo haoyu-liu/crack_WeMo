@@ -1,0 +1,62 @@
+{
+    "headers": {
+        "editDevice": "Changer D'appareil",
+        "picture": "Photo",
+        "ID": "ID WeMo: ",
+        "reset": "Réinitialiser les options",
+        "enterName": "Nom",
+        "groupIcon": "Icône du Groupe",
+        "groupName": "Nom du Groupe",
+        "groupSubHeader": "dans ce Groupe",
+        "alert": "Avertissement"
+    },
+    "resetButtons": {
+        "1": "Effacer les données d'utilisation",
+        "2": "Effacer les informations produit",
+        "3": "Réinitialiser le Wi-Fi",
+        "4": "Effacer tous les contenus et paramètres"
+    },
+    "resetDescriptions": {
+        "1": "Effacer les données relatives à l'alimentation, l'heure et le coût.",
+        "2": "Effacer Nom, Icône et Règles.",
+        "3": "Effacer les paramètres Wi-Fi de l'appareil. (Vous devrez le configurer à nouveau)",
+        "4": "Ce bouton permet de restaurer TOUS les paramètres aux valeurs par défaut."
+    },
+    "validation": {
+        "friendlyNameRequired": "Le nom convivial doit être spécifié.",
+        "friendlyNameMaxLength": "Le nom convivial doit comporter moins de 30 caractères.",
+        "friendlyNameValidation": "Veuillez saisir un nom de 30 caract&egrave;res maximum, compos&eacute; uniquement de lettres, de chiffres, d&rsquo;espaces, de tirets ou de traits de soulignement.",
+        "groupNameRequired": "Le nom du groupe doit être spécifié.",
+        "groupNameMaxLength": "Le nom du groupe doit comporter moins de 30 caractères."
+    },
+    "iconPopup": {
+        "title": "Importer une image",
+        "option1": "Prendre une photo",
+        "option2": "Choisir une photo dans la galerie",
+        "option3": "Remplacer la photo"
+    },
+    "resetPopupMessage": {
+        "resetUsageData": "Effacer toutes les données d'énergie et de durée pour cet appareil?",
+        "fnIconRules": "Effacer le nom, l'icône et les règles de l'appareil?",
+        "wifi": "Effacer les paramètres Wi-Fi de l'appareil? (Vous devrez le configurer à nouveau)",
+        "all": "Effacer tous les réglages et restaurer les paramètres par défaut de l'appareil?"
+    },
+    "messages": {
+        "errorMessageEdit": "Impossible de modifier le nom et l'icône. Veuillez réessayer.",
+        "errorMessageReset": "Tentative échouée. Réessayez.",
+        "iconChangeDisabledMessage": "Malheureusement, les icÃ´nes personnalisÃ©es ne sont pas prises en charge. Visitez le Play Store pour des mises Ã  jour."
+    },
+    "buttons": {
+        "okay": "Okay",
+        "ok": "OK",
+        "done": "Terminé",
+        "cancel": "Annuler",
+        "save": "Sauvegarder",
+        "hide": "Masquer",
+        "continue": "Continuer",
+        "reset": "Réinitialiser"
+    },
+    "labels": {
+        "confirm": "Confirmer"
+    }
+}

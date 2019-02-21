@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="crop__saving">Saving picture…</string>
+    <string name="crop__wait">Please wait…</string>
+    <string name="crop__pick_error">No image sources available</string>
+    <string name="crop__done">DONE</string>
+    <string name="crop__cancel">CANCEL</string>
+    <string name="key_push_crockpot_message_ticker">Ding!</string>
+    <string name="key_push_warmtime_over">Warming time is over</string>
+    <string name="app_name">Wemo</string>
+    <string name="push_message_ticker">Message from WeMo</string>
+    <string name="OK">OK</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="push_crockpot_message_ticker">Ding!</string>
+    <string name="push_crockpot_warm">"The Cook Timer has finished. I'll keep things warm."</string>
+    <string name="push_warmtime_over">Warming time is over</string>
+    <string name="push_over_temp_on">overheated and is cooling off. Tap for more info.</string>
+    <string name="push_crockpot_turn_off">"I'll turn off the Slow Cooker now."</string>
+    <string name="rate_me_title">Enjoying WeMo?</string>
+    <string name="rate_me_text">If you enjoy using WeMo, would you take a moment to rate us? Thanks for your support!</string>
+    <string name="btn_rate_me_now_label">Rate it now</string>
+    <string name="btn_rate_no_thanks_label">No Thanks</string>
+    <string name="btn_report_problem_label">Report a Problem</string>
+    <string name="btn_rate_later_label">Remind me later</string>
+    <string name="widget_not_supported_message">This product is not supported</string>
+    <string name="widget_pick_a_device_message">Select a Wemo</string>
+    <string name="no_devices_message">No Wemos found. Install or discover Wemos with this app, and then you’ll be able to add this widget.</string>
+    <string name="wemo_ap_text">"Your OS may ask you to confirm if you want to stay connected to the Wemo's network.You must confirm 'Yes' to enter the Wemo's setup mode."</string>
+    <string name="wemo_ap_title">Wemo Wifi has no Internet</string>
+    <string name="btn_dont_show_again_label">"Don't show this again"</string>
+</resources>

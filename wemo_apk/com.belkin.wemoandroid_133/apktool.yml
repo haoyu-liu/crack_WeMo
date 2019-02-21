@@ -1,0 +1,42 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: com.belkin.wemoandroid_133.apk
+compressionType: false
+doNotCompress:
+- arsc
+- png
+- gif
+- assets/www/components/polymer/components/tools/doc/themes/dana/VERSION
+- handlebars
+- assets/www/css/images/ic_spinner.fw.png
+- eot
+- woff
+- jpg
+- assets/www/img/bulb_osram_lightify_gardenspot_rgb.png@2x.png
+- assets/www/img/ic_spinner.fw.gif
+- assets/www/img/ic_spinner@2x.fw.gif
+- assets/www/plugins/cordova-plugin-sqlite/spec/www/lib/jasmine-2.2.0/jasmine_favicon.png
+- jar
+- cpp
+- json
+- html
+- res/drawable-hdpi-v4/crop__divider.9.png
+- res/drawable-mdpi-v4/crop__divider.9.png
+- res/drawable-xhdpi-v4/crop__divider.9.png
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '19'
+  targetSdkVersion: '23'
+sharedLibrary: false
+sparseResources: false
+unknownFiles: {}
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.3-dirty
+versionInfo:
+  versionCode: '133'
+  versionName: 1.19.1

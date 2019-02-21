@@ -1,0 +1,102 @@
+{
+    "app": {
+        "name": "test"
+    },
+    "navigation": {
+        "back": "Retour"
+    },
+    "errors": {
+        "title": "WeMo ne peut pas exécuter votre requête",
+        "message": "Si ça continue, relancez l'appli.",
+        "unavailable": "Unavailable",
+        "notDetected": "Non détecté",
+        "rulesTitle": "L’horaire ne peut être sauvegardé",
+        "rulesMessage": "Vous avez du mal à sauvegarder l'horaire. Vérifiez l'état de tous vos appareils WeMo et réessayez."
+    },
+    "validation": {
+        "title": "Mise à jour – nouveau micrologiciel"
+    },
+    "buttons": {
+        "okay": "Okay",
+        "ok": "OK",
+        "done": "Terminé",
+        "cancel": "Annuler",
+        "save": "Sauvegarder",
+        "hide": "Masquer",
+        "continue": "Continuer",
+        "reset": "Réinitialiser"
+    },
+    "hide": {
+        "title": "Masquer cela?",
+        "message": "Le périphérique n'apparaîtra que lorsqu'il sera à nouveau actif."
+    },
+    "firmware": {
+        "update": "Installation du nouveau micrologiciel..."
+    },
+    "date": {
+        "tomorrow": "Demain",
+        "yesterday": "Hier",
+        "today": "Aujourd'hui",
+        "months": {
+            "0": "Janvier",
+            "1": "Février",
+            "2": "Mars",
+            "3": "Avril",
+            "4": "Mai",
+            "5": "Juin",
+            "6": "Juillet",
+            "7": "Août",
+            "8": "Septembre",
+            "9": "Octobre",
+            "10": "Novembre",
+            "11": "Décembre"
+        },
+        "days": {
+            "0": "Dimanches",
+            "1": "Lundis",
+            "2": "Mardis",
+            "3": "Mercredis",
+            "4": "Jeudis",
+            "5": "Vendredis",
+            "6": "Samedis"
+        },
+        "scheduleDays": {
+            "0": "Dim",
+            "1": "Lun",
+            "2": "Mar",
+            "3": "Mer",
+            "4": "Jeu",
+            "5": "Ven",
+            "6": "Sam"
+        }
+    },
+    "timeUnits": {
+        "0": "s",
+        "1": "m",
+        "2": "h"
+    },
+    "labels": {
+        "autoOff": "Arrêt automatique à",
+        "onFor": "Activé pour",
+        "enable": "Activer",
+        "schedule": "Horaire",
+        "dailySchedule": "Horaire quotidien",
+        "confirm": "Confirmer",
+        "batteryReplace": "Unavailable - Replace battery",
+        "batteryLevel": "Low Battery",
+        "signalStrength": "Low Signal",
+        "ago": "ago",
+        "remaining": "Restant",
+        "temperature": "Température"
+    },
+    "mode": {
+        "off": "Désactivé",
+        "on": "Activé"
+    },
+    "messages": {
+        "orderNewFilter": "Commandez un nouveau filtre",
+        "replaceFilter": "Remplacez le filtre!",
+        "timeReplaceFilter": "Il est temps de remplacer les filtres...",
+        "timeOrderFilter": "Il est temps de commander des filtres..."
+    }
+}

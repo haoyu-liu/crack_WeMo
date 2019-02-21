@@ -1,0 +1,7 @@
+{
+    "reachable": {
+        "airplaneMode" : "请关闭飞行模式，以便于您可以使用WeMo。",
+        "remoteDiabaledMode" : "请开启远程访问，以确保您不在家时可以使用WeMo。 您只能从您的家庭网络中开启远程访问。",
+        "radiosOffMode" : "连接到Wi-Fi或者您手机的数据服务，以便您可以使用WeMo。"
+    }
+}

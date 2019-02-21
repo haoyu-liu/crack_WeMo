@@ -1,0 +1,19 @@
+{
+    "state": {
+        "0": "切り替え",
+        "1": "瞬間の接続",
+        "2": "センサトリガなし",
+        "3": "センサトリガなし"
+    },
+    "editContext": {
+        "title": {
+            "switchType": "スイッチタイプ",
+            "toggle": "切り替え",
+            "momentary": "モーメンタリー",
+            "sensor": "センサー",
+            "yes": "はい",
+            "no": "いいえ"
+        }
+    },
+    "defaultFriendlyName": "WeMo Maker"
+}

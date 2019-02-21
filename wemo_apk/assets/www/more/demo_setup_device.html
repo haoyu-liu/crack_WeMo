@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<!--
+    demo_setup_device.html
+
+    Created by Belkin International, Software Engineering on 10/04/2013.
+    Copyright (c) 2012-2013 Belkin International, Inc. and/or its affiliates. All rights reserved.
+
+    Belkin International, Inc. retains all right, title and interest (including all
+    intellectual property rights) in and to this computer program, which is
+    protected by applicable intellectual property laws.  Unless you have obtained
+    a separate written license from Belkin International, Inc., you are not authorized
+    to utilize all or a part of this computer program for any purpose (including
+    reproduction, distribution, modification, and compilation into object code),
+    and you must immediately destroy or return to Belkin International, Inc. all copies
+    of this computer program.  If you are licensed by Belkin International, Inc., your
+    rights to utilize this computer program are limited by the terms of that license.
+
+    To obtain a license, please contact Belkin International, Inc.
+
+    This computer program contains trade secrets owned by Belkin International, Inc.
+    and, unless unauthorized by Belkin International, Inc. in writing, you agree to
+    maintain the confidentiality of this computer program and related information
+    and to not disclose this computer program and related information to any
+    other person or entity.
+
+    THIS COMPUTER PROGRAM IS PROVIDED AS IS WITHOUT ANY WARRANTIES, AND BELKIN INTERNATIONAL, INC.
+    EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF
+    MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+--->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>more menu</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.css" >
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script type="text/javascript" src="../js/vendor/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="../js/vendor/jquery.mobile-1.3.0.js"></script>
+    <script type="text/javascript" src="../js/vendor/owl.carousel.js"></script>
+    <script type="text/javascript" src="../js/vendor/pointer.js"></script>
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../lang/en.js"></script>
+    <script type="text/javascript" src="../lang/ru.js"></script>
+    <script type="text/javascript" src="../lang/fr.js"></script>
+    <script type="text/javascript" src="../lang/zh.js"></script>
+    <script type="text/javascript" src="../lang/de.js"></script>
+    <script type="text/javascript" src="../lang/es.js"></script>
+    <script type="text/javascript" src="../lang/it.js"></script>
+    <script type="text/javascript" src="../lang/ko.js"></script>
+    <script type="text/javascript" src="../lang/ja.js"></script>
+    <script type="text/javascript" src="../lang/lang.js"></script>
+    <script type="text/javascript" src="../js/constants.js"></script>
+    <script type="text/javascript" src="../js/wemo_util.js"></script>
+    <script type="text/javascript" src="../js/wemo.js"></script>
+    <script type="text/javascript" src="../js/more/demo_setup_device.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="setup_instructions_wrapper" class="adjust_popup">
+
+    <div class="setup_instruction_page">
+
+        <div class="demo_setup_device_container">
+            <div id="demo-setup-header">
+                <div class="demo-setup-device-title" localString="true" _key="SetupInstructions_0_WhatDevice"></div>
+                <div id="closeDemoHome"></div>
+            </div>
+
+            <ul id="scrollDevices">
+                <li id="wemo_sensorSwitch" class="demo-setup-device" data-slide="switch_slider_container">
+                    <img class="setupDeviceIcon" src="../img/setupSlideIcons/setupmenu_mini@2x.png"/>
+                    <p localString="true" _key="demoPageSwitchorMotion"></p>
+                    <span class="deviceBlockArrow icon-angle-right"></span>
+                </li>
+
+                <li id="wemo_dimmer" class="demo-setup-device" data-slide="dimmer_slider_container">
+                    <img class="setupDeviceIcon" src="../img/setupSlideIcons/dimmer_setupmenutile@2x.png"/>
+                    <p localString="true" _key="demoPageDimmer"></p>
+                    <span class="deviceBlockArrow icon-angle-right"></span>
+                </li>
+
+                <li id="wemo_lightSwitch" class="demo-setup-device" data-slide="light_slider_container">
+                    <img class="setupDeviceIcon" src="../img/setupSlideIcons/ic_setup_lightswitch@2x.png"/>
+                    <p localString="true" _key="demoPageLightSwitch"></p>
+                    <span class="deviceBlockArrow icon-angle-right"></span>
+                </li>
+
+                <li id="wemo_ledSwitch" class="demo-setup-device" data-slide="led_slider_container">
+                    <img class="setupDeviceIcon" src="../img/setupSlideIcons/ic_setup_lightbulb@2x.png"/>
+                    <p localString="true" _key="demoLedSwitch"></p>
+                    <span class="deviceBlockArrow icon-angle-right"></span>
+                </li>
+
+                <li id="jarden_slowCooker" class="demo-setup-device" data-slide="slowcooker_slider_container">
+                    <img class="setupDeviceIcon" src="../img/setupSlideIcons/ic_setup_crockpot@2x.png"/>
+                    <p localString="true" _key="demoPageCrockpot"></p>
+                    <span class="deviceBlockArrow icon-angle-right"></span>
+                </li>
+
+                <li id="wemo_maker" class="demo-setup-device" data-slide="maker_slider_container">
+                    <img class="setupDeviceIcon" src="../img/setupSlideIcons/ic_setup_maker@2x.png"/>
+                    <p localString="true" _key="demoPageMaker"></p>
+                    <span class="deviceBlockArrow icon-angle-right"></span>
+                </li>
+
+                <li id="jarden_heater" class="demo-setup-device" data-slide="heater_slider_container">
+                    <img class="setupDeviceIcon" src="../img/setupSlideIcons/ic_setup_heater@2x.png"/>
+                    <p localString="true" _key="demoHeater"></p>
+                    <span class="deviceBlockArrow icon-angle-right"></span>
+                </li>
+
+                <li id="jarden_airPurifier" class="demo-setup-device" data-slide="air_purifier_slider_container">
+                    <img class="setupDeviceIcon" src="../img/setupSlideIcons/ic_setup_purifier@2x.png"/>
+                    <p localString="true" _key="demoAirPurifier"></p>
+                    <span class="deviceBlockArrow icon-angle-right"></span>
+                </li>
+
+                <li id="jarden_humidifier" class="demo-setup-device" data-slide="humidifier_slider_container">
+                    <img class="setupDeviceIcon" src="../img/setupSlideIcons/ic_setup_humidifier@2x.png"/>
+                    <p localString="true" _key="demoHumidifier"></p>
+                    <span class="deviceBlockArrow icon-angle-right"></span>
+                </li>
+
+                <li id="jarden_coffeemaker" class="demo-setup-device" data-slide="coffeeMaker_slider_container">
+                    <img class="setupDeviceIcon" src="../img/setupSlideIcons/ic_setup_coffeemaker@2x.png"/>
+                    <p localString="true" _key="demoCoffeeMaker"></p>
+                    <span class="deviceBlockArrow icon-angle-right"></span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="slider_wrapper hiddenSlider">
+        <div id="switch_slider_container" class="slide_container">
+            <div class="demo-setup-device-closeMe"></div>
+
+            <div id="switch_motion_slider" class="owl-carousel">
+                <div class="slider firstSlide">
+                    <div class="insight_flashcard1 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="switch_motion_setup_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_1_PlugMeIn"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen1 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_2_OpenSettings"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen2 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_3_TapWiFi"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen3 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_4_SelectWeMoNetwork"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen4 slideImage"></div>
+                    <div class="setupInstructions_faq"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_5_OpenWeMoApp"></span>
+                    </div>
+                    <div class="setupInstructions_button">
+                        <span id="switch_setupInstructions_video" class="setupInstructions_demo load-video" localString="true" _key="SetupInstructions_Demo" data-link="SetupWeMoDemoVideoUrl"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dimmer Slider Start-->
+        <div id="dimmer_slider_container" class="slide_container">
+            <div class="demo-setup-device-closeMe"></div>
+            <div id="dimmer_slider"  class="owl-carousel">
+                <div class="slider firstSlide">
+                    <div class="dimmer_flashcard1 slideImage"></div>
+                    <div class="setupInstructions_Header" data-link="ViewMoreInfoUrl" localString="true" _key="view_more_info"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="dimmer_setup_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_1_install_dimmer"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="dimmer_flashcard2 slideImage"></div>
+                    <div class="setupInstructions_Header" data-link="ViewWritingSupportUrl" localString="true" _key="view_wiring_support"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="check_dimmer_line_header"></span>
+                        <span class="flashcard_content" localString="true" _key="check_dimmer_line_content"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="dimmer_flashcard3 slideImage">
+                        <span class="flash_dimmer"></span>
+                    </div>
+                    <div class="setupInstructions_Header" data-link="ViewTroubleshottingUrl"  localString="true" _key="view_troubleshotting"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="check_dimmer_setup_success"></span>
+                        <span class="flashcard_content" localString="true" _key="check_dimmer_setup_success_content"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen1 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_2_OpenSettings"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen2 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_3_TapWiFi"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen3 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_4_SelectWeMoNetwork"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen4 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_5_OpenWeMoApp"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Dimmer Slider Ends-->
+
+        <!-- Light Slider Start-->
+        <div id="light_slider_container" class="slide_container">
+            <div class="demo-setup-device-closeMe"></div>
+            <div id="light_switch_slider"  class="owl-carousel">
+                <div class="slider firstSlide">
+                    <div class="lightswitch_flashcard1 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="light_switch_setup_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_1_installLS"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_1_seeBox"></span>
+                    </div>
+                    <span class="SetupInstructionsVideo load-video" localString="true" _key="SetupInstructions_1_ViewVideo" data-link="LightSetupWeMoDemoVideoUrl"></span>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen1 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_2_OpenSettings"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen2 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_3_TapWiFi"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen3 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_4_SelectWeMoNetwork"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen4 slideImage"></div>
+                    <div class="setupInstructions_faq"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_5_OpenWeMoApp"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Light Slider Ends-->
+
+
+        <!-- Led Slider Start-->
+        <div id="led_slider_container" class="slide_container">
+            <div class="demo-setup-device-closeMe"></div>
+            <div id="led_switch_slider"  class="owl-carousel">
+                <div class="slider firstSlide">
+                    <div class="led_flashcard1 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="led_setup_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="led_setup_step1"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="led_flashcard2 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="led_setup_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="led_setup_step2"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="led_flashcard3 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="led_setup_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="led_setup_step3"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen1 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_2_OpenSettings"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen2 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_3_TapWiFi"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen3 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_4_SelectWeMoNetwork"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen4 slideImage"></div>
+                    <div class="setupInstructions_faq"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content"  localString="true" _key="SetupInstructions_5_OpenWeMoApp"></span>
+                    </div>
+                    <div class="setupInstructions_button">
+                        <span class="setupInstructions_demo load-video" id="led_setupInstructions_video" localString="true" _key="SetupInstructions_Demo" data-link="LedSetupWeMoDemoVideoUrl"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Led Slider Ends-->
+
+        <!-- Heater Slider Start-->
+        <div id="heater_slider_container" class="slide_container">
+            <div class="demo-setup-device-closeMe"></div>
+            <div id="heater_smart_slider"  class="owl-carousel">
+                <div class="slider firstSlide">
+                    <div class="jarden_plugin slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="heater_setup_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_1_Heater"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="jarden_heater_flashcard1 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="heater_setup_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_2_Heater"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="jarden_heater_flashcard2 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="heater_setup_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_3_Heater"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen1 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_2_OpenSettings"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen2 slideImage"></div>
+
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_3_TapWiFi"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen3 slideImage"></div>
+
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_4_SelectWeMoNetwork"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen4 slideImage"></div>
+                    <div class="setupInstructions_faq"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_5_OpenWeMoApp"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Heater Slider Ends-->
+
+        <!-- Air purifier Slider Start-->
+        <div id="air_purifier_slider_container" class="slide_container">
+            <div class="demo-setup-device-closeMe"></div>
+
+            <div id="air_purifier_smart_slider"  class="owl-carousel">
+                <div class="slider firstSlide">
+                    <div class="jarden_plugin slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="air_purifier_setup_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_1_AirPurifier"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen1 slideImage"></div>
+
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_2_OpenSettings"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen2 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_3_TapWiFi"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen3 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_4_SelectWeMoNetwork"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen4 slideImage"></div>
+                    <div class="setupInstructions_faq"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_5_OpenWeMoApp"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Air purifier Slider Ends-->
+
+        <!-- Humidifier Slider Start-->
+        <div id="humidifier_slider_container" class="slide_container">
+            <div class="demo-setup-device-closeMe"></div>
+
+            <div id="humidifier_smart_slider"  class="owl-carousel">
+                <div class="slider firstSlide">
+
+                    <div class="jarden_plugin slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="humidifier_setup_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_1_Humidifier"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen1 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_2_OpenSettings"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen2 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_3_TapWiFi"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen3 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_4_SelectWeMoNetwork"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen4 slideImage"></div>
+                    <div class="setupInstructions_faq"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_5_OpenWeMoApp"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Humidifier Slider Ends-->
+
+        <!-- SlowCooker Slider Start-->
+        <div id="slowcooker_slider_container" class="slide_container">
+            <div class="demo-setup-device-closeMe"></div>
+            <div id="slow_cooker_slider" class="owl-carousel">
+                <div class="slider firstSlide">
+                    <div class="jarden_plugin slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="slow_cooker_setup_heading"></span>
+                        <span class="flashcard_content"  localString="true" _key="CrockPot_SetupInstructions_1_PlugMeIn"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen1 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_2_OpenSettings"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen2 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_3_TapWiFi"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen3 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_4_SelectWeMoNetwork"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen4 slideImage"></div>
+                    <div class="setupInstructions_faq"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_5_OpenWeMoApp"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SlowCooker Slider Ends-->
+
+        <!-- CoffeeMaker Slider Start-->
+        <div id="coffeeMaker_slider_container" class="slide_container">
+            <div class="demo-setup-device-closeMe"></div>
+
+            <div id="coffeeMaker_slider"  class="owl-carousel">
+                <div class="slider firstSlide">
+                    <div class="jarden_plugin slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="coffee_maker_setup_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_1_Coffee"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen1 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_2_OpenSettings"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen2 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_3_TapWiFi"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen3 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_4_SelectWeMoNetwork"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen4 slideImage"></div>
+                    <div class="setupInstructions_faq"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_5_OpenWeMoApp"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CoffeeMaker Slider Ends-->
+
+        <!-- Maker Slider Start-->
+        <div id="maker_slider_container" class="slide_container">
+            <div class="demo-setup-device-closeMe"></div>
+            <div id="maker_slider"  class="owl-carousel">
+                <div class="slider firstSlide">
+                    <div class="maker_flashcard slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="maker_setup_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="Maker_SetupInstructions_1_PlugMeIn"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen1 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_2_OpenSettings"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen2 slideImage"></div>
+
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_3_TapWiFi"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen3 slideImage"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_4_SelectWeMoNetwork"></span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="settingSceen4 slideImage"></div>
+                    <div class="setupInstructions_faq"></div>
+                    <div class="flashcard_text">
+                        <span class="flashcard_title" localString="true" _key="connect_to_wifi_heading"></span>
+                        <span class="flashcard_content" localString="true" _key="SetupInstructions_5_OpenWeMoApp"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Maker Slider Ends-->
+
+        </div>
+
+        <div id="autoswitch_popup" data-role="popup" class="pop_up pop__up" data-overlay-theme="a" data-dismissible="false">
+            <div class="popup_head"><span localString="true" _key="autoswitch_header"></span></div>
+            <div class="popup_content"><span localString="true" _key="autoswitch_body"></span></div>
+            <div class="popup_footer">
+                <a href="#" id="autoswitch_cancel_btn" class="popup__btn" data-role="button" data-theme="b" localString="true"><span localString="true"  _key="autoswitch_cancel"></span></a>
+                <a href="#" id="autoswitchlink_btn" class="popup__btn right" data-role="button" data-theme="b" localString="true"><span localString="true"  _key="autoswitch_help"></span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

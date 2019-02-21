@@ -1,0 +1,366 @@
+<html>
+<!--
+    testing_bulb.html
+
+    Created by Belkin International, Software Engineering on 10/04/2013.
+    Copyright (c) 3016 Belkin International, Inc. and/or its affiliates. All rights reserved.
+
+    Belkin International, Inc. retains all right, title and interest (including all
+    intellectual property rights) in and to this computer program, which is
+    protected by applicable intellectual property laws.  Unless you have obtained
+    a separate written license from Belkin International, Inc., you are not authorized
+    to utilize all or a part of this computer program for any purpose (including
+    reproduction, distribution, modification, and compilation into object code),
+    and you must immediately destroy or return to Belkin International, Inc. all copies
+    of this computer program.  If you are licensed by Belkin International, Inc., your
+    rights to utilize this computer program are limited by the terms of that license.
+
+    To obtain a license, please contact Belkin International, Inc.
+
+    This computer program contains trade secrets owned by Belkin International, Inc.
+    and, unless unauthorized by Belkin International, Inc. in writing, you agree to
+    maintain the confidentiality of this computer program and related information
+    and to not disclose this computer program and related information to any
+    other person or entity.
+
+
+    THIS COMPUTER PROGRAM IS PROVIDED AS IS WITHOUT ANY WARRANTIES, AND BELKIN INTERNATIONAL, INC.
+    EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF
+    MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+
+--->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Learn About Wemo</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+
+    <link rel="stylesheet" href="../css/owl.carousel.css" >
+    <link rel="stylesheet" href="../css/learn_about_wemo.css"/>
+    <script type="text/javascript" src="../js/vendor/jquery-1.8.3.js"></script>
+    <script src="../js/vendor/jquery.mobile-1.4.2.js"></script>
+    <script type="text/javascript" src="../js/vendor/owl.carousel.js"></script>
+    <script type="text/javascript" src="../lang/en.js"></script>
+    <script type="text/javascript" src="../lang/ru.js"></script>
+    <script type="text/javascript" src="../lang/fr.js"></script>
+    <script type="text/javascript" src="../lang/zh.js"></script>
+    <script type="text/javascript" src="../lang/de.js"></script>
+    <script type="text/javascript" src="../lang/es.js"></script>
+    <script type="text/javascript" src="../lang/it.js"></script>
+    <script type="text/javascript" src="../lang/ko.js"></script>
+    <script type="text/javascript" src="../lang/ja.js"></script>
+    <script type="text/javascript" src="../lang/lang.js"></script>
+    <script type="text/javascript" src="../js/wemo.js"></script>
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../js/plugins/wemo_plugin.js"></script>
+    <script type="text/javascript" src="../js/constants.js"></script>
+    <script type="text/javascript" src="../js/wemo_util.js"></script>
+    <script type="text/javascript" src="../js/more/learn_about_wemo.js"></script>
+</head>
+<body>
+<div class="wemoTutorialsPage">
+    <div id="tutorialsList" style="visibility: hidden">
+        <header class="main_header">
+            <div class="tutorials_page_back_btn">
+                <div class="backbutton"></div>
+                <span class="headerTitle" localString="true" _key="Tutorials"></span>
+            </div>
+        </header>
+
+        <div class="tutorialsContainer">
+            <ul id="dimmerTutorial" class="pageSection">
+                <li class="sectionTitle" localString="true" _key="DIMMER"></li>
+                <li class="sectionItem" localString="true" _key="NightMode" data-link="night_mode_tutorial"></li>
+                <li class="sectionItem" localString="true" _key="LightBarAnimation" data-link="light_bar_tutorial"></li>
+                <li class="sectionItem" localString="true" _key="ErrorAnimations" data-link="error_tutorial"></li>
+                <li class="sectionItem" localString="true" _key="ResetYourDimmer" data-faq="resetFAQ"></li>
+            </ul>
+            <ul id="ledTutorial" class="pageSection">
+                <li class="sectionTitle" localString="true" _key="LEDBULB"></li>
+                <li class="sectionItem" localString="true" _key="GroupingBulbs" data-link="led_group_tutorial"></li>
+            </ul>
+            <ul id="ruleTutorial" class="pageSection">
+                <li class="sectionTitle" localString="true" _key="MAKEARULE"></li>
+                <li class="sectionItem" localString="true" _key="LongPressRule" data-link="long_press_rule_tutorial"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="tutorialSlidesWrapper hiddenSlides">
+        <div class="slide-close"></div>
+        <div id="long_press_rule_tutorial" class="owl-carousel tutorial_slides">
+            <div class="slide firstSlide">
+                <div class="long_press_flashcard1 slideImage"></div>
+                <div class="flashcard_text">
+                    <span class="flashcard_content" localString="true" _key="long_press_flashcard1"></span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="long_press_flashcard2 slideImage"></div>
+                <div class="flashcard_text">
+                    <span class="flashcard_content" localString="true" _key="long_press_flashcard2"></span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="flashCardHeader" localString="true" _key="long_press_header3"></div>
+                <div class="long_press_flashcard3 slideImage"></div>
+                <div class="flashcard_text">
+                    <span class="flashcard_content" localString="true" _key="long_press_flashcard3"></span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="flashCardHeader" localString="true" _key="long_press_header4"></div>
+                <div class="long_press_flashcard4 slideImage"></div>
+                <div class="flashcard_text">
+                    <span class="flashcard_content" localString="true" _key="long_press_flashcard4"></span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="flashCardHeader" localString="true" _key="long_press_header5"></div>
+                <div class="long_press_flashcard5 slideImage"></div>
+                <div class="flashcard_text">
+                    <span class="flashcard_content" localString="true" _key="long_press_flashcard5"></span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="flashCardHeader" localString="true" _key="long_press_header6"></div>
+                <div class="long_press_flashcard6 slideImage"></div>
+                <div class="flashcard_text">
+                    <span class="flashcard_content" localString="true" _key="long_press_flashcard6"></span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="flashCardHeader" localString="true" _key="long_press_header7"></div>
+                <div class="long_press_flashcard7 slideImage"></div>
+                <div class="flashcard_text FAQ_text">
+                    <div class="flashcard_FAQ_Header" localString="true" _key="FAQ_Header"></div>
+                    <div class="flashcard_FAQ" localString="true" _key="FAQ" data-faq="longPressFAQ"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="light_bar_tutorial" class="owl-carousel tutorial_slides">
+            <div class="slide firstSlide">
+                <div class="flashCardHeader" localString="true" _key="light_bar_header1"></div>
+                <div class="light_bar_flashcard1 slideImage"></div>
+                <div class="flashcard_text">
+                    <span class="flashcard_content" localString="true" _key="light_bar_flashcard1"></span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="flashCardHeader" localString="true" _key="light_bar_header2"></div>
+                <div class="light_bar_flashcard2 slideImage"></div>
+                <div class="flashcard_text">
+                    <span class="flashcard_content" localString="true" _key="light_bar_flashcard2"></span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="flashCardHeader" localString="true" _key="light_bar_header3"></div>
+                <div class="light_bar_flashcard3 slideImage"></div>
+                <div class="flashcard_text">
+                    <span class="flashcard_content" localString="true" _key="light_bar_flashcard3"></span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="flashCardHeader" localString="true" _key="light_bar_header4"></div>
+                <div class="light_bar_flashcard4 slideImage"></div>
+                <div class="flashcard_text">
+                    <span class="flashcard_content" localString="true" _key="light_bar_flashcard4"></span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="flashCardHeader" localString="true" _key="light_bar_header5"></div>
+                <div class="light_bar_flashcard5 slideImage"></div>
+                <div class="flashcard_text">
+                    <span class="flashcard_content" localString="true" _key="light_bar_flashcard5"></span>
+                </div>
+            </div>
+        </div>
+
+        <div id="night_mode_tutorial" class="owl-carousel tutorial_slides">
+            <div class="slide firstSlide">
+                <div class="night_mode_flashcard1 slideImage"></div>
+                <div class="flashcard_text">
+                    <span class="flashcard_content" localString="true" _key="night_mode_flashcard1"></span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="night_mode_flashcard2 slideImage"></div>
+                <div class="flashcard_text">
+                    <span class="flashcard_content" localString="true" _key="night_mode_flashcard2"></span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="night_mode_flashcard3 slideImage_fullScreen">
+                    <span class="highlight_circle"></span>
+                    <span class="highlight_circle_large"></span>
+                </div>
+                <div class="flashcard_text">
+                    <span class="flashcard_content" localString="true" _key="night_mode_flashcard3"></span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="night_mode_flashcard4 slideImage_fullScreen">
+                    <span class="highlight_circle"></span>
+                </div>
+                <div class="flashcard_text">
+                    <span class="flashcard_content" localString="true" _key="night_mode_flashcard4"></span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="flashCardHeader" localString="true" _key="night_mode_header5"></div>
+                <div class="night_mode_flashcard5 slideImage"></div>
+                <div class="flashcard_text FAQ_text">
+                    <div class="flashcard_FAQ_Header" localString="true" _key="FAQ_Header"></div>
+                    <div class="flashcard_FAQ" localString="true" _key="FAQ" data-faq="nightModeFAQ"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="error_tutorial" class="owl-carousel tutorial_slides">
+            <div class="slide firstSlide">
+                <div class="flashCardHeader" localString="true" _key="dimmer_error_header1"></div>
+                <div class="dimmer_error_flashcard1 slideImage"></div>
+                <div class="flashcard_text">
+                    <span class="flashcard_content" localString="true" _key="dimmer_error_flashcard1"></span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="flashCardHeader" localString="true" _key="dimmer_error_header2"></div>
+                <div class="dimmer_error_flashcard2 slideImage"></div>
+                <div class="flashcard_text">
+                    <span class="flashcard_content" localString="true" _key="dimmer_error_flashcard2"></span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="flashCardHeader" localString="true" _key="dimmer_error_header3"></div>
+                <div class="dimmer_error_flashcard3 slideImage"></div>
+                <div class="flashcard_text">
+                    <span class="flashcard_content" localString="true" _key="dimmer_error_flashcard3"></span>
+                </div>
+            </div>
+        </div>
+
+        <div id="led_group_tutorial" class="owl-carousel tutorial_slides">
+            <div class="slide firstSlide">
+                <div class="led_group_flashcard1 slideImage_fullScreen">
+                    <span class="highlight_circle"></span>
+                </div>
+                <div class="flashcard_text">
+                    <span class="flashcard_title" localString="true" _key="led_group_header"></span>
+                    <span class="flashcard_content" localString="true" _key="led_group_flashcard1"></span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="led_group_flashcard2 slideImage_fullScreen"></div>
+                <div class="flashcard_text">
+                    <span class="flashcard_title" localString="true" _key="led_group_header"></span>
+                    <span class="flashcard_content" localString="true" _key="led_group_flashcard2"></span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="led_group_flashcard3 slideImage_fullScreen">
+                    <span class="highlight_circle"></span>
+                </div>
+                <div class="flashcard_text">
+                    <span class="flashcard_title" localString="true" _key="led_group_header"></span>
+                    <span class="flashcard_content" localString="true" _key="led_group_flashcard3"></span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="led_group_flashcard4 slideImage_fullScreen">
+                    <span class="highlight_circle"></span>
+                </div>
+                <div class="flashcard_text">
+                    <span class="flashcard_title" localString="true" _key="led_group_header"></span>
+                    <span class="flashcard_content" localString="true" _key="led_group_flashcard4"></span>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="led_group_flashcard5 slideImage_fullScreen">
+                    <span class="highlight_circle"></span>
+                </div>
+                <div class="flashcard_text">
+                    <span class="flashcard_title" localString="true" _key="led_group_header"></span>
+                    <span class="flashcard_content" localString="true" _key="led_group_flashcard5"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="FAQ_wrapper hideFAQ">
+        <div class="longPressFAQ FAQ_page">
+            <div class="FAQ_title" localString="true" _key="FAQ"></div>
+            <div class="navigation">
+                <div class="nav_item" localString="true" _key="long_press_FAQ_Q1"></div>
+                <div class="nav_sub_item"><span localString="true" _key="long_press_FAQ_A1"></span></div>
+                <div class="nav_item" localString="true" _key="long_press_FAQ_Q2"></div>
+                <div class="nav_sub_item"><span localString="true" _key="long_press_FAQ_A2"></span></div>
+                <div class="nav_item" localString="true" _key="long_press_FAQ_Q3"></div>
+                <div class="nav_sub_item"><span localString="true" _key="long_press_FAQ_A3"></span></div>
+                <div class="nav_item" localString="true" _key="long_press_FAQ_Q4"></div>
+                <div class="nav_sub_item"><span localString="true" _key="long_press_FAQ_A4"></span></div>
+                <div class="nav_item" localString="true" _key="long_press_FAQ_Q5"></div>
+                <div class="nav_sub_item"><span localString="true" _key="long_press_FAQ_A5"></span></div>
+                <div class="nav_item" localString="true" _key="long_press_FAQ_Q6"></div>
+                <div class="nav_sub_item"><span localString="true" _key="long_press_FAQ_A6"></span></div>
+                <div class="nav_item" localString="true" _key="long_press_FAQ_Q7"></div>
+                <div class="nav_sub_item"><span localString="true" _key="long_press_FAQ_A7"></span></div>
+                <div class="nav_item" localString="true" _key="long_press_FAQ_Q8"></div>
+                <div class="nav_sub_item"><span  localString="true" _key="long_press_FAQ_A8"></span></div>
+            </div>
+        </div>
+
+        <div class="resetFAQ FAQ_page">
+            <div class="reset_dimmer_title" localString="true" _key="reset_dimmer_title"></div>
+            <div class="navigation">
+                <div class="nav_item" localString="true" _key="reset_FAQ_Q1"></div>
+                <div class="nav_sub_item"><span localString="true" _key="reset_FAQ_A1"></span></div>
+                <div class="nav_item" localString="true" _key="reset_FAQ_Q2"></div>
+                <div class="nav_sub_item"><span localString="true" _key="reset_FAQ_A2"></span></div>
+                <div class="nav_item" localString="true" _key="reset_FAQ_Q3"></div>
+                <div class="nav_sub_item"><span localString="true" _key="reset_FAQ_A3"></span></div>
+                <div class="nav_item" localString="true" _key="reset_FAQ_Q4"></div>
+                <div class="nav_sub_item"><span localString="true" _key="reset_FAQ_A4"></span></div>
+            </div>
+        </div>
+
+        <div class="nightModeFAQ FAQ_page">
+            <div class="FAQ_title" localString="true" _key="FAQ"></div>
+            <div class="navigation">
+                <div class="nav_item" localString="true" _key="night_mode_FAQ_Q1"></div>
+                <div class="nav_sub_item"><span localString="true" _key="night_mode_FAQ_A1"></span></div>
+                <div class="nav_item" localString="true" _key="night_mode_FAQ_Q2"></div>
+                <div class="nav_sub_item"><span localString="true" _key="night_mode_FAQ_A2"></span></div>
+                <div class="nav_item" localString="true" _key="night_mode_FAQ_Q3"></div>
+                <div class="nav_sub_item"><span localString="true" _key="night_mode_FAQ_A3"></span></div>
+                <div class="nav_item" localString="true" _key="night_mode_FAQ_Q4"></div>
+                <div class="nav_sub_item"><span localString="true" _key="night_mode_FAQ_A4"></span></div>
+                <div class="nav_item" localString="true" _key="night_mode_FAQ_Q5"></div>
+                <div class="nav_sub_item"><span localString="true" _key="night_mode_FAQ_A5"></span></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

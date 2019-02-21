@@ -1,0 +1,33 @@
+{
+    "ruleExecution": {
+        "ruleResponses": [
+            {
+                "ruleResponse": {
+                    "groupName": "Crockpot",
+                    "matchingRule": "235ABDFJLKD-UIUAKJDFKD-34854JKD",
+                    "status": "SUCCESS",
+                    "parameters": [
+                        {
+                            "parameter": {
+                                "name": "downloadURL",
+                                "value": "/widgets/wemo_crockpot/mocks/main.js"
+                            }
+                        },
+                        {
+                            "parameter": {
+                                "name": "nextUpdateAvailableOn",
+                                "value": "09/09/2013"
+                            }
+                        },
+                        {
+                            "parameter": {
+                                "name": "version",
+                                "value": "1"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

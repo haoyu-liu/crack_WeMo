@@ -1,0 +1,68 @@
+{
+    "labels":{
+        "room": "Pièce",
+        "remaining": "DÉSACTIVÉ dans",
+        "dailySchedule": "Horaire quotidien",
+        "enable": "Activer"
+    },
+    "mode":{
+        "0":"Désactivé",
+        "1":"Protection Antigivre",
+        "2":"Mode Élevé",
+        "3":"Mode Bas",
+        "4":"Mode Éco",
+        "off": "Désactivé",
+        "on": "Activé"
+    },
+    "tempUnit":{
+        "0": "Celsius",
+        "1" : "Fahrenheit"
+    },
+    "buttons": {
+        "cancel": "Annuler",
+        "save": "Sauvegarder",
+        "reset": "Réinitialiser",
+        "continue": "Continuer",
+        "hide": "Masquer"
+    },
+    "summary":{
+        "thermostat":"Thermostat",
+        "warningMessage": {
+            "title":"Rappel",
+            "message": {
+                "Holmes": "Vérifiez votre radiateur Bionaireᴹᴰ tous les jours pour assurer un fonctionnement sécuritaire.",
+                "Bionaire": "Vérifiez votre radiateur Bionaireᴹᴰ tous les jours pour assurer un fonctionnement sécuritaire."
+            }
+        },
+        "frostProtectActive":"Protection antigivre activée"
+    },
+    "errors": {
+        "notDetected": "Non détecté"
+    },
+    "settings":{
+        "labels":{
+            "on":"Débuter",
+            "off":"Fin"
+        }
+    },
+    "tile":{
+        "off":"Mettre hors tension",
+        "disabled": "WeMo désactivée"
+    },
+    "popup": {
+        "off": {
+            "title":"Cette opération désactivera votre radiateur",
+            "message":"Vous devrez appuyer sur le bouton d'alimentation sur le radiateur pour le mettre en marche"
+        }
+    },
+    "rules": {
+        "HeaterOff": "Votre __friendlyName__ a été éteint(e).",
+        "HeaterDisabled": "La fonctionnalité WeMo de votre __friendlyName__ a été désactivée.",
+        "Heater90": "Saviez-vous que votre __friendlyName__ est en marche, et qu'il fait plus de 32 degrés?"
+    },
+    "brands": {
+        "Holmes": "holmesLogo",
+        "Bionaire": "bionaireLogo"
+    },
+    "defaultFriendlyName": "Chauffage Bionaireᴹᴰ"
+}

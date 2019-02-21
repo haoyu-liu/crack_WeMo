@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="crop__saving">Изображение сохраняется…</string>
+    <string name="crop__wait">Пожалуйста, подождите…</string>
+    <string name="crop__pick_error">Нет доступных изображений</string>
+    <string name="crop__done">ГОТОВО</string>
+    <string name="crop__cancel">ОТМЕНА</string>
+    <string name="rate_me_title">Вам нравится WeMo?</string>
+    <string name="rate_me_text">Если вам нравится использовать WeMo, не могли бы вы оценить нас? Благодарим за содействие!</string>
+    <string name="btn_rate_me_now_label">Оценить сейчас</string>
+    <string name="btn_rate_no_thanks_label">Нет, спасибо</string>
+    <string name="btn_report_problem_label">Сообщить о проблеме</string>
+    <string name="btn_rate_later_label">Напомнить позже</string>
+</resources>

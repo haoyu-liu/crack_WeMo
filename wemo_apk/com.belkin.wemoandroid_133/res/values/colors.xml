@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="crop__button_bar">#fff3f3f3</color>
+    <color name="crop__button_text">#ff666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+    <color name="dark_grey">#ff777777</color>
+    <color name="grey">#ffd9d9d9</color>
+    <color name="wemo_green">#ffade48c</color>
+    <color name="wemo_green2">#ff73d44c</color>
+    <color name="status_bar_green">#ff3a6a26</color>
+    <color name="dark_blue">#ff314d61</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="black">#ff444444</color>
+    <color name="rate_me_bgcolor">#ffffffff</color>
+    <color name="rate_me_divider_color">#1f000000</color>
+    <color name="rate_me_description_color">#de444444</color>
+</resources>

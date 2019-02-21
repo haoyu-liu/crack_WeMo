@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<!--
+    edit_simple_rule.html
+
+    Created by Belkin International, Software Engineering on 10/04/2013. 
+    Copyright (c) 2012-2013 Belkin International, Inc. and/or its affiliates. All rights reserved. 
+    
+    Belkin International, Inc. retains all right, title and interest (including all 
+    intellectual property rights) in and to this computer program, which is 
+    protected by applicable intellectual property laws.  Unless you have obtained 
+    a separate written license from Belkin International, Inc., you are not authorized 
+    to utilize all or a part of this computer program for any purpose (including 
+    reproduction, distribution, modification, and compilation into object code), 
+    and you must immediately destroy or return to Belkin International, Inc. all copies 
+    of this computer program.  If you are licensed by Belkin International, Inc., your 
+    rights to utilize this computer program are limited by the terms of that license.  
+
+    To obtain a license, please contact Belkin International, Inc. 
+  
+    This computer program contains trade secrets owned by Belkin International, Inc. 
+    and, unless unauthorized by Belkin International, Inc. in writing, you agree to 
+    maintain the confidentiality of this computer program and related information 
+    and to not disclose this computer program and related information to any 
+    other person or entity. 
+  
+    THIS COMPUTER PROGRAM IS PROVIDED AS IS WITHOUT ANY WARRANTIES, AND BELKIN INTERNATIONAL, INC. 
+    EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF 
+    MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. 
+--->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="../css/AndroidHoloDarkLight.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <script type="text/javascript" src="../js/vendor/jquery-1.8.3.js"></script>
+    <script src="../js/vendor/jquery.mobile-1.4.2.js"></script>
+    <script src="../js/vendor/jquery.transit.js"></script>
+    <script src="../js/vendor/pointer.js"></script>
+    <script type="text/javascript" src="../lang/en.js"></script>
+    <script type="text/javascript" src="../lang/fr.js"></script>
+    <script type="text/javascript" src="../lang/zh.js"></script>
+    <script type="text/javascript" src="../lang/de.js"></script>
+    <script type="text/javascript" src="../lang/es.js"></script>
+    <script type="text/javascript" src="../lang/it.js"></script>
+    <script type="text/javascript" src="../lang/ko.js"></script>
+	<script type="text/javascript" src="../lang/ja.js"></script> 
+    <script type="text/javascript" src="../lang/lang.js"></script>
+    <script type="text/javascript" src="../js/wemo.js"></script>
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../js/constants.js"></script>
+    <script type="text/javascript" src="../js/plugins/wemo_plugin.js"></script>
+    <script type="text/javascript" src="../js/wemo_util.js"></script>
+    <script type="text/javascript" src="../js/rules/SaveInsightRule.js"></script>
+    <script type="text/javascript" src="../js/rules/edit_notify_rule.js"></script>
+
+    <link rel="stylesheet" href="../css/nanoscroller.css">
+    <script type="text/javascript" src="../js/vendor/overthrow.min.js"></script>
+    <script type="text/javascript" src="../js/vendor/jquery.nanoscroller.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.nano').nanoScroller({
+                preventPageScrolling: true
+            });
+            $(".nano").nanoScroller();
+        });
+    </script>
+</head>
+<body>
+<!-- Simple Rule Page Start -->
+<div data-role="page" id="simple_rule">
+    <header data-role="header" data-theme="b" class="main_header" data-position="fixed" data-tap-toggle="false">
+        <span class="more_tab_icon">
+            <img src="../img/ic_more_2x.png"/>
+        </span>
+        <span class="wemo_logo"></span>
+    </header>
+    <div class="more_tab"></div>
+    <div class="sub_header">
+        <span localString="true" _key="NewRuleEditRuleTitle"></span>
+    </div>
+
+    <div class="rules_container" data-role="content">
+        <div>
+            <div class="more_menu">
+                <div class="label" localString="true" _key="If"></div>
+                <ul id="notify_rule_what_happens">
+                    <li class="what_happens_select_switches select_switches_middle">
+                        <div><span class="more_li_text_div text_strong" localString="true" _key="WhatHappens"></span>
+                            <span class="more_li_text_right" localString="true" _key="SelectInsights"></span></div>
+                    </li>
+                </ul>
+                <ul id="notify_rule_selected_device"></ul>
+                <ul>
+                    <li id="notify_rule_when">
+                        <div><span class="more_li_text_div text_strong" localString="true" _key="When"></span><span
+                                class="more_li_text_right wrapper"><span id="selectTime"
+                                                                         class="select_time"></span><span id="selectDay"
+                                                                                                          class="select_day">Daily</span></span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="label" localString="true" _key="NotifyMe"></div>
+                <ul>
+                    <li id="notify_message">
+                        <div><span class="more_li_text_div text_strong" localString="true" _key="Message"></span></br>
+                            <span class="more_li_text_right"></span></div>
+                    </li>
+                    <li id="notify_how_often">
+                        <div><span class="more_li_text_div text_strong" localString="true" _key="HowOften"></span></br>
+                            <span class="more_li_text_right"></span></div>
+                    </li>
+                    <li id="notify_rule_rule_name">
+                        <div><span class="more_li_text_div text_strong" localString="true" _key="RuleName"></span><span
+                                class="more_li_text_right"></span></div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div data-theme="b" data-role="footer" class="ui-grid-a" data-position="fixed" data-tap-toggle="false">
+        <div class="ui-block-a">
+            <button id="notify_rule_save_btn" data-theme="b" data-role="button"><span localString="true"
+                                                                                      _key="Save"></span></button>
+        </div>
+        <div class="ui-block-b">
+            <button id="notify_rule_cancel_btn" data-rel="back" data-role="button"><span localString="true"
+                                                                                         _key="Cancel"></span></button>
+        </div>
+    </div>
+
+    <!-- Rule can not save popup Start -->
+    <div id="rule_can_not_save" data-role="popup" class="pop_up" data-overlay-theme="a">
+        <header data-role="content" data-theme="a">
+            <h3 localString="true" _key="RuleNotSaved"></h3>
+        </header>
+
+        <article data-role="content" data-theme="b">
+            <p localString="true" _key="RuleCantBeSaved"></p>
+            <fieldset>
+                <button id="rule_can_not_save_ok"><span localString="true" _key="AlertOK"></span></button>
+            </fieldset>
+        </article>
+    </div>
+    <!--Rule can not save popup Ends-->
+
+    <!-- Rule Conflict popup Start -->
+    <div id="rule_conflict" data-role="popup" class="pop_up" data-overlay-theme="a">
+        <header data-role="content" data-theme="a">
+            <h3 localString="true" _key="RuleConflict"></h3>
+        </header>
+
+        <article data-role="content" data-theme="b">
+            <p localString="true" _key="RuleConflictSimpleAndTimer"></p>
+            <fieldset>
+                <a id="rule_conflict_learn_more_btn" class="half_length" data-role="button"><span localString="true"
+                                                                                                  _key="learnmorestring"></span></a>
+                <a id="rule_conflict_ok_btn" class="half_length" data-role="button"><span localString="true"
+                                                                                          _key="AlertOK"></span></a>
+            </fieldset>
+        </article>
+    </div>
+    <!-- Rule Conflict popup Ends-->
+
+    <!-- Rule Duplication popup Start -->
+    <div id="rule_duplicate" data-role="popup" class="pop_up ui-corner-all ui-popup ui-body-c ui-overlay-shadow"
+         data-theme="c" data-overlay-theme="a" aria-disabled="false" data-disabled="false" data-shadow="true"
+         data-corners="true" data-transition="none" data-position-to="origin">
+        <header data-role="content" data-theme="a">
+            <h3 id="ruleInfoHeader"></h3>
+        </header>
+
+        <article data-role="content" data-theme="b">
+            <p id="RuleDuplicateText"></p>
+            <fieldset>
+                <a id="rule_duplicate_learn_more_btn" class="half_length" data-role="button"><span localString="true"
+                                                                                                   _key="learnmorestring"></span></a>
+                <a id="rule_duplicate_ok_btn" class="half_length" data-role="button"><span localString="true"
+                                                                                           _key="AlertOK"></span></a>
+            </fieldset>
+        </article>
+    </div>
+    <!--Rule Duplication popup Ends-->
+
+    <!--sunrise firmware upgrade popup Start -->
+    <div id="sunrise_firmware_upgrade" data-role="popup" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+     <div class="popup_content"><span localString="true" _key="FirmwareNotSupportingForSunsetAlert"></span></div>
+       <div class="popup_footer">
+        <div id="sunrise_firmware_upgrade_updatenow"><span localString="true" _key="UpdateNow"></span></div>
+        <div id="sunrise_firmware_upgrade_later"><span localString="true" _key="Later"></span></div>
+       </div>
+    </div>
+    <!--sunrise firmware upgrade popup Ends-->
+
+    <div class="overlay">
+        <div class="picker_container">
+            <div class="picker">
+                <div class="picker_header"><span>no more than every:</span></div>
+                <div id="main">
+                    <div class="nano">
+                        <div class="overthrow content description">
+                            <ul id="picker">
+                                <li><span>5 min</span><span><input type="radio" name="rad_how_often"
+                                                                   value="5 min"></span></li>
+                                <li><span>10 min</span><span><input type="radio" name="rad_how_often"
+                                                                    value="10 min"></span></li>
+                                <li><span>15 min</span><span><input type="radio" name="rad_how_often"
+                                                                    value="15 min"></span></li>
+                                <li><span>30 min</span><span><input type="radio" name="rad_how_often" checked
+                                                                    value="30 min"></span></span></li>
+                                <li><span>1 hr</span><span><input type="radio" name="rad_how_often" value="1 hr"></span>
+                                </li>
+                                <li><span>2 hr</span><span><input type="radio" name="rad_how_often" value="2 hr"></span>
+                                </li>
+                                <li><span>3 hr</span><span><input type="radio" name="rad_how_often" value="3 hr"></span>
+                                </li>
+                                <li><span>12 hr</span><span><input type="radio" name="rad_how_often"
+                                                                   value="12 hr"></span></li>
+                                <li><span>Day</span><span><input type="radio" name="rad_how_often" value="Day"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="picker_footer">
+                    <div id="cnl_ho_btn"><span localString="true" _key="Cancel"></span></div>
+                    <div id="set_ho_btn"><span localString="true" _key="Set"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+

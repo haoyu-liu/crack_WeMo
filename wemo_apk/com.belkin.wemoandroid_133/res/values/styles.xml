@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Crop" />
+    <style name="Crop.DoneCancelBar" parent="@style/Crop">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/crop__button_bar</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/crop__bar_height</item>
+        <item name="android:divider">@drawable/crop__divider</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">12.0dip</item>
+    </style>
+    <style name="Crop.ActionButton" parent="@style/Crop">
+        <item name="android:background">@drawable/crop__selectable_background</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Crop.ActionButtonText" parent="@style/Crop">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/crop__button_text</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">8.0dip</item>
+    </style>
+    <style name="Crop.ActionButtonText.Done" parent="@style/Crop.ActionButtonText">
+        <item name="android:text">@string/crop__done</item>
+        <item name="android:drawableLeft">@drawable/crop__ic_done</item>
+    </style>
+    <style name="Crop.ActionButtonText.Cancel" parent="@style/Crop.ActionButtonText">
+        <item name="android:text">@string/crop__cancel</item>
+        <item name="android:drawableLeft">@drawable/crop__ic_cancel</item>
+    </style>
+    <style name="Theme.WeMoTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@color/wemo_green2</item>
+    </style>
+</resources>

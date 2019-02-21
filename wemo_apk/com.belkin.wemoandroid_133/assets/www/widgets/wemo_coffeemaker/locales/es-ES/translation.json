@@ -1,0 +1,48 @@
+{
+    "labels": {
+        "at": "at",
+        "coffeeReady": "Coffee's ready!",
+        "cleanTitle": "Time to refresh!",
+        "cleanMessage": "could use a cleaning!",
+        "filterMessage": "It's time to replace Mr. Coffee® Brewer's water filter",
+        "noRuleMessage": "Disable the schedule or select a day to save",
+        "howto": "How to",
+        "iNeedFilters": "I Need Filters",
+        "time": "5:30 am",
+        "cleanSoon": "(Clean Soon)",
+        "brewSchedule": "BREW SCHEDULE",
+        "waterFilterReminders": "WATER FILTER REMINDERS",
+        "btnReminder": "Recordatorio filtro de agua",
+        "reset": "AJUSTAR RECORDATORIO",
+        "save": "Save Schedule",
+        "resetting": "Resetting...",
+        "saving": "Saving...",
+        "saveScheduleError": "You need to select at least one day to save a schedule",
+        "resetTitle": "Water Filter Reminder",
+        "remainderTitle": "Recordatorio cada 30 infusiones",
+        "remainderDiscription": "Un buen café comienza con buena agua. Los filtros de agua de carbono Mr. Coffee® eliminan el 97% del cloro y mejoran el sabor del café.",
+        "btnResetTitle": "Reinicie el contador de infusiones al cambiar el filtro.",
+        "btnOrderTitle": "¿Necesita nuevo filtro?",
+        "btnOrder": "Pedir",
+        "btnReset": "Restablecer"
+    },
+    "scheduleDays": {
+        "7": "Ready"
+    },
+    "mode": {
+        "0": "Refill Water",
+        "1": "Place Empty Carafe",
+        "3": "Ready",
+        "4": "Brewing",
+        "5": "Brewed",
+        "6": "Cleaning",
+        "7": "Done cleaning",
+        "8": "Place Empty Carafe"
+    },
+    "reminderRules": {
+        "messageCarafe": "__friendlyName__ is scheduled to make coffee tomorrow, but needs you to empty and place the carafe.",
+        "messageRefill": "__friendlyName__ is scheduled to make coffee tomorrow, but needs you to refill the water.",
+        "messageBoth": "__friendlyName__ is scheduled to make coffee tomorrow,but its missing water and carafe."
+    },
+    "defaultFriendlyName": "Cafetera Mr. Coffee®"
+}

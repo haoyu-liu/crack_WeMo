@@ -1,0 +1,62 @@
+{
+    "headers": {
+        "editDevice": "Gerät Bearbeiten",
+        "picture": "Bild",
+        "ID": "WeMo ID: ",
+        "reset": "Optionen zurücksetzen",
+        "enterName": "Name",
+        "groupIcon": "Gruppensymbol",
+        "groupName": "Gruppenname",
+        "groupSubHeader": "in dieser Gruppe",
+        "alert": "Warnung"
+    },
+    "resetButtons": {
+        "1": "Nutzungsdaten löschen",
+        "2": "Produkt-Infos löschen",
+        "3": "WLAN zurücksetzen",
+        "4": "Alle Inhalte und Einstellungen löschen"
+    },
+    "resetDescriptions": {
+        "1": "Alle Strom-, Zeit- und Kostendaten löschen.",
+        "2": "Namen, Symbol und Regeln löschen.",
+        "3": "Die WLAN-Einstellungen des Geräts löschen. (Sie müssen Sie erneut konfigurieren)",
+        "4": "Diese Schaltfläche stellt ALLE Werkseinstellungen wieder her."
+    },
+    "validation": {
+        "friendlyNameRequired": "Anzeigename ist erforderlich.",
+        "friendlyNameMaxLength": "Ihr Anzeigename darf nicht länger als 30 Zeichen sein.",
+        "friendlyNameValidation": "Geben Sie bitte einen Namen ein, der h&ouml;chstens 30�Zeichen lang ist und nur aus Buchstaben, Ziffern, Leerzeichen, Gedankenstrichen und Unterstrichen besteht.",
+        "groupNameRequired": "Gruppenname ist erforderlich.",
+        "groupNameMaxLength": "Der Gruppenname muss kürzer als 30 Zeichen sein."
+    },
+    "iconPopup": {
+        "title": "Ein Bild hochladen",
+        "option1": "Ein Foto aufnehmen",
+        "option2": "Ein Foto aus der Galerie auswählen",
+        "option3": "Foto zurücksetzen"
+    },
+    "resetPopupMessage": {
+        "resetUsageData": "Alle Daten dieses Geräts zum Stromverbrauch und zur Betriebsdauer löschen?",
+        "fnIconRules": "Namen, Symbol und Regeln löschen?",
+        "wifi": "Die WLAN-Einstellungen des Geräts löschen? (Sie müssen Sie erneut konfigurieren)",
+        "all": "Alle Einstellungen löschen und die Werkseinstellungen des Geräts wiederherstellen?"
+    },
+    "messages": {
+        "errorMessageEdit": "Der Name und das Symbol konnten nicht bearbeitet werden. Bitte versuchen Sie es erneut.",
+        "errorMessageReset": "Das hat nicht funktioniert. Erneut versuchen.",
+        "iconChangeDisabledMessage": "Benutzerdefinierte Symbole werden derzeit leider nicht unterstützt. Informieren Sie sich im Play Store über Updates."
+    },
+    "buttons": {
+        "okay": "Okay",
+        "ok": "OK",
+        "done": "Fertig",
+        "cancel": "Abbrechen",
+        "save": "Speichern",
+        "hide": "Ausblenden",
+        "continue": "Fortsetzen",
+        "reset": "Zurücksetzen"
+    },
+    "labels": {
+        "confirm": "Bestätigen"
+    }
+}

@@ -1,0 +1,102 @@
+{
+    "app": {
+        "name": "test"
+    },
+    "navigation": {
+        "back": "返回"
+    },
+    "errors": {
+        "title": "WeMo can’t complete your request",
+        "message": "If this continues, please restart the app.",
+        "unavailable": "不可用",
+        "notDetected": "无法感应到",
+        "rulesTitle": "Schedule cannot be saved",
+        "rulesMessage": "Having trouble saving this schedule now. Please check the status of all your WeMo devices and try again."
+    },
+    "validation": {
+        "title": "请检查您的设置"
+    },
+    "buttons": {
+        "okay": "Okay",
+        "ok": "确定",
+        "done": "完成",
+        "cancel": "取消",
+        "save": "保存",
+        "hide": "隐藏",
+        "continue": "继续",
+        "reset": "重置"
+    },
+    "hide": {
+        "title": "隐藏此设备？",
+        "message": "该设备在再次激活之前不会显示。"
+    },
+    "firmware": {
+        "update": "正在更新固件…"
+    },
+    "date": {
+        "tomorrow": "明天",
+        "yesterday": "昨天",
+        "today": "今天",
+        "months": {
+            "0": "1 月",
+            "1": "2 月",
+            "2": "3 月",
+            "3": "4 月",
+            "4": "5 月",
+            "5": "6 月",
+            "6": "7 月",
+            "7": "8 月",
+            "8": "9 月",
+            "9": "10 月",
+            "10": "11 月",
+            "11": "12 月"
+        },
+        "days": {
+            "0": "星期日",
+            "1": "星期一",
+            "2": "星期二",
+            "3": "星期三",
+            "4": "星期四",
+            "5": "星期五",
+            "6": "星期六"
+        },
+        "scheduleDays": {
+            "0": "週日",
+            "1": "週一",
+            "2": "週二",
+            "3": "週三",
+            "4": "週四",
+            "5": "週五",
+            "6": "週六"
+        }
+    },
+    "timeUnits": {
+        "0": "秒",
+        "1": "分",
+        "2": "时"
+    },
+    "labels": {
+        "autoOff": "Auto-off in",
+        "onFor": "开启时间:",
+        "enable": "启用",
+        "schedule": "Schedule",
+        "dailySchedule": "Daily Schedule",
+        "confirm": "确认",
+        "batteryReplace": "不可用——请更换电池",
+        "batteryLevel": "低电量",
+        "signalStrength": "信号弱",
+        "ago": "ago",
+        "remaining": "剩余的",
+        "temperature": "温度"
+    },
+    "mode": {
+        "off": "关",
+        "on": "开"
+    },
+    "messages": {
+        "orderNewFilter": "Order new filters",
+        "replaceFilter": "Replace filter",
+        "timeReplaceFilter": "Time to replace filters...",
+        "timeOrderFilter": "Time to order filters..."
+    }
+}

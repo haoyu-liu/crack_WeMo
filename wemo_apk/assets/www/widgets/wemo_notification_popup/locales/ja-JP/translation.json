@@ -1,0 +1,9 @@
+{
+    "header": "Wemo DimmerをAlexaとペアリングする場合...",
+    "descriptions": {
+        "1": "AlexaアプリでWemo Skill (Wemoスキル) を有効にする必要があります。 "
+    },
+    "buttons" : {
+        "connectToAlexa" : "詳細を確認する"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "privateKey": "7495d475-6ea9-4fb5-8d81-3198100861eb",
+    "firmwareVersion": "WeMo_WW_2.00.2776.DVT",
+    "firmwareDownloadStartTime": null,
+    "alive": true,
+    "udn": "uuid:Lightswitch-1_0-221322S0000069",
+    "modelCode": null,
+    "uniqueId": null,
+    "state": 0,
+    "pluginSSID": "WeMo.Lightswitch.069",
+    "macAddr": "EC1A59C095E4",
+    "serialNumber": "221322S0000069",
+    "plugID": null,
+    "pluginId":4456,
+    "signalStrength": null,
+    "ruleDBPath": null,
+    "friendlyName": "WeMo Light Switch",
+    "deviceType": "urn:Belkin:device:Lightswitch:1",
+    "iconVersion": null,
+    "firmwareUpgradeStatus": 2
+}

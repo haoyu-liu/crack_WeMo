@@ -1,0 +1,110 @@
+{
+    "labels": {
+        "onFor": "Letzter Betrieb:",
+        "onForNow": "Eingeschaltet seit:",
+        "offSince": "Aus seit:",
+        "since": "Seit:",
+        "standby": "Standby seit:",
+        "onToday": "Heute in Betrieb:",
+        "onAvgDay": "Durchschn. Tagesbetr.:",
+        "avgDay": "Ø pro Tag:",
+        "estimatedMonthly": "Monatliche Schätzung:",
+        "avg": "Durchschnittl:",
+        "now": "Jetzt:",
+        "defaultAvg": "- -",
+        "defaultNow": "---",
+        "reset": "Zurücksetzen",
+        "today": "Heute",
+        "autoOff": "Autom. Abschaltung in"
+    },
+    "timeUnit": {
+        "0": "sek",
+        "1": "min",
+        "2": "s",
+        "3": "tag",
+        "4": "tage"
+    },
+    "currency": {
+        "1": "$",
+        "3": "&pound;",
+        "4": "&euro;",
+        "7": "&#8369;",
+        "10": "&yen;",
+        "13": "&#8361;",
+        "15": "&#3647;"
+    },
+    "date": {
+        "tomorrow": "Morgen",
+        "yesterday": "Gestern",
+        "today": "Heute"
+    },
+    "editContext": {
+        "title": {
+            "on&standbythreshold": "An/Standby-Grenzwert:",
+            "costPerKwh": "Kosten pro kWh: ",
+            "dataExport": "Datenexport",
+            "scheduleExpo": "Geplanter Export",
+            "interval": "Intervall",
+            "currency": "Währung",
+            "threshold": "Grenzwert",
+            "powerThreshold": "Strom-Grenzwert",
+            "enterEmail": "Bitte geben Sie Ihre E-Mail-Adresse ein",
+            "confirm": "Bestätigen"
+        },
+        "buttons": {
+            "autoReset": "Automatisch zurücksetzen",
+            "exportNow": "Jetzt exportieren",
+            "detect&set": "Erkennen und einstellen",
+            "set": "Einstellen",
+            "send": "Senden",
+            "reset": "Zurücksetzen",
+            "cancel": "Abbrechen",
+            "save": "Speichern",
+            "ok": "OK"
+        },
+        "intros": {
+            "dataExport": "Wir können Ihnen alle Daten zur Nutzung und zum Energieverbrauch während der letzten 30 Tage schicken.",
+            "cost1": "Hierdurch können Kostenschätzungen für Ihre Geräte vorgenommen werden. Anhand Ihrer Stromrechnung können Sie die Durchschnittskosten pro kWh ermitteln.",
+            "cost2": "Diese Änderungen werden für alle Geräte übernommen.",
+            "threshold1": "Ihr Gerät erscheint als \"an\", wenn der aktuelle Stromverbrauch den Grenzwert überschreitet und als \"Standby\", wenn er ihn unterschreitet.",
+            "threshold2": "Aktueller Stromverbrauch:",
+            "threshold3": "Status:"
+        },
+        "intervals": {
+            "1" : "Täglich",
+            "2" : "Wöchentlich",
+            "3" : "Monatlich"
+        },
+        "currencyName": {
+            "1": "Dollars",
+            "3": "Pounds",
+            "4": "Euros",
+            "7": "Pesos",
+            "10": "Yen",
+            "13": "Won",
+            "15": "Bitcoin"
+        },
+        "alertMessage": {
+            "autoSet": "Autom. Einstellung",
+            "autoReset-desc": "Ihr Gerät muss ausgeschaltet sein, wenn der Insight Switch eingeschaltet ist; tippen Sie dann \"Erkennen und einstellen\" an",
+            "reset-desc": "Strom-Grenzwert zurücksetzen?",
+            "exportInterval": "Export-Intervall festlegen",
+            "resetDefault": "Auf Werkseinstellung zurücksetzen",
+            "messageResetCost": "Sind Sie sicher? Hierdurch wird die Standardeinstellung der Kosten pro kWh wiederhergestellt.",
+            "messageExport": "Daten jetzt senden an"
+        },
+        "intervalInfo": {
+            "info": "Ihre nächste Export-E-Mail kommt in "
+        },
+        "errors": {
+            "notDetected": "Nicht Erkannt"
+        }
+    },
+    "buttons": {
+        "cancel": "Abbrechen",
+        "hide": "Ausblenden",
+        "reset": "Zurücksetzen",
+        "ok": "OK"
+    },
+    "defaultFriendlyName": "WeMo Insight"
+}

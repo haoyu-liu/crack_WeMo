@@ -1,0 +1,32 @@
+{
+    "information": {
+        "port": "49153",
+        "modelCode": "Humidifier",
+        "type": "urn:Belkin:device:Humidifier:1",
+        "ip": "192.168.1.112",
+        "homeID": "",
+        "pluginID": "",
+        "mac": "94103E5A4338",
+        "udn": "uuid:Humidifier-1_0-221430S00001C0"
+    },
+    "attributes": {
+        "desiredHumidity": "0",
+        "waterAdvise": "1",
+        "expiredFilterTime": "0",
+        "currentHumidity": "26.0",
+        "noWater": "0",
+        "fanMode": "0",
+        "filterLife": "60477"
+    },
+    "properties": {
+        "friendlyName": "Holmes® Humidifier",
+        "discoveryState": "Discovery Success",
+        "state": "1",
+        "firmwareVersion": "WeMo_WW_2.00.8042.DVT-OWRT",
+        "binaryState": "0",
+        "hideParameter": "0",
+        "icon": "\/data\/data\/com.belkin.wemoandroid\/files\/-274879674.png",
+        "customizedState": "0",
+        "inActive": "0"
+    }
+}

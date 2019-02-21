@@ -1,0 +1,39 @@
+{
+    "popup": {
+        "title": "Nuovo firmware disponibile",
+        "message": "L'aggiornamento di WeMo permette di ottenere sempre il massimo dai dispositivi.<br><br>Continuare?",
+        "labels": "Sì, Non ora"
+    },
+    "firmwareupdate": {
+        "title": "Aggiornamento del firmware",
+        "updateBtn": "Accetta e Aggiorna",
+        "header": "Nuovo firmware disponibile per",
+        "updateWarning": "Assicurati di aggiornare tutti i telefoni e tablet alla versione più recente dell'applicazione.",
+        "inProgress": "Aggiornamento del firmware",
+        "inProgressMessage": "I dispositivi effettueranno l'aggiornamento, pertanto ora puoi chiudere l'applicazione e giocare ad Angry Birds.",
+        "notes1": "L'operazione potrebbe richiedere qualche istante, ma non è necessario attendere. Puoi chiudere l'app durante l'aggiornamento.",
+        "notes2": "Quando la riapri, se i tuoi prodotti WeMo non compaiono, l'aggiornamento potrebbe non essere stato completato. Attendi ancora un po'.",
+        "notes3": "I dispositivi WeMo si spegneranno per alcuni istanti, per poter completare l'aggiornamento. Durante l'aggiornamento, potrebbe lampeggiare un LED blu o verde. Quando i LED terminano di lampeggiare, l'aggiornamento è stato completato.",
+        "ugradeInProgress": "Aggiornamento in corso...",
+        "releaseNotes": "Note sulla versione:"
+
+    },
+    "wifistatus": {
+        "0": "download in corso...",
+        "1": "download completato",
+        "2": "download non riuscito",
+        "3": "aggiornamento in corso...",
+        "4": "aggiornato",
+        "5": "aggiornamento non riuscito",
+        "6": "aggiornamento non riuscito",
+        "7": "in attesa...",
+        "90": "Link download in corso...",
+        "91": "Link download completato",
+        "92": "Link download non riuscito",
+        "93": "Link aggiornamento in corso...",
+        "94": "Link aggiornato",
+        "95": "Link aggiornamento non riuscito",
+        "96": "Link aggiornamento non riuscito",
+        "97": "Link in attesa..."
+    }
+}

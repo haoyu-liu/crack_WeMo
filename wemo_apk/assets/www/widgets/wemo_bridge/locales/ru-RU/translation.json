@@ -1,0 +1,11 @@
+{
+    "fwUpdateInProgress": {
+        "header": "Обновление WeMo Link",
+        "message": "Не отсоединяйте WeMo Link от розетки до завершения обновления."
+    },
+    "unavailable": {
+        "header": "WeMo Link не отвечает.",
+        "message": "Попробуйте отсоединить его от розетки и снова подсоединить."
+    },
+    "defaultFriendlyName": "WeMo Link"
+}

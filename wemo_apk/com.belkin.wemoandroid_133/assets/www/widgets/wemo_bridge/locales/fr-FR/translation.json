@@ -1,0 +1,11 @@
+{
+    "fwUpdateInProgress": {
+        "header": "Mise à jour du module WeMo Link",
+        "message": "Ne débranchez pas le module WeMo Link avant la fin de la mise à jour."
+    },
+    "unavailable": {
+        "header": "Le module WeMo Link ne répond plus.",
+        "message": "Débranchez le module, puis rebranchez-le."
+    },
+    "defaultFriendlyName": "Module WEMO Link"
+}

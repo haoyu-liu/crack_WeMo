@@ -1,0 +1,111 @@
+{
+    "labels": {
+        "onFor": "Last on for:",
+        "onForNow": "On now for:",
+        "offSince": "Off since:",
+        "since": "Since:",
+        "standby": "Standby since:",
+        "onToday": "On Today:",
+        "onAvgDay": "On Avg day:",
+        "avgDay": "Avg day:",
+        "estimatedMonthly": "Estimated monthly:",
+        "avg": "Avg:",
+        "now": "Now:",
+        "defaultAvg": "- -",
+        "defaultNow": "---",
+        "reset": "Reset",
+        "today": "Today",
+        "autoOff": "Auto-off in"
+    },
+    "timeUnit": {
+        "0": "sec",
+        "1": "min",
+        "2": "h",
+        "3": "day",
+        "4": "days"
+    },
+    "currency": {
+        "1": "$",
+        "3": "&pound;",
+        "4": "&euro;",
+        "7": "&#8369;",
+        "10": "&yen;",
+        "13": "&#8361;",
+        "15": "&#3647;"
+    },
+    "date": {
+        "tomorrow": "Tomorrow",
+        "yesterday": "Yesterday",
+        "today": "Today"
+    },
+    "editContext": {
+        "title": {
+            "on&standbythreshold": "On/Standby Threshold:",
+            "costPerKwh": "Cost per Kwh: ",
+            "dataExport": "Data Export",
+            "scheduleExpo": "Scheduled Export",
+            "interval": "Interval",
+            "currency": "Currency",
+            "threshold": "Threshold",
+            "powerThreshold": "Power Threshold",
+            "enterEmail": "Enter your email address",
+            "confirm": "Confirm"
+        },
+        "buttons": {
+            "autoReset": "Auto Reset",
+            "exportNow": "Export Now",
+            "detect&set": "Detect & set",
+            "set": "Set",
+            "send": "Send",
+            "reset": "Reset",
+            "cancel": "Cancel",
+            "save": "Save",
+            "ok": "OK"
+        },
+        "intros": {
+            "dataExport": "We can send you all of the usage and energy data for this switch for up to the last 30 days.",
+            "cost1": "This allows us to calculate cost estimates for your devices. Use your electricity bill to determine your average cost per kWH.",
+            "cost2": "Changes here will apply to all devices.",
+            "threshold1": "Your device appears \"on\" when Power Now is over the threshold, and \"standby\" when under.",
+            "threshold2": "Power Now:",
+            "threshold3": "Status:"
+        },
+        "intervals": {
+            "1" : "Daily",
+            "2" : "Weekly",
+            "3" : "Monthly"
+        },
+        "currencyName": {
+            "1": "Dollars",
+            "3": "Pounds",
+            "4": "Euros",
+            "7": "Pesos",
+            "10": "Yen",
+            "13": "Won",
+            "15": "Thai Baht"
+        },
+        "alertMessage": {
+            "autoSet": "Auto Set",
+            "autoReset-desc": "Please have your appliance turned off while the insight switch is on, then tap on detect & set",
+            "reset-desc": "Reset Power Threshold?",
+            "exportInterval": "Schedule Export Interval",
+            "resetDefault": "Reset to Default",
+            "messageResetCost": "Are you sure? This action resets to default cost per Kwh.",
+            "messageExport": "Send the data now to"
+        },
+        "intervalInfo": {
+            "info": "Your next export email will arrive in ",
+            "exportSent":"Export Sent!"
+        },
+        "errors": {
+            "notDetected": "Not Detected"
+        }
+    },
+    "buttons": {
+        "cancel": "Cancel",
+        "hide": "Hide",
+        "reset": "Reset",
+        "ok": "OK"
+    },
+    "defaultFriendlyName": "WeMo Insight"
+}

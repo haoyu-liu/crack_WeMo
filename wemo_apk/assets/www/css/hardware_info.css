@@ -1,0 +1,51 @@
+
+.device-summary, .hardware-info{
+    padding-top: 55px;
+    min-height: 560px;
+    background: #f1f1f1!important;
+}
+
+.hardware-info .ui-content,
+.device-summary__content{
+    padding: 8px;
+}
+
+.device-info__tile{
+    padding: 20px 12px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 1px #e0e0e0;
+    background: url("../img/ic_arrow@320.png") no-repeat scroll 96% 49% white;
+    background-size: 15px auto;
+}
+
+.device-info__label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+}
+
+.device-info__value {
+    font-size: 14px;
+    color: #777;
+}
+
+.device-summary__tile{
+    padding: 20px 12px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 1px #e0e0e0;
+    background: white;
+    background-size: 15px auto;
+}
+
+.device-summary__label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+}
+
+.device-summary__value input{
+    font-size: 14px;
+    color: #777;
+    border:none;
+    width: 100%;
+}

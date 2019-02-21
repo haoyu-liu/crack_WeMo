@@ -1,0 +1,25 @@
+{
+    "state": {
+        "0": "No Motion",
+        "1": "Motion",
+        "2": "Oooh, I sense motion!",
+        "3": "Motion sensed:",
+        "4": "Motion sensed: %@ yesterday"
+    },
+    "defaultFriendlyName": "WeMo Netcam",
+    "editContext": {
+        "title": {
+            "advanceOptions": "Advanced Options"
+        }
+    },
+    "headers": {
+        "downloadNetcam": "Download Netcam"
+    },
+    "descriptions": {
+        "getApp": "To access this camera, get the Belkin Netcam app",
+        "availablePlayStore": "Available on the Play Store."
+    },
+    "buttons": {
+        "getItNow": "Get it Now"
+    }
+}

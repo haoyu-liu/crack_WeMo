@@ -1,0 +1,32 @@
+{
+    "Information": {
+        "Port": "49153",
+        "ModelName": "Insight",
+        "Type": "urn:Belkin:device:insight:1",
+        "IP": "192.168.1.140",
+        "HomeID": "",
+        "PluginID": "",
+        "MAC": "EC1A59831AD4",
+        "UDN": "uuid:Insight-1_0-321305K010112D",
+        "WidgetToLoad": "wemo_insight"
+    },
+    "Attributes": {
+        "BinaryState": 0
+    },
+    "Properties": {
+        "GroupID": "Insight",
+        "GroupName": "Insight",
+        "GroupType": "insight",
+        "FriendlyName": "WeMo Insight B",
+        "DiscoveryState": "Discovery Success",
+        "State": "0",
+        "FirmwareVersion": "WeMo_WW_2.00.8102.PVT-OWRT-SNS",
+        "HideParameter": "0",
+        "Icon": "/data/data/com.belkin.wemoandroid/files/-1864248701.png",
+        "CustomizedState": "",
+        "InActive": "0"
+    },
+    "Component": {
+        "Url": "widgets/wemo_insight/main.js"
+    }
+}

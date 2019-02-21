@@ -1,0 +1,26 @@
+{
+    "pageTitle" : "更多",
+    "menu": {
+        "setupInstructions": "安装说明",
+        "firmwareUpdate": "固件更新可用",
+        "remoteAccess": "远程访问",
+        "ifttt": "连接到 IFTTT",
+        "alexa": "连接到 Alexa",
+        "whatYouThink": "请将您的想法告诉我们！",
+        "helpCenter": "Help Center",
+        "settingsAbout": "设置&简介",
+        "addLinkDevices" : "添加 WeMo Link 设备",
+        "WeMoCommunity" : "WEMO社区",
+        "supportArticles" : "支持文章",
+        "reportaProblem" : "报告问题",
+        "rateWeMo" : "在Play Store为WeMo评分",
+        "help_url" : "http://www.belkin.com/embed/en-us/wemo/android/support",
+        "Enabled" : "已启用",
+        "NotEnabled" : "未启用"
+    },
+    "category" : {
+        "settings" : "设置",
+        "addWeMoDevice" : "添加WEMO设备",
+        "supportFeedback" : "支持&反馈"
+    }
+}

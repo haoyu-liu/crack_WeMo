@@ -1,0 +1,128 @@
+.picker_widget_popup_box {
+    display: none; /* Hide the DIV */
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 1001 !important;
+    border: 1px solid #999999;
+    padding: 0;
+    -moz-box-shadow: 0 0 5px #999999;
+    -webkit-box-shadow: 0 0 5px #999999;
+    box-shadow: 0 0 5px #999999;
+    background: #f2f2f2;
+    float:left;
+}
+
+.picker_widget_popup_box > h1 {
+    color: #73d44c;
+    display: block;
+    border-bottom: 1px #73d44c solid;
+	padding-bottom: 5%;
+}
+
+.picker_widget_spinner_wrapper > hr {
+    background-color: #73d44c; height: 1px; border: 0;
+}
+
+.picker_widget_bottom_buttons
+{
+    position: absolute;
+    bottom: 0px;
+}
+
+.picker_widget_button {
+    border: 1px solid #999999;
+    float: left;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    color: #999999;
+}
+
+.picker_widget_spinner_wrapper {
+    position: relative;
+    text-align: center;
+    left: 50%;
+}
+
+.picker_widget_spinner_up {
+    left: 50%;
+    position: relative;
+    background-image: url(../../img/up.svg);
+    background-size: 100%;
+}
+
+.picker_widget_spinner_down {
+    position: relative;
+    left: 50%;
+    background-image: url(../../img/down.svg);
+    background-size: 100%;
+}
+
+.picker_widget_spinner_cur {
+    left: 50%;
+    position: relative;
+    color: #000000;
+    left: 50%;
+}
+
+.picker_widget_spinner_prev {
+     left: 50%;
+     position: relative;
+     color: #999999;
+    left: 50%;
+ }
+
+.picker_widget_spinner_next {
+    left: 50%;
+    position: relative;
+    color: #999999;
+    left: 50%;
+}
+
+.picker_content_inline {
+    position: relative;
+    float: left;
+    width: 20%;
+}
+
+.picker_content_period
+{
+    text-align: center;
+    font-weight: bold;
+    width: 10% !important;
+}
+
+.cost_picker_content_container {
+	margin-left: 5%;	
+}
+
+.picker_content_time_inline {
+    position: relative;
+    float: left;
+    width: 26%;
+}
+
+.picker_content_time_period
+{
+    text-align: center;
+    font-weight: bold;
+    width: 11%;
+}
+
+.picker_content_time_static
+{
+    text-align: center;
+}
+
+.picker_overlay
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    position : fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%; height: 100%;
+    z-index: 1000 !important;
+}

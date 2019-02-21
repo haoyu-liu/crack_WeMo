@@ -1,0 +1,110 @@
+{
+    "labels": {
+        "onFor": "Dernièrement en marche pour:",
+        "onForNow": "En marche maintenant pour:",
+        "offSince": "En arrêt depuis:",
+        "since": "Depuis:",
+        "standby": "En mode de veille depuis:",
+        "onToday": "En marche aujourd'hui:",
+        "onAvgDay": "En moyenne, jour:",
+        "avgDay": "Moyenne, jour:",
+        "estimatedMonthly": "Estimation mensuelle:",
+        "avg": "Moyenne:",
+        "now": "Maintenant:",
+        "defaultAvg": "- -",
+        "defaultNow": "---",
+        "reset": "Réinitialiser",
+        "today": "Auj",
+        "autoOff": "Arrêt automatique à"
+    },
+    "timeUnit": {
+        "0": "sec",
+        "1": "min",
+        "2": "h",
+        "3": "jour",
+        "4": "jours"
+    },
+    "currency": {
+        "1": "$",
+        "3": "&pound;",
+        "4": "&euro;",
+        "7": "&#8369;",
+        "10": "&yen;",
+        "13": "&#8361;",
+        "15": "&#3647;"
+    },
+    "date": {
+        "tomorrow": "Demain",
+        "yesterday": "Yesterday",
+        "today": "Auj"
+    },
+    "editContext": {
+        "title": {
+            "on&standbythreshold": "Seuil marche/veille:",
+            "costPerKwh": "Coût par kWh: ",
+            "dataExport": "Export des données",
+            "scheduleExpo": "Export programmé",
+            "interval": "Intervalle",
+            "currency": "Devise",
+            "threshold": "Seuil",
+            "powerThreshold": "Seuil d'alimentation",
+            "enterEmail": "Saisissez votre adresse de messagerie",
+            "confirm": "Confirmer"
+        },
+        "buttons": {
+            "autoReset": "Réinitialisation automatique",
+            "exportNow": "Exporter maintenant",
+            "detect&set": "Détecter et paramétrer",
+            "set": "Définir",
+            "send": "Envoyer",
+            "reset": "Réinitialiser",
+            "cancel": "Annuler",
+            "save": "Sauvegarder",
+            "ok": "OK"
+        },
+        "intros": {
+            "dataExport": "Nous pouvons vous envoyer toutes les données relatives à l'utilisation et la consommation d'énergie de cet interrupteur durant les 30 derniers jours.",
+            "cost1": "Ceci nous permet de calculer des estimations de coûts pour vos appareils. Utilisez votre facture électrique pour déterminer votre coût moyen par kWh.",
+            "cost2": "Les modifications effectuées ici s'appliquent à tous les appareils.",
+            "threshold1": "Votre appareil est \"actif\" lorsque le niveau de l'alimentation dépasse le seuil et \"en veille\" lorsqu'il est inférieur au seuil.",
+            "threshold2": "Niveau actuel de l'alimentation:",
+            "threshold3": "État:"
+        },
+        "intervals": {
+            "1" : "Quotidienne",
+            "2" : "Hebdomadaire",
+            "3" : "Mensuelle"
+        },
+        "currencyName": {
+            "1": "Dollars",
+            "3": "Livres sterling",
+            "4": "Euros",
+            "7": "Pesos",
+            "10": "Yen",
+            "13": "Won",
+            "15": "Bitcoin"
+        },
+        "alertMessage": {
+            "autoSet": "Configurer automatiquement",
+            "autoReset-desc": "Veuillez éteindre votre appareil lorsque l'interrupteur insight est allumé, puis tapez sur détecter et paramétrer",
+            "reset-desc": "Réinitialiser le seuil d'alimentation?",
+            "exportInterval": "Programmer un intervalle d'exportation",
+            "resetDefault": "Réinitialiser par défaut",
+            "messageResetCost": "Voulez-vous vraiment? Cette action réinitialise au coût par kWh par défaut.",
+            "messageExport": "Envoyez les données maintenant vers"
+        },
+        "intervalInfo": {
+            "info": "Le prochain e-mail de données exportées arrivera dans "
+        },
+        "errors": {
+            "notDetected": "Non détecté"
+        }
+    },
+    "buttons": {
+        "cancel": "Annuler",
+        "hide": "Masquer",
+        "reset": "Réinitialiser",
+        "ok": "OK"
+    },
+    "defaultFriendlyName": "WeMo Insight"
+}

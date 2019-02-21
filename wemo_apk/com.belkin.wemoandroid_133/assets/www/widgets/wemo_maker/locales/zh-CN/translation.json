@@ -1,0 +1,19 @@
+{
+    "state": {
+        "0": "切換",
+        "1": "暂时触发",
+        "2": "传感器未触发",
+        "3": "传感器已触发"
+    },
+    "editContext": {
+        "title": {
+            "switchType": "開關類型",
+            "toggle": "切換",
+            "momentary": "暫態",
+            "sensor": "感測器",
+            "yes": "是",
+            "no": "否"
+        }
+    },
+    "defaultFriendlyName": "WeMo Maker"
+}

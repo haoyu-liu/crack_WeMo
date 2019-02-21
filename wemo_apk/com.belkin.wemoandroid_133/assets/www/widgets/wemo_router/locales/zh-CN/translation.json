@@ -1,0 +1,13 @@
+{
+    "errors": {
+        "notDetected": "无法感应到"
+    },
+    "buttons": {
+        "cancel": "取消",
+        "hide": "隐藏"
+    },
+    "hide": {
+        "title": "隐藏此设备？",
+        "message": "该设备在再次激活之前不会显示。"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "header": "Si deseas emparejar tu Wemo Dimmer con Alexa...",
+    "descriptions": {
+        "1": "Necesitas habilitar la Wemo skill en la aplicación Alexa."
+    },
+    "buttons" : {
+        "connectToAlexa" : "Más información"
+    }
+}

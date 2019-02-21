@@ -1,0 +1,9 @@
+{
+    "header": "Если нужно подключить Wemo Dimmer к Alexa…",
+    "descriptions": {
+        "1": "Нужно включить специальность Wemo в приложении Alexa."
+    },
+    "buttons" : {
+        "connectToAlexa" : "Узнайте больше"
+    }
+}

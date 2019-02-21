@@ -1,0 +1,43 @@
+{
+    "popup": {
+        "title": "New Firmware Available",
+        "message": "Updating your firmware keeps your WeMo devices happy.<br><br>Would you like to update?",
+        "labels": "Yes,Not Now"
+    },
+    "completePopup":{
+        "title": "Update Complete",
+        "message": "All of your WeMo devices are feeling happy and running with the latest firmware",
+        "button": "Hooray!"
+    },
+    "firmwareupdate": {
+        "title": "Firmware Upgrade",
+        "updateBtn": "Accept & Upgrade",
+        "header": "New firmware is available for",
+        "updateWarning": "Please make sure to update all phones and tablets to the latest app version.",
+        "inProgress": "Firmware upgrade",
+        "inProgressMessage": "Your devices are handling this update on their own, so feel free to close this app and play some Angry Birds now.",
+        "notes1": "This can take a while, but you don’t have to wait around. Feel free to close the app while we take care of the update.",
+        "notes2": "When you return, if your WeMo products don’t appear, the update may not be complete yet. Please give it some more time.",
+        "notes3": "Your WeMo devices will power off for a moment to complete the update. They may also flash a blue or green light during the update. When the lights stop flashing, the update is complete.",
+        "ugradeInProgress": "Update in progress...",
+        "releaseNotes": "Release Notes:"
+    },
+    "wifistatus": {
+        "0": "downloading...",
+        "1": "downloaded",
+        "2": "download failed",
+        "3": "upgrading...",
+        "4": "Upgraded",
+        "5": "Upgrade failed",
+        "6": "Upgrade failed",
+        "7": "waiting...",
+        "90": "link downloading...",
+        "91": "link downloaded",
+        "92": "link download failed",
+        "93": "link upgrading...",
+        "94": "Link upgraded",
+        "95": "Link upgrade failed",
+        "96": "Link upgrade failed",
+        "97": "link waiting..."
+    }
+}

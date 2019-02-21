@@ -1,0 +1,10 @@
+{
+    "state": {
+        "0": "Keine Bewegung",
+        "1": "Bewegung",
+        "2": "Es wird Bewegung erkannt",
+        "3": "Bewegung erkannt:",
+        "4": "Bewegung erkannt: %@ gestern"
+    },
+    "defaultFriendlyName": "WeMo Motion"
+}

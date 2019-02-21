@@ -1,0 +1,218 @@
+{
+    "labels": {
+        "autoOff": "Auto-off in",
+        "brightness": "Brightness",
+        "sleep": "SLEEP",
+        "timer": "Timer",
+        "fadeOut": "Fade Out",
+        "startTimer": "Start Timer",
+        "cancelTimer": "Cancel Timer",
+        "time": "Time",
+        "nightMode": "NIGHT MODE",
+        "longPress": "LONG PRESS",
+        "lightBar" : "LIGHTBAR",
+        "nightModeSettings": "Night Mode Settings",
+        "start": "Start",
+        "end": "End",
+        "status" : "Status",
+        "ruleAction0" : "Turns Off",
+        "ruleAction1" : "Turns On",
+        "ruleAction2" : "Toggles",
+        "ruleAction3" : "Randomizes for Security",
+        "startTime" : "Start",
+        "endTime" : "End",
+        "done" : "Done",
+        "Initiating" : "Initiating...",
+        "fadeTimerError" : "Error - please try again",
+        "createLongPressRule": "Create a Long Press Rule",
+        "noRules" : "Control other Wemos from your switch",
+        "ruleState0": "Disabled",
+        "ruleState1": "Enabled",
+        "Edit" : "Edit",
+        "notAvailable" : " - unavailable",
+        "others" : " others",
+        "and": "and",
+        "Until":"Until ",
+        "hideErrors" : "Hide Errors",
+        "longPressRule" : "Long Press Rule",
+        "WeMoLightSwitch": "WeMo Light Switch",
+        "WeMoMaker": "WeMo Maker",
+        "WeMoSwitch": "WeMo Switch",
+        "WeMoInsight": "WeMo Insight"
+    },
+    "mode": {
+        "off" : "Off"
+    },
+    "status": {
+        "disabled" : "Disabled",
+        "active" : "Active",
+        "enabled" : "Enabled"
+    },
+    "nightMode": {
+        "default" : "A mellower vibe for the evening hours.",
+        "brightnessFrom" : "% brightness from "
+    },
+    "notification": {
+        "problem" : "Problem Detected",
+        "coolOff" : "Cooling off..."
+    },
+    "longPress": {
+        "default" : "Control other Wemos from your switch.",
+        "createRule" : "Create Long Press Rule",
+        "editeRule" : "Edit Long Press Rule",
+        "Summary" : "Summary",
+        "WhenILongPressShort" : "When I Long Press",
+        "LONGPRESSRULE" : "LONG PRESS RULE",
+        "My" : "FOR THESE",
+        "Turn" : "DOES THIS",
+        "WhenILongPress" : "LONG PRESS",
+        "Toggle" : "Toggle",
+        "On" : "Turn On",
+        "Off" : "Turn Off",
+        "PretendSomeoneHome" : "Pretend Someone's Home",
+        "Info" : "Press Light Switch for 2 seconds to turn other devices on or off."
+    },
+    "hushMode": {
+        "default": "Errors are displayed if they occur",
+        "gotErrorHeader" : "Got a persistent error?",
+        "gotErrorMsg" : "You can temporarily hide error animations by single tapping the lightbar on your Dimmer or pressing the hide error button below.",
+        "gotErrorNote" : "Note: Tapping the lightbar will hide all current and new error animations for 24 hours.",
+        "errorHiddenHeader": "Your Errors are Hidden!",
+        "errorHiddenMsg": "You can reactivate error animations by single tapping the lightbar on your Dimmer or by pressing the button below.",
+        "showErrors": "Show Errors",
+        "hideErrors": "Hide Errors",
+        "errorsAreHidden": "Errors are hidden"
+    },
+    "buttons": {
+        "Save" : "Save",
+        "Delete" : "Delete",
+        "Next" : "Next",
+        "Yes": "Yes",
+        "Cancel" : "Cancel",
+        "Set" : "Set",
+        "needHelp": "No",
+        "Test": "Test",
+        "TryAgain" : "Try Again",
+        "FinishSetup" : "Finish Setup",
+        "Start" : "Start",
+        "ResetDial" : "Reset Dial",
+        "Begin" : "Begin",
+        "Done" : "Done",
+        "LearnMore" : "Learn More"
+    },
+    "suspendedOptions" : {
+        "title": "Hide Errors",
+        "1" :"Hide for 1 hour",
+        "2" :"Hide until Tomorrow",
+        "3" :"Hide for a Week"
+    },
+    "errorPopups": {
+        "rulesConflict" : {
+            "title" : "Conflicting Rule",
+            "message" : "This dimmer already has a long press rule. Please select another lightswitch or go back to the rule summary screen to edit the existing rule.",
+            "ok" : "OK"
+        },
+        "deviceNotDected" : {
+            "cannotSavedTitle" : "Rule Cannot Be Saved",
+            "cannotEnabledTitle" : "Rule Cannot Be Enabled",
+            "cannotDisabledTitle" : "Rule Cannot Be Disabled",
+            "cannotDeletedTitle" : "Rule Cannot Be Deleted",
+            "message" : "It looks like one of your Wemos is offline. Your devices must be online to make changes to a rule. Check your connection and try again later.",
+            "ok" : "OK"
+        },
+        "needFWUpgrade" : {
+            "title" : "Rule Cannot Be Saved",
+            "message" : "Long Press rules require the latest firmware for your Wemos. Please update your firmware and try again.",
+            "cancel" : "Cancel",
+            "goUpdate" : "Go Update"
+        },
+        "singleDimmerConflict" : {
+            "title" : "Rule Cannot Be Saved",
+            "message" : "Toggle, Turn Off and Turn On action types cannot be used with a dimmer alone. Select Away Mode or add another Wemo to create a rule.",
+            "ok" : "OK"
+        }
+    },
+    "messages": {
+        "fadeout" : "Lights fading out at  ",
+        "turnoff": "Lights out at ",
+        "at": "At",
+        "lightWillGoOut": "Lights would be out by ",
+        "lightsWillFadeOut": "Lights would fade out by ",
+        "nightModeInfo": "Your lights are set lower at night to save your eyes."
+    },
+    "editContext": {
+        "title": {
+            "bulbType" : "Bulb Type",
+            "bulbConfigure" : "Bulb Configuration",
+            "dimmerSetUp" : "Dimmer Set Up",
+            "bulbSetUp" : "Bulb Set Up",
+            "ledCalibration" : "LED Calibration",
+            "incompatibleBulb" : "Incompatible Bulb"
+        },
+        "description": {
+            "whatBulb" : "What bulbs are you using?",
+            "dimmerOptimized" : "Select the bulb type below to adjust the widest dim range capable. Check that you're not mixing bulb types on the circuit.",
+            "multipleBulbType" : "I have a mix of bulb types",
+            "CFL" : "CFL",
+            "Incandescent" : "Incandescent",
+            "LED" : "LED",
+            "testing" : "Testing...",
+            "testAgain" : "Check Again",
+            "bulbTurnOn" : "Did your bulbs turn on at the lowest light level?",
+            "bulbDim" : "Did your bulbs brighten up flicker-free?",
+            "letusTestBulb" : "Let’s check your bulbs.",
+            "testDoneSub": "You can reset your bulb types anytime from Device Edit.",
+            "startTest" : "Tap below and see if your bulbs turn on at their lowest light level.",
+            "testDimmingCapability" : " Let's check the dim range",
+            "bulbSmoothlyFade" : "Check the bulb's dim range from 0% to 100% to make sure it's flicker free.",
+            "bulbAllSet" : "Huzzah, your Dimmer is now calibrated to your bulbs!",
+            "dimmerCalibrated" : "You can reset your bulb types anytime from Device Edit.",
+            "powerUpSetting" : "Let's get your bulbs started.",
+            "powerUpSettingIntro" : "Tap the plus button until your bulbs turn on. This will help achieve the widest dim range.",
+            "brightnessCeiling" : "Let's set the dim range.",
+            "findMaxBrightness" : "How bright can your bulbs get? Tap the plus button until your light stops getting brighter. ",
+            "findMaxBrightnessSub" : "If your light flickers or blinks, dial it down until it stops.",
+            "brightnessFloor" : "Let's set the dim range.",
+            "findMinBrightness" : "Find out if your bulbs can dim a little further. Tap the minus button until your bulbs turn off."
+        },
+        "calibrationProblem": {
+            "title" :"You can reset your bulb types anytime from Device Edit.",
+            "description1" : "Check if your bulbs are marked as dimmable bulbs. Many CFLs and LEDs are not dimmable.",
+            "description2" : "For more information visit:",
+            "description3" : "<span class='link'>wemo.com/help/bulbcompatibility</span>"
+        },
+        "multipleBulbTypes": {
+            "pageTitle" :"Multiple Bulb Types",
+            "title": "Wemo Dimmer works best with bulbs of the same type. ",
+            "description1": "If you continue to use mixed bulbs, you may experience a variation in dimming range and start up performances. ",
+            "description2": "If you do decide to continue, please review your bulb types. If one of your bulbs is a CFL then select CFL preset. Otherwise, choose LED preset.",
+            "description3": "If you replace your bulbs later, resetting your bulb type is accessible from Device Edit."
+        }
+    },
+    "hardwareError":{
+        "status" : "Cooling off",
+        "banner":{
+            "1" : "Problem Detected"
+        },
+        "title":{
+            "1": "Overheated"
+        },
+        "description":{
+            "1" : "Yikes, your Dimmer has overheated. There's no danger, but the Dimmer has switched into cool-down mode, so you won't be able to use it for a few minutes. <br><br>Usually, this is due to too many bulbs on the circuit. If you have more than 600W of bulbs total, please remove some of them or switch to lower-watt bulbs. <br><br>If that's not the problem, you might need to consult an electrician. There may not be enough ventilation in the wall or two many switches in the same box.",
+            "2" : ""
+        },
+        "descriptionAria":{
+            "1" : "Yikes, your Dimmer has overheated. There's no danger, but the Dimmer has switched into cool-down mode, so you won't be able to use it for a few minutes. Usually, this is due to too many bulbs on the circuit. If you have more than 600W of bulbs total, please remove some of them or switch to lower-watt bulbs. If that's not the problem, you might need to consult an electrician. There may not be enough ventilation in the wall or two many switches in the same box.",
+            "2" : ""
+        },
+        "buttonLabels":{
+            "primary":{
+                "1":"Dismiss"
+            },
+            "secondary":{
+                "1":"Learn More"
+            }
+        }
+    },
+    "defaultFriendlyName": "WeMo Dimmer"
+}

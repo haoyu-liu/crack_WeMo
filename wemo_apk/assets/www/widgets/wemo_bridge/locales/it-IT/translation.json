@@ -1,0 +1,11 @@
+{
+    "fwUpdateInProgress": {
+        "header": "Aggiornamento di WeMo Link",
+        "message": "Non scollegare WeMo Link fino al completamento dell'aggiornamento."
+    },
+    "unavailable": {
+        "header": "Il WeMo Link non risponde.",
+        "message": "Prova a scollegarlo e ricollegarlo in."
+    },
+    "defaultFriendlyName": "WeMo Link"
+}

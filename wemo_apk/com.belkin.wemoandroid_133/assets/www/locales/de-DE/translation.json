@@ -1,0 +1,102 @@
+{
+    "app": {
+        "name": "test"
+    },
+    "navigation": {
+        "back": "Zurück"
+    },
+    "errors": {
+        "title": "WeMo kann die Aufforderung nicht durchführen",
+        "message": "Tritt dieser Fehler wieder auf, die App neu starten.",
+        "unavailable": "Nicht verfügbar",
+        "notDetected": "Nicht Erkannt",
+        "rulesTitle": "Zeitplan konnte nicht gespeichert werden",
+        "rulesMessage": "Probleme beim Speichern des Zeitplans. Status sämtlicher WeMo-Geräte prüfen und erneut versuchen."
+    },
+    "validation": {
+        "title": "Eingabe überprüfen"
+    },
+    "buttons": {
+        "okay": "Okay",
+        "ok": "OK",
+        "done": "Fertig",
+        "cancel": "Abbrechen",
+        "save": "Speichern",
+        "hide": "Ausblenden",
+        "continue": "Fortsetzen",
+        "reset": "Zurücksetzen"
+    },
+    "hide": {
+        "title": "Ausblenden?",
+        "message": "Dieses Gerät wird erst wieder eingeblendet, wenn es aktiviert wird."
+    },
+    "firmware": {
+        "update": "Firmware wird aktualisiert..."
+    },
+    "date": {
+        "tomorrow": "Morgen",
+        "yesterday": "Gestern",
+        "today": "Heute",
+        "months": {
+            "0": "Januar",
+            "1": "Februar",
+            "2": "März",
+            "3": "April",
+            "4": "Mai",
+            "5": "Juni",
+            "6": "Juli",
+            "7": "August",
+            "8": "September",
+            "9": "Oktober",
+            "10": "November",
+            "11": "Dezember"
+        },
+        "days": {
+            "0": "Sonntag",
+            "1": "Montag",
+            "2": "Dienstag",
+            "3": "Mittwoch",
+            "4": "Donnerstag",
+            "5": "Freitag",
+            "6": "Samstag"
+        },
+        "scheduleDays": {
+            "0": "So",
+            "1": "Mo",
+            "2": "Di",
+            "3": "Mi",
+            "4": "Do",
+            "5": "Fr",
+            "6": "Sa"
+        }
+    },
+    "timeUnits": {
+        "0": "s",
+        "1": "m",
+        "2": "h"
+    },
+    "labels": {
+        "autoOff": "Autom. Abschaltung in",
+        "onFor": "An für",
+        "enable": "Aktivieren",
+        "schedule": "Zeitplan",
+        "dailySchedule": "Tägl. Zeitplan",
+        "confirm": "Bestätigen",
+        "batteryReplace": "Nicht verfügbar - Akku wechseln",
+        "batteryLevel": "Akku schwach",
+        "signalStrength": "Schwaches Signal",
+        "ago": "vor",
+        "remaining": "Verbleibend",
+        "temperature": "Temperatur"
+    },
+    "mode": {
+        "off": "Aus",
+        "on": "Ein"
+    },
+    "messages": {
+        "orderNewFilter": "Neue Filter bestellen",
+        "replaceFilter": "Filter wechseln",
+        "timeReplaceFilter": "Filter müssen gewechselt werden...",
+        "timeOrderFilter": "Filter müssen bestellt werden..."
+    }
+}

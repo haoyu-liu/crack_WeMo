@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="no-js">
+<!--
+//
+//  device/power_threshold_settings.html
+//
+//  Created by Belkin International, Software Engineering on 08/16/2013.
+//  Copyright (c) 2012-2013 Belkin International, Inc. and/or its affiliates. All rights reserved.
+//
+
+
+	Belkin International, Inc. retains all right, title and interest (including all
+	intellectual property rights) in and to this computer program, which is
+	protected by applicable intellectual property laws.  Unless you have obtained
+	a separate written license from Belkin International, Inc., you are not authorized
+	to utilize all or a part of this computer program for any purpose (including
+	reproduction, distribution, modification, and compilation into object code),
+	and you must immediately destroy or return to Belkin International, Inc. all copies
+	of this computer program.  If you are licensed by Belkin International, Inc., your
+	rights to utilize this computer program are limited by the terms of that license.
+
+	To obtain a license, please contact Belkin International, Inc.
+
+	This computer program contains trade secrets owned by Belkin International, Inc.
+	and, unless unauthorized by Belkin International, Inc. in writing, you agree to
+	maintain the confidentiality of this computer program and related information
+	and to not disclose this computer program and related information to any
+	other person or entity.
+
+
+	THIS COMPUTER PROGRAM IS PROVIDED AS IS WITHOUT ANY WARRANTIES, AND BELKIN INTERNATIONAL, INC.
+	EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF
+	MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+
+--->
+	 <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>wemo tab</title>
+		<meta name="description" content="">
+
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv='expires' content='0'>
+		<meta http-equiv='pragma' content='no-cache'>
+
+		<link rel="stylesheet" href="../css/jquery.mobile-1.4.2.min.css">
+		<link rel="stylesheet" href="../css/AndroidHoloDarkLight.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link href="../css/wemoTTicker.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="../js/vendor/jquery-1.8.3.js"></script>
+		<script src="../js/vendor/jquery.mobile-1.4.2.js"></script><script src="../js/vendor/jquery.transit.js"></script><script src="../js/vendor/pointer.js"></script>
+		<script type="text/javascript" src="../cordova.js"></script>
+		<script type="text/javascript" src="../lang/en.js"></script>
+		<script type="text/javascript" src="../lang/fr.js"></script>
+		<script type="text/javascript" src="../lang/zh.js"></script>
+		<script type="text/javascript" src="../lang/de.js"></script>
+		<script type="text/javascript" src="../lang/es.js"></script>
+		<script type="text/javascript" src="../lang/it.js"></script>
+		<script type="text/javascript" src="../lang/ko.js"></script>
+		<script type="text/javascript" src="../lang/ja.js"></script> 
+		<script type="text/javascript" src="../lang/lang.js"></script>
+		<script type="text/javascript" src="../js/constants.js"></script>
+		<script type="text/javascript" src="../js/wemo_util.js"></script>
+		<script type="text/javascript" src="../js/wemo.js"></script>
+		<script type="text/javascript" src="../js/device/power_threshold_settings.js"></script>
+		<script type="text/javascript" src="../js/plugins/wemo_plugin.js"></script>
+		<!--<script type="text/javascript" src="../js/device/wemothreshold.js" ></script>-->
+
+         <script src="../js/widgets/picker.widget.js" type="text/javascript"></script>
+         <link rel="stylesheet" href="../css/widgets/picker.widget.css"/>
+
+	</head>
+		<body>
+			<div data-role="page" id="edit_threshold">
+					<header data-role="header" data-theme="b" class="main_header" data-position="fixed" data-tap-toggle="false">
+						<span class="wemo_logo">
+						</span>
+					</header>
+					<div class="more_tab"></div>
+					<div class="sub_header" data-theme="b">
+						<h3 localString="true" _key="InsightDataSubtitle"></h3>
+					</div>
+					<div class="" data-role="content">			
+						<div class="set_power_threshold">
+							<div class="ui-grid-solo"> 
+								<div class="ui-block-a" >
+									<label><span class="label" localString="true" _key="Threshold"></span></label><hr class="divider"></hr>
+									<button id="set_power_threshold" data-theme="d">
+										<!--<span class="edit_device_button_text" localString="true" _key="ThresholdWatts"></span>-->
+										<span class="edit_device_button_cur_value power_threshold_current_value" >
+											<span class="cur_value_loading" ></span>
+										</span>	
+										<span class="watts" localString="true" _key="Watts"></span>
+									</button>	
+								</div>
+							</div>
+						</div>
+						<div class="ui-grid-solo">
+							&nbsp;
+						</div>
+						<div class="ui-grid-solo edit_device_input_field">
+							<div class="edit_device_icon">
+								<div class="ui-grid-solo power_threshold_tip_text">
+									<span localString="true" _key="ThresholdTip"></span>
+								</div>
+								<div class="ui-grid-solo">
+									<div class="ui-grid-b power_threshold_tip_text">
+										<span class="ui-block-b" localString="true" _key="PowerNow"></span>
+										<span class="ui-block-b power_now"></span>
+									</div>
+									<div class="ui-grid-b power_threshold_tip_text">
+										<span class="ui-block-b" localString="true" _key="PowerStatus"></span>
+										<span class="ui-block-b power_threshold_indicator"></span>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div  data-position="fixed" data-tap-toggle="false" class="edit_device_bottom_btns">
+						<div class="auto_set"><span localString="true" _key="AutoSet"></span></div>
+						<div class="reset_to_default"><span localString="true" _key="ResetToDefault"></span></div>						
+					</div>
+
+                <div id="kwatt_selector">
+                    <h1><span localString="true" _key="ThresholdInWatts"></span></h1>
+                </div>
+				
+				<!-- Reset to default popup Starts -->			
+				<div id="reset_to_default_message" data-role="popup" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+					<div class="popup_head"><span localString="true" _key="Confirm"></span></div>
+					<div class="popup_content"><span localString="true" _key="PowerThresholdResetToDefault_AlertMessage"></span></div>
+					<div class="popup_footer border_top_gray">
+						<div class="popup_cnl_btn" id="reset_to_default_cancel_btn"><span localString="true" _key="Cancel"></span></div>
+						<div class="popup_ok_btn" id="reset_to_default_ok_btn"><span localString="true" _key="Yes"></span></div>
+					</div>					
+				</div>					
+			    <!-- Reset to default popup Ends -->
+
+			</div>
+		</body>
+</html>

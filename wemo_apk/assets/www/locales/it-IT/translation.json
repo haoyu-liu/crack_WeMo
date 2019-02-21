@@ -1,0 +1,102 @@
+{
+    "app": {
+        "name": "test"
+    },
+    "navigation": {
+        "back": "Indietro"
+    },
+    "errors": {
+        "title": "WeMo non può completare la richiesta",
+        "message": "Se continua così, riavviare l'applicazione.",
+        "unavailable": "Non disponibile",
+        "notDetected": "Non rilevato",
+        "rulesTitle": "Non grado di salvare Programma",
+        "rulesMessage": "Si sono verificati problemi con il salvataggio di questa regola. Verifica lo stato di tutti i tuoi dispositivi WeMo."
+    },
+    "validation": {
+        "title": "Si prega di verificare l'ingresso"
+    },
+    "buttons": {
+        "okay": "OK",
+        "ok": "OK",
+        "done": "Fatto",
+        "cancel": "Annulla",
+        "save": "Salva",
+        "hide": "Nascondi",
+        "continue": "Continua",
+        "reset": "Ripristina"
+    },
+    "hide": {
+        "title": "Nascondere?",
+        "message": "Il dispositivo non apparirà fino a quando è di nuovo attivo"
+    },
+    "firmware": {
+        "update": "Firmware aggiornamento..."
+    },
+    "date": {
+        "tomorrow": "Domani",
+        "yesterday": "Ieri",
+        "today": "Oggi",
+        "months": {
+            "0": "Gennaio",
+            "1": "Febbraio",
+            "2": "Marzo",
+            "3": "Aprile",
+            "4": "Maggio",
+            "5": "Giugno",
+            "6": "Luglio",
+            "7": "Agosto",
+            "8": "Settembre",
+            "9": "Ottobre",
+            "10": "Novembre",
+            "11": "Dicembre"
+        },
+        "days": {
+            "0": "Domenica",
+            "1": "Lunedi",
+            "2": "Martedì",
+            "3": "Mercoledì",
+            "4": "Giovedi",
+            "5": "Venerdì",
+            "6": "Sabato"
+        },
+        "scheduleDays": {
+            "0": "Do",
+            "1": "Lun",
+            "2": "Mar",
+            "3": "Mer",
+            "4": "Gio",
+            "5": "Ven",
+            "6": "Sab"
+        }
+    },
+    "timeUnits": {
+        "0": "s",
+        "1": "m",
+        "2": "h"
+    },
+    "labels": {
+        "autoOff": "Auto-spegnimento in",
+        "onFor": "Acceso per",
+        "enable": "Abilita",
+        "schedule": "Programma",
+        "dailySchedule": "Programma giornaliero",
+        "confirm": "Conferma",
+        "batteryReplace": "Non disponibile - Sostituire la batteria",
+        "batteryLevel": "Batteria scarica",
+        "signalStrength": "Segnale basso",
+        "ago": "fa",
+        "remaining": "Rimanente",
+        "temperature": "Temperatura"
+    },
+    "mode": {
+        "off": "Spegnimento",
+        "on": "Accensione"
+    },
+    "messages": {
+        "orderNewFilter": "Order new filters", // No Jarden products in Italy
+        "replaceFilter": "Replace filter", // No Jarden products in Italy
+        "timeReplaceFilter": "Time to replace filters...", // No Jarden products in Italy
+        "timeOrderFilter": "Time to order filters..." // No Jarden products in Italy
+    }
+}

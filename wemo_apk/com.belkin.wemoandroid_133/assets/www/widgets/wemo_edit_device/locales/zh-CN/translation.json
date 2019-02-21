@@ -1,0 +1,62 @@
+{
+    "headers": {
+        "editDevice": "编辑设备",
+        "picture": "圖片",
+        "ID": "WeMo ID: ",
+        "reset": "重置選項",
+        "enterName": "名稱",
+        "groupIcon": "分组图标",
+        "groupName": "分组名称",
+        "groupSubHeader": "在该分组中",
+        "alert": "警报"
+    },
+    "resetButtons": {
+        "1": "清除使用資料",
+        "2": "清除產品資訊",
+        "3": "重置Wi-Fi",
+        "4": "清除所有內容和設置"
+    },
+    "resetDescriptions": {
+        "1": "清除電源、時間和成本資料。",
+        "2": "清除名稱、圖示和規則。",
+        "3": "清除设备的Wi-Fi设置。（您将需对其重新设置）",
+        "4": "此按鈕還可將所有設置恢復至出廠預設值。"
+    },
+    "validation": {
+        "friendlyNameRequired": "必须設置友好的名称。",
+        "friendlyNameMaxLength": "友好的名称必须少于30个字符。",
+        "friendlyNameValidation": "请输入一个30字符以内的名称，仅由字母、数字、空格、破折号、点号或下划线组成。",
+        "groupNameRequired": "必须设置分组名称。",
+        "groupNameMaxLength": "分组名称必须少于30个字符。"
+    },
+    "iconPopup": {
+        "title": "上傳一張圖片",
+        "option1": "拍照",
+        "option2": "從圖庫選擇照片",
+        "option3": "重置圖片"
+    },
+    "resetPopupMessage": {
+        "resetUsageData": "是否清除此设备的所有电量和时间数据？",
+        "fnIconRules": "清除设备的名称、图标和规则？",
+        "wifi": "清除设备的Wi-Fi设置？（您将需对其重新设置）",
+        "all": "是否清除所有设置并将您的设备恢复为出厂默认设置？"
+    },
+    "messages": {
+        "errorMessageEdit": "无法编辑该名称和图标。请重试。",
+        "errorMessageReset": "操作无效。重试。",
+        "iconChangeDisabledMessage": "抱歉，当前不支持自定义图标。请检查Play Store更新。"
+    },
+    "buttons": {
+        "okay": "Okay",
+        "ok": "确定",
+        "done": "完成",
+        "cancel": "取消",
+        "save": "保存",
+        "hide": "隐藏",
+        "continue": "继续",
+        "reset": "重置"
+    },
+    "labels": {
+        "confirm": "确认"
+    }
+}

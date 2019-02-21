@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="crop__saving">Sparar bild…</string>
+    <string name="crop__wait">Var god vänta…</string>
+    <string name="crop__pick_error">Inga bildkällor tillgängliga</string>
+    <string name="crop__done">KLAR</string>
+    <string name="crop__cancel">AVBRYT</string>
+</resources>

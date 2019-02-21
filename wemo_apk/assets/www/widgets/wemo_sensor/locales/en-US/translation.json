@@ -1,0 +1,10 @@
+{
+    "state": {
+        "0": "No Motion",
+        "1": "Motion",
+        "2": "Oooh, I sense motion!",
+        "3": "Motion sensed:",
+        "4": "Motion sensed: %@ yesterday"
+    },
+    "defaultFriendlyName": "WeMo Motion"
+}

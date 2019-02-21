@@ -1,0 +1,25 @@
+{
+    "state": {
+        "0": "동작 없음",
+        "1": "동작",
+        "2": "동작이 감지되었습니다!",
+        "3": "감지된 동작:",
+        "4": "감지된 동작: %@ 어제"
+    },
+    "defaultFriendlyName": "WeMo NetCam",
+    "editContext": {
+        "title": {
+            "advanceOptions": "고급 옵션"
+        }
+    },
+    "headers": {
+        "downloadNetcam": "NetCam 다운로드"
+    },
+    "descriptions": {
+        "getApp": "이 카메라에 액세스하려면 Belkin NetCam 앱을 다운로드하십시오",
+        "availablePlayStore": "App Store에서 사용 가능."
+    },
+    "buttons": {
+        "getItNow": "지금 받기"
+    }
+}

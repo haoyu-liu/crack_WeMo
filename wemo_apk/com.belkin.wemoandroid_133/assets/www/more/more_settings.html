@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<!--
+    more_settings.html 
+
+    Created by Belkin International, Software Engineering on 10/04/2013. 
+    Copyright (c) 2012-2013 Belkin International, Inc. and/or its affiliates. All rights reserved. 
+    
+    Belkin International, Inc. retains all right, title and interest (including all 
+    intellectual property rights) in and to this computer program, which is 
+    protected by applicable intellectual property laws.  Unless you have obtained 
+    a separate written license from Belkin International, Inc., you are not authorized 
+    to utilize all or a part of this computer program for any purpose (including 
+    reproduction, distribution, modification, and compilation into object code), 
+    and you must immediately destroy or return to Belkin International, Inc. all copies 
+    of this computer program.  If you are licensed by Belkin International, Inc., your 
+    rights to utilize this computer program are limited by the terms of that license.  
+
+    To obtain a license, please contact Belkin International, Inc. 
+  
+    This computer program contains trade secrets owned by Belkin International, Inc. 
+    and, unless unauthorized by Belkin International, Inc. in writing, you agree to 
+    maintain the confidentiality of this computer program and related information 
+    and to not disclose this computer program and related information to any 
+    other person or entity. 
+  
+    THIS COMPUTER PROGRAM IS PROVIDED AS IS WITHOUT ANY WARRANTIES, AND BELKIN INTERNATIONAL, INC. 
+    EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF 
+    MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. 
+---->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>more_settings</title>
+    <meta name="description" content="">
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="../css/AndroidHoloDarkLight.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <script type="text/javascript" src="../js/vendor/jquery-1.8.3.js"></script>
+    <script src="../js/vendor/jquery.mobile-1.4.2.js"></script>
+    <script src="../js/vendor/jquery.transit.js"></script>
+    <script src="../js/vendor/pointer.js"></script>
+    <script type="text/javascript" src="../lang/en.js"></script>
+    <script type="text/javascript" src="../lang/ru.js"></script>
+    <script type="text/javascript" src="../lang/fr.js"></script>
+    <script type="text/javascript" src="../lang/zh.js"></script>
+    <script type="text/javascript" src="../lang/de.js"></script>
+    <script type="text/javascript" src="../lang/es.js"></script>
+    <script type="text/javascript" src="../lang/it.js"></script>
+    <script type="text/javascript" src="../lang/ko.js"></script>
+    <script type="text/javascript" src="../lang/ja.js"></script>
+    <script type="text/javascript" src="../lang/lang.js"></script>
+    <script type="text/javascript" src="../js/wemo.js"></script>
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../js/constants.js"></script>
+    <script type="text/javascript" src="../js/wemo_util.js"></script>
+    <script type="text/javascript" src="../js/more/more_settings.js"></script>
+    <script type="text/javascript" src="../js/plugins/wemo_plugin.js"></script>
+    <script type="text/javascript" src="../js/classes/deviceObject.js"></script>
+    <script type="application/javascript" src="../js/more/revision.json"></script>
+</head>
+<body>
+<div class="more_settings settings_page" data-role="page">
+    <header data-role="header" data-theme="b" class="main_header" data-position="fixed" data-tap-toggle="false">
+        <div class="backbutton"></div>
+        <span localString="true" _key="SettingsAndAbout"></span>
+    </header>
+    <div class="more_tab"></div>
+    <div class="sub_header"></div>
+
+
+    <div data-role="content">
+
+
+        <div id="more_container" class="more_container">
+            <!-- More Menu page -->
+            <div>
+                <input type="checkbox" name="more_remember_wifi" id="more_remember_wifi"/>
+                <label class="remember_wifi" for="more_remember_wifi">
+                    <span localString="true" _key="RememberWiFiSettings" class="remember_wifi_text"></span>
+                </label>
+
+                <p localString="true" _key="SwitchinfoLabel"></p>
+            </div>
+            <div id="location_container" class="ic_arrow">
+                <span class="" localString="true" _key="locationLabel"></span>
+                <span id="more_setting_location" class="right_text"></span>
+
+            </div>
+            <div class="ic_arrow app_info_tab">
+                <span class="">App Info</span>
+            </div>
+
+            <div class="ic_arrow hardware_info_tab">
+                <span id="more_firmware_versions" class="">Hardware Info</span>
+            </div>
+            <div class="ic_arrow setting_legal">
+                <span id="more_setting_legal" class="" localString="true" _key="LegalLabel"></span>
+            </div>
+        </div>
+
+        <div id="temperature_container" class="more_li_clone">
+            <div id="temperature_Units" localString="true" _key="temperatureLabel"></div>
+            <div id="divContainerF" class="clearfix">
+                <label id="labelF" class="temperatureLabel">Fahrenheit </label>
+
+                <div class="temp_button_container"><span class="temp_radio_button" data-temp-scale="1"></span>
+                </div>
+            </div>
+            <div id="divContainerC" class="clearfix">
+                <label id="labelC" class="temperatureLabel">Celsius</label>
+
+                <div class="temp_button_container"><span class="temp_radio_button" data-temp-scale="0"></span></div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- location selection Popup-->
+    <div data-role="popup" id="location_selection_popup" data-theme="a" data-position-to="window" class="pop_up"
+         data-overlay-theme="a" data-dismissible="false">
+        <article data-role="content" data-theme="b">
+            <p localString="true" _key="changingLocationNotSupported"></p>
+
+            <div class="bottom_buttons">
+                <a id="location_selection_popup_ok" data-role="button" data-theme="b" localString="true"
+                   _key="AlertOK"></a>
+            </div>
+        </article>
+    </div>
+    <!-- location selection Popup-->
+
+
+</div>
+</body>
+</html>

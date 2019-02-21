@@ -1,0 +1,15 @@
+{
+    "header": "Wemo Dimmer Is Here",
+    "description": {
+        "1": "The Wemo Smart Dimmer features tons of options for lightning, schedules, timers, moods, and all the convenience of Wemo.",
+        "2": "Learn more…"
+    },
+    "googleHome" : {
+        "header" : "Smart Home Integration",
+        "title" : "Hello Hands-Free Control",
+        "description1" : "That’s right. Pairing Wemo with Amazon Echo or Google Home makes turning the lights on or off as easy as using your voice. Link your Wemo devices with your Amazon or Google voice-activated speaker and you can control your lights, your appliances, or a whole room. Simply tell your voice-activated speaker to turn your Wemo devices on or off without having to lift a finger. Now that’s powerful.",
+        "description2" : "For more info on the Amazon Alexa integration go here: <span class='link alexaLink'>Tap here for more info.</span>",
+        "description3" : "For more info on the Google Home integration go here: <span class='link googleLink'>Tap here for more info.</span>",
+        "gotit" : "GOT IT"
+    }
+}

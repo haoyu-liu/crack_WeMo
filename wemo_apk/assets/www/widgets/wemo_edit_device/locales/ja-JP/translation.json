@@ -1,0 +1,62 @@
+{
+    "headers": {
+        "editDevice": "デバイスを編集",
+        "picture": "画像",
+        "ID": "WeMo ID: ",
+        "reset": "リセットオプション",
+        "enterName": "名前",
+        "groupIcon": "グループアイコン",
+        "groupName": "グループ名",
+        "groupSubHeader": "このグループ内",
+        "alert": "アラート"
+    },
+    "resetButtons": {
+        "1": "使用するデータをクリアします",
+        "2": "製品情報をクリア",
+        "3": "Wi-Fiをリセット",
+        "4": "全てのコンテンツと設定を消去します"
+    },
+    "resetDescriptions": {
+        "1": "電力、時間、費用をクリア。",
+        "2": "名前、アイコン、ルールをクリア。",
+        "3": "端末のWi-Fi設定を消去して下さい。（もう一度設定し直す必要があります）",
+        "4": "このボタンですべての設定を工場出荷時の設定に戻します。"
+    },
+    "validation": {
+        "friendlyNameRequired": "簡易名が必要です。",
+        "friendlyNameMaxLength": "簡易名は30文字以下にする必要があります。",
+        "friendlyNameValidation": "文字、数字、スペース、ダッシュ、またはアンダースコアのみを使用した名前を30文字以内で入力してください。",
+        "groupNameRequired": "グループ名が必要です。",
+        "groupNameMaxLength": "グループ名は30文字以下にしてください。"
+    },
+    "iconPopup": {
+        "title": "画像をアップロード",
+        "option1": "写真を撮る",
+        "option2": "ギャラリーから画像を選択",
+        "option3": "画像をリセット"
+    },
+    "resetPopupMessage": {
+        "resetUsageData": "このデバイス上のエネルギーと時間に関するデータをクリアしますか？",
+        "fnIconRules": "デバイス名、アイコン、ルールをクリアしますか？",
+        "wifi": "このデバイスのWi-Fi設定をクリアしますか？（もう一度設定する必要があります）",
+        "all": "全ての設定をクリアし、デバイスを出荷時のデフォルト値に回復しますか？"
+    },
+    "messages": {
+        "errorMessageEdit": "名前とアイコンを編集できませんでした。もう一度試して下さい。",
+        "errorMessageReset": "失敗しました。もう一度お試し下さい。",
+        "iconChangeDisabledMessage": "We're sorry but custom icons are not currently supported. Check Play Store for updates."
+    },
+    "buttons": {
+        "okay": "Okay",
+        "ok": "確認",
+        "done": "完了",
+        "cancel": "キャンセル",
+        "save": "保存",
+        "hide": "非表示",
+        "continue": "続行",
+        "reset": "リセット"
+    },
+    "labels": {
+        "confirm": "確認"
+    }
+}

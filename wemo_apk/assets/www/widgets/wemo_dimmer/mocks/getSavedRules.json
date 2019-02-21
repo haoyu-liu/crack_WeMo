@@ -1,0 +1,41 @@
+[
+    {
+        "DB_RULE_TYPE":"Long Press",
+        "RULE_ID":3,
+        "STATE":1,
+        "DISPLAY_NAME":"Dimmer 19B Long Press Rule",
+        "DAY_ID_ARR":[
+            -1
+        ],
+        "WIFI_DEV_ARR":[
+            { "UDN":"uuid:Dimmer-1_0-221322S0000069", "START_ACTION":3 }
+        ],
+        "TARGET_DEV_ARR":[
+            { "DEVICE_ID":"uuid:Socket-1_0-221322S0000069", "DEVICE_INDEX":2 },
+            { "DEVICE_ID":"uuid:Dimmer-1_0-221322S0000069", "DEVICE_INDEX":4 },
+            { "DEVICE_ID":"uuid:insight-1_0-221322S0000069", "DEVICE_INDEX":0 },
+            { "DEVICE_ID":"uuid:Lightswitch-1_0-221322S0000069", "DEVICE_INDEX":3 },
+            { "DEVICE_ID":"uuid:Dimmer-1_0-241421K1500321", "DEVICE_INDEX":1 },
+            { "DEVICE_ID":"uuid:Maker-1_0-221322S0000069:switch:sensor", "DEVICE_INDEX":5 }
+        ],
+        "RULE_TYPE":2
+    },
+    {
+        "DB_RULE_TYPE":"Long Press",
+        "RULE_ID":2,
+        "STATE":1,
+        "DISPLAY_NAME":"WeMo Light Switch 6BB Long Press Rule",
+        "DAY_ID_ARR":[
+            -1
+        ],
+        "WIFI_DEV_ARR":[
+            { "UDN":"uuid:Lightswitch-1_0-221345K13006BB", "START_ACTION":2 }
+        ],
+        "TARGET_DEV_ARR":[
+            { "DEVICE_ID":"uuid:Socket-1_0-221241K0101359", "DEVICE_INDEX":2 },
+            { "DEVICE_ID":"uuid:Insight-1_0-221403K12008B1", "DEVICE_INDEX":1 },
+            { "DEVICE_ID":"uuid:Maker-1_0-221451S0000015:sensor:switch", "DEVICE_INDEX":0 }
+        ],
+        "RULE_TYPE":2
+    }
+]

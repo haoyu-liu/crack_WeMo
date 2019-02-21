@@ -1,0 +1,9 @@
+{
+    "header": "Zum Koppeln des Wemo Dimmers mit Alexa gehen Sie folgendermaßen vor...",
+    "descriptions": {
+        "1": "Sie müssen den Wemo Skill in der Alexa App aktivieren. "
+    },
+    "buttons" : {
+        "connectToAlexa" : "Mehr erfahren"
+    }
+}

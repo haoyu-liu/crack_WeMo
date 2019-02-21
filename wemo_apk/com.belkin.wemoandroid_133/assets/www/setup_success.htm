@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<!--
+    setup_success.html 
+
+    Created by Belkin International, Software Engineering on 10/04/2013. 
+    Copyright (c) 2012-2013 Belkin International, Inc. and/or its affiliates. All rights reserved. 
+    
+    Belkin International, Inc. retains all right, title and interest (including all 
+    intellectual property rights) in and to this computer program, which is 
+    protected by applicable intellectual property laws.  Unless you have obtained 
+    a separate written license from Belkin International, Inc., you are not authorized 
+    to utilize all or a part of this computer program for any purpose (including 
+    reproduction, distribution, modification, and compilation into object code), 
+    and you must immediately destroy or return to Belkin International, Inc. all copies 
+    of this computer program.  If you are licensed by Belkin International, Inc., your 
+    rights to utilize this computer program are limited by the terms of that license.  
+
+    To obtain a license, please contact Belkin International, Inc. 
+  
+    This computer program contains trade secrets owned by Belkin International, Inc. 
+    and, unless unauthorized by Belkin International, Inc. in writing, you agree to 
+    maintain the confidentiality of this computer program and related information 
+    and to not disclose this computer program and related information to any 
+    other person or entity. 
+  
+    THIS COMPUTER PROGRAM IS PROVIDED AS IS WITHOUT ANY WARRANTIES, AND BELKIN INTERNATIONAL, INC. 
+    EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF 
+    MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. 
+--->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="css/AndroidHoloDarkLight.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/vendor/jquery-1.8.3.js"></script>
+    <script src="js/vendor/jquery.mobile-1.4.2.js"></script>
+    <script src="js/vendor/jquery.transit.js"></script>
+    <script src="js/vendor/pointer.js"></script>
+    <script src="cordova.js"></script>
+    <script type="text/javascript" src="lang/en.js"></script>
+    <script type="text/javascript" src="lang/ru.js"></script>
+    <script type="text/javascript" src="lang/fr.js"></script>
+    <script type="text/javascript" src="lang/zh.js"></script>
+    <script type="text/javascript" src="lang/de.js"></script>
+    <script type="text/javascript" src="lang/es.js"></script>
+    <script type="text/javascript" src="lang/ko.js"></script> 
+	<script type="text/javascript" src="lang/ja.js"></script> 
+    <script type="text/javascript" src="lang/lang.js"></script>
+    <script type="text/javascript" src="js/plugins/setup_plugin.js"></script>
+    <script type="text/javascript" src="js/constants.js"></script>
+    <script type="text/javascript" src="js/wemo.js"></script>
+    <script type="text/javascript" src="js/wemo_util.js"></script>
+    <script type="text/javascript" src="js/plugins/wemo_plugin.js"></script>
+    <script type="text/javascript" src="js/classes/cloudServices.js"></script>
+    <script type="text/javascript" src="js/setup_success.js"></script>
+
+
+
+
+</head>
+<body>
+<div id="device_list" data-role="page" class="setup_success">
+    <header data-role="header" data-theme="b" class="main_header" data-position="fixed" data-tap-toggle="false">
+					<span class="wemo_logo">
+					</span>
+    </header>
+    <div class="sub_header"><span name="device_name_container" localString="true" _key="SetupSuccessful_Title"></span></div>
+
+    <div data-role="content"  class="content-with-margin">
+        <h4><span id="device_type"></span><span localString="true" _key="SetupSuccessful_NowConnectedToPlugin"></span></h4>
+        <span id="setup_success_message"></span>
+        <hr />
+        <div id="friendly_name_row" class="arrow_slide">
+            <span class="text_strong"><span localString="true" _key="Name"></span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id="friendly_name" class="font_20 text_strong link_gray"></span>
+        </div>
+        <hr />
+        <div id="device_icon_row" class=" ui-grid-a">
+
+            <div class="ui-block-a" style="line-height:72px;"><label class="text_strong"><span class="capitalize" localString="true" _key="DeviceIconLowerCase"></span></label></div>
+            <div class="ui-block-b"><img id="device_thumb" style="height:72px; width:72px; float:right;" /></div>
+
+        </div>
+        <hr />
+			<div id="switchbackground" class="arrow_slide "  style="display: none;">
+				<label class="text_strong"><span class="capitalize"
+					localString="true" _key="SwitchType"></span> <span
+					class="text_strong link_gray" id="switchstatusselected"
+					style="margin-left:10px; ">Toggle</span>
+			</div>
+			<div id="switchslection"
+				style="clear:both; margin-top: 20px; display: none;">
+				<div class="switchbackground_li dim_high div_bg_green"
+					id="togglediv">
+					<span>Toggle</span>
+				</div>
+				<div class="switchbackground_li dim_low" id="momentarydiv">
+					<span>Momentary</span>
+				</div>
+			</div>
+			<hr id="switchline" style="display: none;" />
+			<div id="sensorbackground" class="arrow_slide " style="display: none;">
+				<label class="text_strong"><span class="capitalize"
+					localString="true" _key="Sensor"></span> <span
+					class="text_strong link_gray" id="sensorstatusselected"
+					style="margin-left:50px;">Yes</span>
+			</div>
+			<div id="sensorselection"
+				style="clear:both; margin-top: 10px; display: none;">
+				<div class="sensorbackground_li" id="sensoryesdiv">
+					<span>Yes</span>
+				</div>
+				<div class="sensorbackground_li" id="sensornodiv">
+					<span>No</span>
+				</div>
+			</div>
+			<hr id="sensorline" style="display: none;" />
+        <div id="email_row" class="arrow_slide">
+            <p>
+                <span class="text_strong"><span localString="true" _key="Email"></span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="email_address"><span localString="true" _key="Optional"></span></span>
+            </p>
+				<p>
+					<span localString="true" _key="EmailInfo1"></span> <span
+						id="brand_nameph"></span> 
+				</p>
+			</div>
+        <hr />
+        <fieldset data-role="fieldcontain" class="ui-grid-solo">
+			<input type="checkbox" name="checkbox1" id="remember_wifi" checked="checked" />
+			<label for="remember_wifi"><span localString="true" _key="RememberWiFiSettings"></span></label>
+            <p>
+                <span localString="true" _key="SwitchinfoLabel"></span>
+            </p>
+        </fieldset>
+	</div>
+
+
+    <div  data-position="fixed" data-tap-toggle="false" class="border_top_gray bottom_btns">
+        <div class="bottom_single_button" id="save_setup"><span localString="true" _key="Done"></span></div>
+    </div>
+	
+    <!-- Select Photo popup Start -->
+
+    <div id="select_photo_popup" data-role="popup" class="pop_up" data-overlay-theme="a" data-position-to="window" data-dismissible="false" data-go-forward="false">
+        <header data-role="header" data-theme="a">
+            <h3><span localString="true" _key="select_photo"></span></h3>
+        </header>
+
+        <article data-role="content" data-theme="b">
+            <ul id="photo_pick_option" data-role="listview" data-theme="d">
+                <li id="take_photo"><span localString="true" _key="IconActionSheet_TakePhoto"></span></li>
+                <li id="select_from_gallery"><span localString="true" _key="IconActionSheet_ChooseExisting"></span></li>
+                <li id="remove_photo"><span localString="true" _key="IconActionSheet_Restore"></span></li>
+            </ul>
+        </article>
+    </div>
+
+    <!-- Select Photo popup Ends -->
+
+    <!-- Connection Failure popup Starts -->
+    <div id="connection_failure_popup" data-role="popup" class="pop_up" data-overlay-theme="a" data-position-to="window" data-dismissible="false" data-go-forward="false">
+        <header data-role="header" data-theme="a">
+            <h3><span localString="true" _key="networkError"></span></h3>
+        </header>
+        <article data-role="content" data-theme="b">
+            <p><span localString="true" _key="connectionFailureContent"></span></p>
+
+        </article>
+    </div>
+    <!-- Connection Failure popup Ends -->
+
+    <!-- Network lost popup Starts -->
+    <div id="network_lost_popup" data-role="popup" class="pop_up" data-overlay-theme="a" data-position-to="window" data-dismissible="true" data-go-forward="false">
+        <header data-role="header" data-theme="a">
+            <h3><span localString="true" _key="networkLost"></span></h3>
+        </header>
+        <article data-role="content" data-theme="b">
+            <p><span localString="true" _key="connectionLostContent"></span></p>
+
+        </article>
+    </div>
+    <!-- Network lost popup Ends -->
+    
+    <!-- custom icons are not currently supported popup Starts -->
+	<div id="gosh_message" data-role="popup" class="pop_up" data-overlay-theme="a" data-position-to="window"  data-dismissible="false" data-go-forward="false">
+		<div class="popup_head"><span localString="true" _key=""></span></div>
+		<div class="popup_content"><span localString="true" _key="DeviceCustomIcons" _innerString="true"></span></div>
+		<div class="popup_footer" id="gosh_message_footer">
+			<div id="gosh_message_ok_btn" class="popup_single_ok_btn"><span localString="true" _key="AlertOK"></span></div>
+		</div>
+	</div>
+    <!-- custom icons are not currently supported popup Ends -->
+    
+    <!-- Retry setup -->
+    <div id="retry_popup" data-role="popup" class="pop_up" data-overlay-theme="a" data-position-to="window" data-dismissible="true" data-go-forward="false">
+        <header data-role="header" data-theme="a">
+            <h3><span localString="true" _key="networkError"></span></h3>
+        </header>
+        <article data-role="content" data-theme="b">
+            <p><span localString="true" _key="setupFailedContent"></span></p>
+
+        </article>
+    </div>
+
+	<div id="remote_status_popup" data-role="popup" class="pop_up" data-overlay-theme="a" data-position-to="window" data-dismissible="false" data-go-forward="false">
+		<div class="popup_head"><span id="remote_status_header"></span></div>
+		<div class="popup_content"><p id="remote_status_body"></p></div>
+		<div class="popup_footer" id="remote_setup_failure_footer">
+			<div id="remote_status_ok_btn" class="popup_cnl_btn"><span localString="true" _key="Later"></span></div>
+			<div id="remote_status_try_again_btn" class="popup_ok_btn"><span localString="true" _key="TryAgain"></span></div>
+		</div>
+		<div  class="popup_footer" id="remote_setup_success_footer">
+			<div id="remote_status_ok_btn_failure" class="popup_single_ok_btn"><span localString="true" _key="AlertOK"></span></div>           
+        </div>
+	</div>
+
+
+</div>
+</body>
+</html>
+
+
+
+

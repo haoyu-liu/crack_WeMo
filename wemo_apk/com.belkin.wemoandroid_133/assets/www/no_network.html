@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<!--
+    no_network.html 
+
+    Created by Belkin International, Software Engineering on 10/04/2013. 
+    Copyright (c) 2012-2013 Belkin International, Inc. and/or its affiliates. All rights reserved. 
+    
+    Belkin International, Inc. retains all right, title and interest (including all 
+    intellectual property rights) in and to this computer program, which is 
+    protected by applicable intellectual property laws.  Unless you have obtained 
+    a separate written license from Belkin International, Inc., you are not authorized 
+    to utilize all or a part of this computer program for any purpose (including 
+    reproduction, distribution, modification, and compilation into object code), 
+    and you must immediately destroy or return to Belkin International, Inc. all copies 
+    of this computer program.  If you are licensed by Belkin International, Inc., your 
+    rights to utilize this computer program are limited by the terms of that license.  
+
+    To obtain a license, please contact Belkin International, Inc. 
+  
+    This computer program contains trade secrets owned by Belkin International, Inc. 
+    and, unless unauthorized by Belkin International, Inc. in writing, you agree to 
+    maintain the confidentiality of this computer program and related information 
+    and to not disclose this computer program and related information to any 
+    other person or entity. 
+  
+    THIS COMPUTER PROGRAM IS PROVIDED AS IS WITHOUT ANY WARRANTIES, AND BELKIN INTERNATIONAL, INC. 
+    EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF 
+    MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. 
+--->
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+<link rel="stylesheet" href="css/AndroidHoloDarkLight.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/vendor/jquery-1.8.3.js"></script>
+<script src="js/vendor/jquery.mobile-1.4.2.js"></script>
+    <script src="js/vendor/jquery.transit.js"></script>
+    <script src="js/vendor/pointer.js"></script>
+<script src="cordova.js"></script>
+<script type="text/javascript" src="js/plugins/setup_plugin.js"></script>
+<script type="text/javascript" src="js/no_network.js"></script>
+</head>
+
+<body style="background:#000000 !important; ">
+
+	<div id="no_network_page" data-role="page" class="wemo_ed">
+		<!-- If no network wifi network available, then show popup -->
+		<!-- No Network Connection Dialog Start -->
+		
+		<div id="no_network_dialog" data-role=popup class="pop_up"  data-dismissible="false">
+			
+			<header data-role="header" data-theme="a">
+				<h3 class="alert_icon"><span localString="true" _key="NoNetwork_Title"></span></h3>
+			</header>
+			
+			<article data-role="content" data-theme="b">
+				<p><span localString="true" _key="currentlyNotConnected_network"></span></p>
+				<p><span localString="true" _key="notConnect_connectManually"></span></p>
+				<p><span localString="true" _key="stillHavingTroubleMessage"></span></p>
+
+				<fieldset>
+					<a href="#" id="btn_try_again" class="half_length" data-role="button" data-theme="b"><span localString="true" _key="TryAgain"></span></a> 
+					<a href="#" id="btn_connect_to_wifi" class="half_length" data-role="button" data-theme="b"><span localString="true" _key="ConnectToWiFi"></span></a>
+				</fieldset>
+			</article>
+
+			<a href="#" id="hidden_btn" data-role="button" class="hidden_btn"
+				data-theme="b" data-textonly="false" data-textvisible="false"></a>
+		</div>
+		<!-- No Network Connection Dialog Ends-->
+	</div>
+
+</body>
+</html>

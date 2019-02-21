@@ -1,0 +1,19 @@
+{
+    "state": {
+        "0": "A leva",
+        "1": "Connessione momentanea",
+        "2": "Sensore non attivato",
+        "3": "Sensore attivato"
+    },
+    "editContext": {
+        "title": {
+            "switchType": "Tipo di interruttore",
+            "toggle": "A leva",
+            "momentary": "Momentaneo",
+            "sensor": "Sensore",
+            "yes": "Sì",
+            "no": "No"
+        }
+    },
+    "defaultFriendlyName": "WeMo Maker"
+}

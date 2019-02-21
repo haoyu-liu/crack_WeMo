@@ -1,0 +1,9 @@
+{
+    "header": "如果您想要配对您的 Wemo Dimmer 和 Alexa…",
+    "descriptions": {
+        "1": "您需要在 Alexa 应用中启用 Wemo 技能。 "
+    },
+    "buttons" : {
+        "connectToAlexa" : "了解更多"
+    }
+}

@@ -1,0 +1,52 @@
+{
+  "HVAC": {
+    "heating": "暖房中",
+    "cooling": "冷房中",
+    "fanrunning": "ファン送風中",
+    "heat": "暖房",
+    "cool": "冷房",
+    "heatcool": "暖房 / 冷房",
+    "off": "オフ",
+    "on" : "オン",
+    "rhrHeader": "Rush Hour Rewards がアクティブ",
+    "rhrMessage": "温度を調節すると節電報酬に影響します。",
+    "headerTemperature": "温度を設定",
+    "headerHeatTemperature": "暖房温度",
+    "headerCoolTemperature": "冷房温度",
+    "headerMode": "モードを設定",
+    "drawerLabelCurrent": "現在",
+    "drawerLabelTemp": "温度",
+    "drawerLabelHumidity": "湿度",
+    "drawerLabelTempAway": "温度を表示、調節するには、Nest サーモスタットを\"ホーム\"に設定してください",
+    "serviceUnavailable": "Nest サービスは現在利用できません。"
+  },
+
+  "error": {
+    "energy-saving-event-on":{
+      "heading": "リモートで調節できません",
+      "message": "Rush Hour Reward (ピーク時節電報酬) イベントが実行中です。調節するには、Nest アプリまたは Nest サーモスタットを使用してください。"
+    },
+    "lock-enabled":{
+      "heading":"リモートで調節できません",
+      "message":"Nest サーモスタットはロックされています。調節するには、Nest サーモスタットからロックを解除してください。"
+    },
+    "emergency-heat-is-on":{
+      "heading":"アウェイ モードが利用できません",
+      "message":"緊急暖房がオンになっています。アウェイ モードは現在使用できません。"
+    },
+    "blocked":{
+      "heading":"Nest には休みが必要です",
+      "message":"Nest と HVAC システムの安全のため、Nest サービスでは短時間内での変更の回数は制限されています。数分後にもう一度やり直すか、Nest サーモスタットを直接調節してください。"
+    },
+    "default":{
+      "heading":"申し訳ありません",
+      "message":"予期しない問題が発生しました。もう一度やり直すか、Nest アプリから設定してください。"
+    }
+  },
+
+  "nestAlerts":{
+    "notConnected": "このサーモスタットは Nest アカウントに接続していません。",
+    "noInternet": "Nest サービスには現在アクセスできません。後ほどもう一度お試しください。"
+  }
+}
+

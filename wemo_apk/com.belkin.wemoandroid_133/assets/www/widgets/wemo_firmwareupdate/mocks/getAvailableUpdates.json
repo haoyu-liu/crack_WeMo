@@ -1,0 +1,107 @@
+{
+    "success": "true",
+    "response": {
+        "wemoDeviceFirmwares": [{
+            "uniqueId": "94103EA2B2782C05",
+            "modelCode": "Insight",
+            "macAddress": "0e0e0e0e0e0e0e",
+            "firmwares": [{
+                "versionRev": "3900",
+                "version": "WeMo_US_2.00.3900.PVT",
+                "url": "http://firmwares.r.us/switch",
+                "hwVersion": "v1",
+                "region": "WW",
+                "releaseNotes": "WeMo Switch and Sensor firmware release notes WW 8986 PVT:\nâ¢ General bug fixes and improvements\n",
+                "models": ["Insight"],
+                "tags": [],
+                "checksum": "absda44343"
+            }]
+        }, {
+            "uniqueId": "94103EF6BF42D955",
+            "modelCode": "Insight",
+            "macAddress": "0e0e0e0e0e0e0e",
+            "firmwares": [{
+                "versionRev": "3900",
+                "version": "WeMo_US_2.00.3900.PVT",
+                "url": "http://firmwares.r.us/switch",
+                "hwVersion": "v1",
+                "region": "WW",
+                "releaseNotes": "This is a release Note",
+                "models": ["Insight"],
+                "tags": [],
+                "checksum": "absda44343"
+            }]
+        }, {
+            "uniqueId": "uuid:Insight-1_0-23902390DF-121",
+            "modelCode": "Insight",
+            "macAddress": "0e0e0e0e0e0e0e",
+            "firmwares": [{
+                "versionRev": "3900",
+                "version": "WeMo_US_2.00.3900.PVT",
+                "url": "http://firmwares.r.us/switch",
+                "hwVersion": "v1",
+                "region": "WW",
+                "releaseNotes": "This is a release Note",
+                "models": ["Insight"],
+                "tags": [],
+                "checksum": "absda44343"
+            }]
+        }, {
+            "uniqueId": "uuid:Socket-1_0-221305K0100C93",
+            "modelCode": "Socket",
+            "macAddress": "EC1A5983086C",
+            "firmwares": [{
+                "versionRev": "8326",
+                "version": "WeMo_WW_2.00.8326.DVT-OWRT-SNS",
+                "url": "http://fwdl.xbcs.net/dvtimages/WeMo_WW_2.00.8326.OWRT.DVT_SNS-trans.bin.gpg",
+                "hwVersion": "v1",
+                "region": "WW",
+                "checksum": "f1d78d6e10b229c207600eaf7568914a",
+                "releaseNotes": "WeMo Switch and Sensor firmware release notes WW 8326 DVT:\n• Support for Auto-Off Timer\n• Architectural changes for future scalability\n• General bug fixes and improvements\n",
+                "models": [
+                    "Socket",
+                    "Sensor"
+                ],
+                "tags": [
+                    "WeMoOpenWRTTransSNS",
+                    "WeMoSignedUS",
+                    "WeMoSignedEU"
+                ]
+            }, {
+                "versionRev": "8986",
+                "version": "WeMo_WW_2.00.8986.PVT-OWRT-SNS",
+                "url": "http://app.xbcs.net/firmware/wemo_dev_pro_RC_1_13/openwrt/signed_images/WeMo_WW_2.00.8986.OWRT.PVT_S...",
+                "hwVersion": "v1",
+                "region": "WW",
+                "checksum": "37ceea29c4cb68dcea4d5f81eff0a315",
+                "releaseNotes": "WeMo Switch and Sensor firmware release notes WW 8986 PVT:\n• General bug fixes and improvements\n",
+                "models": [
+                    "Socket",
+                    "Sensor"
+                ],
+                "tags": [
+                    "WeMoOpenWRTSNS"
+                ]
+            }]
+        }, {
+            "uniqueId": "uuid:Insight-1_0-231442K1200001",
+            "modelCode": "Insight",
+            "macAddress": "94103ECF1D5A",
+            "firmwares": [{
+                "versionRev": "8986",
+                "version": "WeMo_WW_2.00.8986.PVT-OWRT-Insight",
+                "url": "http://app.xbcs.net/firmware/wemo_dev_pro_RC_1_13/openwrt/signed_images/WeMo_WW_2.00.8986.OWRT.PVT_I...",
+                "hwVersion": "v1",
+                "region": "WW",
+                "checksum": "4aaaee7b2f120fc5de8d7f7a94f3c55b",
+                "releaseNotes": "WeMo Insight OpenWRTfirmware release notes WW 8986 PVT:\n• General bug fixes and improvements\n",
+                "models": [
+                    "Insight"
+                ],
+                "tags": [
+                    "WeMoOpenWRTInsight"
+                ]
+            }]
+        }]
+    }
+}

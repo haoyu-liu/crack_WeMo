@@ -1,0 +1,43 @@
+{
+    "popup": {
+        "title": "Hay disponible una nueva versión firmware ",
+        "message": "Mantener el firmware de sus dispositivos WeMo siempre actualizado le asegurar&aacute; siempre un rendimiento &oacute;ptimo.<br><br>&iquest;Le gustar&iacute;a actualizar ahora?",
+        "labels": "Sí,Ahora no"
+    },
+    "completePopup":{
+        "title": "Actualización completada",
+        "message": "Todos tus dispositivos WeMo están actualizados con la última versión de firmware.",
+        "button": "¡Estupendo!"
+    },
+    "firmwareupdate": {
+        "title": "Actualización del firmware",
+        "updateBtn": "Actualizar ahora",
+        "header": "Existe un nuevo firmware disponible para",
+        "updateWarning": "Asegúrate de actualizar todos los teléfonos y tablets a la última versión de la aplicación.",
+        "inProgress": "Firmware upgrade",
+        "inProgressMessage": "Sus dispositivos están actualizándonse independientemente, por lo que si así lo desea puede cerrar esta app y realizar cualquier otra tarea.",
+        "notes1": "Esta puede tardar un poco pero no es necesario que se quede esperando. Si lo desea cierre la aplicación mientras la actualización se lleva a cabo.",
+        "notes2": "Si vuelve y sus productos WeMo no aparecen es posible que la actualización no se haya completado aún. Tenga la bondad de darle unos minutos más.",
+        "notes3": "Su dispositivos WeMo se apagarán un momento para completar la actualización. Es posible también que estos parpadeen en color azul o verde durante el proceso de actualización. Cuando las luces dejen de parpadear esto indica que la actualización se ha completado.",
+        "ugradeInProgress": "Actualización en curso...",
+        "releaseNotes": "Detalles de la versión:"
+    },
+    "wifistatus": {
+        "0": "descargando...",
+        "1": "descargando",
+        "2": "error en la descarga",
+        "3": "actualizando...",
+        "4": "Actualizado",
+        "5": "Fallo en la actualización",
+        "6": "Fallo en la actualización",
+        "7": "esperando...",
+        "90": "link en descarga...",
+        "91": "link descargado",
+        "92": "error de descarga de Link",
+        "93": "actualizando Link...",
+        "94": "Link actualizado...",
+        "95": "error de actualización de Link",
+        "96": "error de actualización de Link",
+        "97": "esperando a link..."
+    }
+}

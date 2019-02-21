@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/widget_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/wemo_header" android:background="@drawable/widget_header_background" android:layout_width="fill_parent" android:layout_height="14.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:src="@drawable/wemologo_small" />
+    </FrameLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#ff434343" android:id="@id/friendly_name_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_below="@id/wemo_header" />
+    <TextView android:textSize="11.0sp" android:textColor="#ff777777" android:id="@id/dimmer_level_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/friendly_name_label" android:layout_alignLeft="@id/friendly_name_label" />
+    <FrameLayout android:id="@id/power_button_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="8.0dip" android:layout_below="@id/wemo_header" android:layout_alignParentRight="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/on_off_button_image" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/widget_control_off" />
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:indeterminateDrawable="@drawable/widget_progress_bar" style="@android:style/Widget.ProgressBar" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/app_launch_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/power_button_container" />
+</RelativeLayout>

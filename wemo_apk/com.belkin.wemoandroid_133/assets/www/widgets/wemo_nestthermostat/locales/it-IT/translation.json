@@ -1,0 +1,52 @@
+{
+  "HVAC": {
+    "heat": "Riscaldamento",
+    "cool": "Raffreddamento",
+    "fanrunning": "Ventilatore acceso",
+    "heat": "Riscald.",
+    "cool": "Raffred.",
+    "heatcool": "Riscald./Raffred.",
+    "off": "Spento",
+    "on" : "Accensione",
+    "rhrHeader": "Risparmio ore di punta attivo",
+    "rhrMessage": "Regolare la temperatura potrebbe influenzare il tuo risparmio.",
+    "headerTemperature": "IMPOSTA TEMPERATURA",
+    "headerHeatTemperature": "Temp. riscald.",
+    "headerCoolTemperature": "Temp. raffred.",
+    "headerMode": "IMPOSTA MODO",
+    "drawerLabelCurrent": "Attuale",
+    "drawerLabelTemp": "Temp.",
+    "drawerLabelHumidity": "Umidità",
+    "drawerLabelTempAway": "Per visualizzare e regolare la temperatura, imposta il Termostato Nest su A casa",
+    "serviceUnavailable": "Il servizio Nest non è al momento disponibile."
+  },
+
+  "error": {
+    "energy-saving-event-on":{
+      "heading": "Unable to Adjust Remotely",
+      "message": "È attivo un evento per risparmio ore di punta. Per eseguire modifiche, utilizza l'app Nest o il Termostato Nest."
+    },
+    "lock-enabled":{
+      "heading":"Impossibile modificare da remoto",
+      "message":"Il Termostato Nest è bloccato, Per eseguire modifiche, sbloccalo dal Termostato Nest."
+    },
+    "emergency-heat-is-on":{
+      "heading":"Modalità Assente non disponibile",
+      "message":"Riscaldamento di emergenza è attualmente attivo. La modalità Assente non è attualmente disponibile."
+    },
+    "blocked":{
+      "heading":"Nest ha bisogno di una pausa",
+      "message":"Per proteggere la sicurezza del sistema Nest e HVAC, il servizio Nest impedisce di effettuare troppe modifiche in un breve periodo di tempo. Riprova tra qualche minuto o modifica direttamente il termostato Nest."
+    },
+    "default":{
+      "heading":"Spiacenti",
+      "message":"Si è verificato un imprevisto. Riprova o esegui modifiche dall'app Nest."
+    }
+  },
+
+  "nestAlerts":{
+    "notConnected": "Questo termostato non è più connesso al tuo account Nest.",
+    "noInternet": "L'accesso al servizio Nest non è al momento disponibile.  Riprova più tardi."
+  }
+}
+

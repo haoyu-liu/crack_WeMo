@@ -1,0 +1,10 @@
+{
+    "state":{
+        "0":"Aucun mouvement",
+        "1":"Mouvement",
+        "2":"Je détecte un mouvement!",
+        "3":"Mouvement détecté:",
+        "4":"Mouvement détecté, %@ hier"
+    },
+    "defaultFriendlyName": "Détecteur de mouvement WeMo"
+}

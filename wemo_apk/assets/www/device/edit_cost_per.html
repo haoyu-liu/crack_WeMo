@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>wemo tab</title>
+		<meta name="description" content="">
+
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv='expires' content='0'>
+		<meta http-equiv='pragma' content='no-cache'>
+
+		<link rel="stylesheet" href="../css/jquery.mobile-1.4.2.min.css">
+		<link rel="stylesheet" href="../css/AndroidHoloDarkLight.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link href="../css/wemoTTicker.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="../js/vendor/jquery-1.8.3.js"></script>
+		<script src="../js/vendor/jquery.mobile-1.4.2.js"></script><script src="../js/vendor/jquery.transit.js"></script><script src="../js/vendor/pointer.js"></script>
+		<script type="text/javascript" src="../cordova.js"></script>
+		<script type="text/javascript" src="../lang/en.js"></script>
+		<script type="text/javascript" src="../lang/fr.js"></script>
+		<script type="text/javascript" src="../lang/zh.js"></script>
+		<script type="text/javascript" src="../lang/de.js"></script>
+		<script type="text/javascript" src="../lang/es.js"></script>
+		<script type="text/javascript" src="../lang/it.js"></script>
+		<script type="text/javascript" src="../lang/ko.js"></script> 
+		<script type="text/javascript" src="../lang/ja.js"></script> 
+		<script type="text/javascript" src="../lang/lang.js"></script>
+		<script type="text/javascript" src="../js/constants.js"></script>
+		<script type="text/javascript" src="../js/default_energy_cost.js"></script>	
+		<script type="text/javascript" src="../js/wemo_util.js"></script>
+		<script type="text/javascript" src="../js/wemo.js"></script>
+		<script type="text/javascript" src="../js/device/edit_cost_per.js"></script>		
+		<script type="text/javascript" src="../js/plugins/wemo_plugin.js"></script> 
+		
+		<script type="text/javascript" src="../js/device/wemoThresholdPicker.js" ></script>
+		<script type="text/javascript" src="../js/device/wemothreshold.js" ></script>
+
+        <script src="../js/widgets/picker.widget.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="../css/widgets/picker.widget.css"/>
+		
+    <!-- Currency scroller Start -->
+    <link rel="stylesheet" href="../css/nanoscroller.css">
+    <script type="text/javascript" src="../js/vendor/overthrow.min.js"></script>
+    <script type="text/javascript" src="../js/vendor/jquery.nanoscroller.js"></script>
+		<script type="text/javascript" src="../js/vendor/jquery.nicescroll.js"></script>
+		<script type="text/javascript">
+		  $(document).ready(function() {
+			$("#boxscroll").niceScroll({cursorborder:"",cursorcolor:"transparent",boxzoom:true});
+		  });
+        $(function () {
+            $('.nano').nanoScroller({
+                preventPageScrolling: true
+            });
+            $(".nano").nanoScroller();
+        });
+		</script>
+    <!-- Currency scroller End -->
+	</head>
+	<body>
+		<div data-role="page" id="edit_cost_per">
+			<header data-role="header" data-theme="b" class="main_header" data-position="fixed" data-tap-toggle="false">
+				<span class="wemo_logo">	
+				</span>
+			</header>
+			<div class="more_tab"></div>
+			<div class="sub_header" data-theme="b">
+				<h3 localString="true" _key="InsightDataSubtitle"></h3>
+			</div>
+			<div data-role="content" class="content-with-margin">
+			
+			
+				<label><span class="label" localString="true" _key="CostPerKWH"></span></label><hr class="divider">
+				<div class="ui-grid-solo">
+					<div class="ui-block-a">							
+						<button id="set_cost_per" data-theme="d">
+							<span class="edit_device_button_text" localString="false" _key="CostPerKWH"></span>								
+							<span class="edit_device_button_cur_value cost_per_current_value" >
+								<span class="cur_value_loading" ></span>
+							</span>	
+						</button>	
+					</div>
+				</div>						
+			
+				&nbsp;			
+				
+				<div class="ui-grid-solo">
+					<div class="edit_device_icon">
+						<div class="ui-grid-solo cost_per_tip_text">
+							<span localString="true" _key="CostPerTip"></span>
+						</div>						
+					</div>
+				</div>	
+				
+				&nbsp;
+                <div><span class="label" localString="true" _key="CurrencyLabel" style="margin-left: 30px;text-transform: none;"></span></div>
+                &nbsp;
+				<div id="currency"><span class=""></span></div>			
+		
+			</div>	
+			<div  data-position="fixed" data-tap-toggle="false" class="edit_device_bottom_btns">
+				<div id="reset_to_default"><span localString="true" _key="ResetToFactoryDefaults"></span></div>										
+			</div>
+
+            <div id="costper_selector">
+                <h1><span localString="true" _key="EditCostPer_Title"></span></h1>
+            </div>
+						
+			<div id="reset_to_default_message" data-role="popup" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+				<div class="popup_head"><span localString="true" _key="ResetToDefault"></span></div>
+				<div class="popup_content"><span localString="true" _key="CostPerResetToDefault_AlertMessage"></span></div>
+				<div class="popup_footer">
+					<div class="popup_cnl_btn" id="reset_to_default_cancel_btn"><span localString="true" _key="Cancel" ></span></div>
+					<div class="popup_ok_btn" id="reset_to_default_ok_btn"><span localString="true" _key="ResetToDefault"></span></div>										
+				</div>						
+			</div>	
+		</div>
+
+    
+		<div class="overlayScrollPicker">
+			<div class="display_table">
+				<div class="display_cell">
+					<div class="scrollPickerContainer picker">
+						<div class="picker_header_ScrollPicker"><span>Currency</span></div>
+						<div id="boxscroll">
+							<ul id="picker" style="margin:0;">
+								<li><span>$</span><span><input type="radio" name="currency" id="1" value="$"></span></li>
+								<li><span>&euro;</span><span><input type="radio" name="currency" id="4" value="&euro;"></span></li>
+								<li><span>&pound;</span><span><input type="radio" name="currency" id="3" value="&pound;"></span></li>
+								<li><span>&yen;</span><span><input type="radio" name="currency" id="10" value="&yen;"></span></span></li>
+								<li><span>&#8361;</span><span><input type="radio" name="currency" id="13" value="&#8361;"></span></li>
+								<li><span>&#3647;</span><span><input type="radio" name="currency" id="15" value="&#3647;"></span></li>
+								<li><span>&#8369;</span><span><input type="radio" name="currency" id="7" value="&#8369;"></span></li>									
+							</ul>
+						</div>
+						<div class="picker_footer">
+							<div class="picker_cnl" id="cnl_cur_btn"><span localString="true" _key="Cancel"></span></div>
+							<div class="picker_set" id="set_cur_btn"><span localString="true" _key="Set"></span></div>
+						</div>							
+					</div>
+				</div>
+			</div>
+		</div>
+            
+
+    <div class="overlay">
+        <div class="picker_container">
+            <div class="picker">
+                <div class="picker_header"><span>Currency</span></div>
+                <div id="main">
+                    <div class="nano">
+                        <div class="overthrow content description">
+                            <ul id="picker">
+                                <li><span>$</span><span><input type="radio" name="currency" checked id="1" value="$"></span></li>
+                                <li><span>&euro;</span><span><input type="radio" name="currency" id="4" value="&euro;"></span></li>
+                                <li><span>&pound;</span><span><input type="radio" name="currency" id="3" value="&pound;"></span></li>
+                                <li><span>&yen;</span><span><input type="radio" name="currency" id="10" value="&yen;"></span></span></li>
+                                <li><span>&#8361;</span><span><input type="radio" name="currency" id="13" value="&#8361;"></span></li>
+                                <li><span>&#3647;</span><span><input type="radio" name="currency" id="15" value="&#3647;"></span></li>
+                                <li><span>&#8369;</span><span><input type="radio" name="currency" id="7" value="&#8369;"></span></li>
+                                <!--<li><span>None</span><span><input type="radio" name="currency" value="None"></span></li>	-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="picker_footer">
+                    <div class="picker_cnl" id="cnl_cur_btn"><span localString="true" _key="Cancel"></span></div>
+                    <div class="picker_set" id="set_cur_btn"><span localString="true" _key="Set"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+	</body>
+</html>

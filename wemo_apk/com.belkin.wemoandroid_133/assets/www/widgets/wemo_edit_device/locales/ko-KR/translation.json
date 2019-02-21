@@ -1,0 +1,62 @@
+{
+    "headers": {
+        "editDevice": "기기 편집",
+        "picture": "사진",
+        "ID": "WeMo ID: ",
+        "reset": "리셋 옵션",
+        "enterName": "이름",
+        "groupIcon": "그룹 아이콘",
+        "groupName": "그룹 이름",
+        "groupSubHeader": "이 그룹 참여",
+        "alert": "알림"
+    },
+    "resetButtons": {
+        "1": "사용 데이터 지우기",
+        "2": "제품 정보 지우기",
+        "3": "Wi-Fi 리셋",
+        "4": "모든 내용과 설정 지우기"
+    },
+    "resetDescriptions": {
+        "1": "전력, 시간 및 비용 데이터 지우기.",
+        "2": "이름, 아이콘 및 규칙 지우기.",
+        "3": "Clear the device’s Wi-Fi settings. (You will need to set it up again)",
+        "4": "이 버튼을 누르면 모든 설정을 출하시 초기 기본값으로 복원합니다."
+    },
+    "validation": {
+        "friendlyNameRequired": "친숙한 이름이 필요합니다.",
+        "friendlyNameMaxLength": "친숙한 이름은 30자 미만이어야 합니다.",
+        "friendlyNameValidation": "글자, 숫자, 대시 또는 밑줄만 사용하여 30자 또는 그 미만의 이름을 입력하십시오.",
+        "groupNameRequired": "그룹 이름이 필요합니다.",
+        "groupNameMaxLength": "그룹 이름은 30자 미만이어야 합니다."
+    },
+    "iconPopup": {
+        "title": "이미지 업로드",
+        "option1": "사진 촬영",
+        "option2": "갤러리에서 사진 선택",
+        "option3": "사진 리셋"
+    },
+    "resetPopupMessage": {
+        "resetUsageData": "이 디바이스의 모든 에너지 및 시간 데이터를 지우시겠습니까?",
+        "fnIconRules": "디바이스 이름, 아이콘 및 규칙을 지우시겠습니까?",
+        "wifi": "디바이스의 Wi-Fi 설정을 지우시겠습니까? (다시 설정해야 합니다.)",
+        "all": "모든 설정을 지우고 디바이스를 초기값으로 복원하시겠습니까?"
+    },
+    "messages": {
+        "errorMessageEdit": "이름과 아이콘을 편집할 수 없습니다. 다시 시도하십시오.",
+        "errorMessageReset": "작동하지 않습니다. 다시 시도하십시오.",
+        "iconChangeDisabledMessage": "We're sorry but custom icons are not currently supported. Check Play Store for updates."
+    },
+    "buttons": {
+        "okay": "Okay",
+        "ok": "확인",
+        "done": "완료",
+        "cancel": "취소",
+        "save": "저장",
+        "hide": "숨김",
+        "continue": "계속",
+        "reset": "리셋"
+    },
+    "labels": {
+        "confirm": "확인"
+    }
+}

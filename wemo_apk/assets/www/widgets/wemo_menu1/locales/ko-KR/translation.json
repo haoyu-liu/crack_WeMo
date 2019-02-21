@@ -1,0 +1,26 @@
+{
+    "pageTitle" : "자세히",
+    "menu": {
+        "setupInstructions": "다른 기기 설정",
+        "firmwareUpdate": "펌웨어 업데이트 사용 가능",
+        "remoteAccess": "원격 액세스",
+        "ifttt": "IFTTT에 연결",
+        "alexa": "Alexa에 연결하기",
+        "whatYouThink": "의견을 제시해 주십시오!",
+        "helpCenter": "도움말 센터",
+        "settingsAbout": "설정 및 정보",
+        "addLinkDevices" : "WeMo Link 기기 추가",
+        "WeMoCommunity" : "WeMo 커뮤니티",
+        "supportArticles" : "지원 기사",
+        "reportaProblem" : "문제 보고",
+        "rateWeMo" : "WeMo 평가",
+        "help_url" : "http://www.belkin.com/embed/en-us/wemo/android/support",
+        "Enabled" : "사용함",
+        "NotEnabled" : "사용 안 함"
+    },
+    "category" : {
+        "settings" : "설정",
+        "addWeMoDevice" : "WEMO 기기 추가",
+        "supportFeedback" : "지원 및 피드백"
+    }
+}

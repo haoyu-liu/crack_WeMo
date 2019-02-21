@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_above="@id/friendly_name_label" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/on_off_button_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/widget_control_off" />
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:indeterminateDrawable="@drawable/widget_progress_bar" style="@android:style/Widget.ProgressBar" />
+    </FrameLayout>
+    <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget" android:ellipsize="marquee" android:gravity="center" android:id="@id/friendly_name_label" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="@color/black" android:shadowDx="3.0" android:shadowDy="3.0" android:shadowRadius="2.0" android:layout_alignParentBottom="true" android:fontFamily="sans-serif-condensed" />
+</RelativeLayout>

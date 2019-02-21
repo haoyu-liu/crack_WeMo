@@ -1,0 +1,111 @@
+{
+    "labels": {
+        "filterTile": "Filtres",
+        "wickFilter": "Commander des filtres à mèche",
+        "changeFilter": "Procédure de changement",
+        "waterAdvise": "Remplissez d'eau!",
+        "timeToOrderNewWickFilter": "COMMANDEZ UN FILTRE À MÈCHE",
+        "saveScheduleError": "Vous devez choisir au moins un jour et un mode de ventilation pour sauvegarder l'horaire",
+        "wickFilterLife": "Durée de vie du filtre à mèche",
+        "replaceFilter": "Remplacez le filtre",
+        "schedule": "Horaire",
+        "dailySchedule": "Horaire quotidien",
+        "enable": "Activer",
+        "onFor": "Activé pour"
+    },
+    "fanMode": {
+        "5": "Max",
+        "4": "Mode Élevé",
+        "3": "Mode Moyen",
+        "2": "Mode Bas",
+        "1": "Min"
+    },
+    "ruleMode": {
+        "3": "Moyen"
+    },
+    "buttons": {
+        "cancel": "Annuler",
+        "save": "Sauvegarder",
+        "reset": "Réinitialiser",
+        "ok": "OK",
+        "hide": "Masquer"
+    },
+    "mode": {
+        "off": "Désactivé",
+        "on": "Activé"
+    },
+    "date": {
+        "tomorrow": "Demain",
+        "yesterday": "Yesterday",
+        "today": "Auj",
+        "days": {
+            "0": "Dimanches",
+            "1": "Lundis",
+            "2": "Mardis",
+            "3": "Mercredis",
+            "4": "Jeudis",
+            "5": "Vendredis",
+            "6": "Samedis"
+        },
+        "scheduleDays": {
+            "0": "Dim",
+            "1": "Lun",
+            "2": "Mar",
+            "3": "Mer",
+            "4": "Jeu",
+            "5": "Ven",
+            "6": "Sam"
+        }
+    },
+    "desireHumidity": {
+        "0": "45%",
+        "1": "50%",
+        "2": "55%",
+        "3": "60%",
+        "4": "Max%"
+    },
+    "staysafe": {
+        "room": "Humidité",
+        "humidistate": "Humidité ciblée",
+        "scheduleTime": {
+            "defaultHour": "5:",
+            "defaultMinute": "58",
+            "am": "am",
+            "pm" : "pm"
+        },
+        "off": "DÉSACTIVÉ"
+    },
+    "errors": {
+        "notDetected": "Non détecté"
+    },
+    "popup":{
+        "titleChange": "a besoin de filtres à mèche",
+        "titleChangeSoon": "aura bientôt besoin d'un nouveau filtre à mèche",
+        "filterChanged": "Filtres changés",
+        "remindMelater": "Rappelez-le-moi plus tard",
+        "orderNewFilter": "Commandez un nouveau filtre"
+    },
+    "messages": {
+        "orderNewFilter": "Commandez un nouveau filtre",
+        "replaceFilter": "Remplacez le filtre!",
+        "timeReplaceFilter": "Il est temps de remplacer les filtres...",
+        "timeOrderFilter": "Il est temps de commander des filtres..."
+    },
+    "rules": {
+        "HumidifierLow": "__friendlyName__ est presque à cours d'eau",
+        "HumidifierRefill": "__friendlyName__ a éteint le ventilateur en raison de faibles niveaux d'eau. Remplissez le réservoir d'eau dès que possible."
+    },
+    "brands": {
+        "Holmes": "HumidifierIcon",
+        "Bionaire": "bionaireLogo"
+    },
+    "purchasefilterLink": {
+        "Holmes": "http://www.belkin.com/embed/en-us/wemo-humidifier/purchasefilter",
+        "Bionaire": "http://www.bionairecanada.com/en_CA/humidification-and-dehumidification/humidifier-filters-and-wicks/"
+    },
+    "changefilterLink": {
+        "Holmes": "http://www.belkin.com/embed/en-us/wemo-humidifier/changefilter",
+        "Bionaire": "http://www.belkin.com/embed/en-ca/wemo/bionaire-humidifier/moreinfo"
+    },
+    "defaultFriendlyName": "Humidificateur Bionaireᴹᴰ"
+}

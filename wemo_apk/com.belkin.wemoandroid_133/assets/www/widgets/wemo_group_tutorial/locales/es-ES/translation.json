@@ -1,0 +1,19 @@
+{
+    "popup": {
+        "heading": "Más funcionalidades",
+        "description": "Agrupe varias bombillas para que funcionen conjuntamente o agregue dispositivos a su red a través de WeMo Link. A continuación una guía de uso paso a paso.",
+        "description2": "¿Se viene con nosotros?",
+        "cancelBtn": "Ahora no",
+        "doneBtn": "Mostrármelo"
+    },
+    "title": {
+        "1": "Agrupación de bombillas LED"
+    },
+    "desc": {
+        "1": "Seleccione \"Editar dispositivo\" en el menú emergente.",
+        "2": "Arrastre una bombilla sobre otra para agruparlas.",
+        "3": "Los números encima de los iconos de las bombillas muestran el número de bombillas contenido en un grupo.",
+        "4": "Select Settings in the navigation bar.",
+        "5": "To add a WeMo Link-enabled device, select 'Add WeMo Link Devices' in the More tab."
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "reachable": {
+        "airplaneMode" : "Turn off airplane mode so you can use WeMo.",
+        "remoteDiabaledMode" : "Turn on Remote Access to use WeMo when you aren't home. You can only turn on Remote Access from within your home network.",
+        "radiosOffMode" : "Connect to Wi-Fi or your phone's data service so you can use WeMo."
+    }
+}

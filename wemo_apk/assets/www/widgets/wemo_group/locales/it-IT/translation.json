@@ -1,0 +1,25 @@
+{
+    "removeWarningDialog": {
+        "title": "Disgregare il gruppo?",
+        "message": "Ci sono solo 2 dispositivi in questo gruppo. La rimozione di questo dispositivo comporterà l'eliminazione del gruppo dall'elenco dispositivi e delle regole associate.",
+        "buttonLabels": "Rimuovi, Annulla"
+    },
+    "ungroupedDialog": {
+        "title": "Dispositivo rimosso dal gruppo",
+        "message": "è stato rimosso dal gruppo"
+    },
+    "header": {
+        "groupedBulbs": "Lampadine Raggruppate"
+    },
+    "grouping": {
+        "defaultGroupName": "Gruppo di illuminazioni",
+        "inThisGroup": "Lampadine"
+    },
+    "buttons": {
+        "ok": "OK",
+        "cancel": "Annulla"
+    },
+    "label": {
+        "unavailable" : "non disponibile"
+    }
+}

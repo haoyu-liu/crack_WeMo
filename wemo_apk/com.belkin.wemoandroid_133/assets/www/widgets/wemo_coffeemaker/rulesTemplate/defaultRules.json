@@ -1,0 +1,34 @@
+[
+    {
+        "enabled": "true",
+        "min_version": "20",
+        "max_version": "29",
+        "id":"coffee-brewed",
+        "name":"coffee-brewed",
+        "template":"do_if",
+        "parameters": {
+            "conditions": {
+                "condition": [
+                    [
+                        {
+                            "method": "attribute_changes_to",
+                            "key": "Mode",
+                            "value": "Brewed"
+                        }
+                    ]
+                ]
+            },
+            "action-start": {
+                "notifications": [
+                    {
+                        "platform": "BOTH",
+                        "message": "CoffeeReady",
+                        "replacements": []
+                    }
+                ]
+            },
+            "when-days": ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+        }
+    }
+]
+

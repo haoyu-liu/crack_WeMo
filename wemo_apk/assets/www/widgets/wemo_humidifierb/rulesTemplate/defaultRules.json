@@ -1,0 +1,65 @@
+[
+    {
+        "enabled": "true",
+        "min_version": "20",
+        "max_version": "29",
+        "id":"humidifier-low",
+        "name":"humidifier-low",
+        "template":"do_if",
+        "parameters": {
+            "conditions": {
+                "condition": [
+                    [
+                        {
+                            "method": "attribute_changes_to",
+                            "key": "WaterAdvise",
+                            "value": "1"
+                        }
+                    ]
+                ]
+            },
+            "action-start": {
+                "notifications": [
+                    {
+                        "platform": "BOTH",
+                        "message": "HumidifierLow",
+                        "replacements": []
+                    }
+                ]
+            },
+            "when-days": ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+        }
+    },
+    {
+        "enabled": "true",
+        "min_version": "20",
+        "max_version": "29",
+        "id":"humidifier-refill",
+        "name":"humidifier-refill",
+        "template":"do_if",
+        "parameters": {
+            "conditions": {
+                "condition": [
+                    [
+                        {
+                            "method": "attribute_changes_to",
+                            "key": "NoWater",
+                            "value": "1"
+                        }
+                    ]
+                ]
+            },
+            "action-start": {
+                "notifications": [
+                    {
+                        "platform": "BOTH",
+                        "message": "HumidifierRefill",
+                        "replacements": []
+                    }
+                ]
+            },
+            "when-days": ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+        }
+    }
+]
+

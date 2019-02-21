@@ -1,0 +1,35 @@
+[
+    {
+        "wednesday": "1",
+        "state": "1",
+        "thursday": "0",
+        "saturday": "0",
+        "sunday": "0",
+        "notificationMessage": "Sensed Motion",
+        "switchArray": [
+            {
+                "FRIENDLYNAME": "Switch Not Present",
+                "ENDACTION": 5,
+                "UDN": "uuid:wemo_coffeemaker-1_0-221322K1400046",
+                "STARTACTION": 3
+            }
+        ],
+        "sensorArray": [],
+        "name": "Coffee Rule",
+        "ruleIDForAPNS": "",
+        "type": "Coffee Schedule",
+        "weekDays": "0",
+        "friday": "0",
+        "startTime": "2:59pm",
+        "notificationDuration": "5 minutes",
+        "weekEnds": "0",
+        "sensitivity": "",
+        "monday": "0",
+        "ID": "1",
+        "everyDay": "0",
+        "allDay": "0",
+        "endTime": "2:58pm",
+        "tuesday": "0",
+        "ruleMode": "Edit"
+    }
+]

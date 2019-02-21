@@ -1,0 +1,13 @@
+{
+    "errors": {
+        "notDetected": "Non détecté"
+    },
+    "buttons": {
+        "cancel": "Annuler",
+        "hide": "Masquer"
+    },
+    "hide": {
+        "title": "Masquer cela?",
+        "message": "Le périphérique n'apparaîtra que lorsqu'il sera à nouveau actif."
+    }
+}

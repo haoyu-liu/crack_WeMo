@@ -1,0 +1,9 @@
+{
+    "header": "Si vous souhaitez jumeler votre WeMo Dimmer avec l'application Alexa...",
+    "descriptions": {
+        "1": "Vous devez activer votre WeMo Skill dans l'application Alexa. "
+    },
+    "buttons" : {
+        "connectToAlexa" : "En savoir plus"
+    }
+}

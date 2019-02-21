@@ -1,0 +1,173 @@
+html, body {
+    margin: 0;
+    background: #f1f1f1;
+    font-family: RobotoThin, Helvetica, Arial, sans-serif /*{global-font-family}*/;
+}
+
+* {
+    text-shadow:0 0 0 transparent;
+}
+
+.ui-loader-default,
+.gr__tooltip {
+    display: none;
+}
+
+.settings_page header.main_header {
+    background: #73d44c !important;
+    font-weight: 400;
+    line-height: 55px;
+    height: 56px;
+    font-size: 17px;
+    padding: 0;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    border: none !important;
+    box-sizing: border-box;
+    top: 0;
+}
+
+.settings_page .main_header .backbutton {
+    width: 22px;
+    height: 22px;
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-image: url(../img/ic_back_button.png);
+    float: left;
+    margin-top: 16px;
+    margin-left: 15px;
+}
+
+.settings_page .greenBtn {
+    color: #fff;
+    background-color: #73d44c;
+    border: solid 1px #73d44c;
+    padding: 14px 0;
+    margin: 15px 0;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: 15px;
+    border-radius: 3px;
+    text-transform: initial;
+}
+
+.settings_page  .pageContainer {
+    background: #f2f2f2;
+    color: #444;
+    margin-top: 56px;
+    padding-top: 20px
+}
+
+.pageContainer .banner {
+    background: url(../img/connectToAlexa@3x.png);
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-size: 86% auto;
+    height: 80px;
+    padding: 5px 20px;
+}
+
+.pageContainer .description {
+    padding: 5px 20px;
+}
+
+.pageContainer .description .descriptionTitle {
+    font-size: 22px;
+    margin: 20px 0 15px 0;
+    font-weight: 400;
+}
+
+.pageContainer .description .descriptionContent {
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.pageContainer .description .buttonFooter {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.navigation .nav_item {
+    padding: 25px 40px 25px 0;
+    border-bottom: 1px solid #9b9b9b;
+    position: relative;
+    font-weight: 500;
+}
+
+.nav_item.showItem {
+    border-bottom: none;
+}
+
+.navigation .nav_item:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 24px;
+    height: 24px;
+    width: 42px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 18px auto;
+    background-image: url(../img/faqDown@3x.png);
+}
+
+.nav_item.showItem:after {
+    top: 22px;
+    background-image: url(../img/faqUp@3x.png);
+}
+
+.navigation .nav_sub_item {
+    font-size: 15px;
+    padding-right: 24px;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.navigation .nav_sub_item .bolder {
+    font-weight: 500;
+}
+
+.navigation .nav_sub_item .link {
+    text-decoration: underline;
+}
+
+.navigation .nav_sub_item.showSubItem {
+    max-height: 500;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #9b9b9b;
+}
+
+.FAQ_title {
+    padding: 0 20px 20px 0;
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 1px solid #9b9b9b;
+}
+
+.alexaFAQ {
+    background: #fff;
+    padding: 20px;
+    color: #4a4a4a;
+}
+
+#notification {
+    position: fixed;
+    bottom: 5px;
+    width: 94%;
+    left: 3%;
+    z-index: 105;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}

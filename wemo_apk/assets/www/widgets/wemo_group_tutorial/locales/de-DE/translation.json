@@ -1,0 +1,19 @@
+{
+    "popup": {
+        "heading": "Weitere Funktionen",
+        "description": "Gruppieren Sie Lampen mit ähnlicher Funktionsweise oder binden Sie Geräte über den WeMo Link in Ihr Netzwerk ein. Gehen Sie nach folgenden Schritten vor.",
+        "description2": "Wollen Sie fortfahren?",
+        "cancelBtn": "Jetzt nicht",
+        "doneBtn": "Bitte anzeigen"
+    },
+    "title": {
+        "1": "LED-Lampen gruppieren"
+    },
+    "desc": {
+        "1": "Wählen Sie im Überlaufmenü \"Gerät bearbeiten\" aus.",
+        "2": "Ziehen Sie zum Gruppieren eine Lampe über eine andere.",
+        "3": "Die Zahlen über den Lampen-Symbolen zeigen die Anzahl der Lampen einer Gruppe an.",
+        "4": "Select Settings in the navigation bar.",
+        "5": "To add a WeMo Link-enabled device, select 'Add WeMo Link Devices' in the More tab."
+    }
+}

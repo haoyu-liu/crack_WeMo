@@ -1,0 +1,52 @@
+{
+  "HVAC": {
+    "heating": "制热",
+    "cooling": "制冷",
+    "fanrunning": "风扇运行",
+    "heat": "制热",
+    "cool": "制冷",
+    "heatcool": "制热 / 制冷",
+    "off": "关闭",
+    "on" : "开",
+    "rhrHeader": "Rush Hour Reward 已开启",
+    "rhrMessage": "调整您的温度可能会影响您的奖励。",
+    "headerTemperature": "设置温度",
+    "headerHeatTemperature": "制热温度",
+    "headerCoolTemperature": "制冷温度",
+    "headerMode": "设置模式",
+    "drawerLabelCurrent": "当前",
+    "drawerLabelTemp": "温度",
+    "drawerLabelHumidity": "湿度",
+    "drawerLabelTempAway": "如需查看并调整温度，请将您的Nest温度调节器设置为\"在家\"模式",
+    "serviceUnavailable": "Nest服务当前不可用。"
+  },
+
+  "error": {
+    "energy-saving-event-on":{
+      "heading": "无法进行远程调整",
+      "message": "Rush Hour Reward事件已生效。 如需进行调整，请使用Nest应用或Nest温度调节器进行调整。"
+    },
+    "lock-enabled":{
+      "heading":"无法进行远程调整",
+      "message":"您的Nest温度调节器已锁定。 如需进行调整，请从Nest温度调节器上解锁。"
+    },
+    "emergency-heat-is-on":{
+      "heading":"离开模式不可用",
+      "message":"应急制热已开启。 离开模式当前不可用。"
+    },
+    "blocked":{
+      "heading":"Nest需要稍作歇息",
+      "message":"出于您的Nest和暖通系统安全考虑，Nest服务会防止在较短时间范围内进行过多设置更改。 请在几分钟后重试，或者直接调整Nest温度调节器。"
+    },
+    "default":{
+      "heading":"很抱歉",
+      "message":"发生了意外错误。 请重试，或者尝试使用Nest应用进行调整。"
+    }
+  },
+
+  "nestAlerts":{
+    "notConnected": "此温度调节器已不再连接到您的Nest帐户。",
+    "noInternet": "Nest服务的访问当前不可用。 请稍后再试。"
+  }
+}
+

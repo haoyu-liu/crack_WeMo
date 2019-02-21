@@ -1,0 +1,52 @@
+{
+  "HVAC": {
+    "heating": "Chauffage",
+    "cooling": "Climatisation",
+    "fanrunning": "Ventilation",
+    "heat": "Chaud",
+    "cool": "Froid",
+    "heatcool": "Chaud / Froid",
+    "off": "Désactivé",
+    "on" : "Activé",
+    "rhrHeader": "Fonction Rush Hour Rewards activée",
+    "rhrMessage": "Modifier la température peut avoir une incidence sur vos remises et primes.",
+    "headerTemperature": "RÉGLER LA TEMPÉRATURE",
+    "headerHeatTemperature": "Augmenter la température",
+    "headerCoolTemperature": "Baisser la température",
+    "headerMode": "CONFIGURER LE MODE",
+    "drawerLabelCurrent": "Temp. ambiante",
+    "drawerLabelTemp": "Temp.",
+    "drawerLabelHumidity": "Humidité",
+    "drawerLabelTempAway": "Pour régler et afficher la température, veuillez activer la fonction Chez moi sur votre thermostat Nest",
+    "serviceUnavailable": "Le service Nest est actuellement indisponible."
+  },
+
+  "error": {
+    "energy-saving-event-on":{
+      "heading": "Impossible d’ajuster à distance les paramètres",
+      "message": "Un évènement Rush Hour Reward est en cours. Si vous souhaitez faire des changements, veuillez utiliser l’appli Nest ou votre thermostat Nest."
+    },
+    "lock-enabled":{
+      "heading":"Impossible d’ajuster à distance les paramètres",
+      "message":"Votre thermostat Nest est verrouillé. Si vous souhaitez faire des changements, veuillez déverrouiller votre thermostat."
+    },
+    "emergency-heat-is-on":{
+      "heading":"Fonction Absent indisponible",
+      "message":"Le chauffage d’urgence est activé. La fonction Absent est indisponible pour le moment."
+    },
+    "blocked":{
+      "heading":"Nest va passer en mode veille",
+      "message":"Pour des raisons de sécurité, le service Nest n’autorise qu’un nombre limité de changements sur des courtes intervalles de temps. Veuillez réessayer plus tard ou ajustez les réglages directement sur votre thermostat Nest."
+    },
+    "default":{
+      "heading":"Désolé",
+      "message":"Une erreur est survenue. Veuillez recommencer ou essayez d’ajuster les réglages directement sur l’appli Nest."
+    }
+  },
+
+  "nestAlerts":{
+    "notConnected": "Ce thermostat n’est plus connecté à votre compte Nest.",
+    "noInternet": "L’accès au service Nest est impossible pour le moment.  Veuillez réessayer plus tard."
+  }
+}
+

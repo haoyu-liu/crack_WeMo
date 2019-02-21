@@ -1,0 +1,22 @@
+{
+    "removeWarningDialog": {
+        "title": "このグループをばらばらにしますか?",
+        "message": "このグループには2つのデバイスのみがあります。このデバイスを削除すると、デバイス一覧のグループとルールが削除されます。",
+        "buttonLabels": "削除,キャンセル"
+    },
+    "ungroupedDialog": {
+        "title": "グループ化解除されたデバイス",
+        "message": "、グループから削除されています。"
+    },
+    "header": {
+        "groupedBulbs": "グループ化された電球"
+    },
+    "buttons": {
+        "ok": "確認",
+        "cancel": "キャンセル"
+    },
+    "grouping": {
+        "defaultGroupName": "照明グループ",
+        "inThisGroup": "照明"
+    }
+}

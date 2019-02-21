@@ -1,0 +1,25 @@
+{
+    "state": {
+        "0": "无动作",
+        "1": "动作规则",
+        "2": "噢，我感志到动作",
+        "3": "感应到迿动:",
+        "4": "感应到迿动: %@ 昨天"
+    },
+    "defaultFriendlyName": "WeMo NetCam",
+    "editContext": {
+        "title": {
+            "advanceOptions": "高级选项"
+        }
+    },
+    "headers": {
+        "downloadNetcam": "下载NetCam"
+    },
+    "descriptions": {
+        "getApp": "如需使用此摄像机，请下载Belkin NetCam应用",
+        "availablePlayStore": "可从Play Store下载。"
+    },
+    "buttons": {
+        "getItNow": "马上下载"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "defaultFriendlyName": "WeMo Light Switch",
+    "labels": {
+        "autoOff": "自动关闭时间："
+    }
+}

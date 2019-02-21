@@ -1,0 +1,81 @@
+{
+    "labels":{
+        "at": "à",
+        "coffeeReady": "Le café est prêt!",
+        "cleanTitle": "Rafraîchissement requis!",
+        "cleanMessage": "a besoin d'être nettoyée!",
+        "filterMessage": "Il est temps de remplacer le filtre à eau de votre cafetière Mr. Coffeeᴹᴰ",
+        "noRuleMessage": "Désactivez la programmation ou choisissez un jour à sauvegarder",
+        "howto": "Marche à suivre",
+        "iNeedFilters": "J'ai besoin de filtres",
+        "time": "5:30 am",
+        "cleanSoon": "(Nettoyez bientôt)",
+        "brewSchedule": "HORAIRE D'INFUSION",
+        "waterFilterReminders": "RAPPELS SUR LE FILTRE À EAU",
+        "btnReminder": "Rappel sur le filtre à eau",
+        "reset": "RÉGLER LE RAPPEL",
+        "save": "Sauvegarder l'horaire",
+        "resetting": "Réinitialisation en cours...",
+        "saving": "Sauvegarde en cours...",
+        "saveScheduleError": "Vous devez choisir au moins un jour pour sauvegarder l'horaire",
+		"resetTitle": "Rappel sur le filtre à eau",
+		"remainderTitle": "Afficher un rappel à toutes les 30 infusions",
+		"remainderDiscription": "Un café savoureux commence par une eau de qualité. Le filtre à eau au charbon Mr. Coffeeᴹᴰ élimine jusqu'à 97% du chlore pour rehausser la saveur de votre café.",
+		"btnResetTitle": "Réinitialisez le compteur d'infusion quand vous remplacez le filtre.",
+		"btnOrderTitle": "Vous avez besoin d'un nouveau filtre?",
+		"btnOrder": "Commander",
+        "btnReset": "Recommencer",
+        "remaining": "Restant"
+    },
+    "date": {
+        "tomorrow": "Demain",
+        "yesterday": "Yesterday",
+        "today": "Auj",
+        "days": {
+            "0": "Dimanches",
+            "1": "Lundis",
+            "2": "Mardis",
+            "3": "Mercredis",
+            "4": "Jeudis",
+            "5": "Vendredis",
+            "6": "Samedis"
+        },
+        "scheduleDays": {
+            "0": "Dim",
+            "1": "Lun",
+            "2": "Mar",
+            "3": "Mer",
+            "4": "Jeu",
+            "5": "Ven",
+            "6": "Sam"
+        }
+    },
+    "scheduleDays":{
+        "7": "Prêt"
+    },
+    "mode":{
+        "0": "Remplissez le réservoir d'eau",
+        "1": "Mettez la carafe vide en place",
+        "3": "Prêt",
+        "4": "Infusion en cours",
+        "5": "Infusé",
+        "6": "Nettoyage en cours",
+        "7": "Nettoyage terminé",
+        "8": "Mettez la carafe vide en place"
+    },
+    "buttons": {
+        "ok": "OK",
+        "done": "Terminé",
+        "cancel": "Annuler",
+        "hide": "Masquer"
+    },
+    "errors": {
+        "notDetected": "Non détecté"
+    },
+    "reminderRules":{
+        "messageCarafe": "__friendlyName__ est programmée pour faire du café demain, mais vous devez vider la carafe et la mettre en place.",
+        "messageRefill": "__friendlyName__ est programmée pour faire du café demain, mais vous devez remplir le réservoir d'eau.",
+        "messageBoth": "__friendlyName__ est programmée pour faire du café demain, mais vous devez remplir le réservoir d'eau et mettre la carafe en place."
+    },
+    "defaultFriendlyName": "Cafetière Mr. Coffeeᴹᴰ"
+}

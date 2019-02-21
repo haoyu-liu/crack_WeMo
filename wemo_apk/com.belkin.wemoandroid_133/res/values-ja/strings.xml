@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="crop__saving">保存中…</string>
+    <string name="crop__wait">お待ちください…</string>
+    <string name="crop__pick_error">画像が見つかりません</string>
+    <string name="crop__done">決定</string>
+    <string name="crop__cancel">キャンセル</string>
+    <string name="rate_me_title">WeMoをご利用いただきありがとうございます。</string>
+    <string name="rate_me_text">WeMoのご利用をお楽しみの場合、ぜひ評価をお願いします。 みなさまのサポートに感謝いたします!</string>
+    <string name="btn_rate_me_now_label">今すぐ評価する</string>
+    <string name="btn_rate_no_thanks_label">評価しない</string>
+    <string name="btn_report_problem_label">問題を報告する</string>
+    <string name="btn_rate_later_label">後で通知する</string>
+</resources>

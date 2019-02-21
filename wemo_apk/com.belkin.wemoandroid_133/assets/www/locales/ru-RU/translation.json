@@ -1,0 +1,102 @@
+{
+    "app": {
+        "name": "test"
+    },
+    "navigation": {
+        "back": "Назад"
+    },
+    "errors": {
+        "title": "WeMo can’t complete your request",
+        "message": "If this continues, please restart the app.",
+        "unavailable": "Unavailable",
+        "notDetected": "Не обнаружено",
+        "rulesTitle": "Schedule cannot be saved",
+        "rulesMessage": "Having trouble saving this schedule now. Please check the status of all your WeMo devices and try again."
+    },
+    "validation": {
+        "title": "Проверьте ввод"
+    },
+    "buttons": {
+        "okay": "Okay",
+        "ok": "OK",
+        "done": "Готово",
+        "cancel": "Отмена",
+        "save": "Сохранить",
+        "hide": "Скрыть",
+        "continue": "Продолжить",
+        "reset": "Сброс"
+    },
+    "hide": {
+        "title": "Спрятать?",
+        "message": "Устройство не видно, пока не станет снова активным."
+    },
+    "firmware": {
+        "update": "Обновление встроенного ПО..."
+    },
+    "date": {
+        "tomorrow": "Завтра",
+        "yesterday": "Вчера",
+        "today": "Сегод",
+        "months": {
+            "0": "Январь",
+            "1": "Февраль",
+            "2": "Март",
+            "3": "Апрель",
+            "4": "Май",
+            "5": "Июнь",
+            "6": "Июль",
+            "7": "Август",
+            "8": "Сентябрь",
+            "9": "Октябрь",
+            "10": "Ноябрь",
+            "11": "Декабрь"
+        },
+        "days": {
+            "0": "Воскресения",
+            "1": "Понедельники",
+            "2": "Вторники",
+            "3": "Среды",
+            "4": "Четверги",
+            "5": "Пятницы",
+            "6": "Субботы"
+        },
+        "scheduleDays": {
+            "0": "Вс",
+            "1": "ПН",
+            "2": "ВТ",
+            "3": "СР",
+            "4": "ЧТ",
+            "5": "ПТ",
+            "6": "СБ"
+        }
+    },
+    "timeUnits": {
+        "0": "s",
+        "1": "m",
+        "2": "h"
+    },
+    "labels": {
+        "autoOff": "Auto-off in",
+        "onFor": "On for",
+        "enable": "Enable",
+        "schedule": "Schedule",
+        "dailySchedule": "Daily Schedule",
+        "confirm": "Подтвердить",
+        "batteryReplace": "Unavailable - Replace battery",
+        "batteryLevel": "Low Battery",
+        "signalStrength": "Low Signal",
+        "ago": "ago",
+        "remaining": "Остальной",
+        "temperature": "Температура"
+    },
+    "mode": {
+        "off": "Off",
+        "on": "On"
+    },
+    "messages": {
+        "orderNewFilter": "Order new filters",
+        "replaceFilter": "Replace filter",
+        "timeReplaceFilter": "Time to replace filters...",
+        "timeOrderFilter": "Time to order filters..."
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>ColorPicker Demo</title>
+    <script src="../../webcomponentsjs/webcomponents.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--<link rel="import" href="color-swatch.html">-->
+    <link rel="import" href="color-picker.html">
+
+    <style>
+        body {
+            font-family: RobotoDraft;
+            -webkit-font-smoothing: antialiased;
+            background: #fff;
+        }
+
+    </style>
+</head>
+<body>
+<!--link to load this demo: http://localhost:9000/components/polymer/components/wemo/color-picker/demo.html-->
+<color-picker color="#f43c2e" id="colorPicker"></color-picker>
+
+<script>
+    var cp = document.getElementById('colorPicker');
+
+    cp.addEventListener('colorselected', function(event) {
+        //output seelected color
+        console.log(event.detail.selectedColor);
+    });
+
+</script>
+
+</body>
+</html>

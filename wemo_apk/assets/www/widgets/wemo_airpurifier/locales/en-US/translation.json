@@ -1,0 +1,115 @@
+{
+    "labels": {
+        "on": "Auto",
+        "saveScheduleError": "You must select at least a day and a Fan mode to save the schedule.",
+        "ionizer": "Ionizer",
+        "fan": "Fan: ",
+        "air": "Air: ",
+        "moreInfo": "More Information",
+        "dailySchedule": "Daily Schedule",
+        "enable": "Enable",
+        "schedule": "Schedule",
+        "onFor": "On for"
+    },
+    "buttons": {
+        "cancel": "Cancel",
+        "save": "Save",
+        "reset": "Reset",
+        "ok": "OK",
+        "hide": "Hide"
+    },
+    "errors": {
+        "notDetected": "Not Detected"
+    },
+    "mode": {
+        "1": "Low",
+        "2": "Med",
+        "3": "High",
+        "4": "Auto",
+        "off": "Off",
+        "on": "On"
+    },
+    "filterPresent": {
+        "0": "Filters Not Detected"
+    },
+    "filter": {
+        "text": "Which new aer1® filter did you use in your",
+        "filter0": "I didn't change the filters.",
+        "filter1": "Total Air",
+        "filter2": "Odor Eliminator",
+        "filter3": "Smoke Grabber",
+        "filter4": "Allergen Remover",
+        "filter5": "Performance Plus",
+        "filter6": "HEPA Type",
+        "filter7": "I don't know"
+    },
+    "date": {
+        "tomorrow": "Tomorrow",
+        "yesterday": "Yesterday",
+        "today": "Today",
+        "days": {
+            "0": "Sunday",
+            "1": "Monday",
+            "2": "Tuesday",
+            "3": "Wednesday",
+            "4": "Thursday",
+            "5": "Friday",
+            "6": "Saturday"
+        },
+        "scheduleDays": {
+            "0": "Sun",
+            "1": "Mon",
+            "2": "Tue",
+            "3": "Wed",
+            "4": "Thu",
+            "5": "Fri",
+            "6": "Sat"
+        }
+    },
+    "AirQuality": {
+        "0": "Poor",
+        "1": "Moderate",
+        "2": "Good"
+    },
+    "staysafe": {
+        "textFilter": "Filter Life"
+    },
+    "settings": {
+        "title": "Filter",
+        "FilterOut": "NO FILTERS DETECTED",
+        "FilterOutText": "Check to make sure that your filters are properly installed into the Air Purifier.",
+        "timeToOrderNewWickFilter": "TIME TO ORDER NEW FILTERS",
+        "timeToReplaceNewWickFilter": "TIME TO REPLACE FILTERS"
+    },
+    "messages": {
+        "orderNewFilter": "Order new filters",
+        "replaceFilter": "Replace filter",
+        "timeReplaceFilter": "Time to replace filters...",
+        "timeOrderFilter": "Time to order filters..."
+    },
+    "alertMessages": {
+        "mainTitle": "is in need of Maintenance",
+        "mainMessage": "Clean the Optical Sensor and the Prefilter.",
+        "expiredTitle": "filter life has expired",
+        "expiredMessage": "It's time to replace filters.",
+        "soonTitle": "needs new filters soon",
+        "changeTitle": "Filter Change Detected",
+        "missingTitle": "seems to be  missing its filters",
+        "missingMessage": "Check to make sure that your filters are properly installed into the",
+        "showMessage": "Show Me How",
+        "newFilter": "Order new filters"
+    },
+    "brands": {
+        "Holmes": "holmesLogo",
+        "Bionaire": "bionaireLogo"
+    },
+    "purchasefilterLink": {
+        "Holmes": "http://www.belkin.com/embed/en-us/wemo-air/filterpurchase",
+        "Bionaire": "http://www.bionairecanada.com/en_CA/air-purification/air-purifiers-filters/"
+    },
+    "changefilterLink": {
+        "Holmes": "http://www.belkin.com/embed/en-us/wemo-air/changefilter",
+        "Bionaire": "http://www.belkin.com/embed/en-ca/wemo/bionaire-airpurifier/moreinfo"
+    },
+    "defaultFriendlyName": "Holmes® Air Purifier"
+}

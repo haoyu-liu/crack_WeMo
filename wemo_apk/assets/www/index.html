@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<!--
+    index.html 
+
+    Created by Belkin International, Software Engineering on 10/04/2013. 
+    Copyright (c) 2012-2013 Belkin International, Inc. and/or its affiliates. All rights reserved. 
+    
+    Belkin International, Inc. retains all right, title and interest (including all 
+    intellectual property rights) in and to this computer program, which is 
+    protected by applicable intellectual property laws.  Unless you have obtained 
+    a separate written license from Belkin International, Inc., you are not authorized 
+    to utilize all or a part of this computer program for any purpose (including 
+    reproduction, distribution, modification, and compilation into object code), 
+    and you must immediately destroy or return to Belkin International, Inc. all copies 
+    of this computer program.  If you are licensed by Belkin International, Inc., your 
+    rights to utilize this computer program are limited by the terms of that license.  
+
+    To obtain a license, please contact Belkin International, Inc. 
+  
+    This computer program contains trade secrets owned by Belkin International, Inc. 
+    and, unless unauthorized by Belkin International, Inc. in writing, you agree to 
+    maintain the confidentiality of this computer program and related information 
+    and to not disclose this computer program and related information to any 
+    other person or entity. 
+  
+    THIS COMPUTER PROGRAM IS PROVIDED AS IS WITHOUT ANY WARRANTIES, AND BELKIN INTERNATIONAL, INC. 
+    EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF 
+    MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. 
+--->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <script src="js/vendor/jquery-1.8.3.js"></script>
+    <script src="js/vendor/jquery.mobile-1.4.2.js"></script>
+    <script src="cordova.js"></script>
+    <script type="text/javascript" src="lang/en.js"></script>
+    <script type="text/javascript" src="lang/fr.js"></script>
+    <script type="text/javascript" src="lang/zh.js"></script>
+    <script type="text/javascript" src="lang/de.js"></script>
+    <script type="text/javascript" src="lang/it.js"></script>
+    <script type="text/javascript" src="lang/es.js"></script>
+    <script type="text/javascript" src="lang/ru.js"></script>
+    <script type="text/javascript" src="lang/ko.js"></script>
+    <script type="text/javascript" src="lang/ja.js"></script>
+    <script type="text/javascript" src="lang/lang.js"></script>
+    <script type="text/javascript" src="js/plugins/setup_plugin.js"></script>
+    <script type="text/javascript" src="js/plugins/device_tab_plugin.js"></script>
+    <script type="text/javascript" src="js/plugins/wemo_plugin.js"></script>
+    <script type="text/javascript" src="js/constants.js"></script>
+    <script type="text/javascript" src="js/wemo_util.js"></script>
+    <script type="text/javascript" src="js/wemo.js"></script>
+    <script type="text/javascript" src="js/smartFramework/demoDevices.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/classes/cloudServices.js"></script>
+
+</head>
+
+<body style="background: #73d44c;">
+<div data-role="page" class="splash_screen_img" data-theme="a">
+    <div id="wemo_beta_icon"><img src="img/Logo_WeMo@3x.png"/></div>
+    <div class="loading_spinner_splash">
+    </div>
+    <div class="splashPageContent"><span id="connected_to_label" class="setup_wifi_listContainer"></span><span
+            id="connected_to_value" class="text_strong"></span><span id="status_holder_img"></span><span
+            id="status_holder_header" class="text_strong"></span><br><span id="status_holder"></span><span class="app_version" id="app_version"></span></div>
+
+    <!-- Connection Failure popup Starts -->
+    <div id="network_failure_popup" data-role="popup" class="pop_up" data-overlay-theme="a" data-position-to="window"
+         data-dismissible="false" data-go-forward="false">
+        <header data-role="content" data-theme="a">
+            <h3><span localString="true" _key="networkError"></span></h3>
+        </header>
+        <article data-role="content" data-theme="b">
+            <p><span localString="true" _key="networkDisconnectUnExcepectedMessage"></span></p>
+        </article>
+    </div>
+    <!-- Connection Failure popup Ends -->
+
+    <div id="setup_password_fail_popup" data-role="popup" class="pop_up" data-overlay-theme="a"
+         data-dismissible="false">
+
+        <div class="popup_content"><p><span localString="true" _key="Setup_Unsuccessful"
+                                            class="text_strong"></span><span id="router_name"
+                                                                             class="text_strong"></span><span
+                localString="true" _key="Setup_Unsuccessful_BadPassword"></span></p></span></div>
+        <div class="popup_footer">
+            <div id="setup_password_fail_ok_button" class="popup_cnl_100_btn"><span localString="true" _key="OK"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- password setup error -->
+
+    <div id="remote_status_popup" data-role="popup" class="pop_up" data-overlay-theme="a" data-position-to="window"
+         data-dismissible="false" data-go-forward="false">
+        <div class="popup_head"><span id="remote_status_header"></span></div>
+        <div class="popup_content"><p id="remote_status_body"></p></div>
+        <div class="popup_footer" id="remote_setup_failure_footer">
+            <div id="remote_status_ok_btn" class="popup_cnl_btn"><span localString="true" _key="Later"></span></div>
+            <div id="remote_status_try_again_btn" class="popup_ok_btn"><span localString="true" _key="TryAgain"></span>
+            </div>
+        </div>
+        <div class="popup_footer" id="remote_setup_success_footer">
+            <div id="remote_status_ok_btn_failure" class="popup_single_ok_btn"><span localString="true"
+                                                                                     _key="AlertOK"></span></div>
+        </div>
+    </div>
+
+    <!-- password setup error -->
+
+    <!-- Multiple Bridge popup -->
+
+    <div id="multiple_bridge_popup" data-role="popup" class="pop_up" data-overlay-theme="a" data-position-to="window"
+         data-dismissible="false" data-go-forward="false">
+        <header data-role="header" data-theme="a">
+            <h3 id="multiple_bridge_header"></h3>
+        </header>
+        <article data-role="content" data-theme="b">
+            <p id="multiple_bridge_body"></p>
+            <fieldset>
+                <a href="#" id="multiple_bridge_no_btn" class="full_length" data-role="button" data-theme="b"
+                   localString="true"><span localString="true" class="multiple_bridge_popup"
+                                            _key="Continue_Existing"></span></a>
+                <a href="#" id="multiple_bridge_yes_btn" class="full_length" data-role="button" data-theme="b"
+                   localString="true"><span localString="true" class="multiple_bridge_popup"
+                                            _key="Delete_Existing"></span></a>
+                <a href="#" id="multiple_bridge_cancel_btn" class="full_length" data-role="button" data-theme="b"
+                   localString="true"><span localString="true" class="multiple_bridge_popup" _key="Cancel_Setup"></span></a>
+            </fieldset>
+        </article>
+    </div>
+
+    <!-- End Multiple Bridge popup -->
+
+</div>
+
+
+</body>
+</html>

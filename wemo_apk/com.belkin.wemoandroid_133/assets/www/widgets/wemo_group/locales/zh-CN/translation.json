@@ -1,0 +1,22 @@
+{
+    "removeWarningDialog": {
+        "title": "解散此分组？",
+        "message": "此分组中只有2个设备。移除此设备会将此分组从设备列表及所有相关规则移除。",
+        "buttonLabels": "移除,取消"
+    },
+    "ungroupedDialog": {
+        "title": "未分组设备",
+        "message": "已从分组中移除。"
+    },
+    "header": {
+        "groupedBulbs": "已分组灯泡"
+    },
+    "buttons": {
+        "ok": "确定",
+        "cancel": "取消"
+    },
+    "grouping": {
+        "defaultGroupName": "照明组",
+        "inThisGroup": "灯泡"
+    }
+}

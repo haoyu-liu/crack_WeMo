@@ -1,0 +1,102 @@
+{
+    "app": {
+        "name": "test"
+    },
+    "navigation": {
+        "back": "Atrás"
+    },
+    "errors": {
+        "title": "WeMo can’t complete your request",
+        "message": "If this continues, please restart the app.",
+        "unavailable": "Unavailable",
+        "notDetected": "No detectado",
+        "rulesTitle": "Schedule cannot be saved",
+        "rulesMessage": "Having trouble saving this schedule now. Please check the status of all your WeMo devices and try again."
+    },
+    "validation": {
+        "title": "Por favor, compruebe lo digitado"
+    },
+    "buttons": {
+        "okay": "Okay",
+        "ok": "Aceptar",
+        "done": "Finalizado",
+        "cancel": "Cancelar",
+        "save": "Guardar",
+        "hide": "Ocultar",
+        "continue": "Continuar",
+        "reset": "Reiniciar"
+    },
+    "hide": {
+        "title": "¿Ocultar esto?",
+        "message": "El dispositivo no aparecerá hasta que se active de nuevo."
+    },
+    "firmware": {
+        "update": "Actualizando nuevo firmware..."
+    },
+    "date": {
+        "tomorrow": "Mañana",
+        "yesterday": "Ayer",
+        "today": "Hoy",
+        "months": {
+            "0": "Enero",
+            "1": "Febrero",
+            "2": "Marzo",
+            "3": "Abril",
+            "4": "Mayo",
+            "5": "Junio",
+            "6": "Julio",
+            "7": "Agosto",
+            "8": "Septiembre",
+            "9": "Octubre",
+            "10": "Noviembre",
+            "11": "Diciembre"
+        },
+        "days": {
+            "0": "Domingo",
+            "1": "Lunes",
+            "2": "Martes",
+            "3": "Miércoles",
+            "4": "Jueves",
+            "5": "Viernes",
+            "6": "Sábado"
+        },
+        "scheduleDays": {
+            "0": "Dom",
+            "1": "Lun",
+            "2": "Mar",
+            "3": "Miér",
+            "4": "Jue",
+            "5": "Vie",
+            "6": "Sáb"
+        }
+    },
+    "timeUnits": {
+        "0": "s",
+        "1": "m",
+        "2": "h"
+    },
+    "labels": {
+        "autoOff": "Auto-off in",
+        "onFor": "Encendido durante",
+        "enable": "Enable",
+        "schedule": "Schedule",
+        "dailySchedule": "Daily Schedule",
+        "confirm": "Confirmar",
+        "batteryReplace": "Unavailable - Replace battery",
+        "batteryLevel": "Low Battery",
+        "signalStrength": "Low Signal",
+        "ago": "ago",
+        "remaining": "Queda(n)",
+        "temperature": "Temperatura"
+    },
+    "mode": {
+        "off": "Desactivado",
+        "on": "Activado"
+    },
+    "messages": {
+        "orderNewFilter": "Order new filters",
+        "replaceFilter": "Replace filter",
+        "timeReplaceFilter": "Time to replace filters...",
+        "timeOrderFilter": "Time to order filters..."
+    }
+}

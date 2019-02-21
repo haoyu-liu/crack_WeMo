@@ -1,0 +1,26 @@
+{
+    "pageTitle" : "More",
+    "menu": {
+        "setupInstructions": "Настроить другое устройство",
+        "firmwareUpdate": "Ошибка обновления Прошивки",
+        "remoteAccess": "Удаленный доступ",
+        "ifttt": "Подключитесь к IFTTT",
+        "alexa": "Подключить к Alexa",
+        "whatYouThink": "Расскажите Нам, Что Вы Думаете!",
+        "helpCenter": "Центр справки",
+        "settingsAbout": "Параметры и о программе",
+        "addLinkDevices" : "Доб. устр. WeMo Link",
+        "WeMoCommunity" : "Сообщество WeMo",
+        "supportArticles" : "Статьи",
+        "reportaProblem" : "Сообщить об проблеме",
+        "rateWeMo" : "Оцените  WeMo в App Store",
+        "help_url" : "http://www.belkin.com/embed/ru-ru/wemo/android/support",
+        "Enabled" : "Включено",
+        "NotEnabled" : "Не включено"
+    },
+    "category" : {
+        "settings" : "Настройки",
+        "addWeMoDevice" : "ДОБАВИТЬ УСТРОЙСТВО WEMO",
+        "supportFeedback" : "ПОДДЕРЖКА & ОТЗЫВЫ"
+    }
+}

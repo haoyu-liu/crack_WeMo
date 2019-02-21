@@ -1,0 +1,10 @@
+{
+    "test": [{
+        "UDN": "udn",
+        "Name": "name",
+        "ReleaseNotes": "NOTES",
+        "UpdateURL": "url",
+        "Version": "version",
+        "required": true
+    }]
+}

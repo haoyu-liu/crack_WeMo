@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="no-js">
+<!--
+//
+//  device/led_edit_devices.html
+//
+//  Created by Belkin International, Software Engineering on 10/04/2013.
+//  Copyright (c) 2012-2013 Belkin International, Inc. and/or its affiliates. All rights reserved.
+//
+
+
+    Belkin International, Inc. retains all right, title and interest (including all
+    intellectual property rights) in and to this computer program, which is
+    protected by applicable intellectual property laws.  Unless you have obtained
+    a separate written license from Belkin International, Inc., you are not authorized
+    to utilize all or a part of this computer program for any purpose (including
+    reproduction, distribution, modification, and compilation into object code),
+    and you must immediately destroy or return to Belkin International, Inc. all copies
+    of this computer program.  If you are licensed by Belkin International, Inc., your
+    rights to utilize this computer program are limited by the terms of that license.
+
+    To obtain a license, please contact Belkin International, Inc.
+
+    This computer program contains trade secrets owned by Belkin International, Inc.
+    and, unless unauthorized by Belkin International, Inc. in writing, you agree to
+    maintain the confidentiality of this computer program and related information
+    and to not disclose this computer program and related information to any
+    other person or entity.
+
+
+    THIS COMPUTER PROGRAM IS PROVIDED AS IS WITHOUT ANY WARRANTIES, AND BELKIN INTERNATIONAL, INC.
+    EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF
+    MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+
+--->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>wemo tab</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" href="../../css/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="../../css/style.css"/>
+
+    <script type="text/javascript" src="../../js/vendor/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="../../js/vendor/jquery.mobile-1.4.2.js"></script>
+    <script type="text/javascript" src="../../js/vendor/jquery.transit.js"></script>
+    <script type="text/javascript" src="../../js/vendor/pointer.js"></script>
+    <script type="text/javascript" src="../../cordova.js"></script>
+    <script type="text/javascript" src="../../lang/en.js"></script>
+    <script type="text/javascript" src="../../lang/ru.js"></script>
+    <script type="text/javascript" src="../../lang/fr.js"></script>
+    <script type="text/javascript" src="../../lang/zh.js"></script>
+    <script type="text/javascript" src="../../lang/de.js"></script>
+    <script type="text/javascript" src="../../lang/es.js"></script>
+    <script type="text/javascript" src="../../lang/it.js"></script>
+    <script type="text/javascript" src="../../lang/lang.js"></script>
+    <script type="text/javascript" src="../../js/constants.js"></script>
+    <script type="text/javascript" src="../../js/plugins/setup_plugin.js"></script>
+    <script type="text/javascript" src="../../js/constants.js"></script>
+    <script type="text/javascript" src="../../js/plugins/wemo_plugin.js"></script>
+    <script type="text/javascript" src="../../js/wemo_util.js"></script>
+    <script type="text/javascript" src="../../js/wemo.js"></script>
+    <script type="text/javascript" src="../../js/vendor/json2.js"></script>
+    <script type="text/javascript" src="../../js/plugins/device_tab_plugin.js"></script>
+    <script type="text/javascript" src="../../js/plugins/wemo_plugin.js"></script>
+    <script type="text/javascript" src="../../js/led/device_list_bridge.js"></script>
+    <script type="text/javascript" src="../../js/led/led_edit_device.js"></script>
+
+</head>
+<body>
+
+<div data-role="page" class="wemo_ed led_edit_device edit_screen_bulb">
+    <header data-role="header" class="main_header" data-position="fixed" data-tap-toggle="false">
+		<span class="wemo_logo">
+		</span>
+    </header>
+
+    <div class="more_tab"></div>
+    <div class="sub_header">
+        <span localString="true" _key="EditDevice_Title" id="editdevice"></span>
+        <span localString="true" _key="EditGroup_Title" id="editgroup" style="display:none;"></span>
+        <span localString="true" _key="Successful_Title" id="successpage" style="display:none;"></span>
+    </div>
+
+    <div data-role="content">
+
+        <div class="edit_led_content">
+            <div class="edit_led_label" id="led_edit_icon" localString="true" _key="picture"></div>
+            <div class="edit_led_pics custom_device_img"></div>
+        </div>
+
+        <div class="edit_led_content led_name_row">
+            <div class="edit_led_label edit_led_name_label" id="led_edit_name" localString="true" _key="Name"></div>
+            <div class="edit_led_name">
+                <input type="text" id="device_edit_friendly_name" class="edit_device_input" name="name" pattern="[A-Za-z0-9 _-]*" maxlength="30" value="" placeholder="Name">
+            </div>
+        </div>
+
+        <div class="edit_led_content checkBulb" >
+            <div class="edit_led_find_bulb">
+                <span id="find_bulb" _key="checkBulb" localstring="true" class="label"></span>
+            </div>
+            <div class="edit_led_deviceId">
+                <span localString="true" _key="Led_EditDevice_DeviceID"></span>
+                <span id="device_ssid"></span>
+            </div>
+        </div>
+
+        <div class="edit_led_content edit_bulb_reset" id="reset_options" localString="true" _key="ResetOptions">
+        </div>
+
+
+
+
+
+        <!-- Devices List -->
+        <div class="netCamDisable" id="devicelistdisplay">
+            <p class="Textcenter light_bulb_in_group">Lightbulbs in this group</p>
+            <ul id="leddevieslist">
+            </ul>
+        </div>
+
+
+
+    </div>
+    <div id="rules_container" class="rules_container none">
+        <h1>Rules List will be soon</h1>
+    </div>
+
+    <div id="more_container" class="more_container none">
+        <h1>More List will be soon</h1>
+    </div>
+
+    <div data-position="fixed" data-tap-toggle="false" class="edit_device_bottom_btns updated_edit_footer">
+        <div id="edit_device_cancel_btn" class="footer_cancel"><span localString="true" _key="Cancel"></span></div>
+        <div id="edit_device_save_btn" class="footer_save"><span localString="true" _key="Save"></span></div>
+    </div>
+
+
+    <div id="select_photo_popup" data-role="popup" class="pop_up" data-overlay-theme="a" data-position-to="window"
+         data-dismissible="false" data-go-forward="false">
+        <header data-role="header" data-theme="a">
+            <span localString="true" _key="select_photo"></span>
+        </header>
+
+        <ul id="photo_pick_option" data-role="listview" data-theme="d">
+            <li id="take_photo"><span localString="true" _key="IconActionSheet_TakePhoto"></span></li>
+            <li id="select_from_gallery"><span localString="true" _key="IconActionSheet_ChooseExisting"></span></li>
+            <li id="remove_photo"><span localString="true"  _key="IconActionSheet_Restore"></span></li>
+            <li id="cancel_photo_popup"><span localString="true"  _key="Cancel"></span></li>
+        </ul>
+    </div>
+
+
+    <!-- Remove individual device success popup -->
+
+    <div id="removedevice_status_popup" data-role="popup" class="pop_up" data-overlay-theme="a" data-position-to="window" data-dismissible="false" data-go-forward="false">
+        <header data-role="header" data-theme="a">
+            <h3 id="removedevice_status_header"></h3>
+        </header>
+        <article data-role="content" data-theme="b">
+            <p id="removedevice_status_body"></p>
+            <a href="#" id="removedevice_ok_btn" class="full_length" data-role="button" data-theme="b" localString="true"><span localString="true" _key="AlertOK"></span></a>
+        </article>
+    </div>
+
+    <!-- End Remove individual device success popup -->
+
+    <!-- delete group popup -->
+
+    <div id="deletegroup_status_popup" data-role="popup" class="pop_up" data-overlay-theme="a" data-position-to="window" data-dismissible="false" data-go-forward="false">
+        <header data-role="header" data-theme="a">
+            <h3 id="deletegroup_status_header"></h3>
+        </header>
+        <article data-role="content" data-theme="b">
+            <p id="deletegroup_status_body"></p>
+            <fieldset>
+                <a href="#" id="deletegroup_cancel_btn"  class="group_popup_cancel" data-role="button" data-theme="b" localString="true"><span localString="true" _key="Cancel"></span></a>
+                <a href="#" id="deletegroup_ok_btn" class="group_popup_ok" data-role="button" data-theme="b" localString="true"><span localString="true" _key="remove"></span></a>
+            </fieldset>
+        </article>
+    </div>
+
+    <!-- End delete group -->
+
+    <!-- Device name validation popup -->
+
+    <div id="invalidNamePopup" data-role="popup" class="pop_up" data-overlay-theme="b" data-position-to="window"
+         data-dismissible="false" data-go-forward="false">
+        <div class="popup_head"><span localString="true" _key=""></span></div>
+        <div class="popup_content"><span localString="true" _key="InvalidName_AlertMessage" _innerString="true"></span>
+        </div>
+        <div class="popup_footer">
+            <div id="invalidNamePopupOK" class="popup_single_ok_btn"><span localString="true" _key="AlertOK"></span></div>
+        </div>
+    </div>
+
+    <!-- Device name validation popup -->
+
+</div>
+</body>
+</html>

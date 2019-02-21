@@ -1,0 +1,19 @@
+{
+    "popup": {
+        "heading": "추가 기능",
+        "description": "전구가 유사하게 작동하도록 그룹화하거나 WeMo Link를 통해 네트워크에 기기를 추가합니다. 여기에 단계별 실행 방법이 나와 있습니다.",
+        "description2": "시작하시겠습니까?",
+        "cancelBtn": "지금 시작하지 않음",
+        "doneBtn": "지금 보기"
+    },
+    "title": {
+        "1": "LED 전구 그룹화"
+    },
+    "desc": {
+        "1": "오버플로우 메뉴에서 \"기기 편집\"을 선택합니다.",
+        "2": "2개 전구를 다른 전구 위로 끌어서 그룹화합니다.",
+        "3": "위의 전구 수 아이콘은 그룹의 전구 수를 나타냅니다.",
+        "4": "Select Settings in the navigation bar.",
+        "5": "To add a WeMo Link-enabled device, select 'Add WeMo Link Devices' in the More tab."
+    }
+}

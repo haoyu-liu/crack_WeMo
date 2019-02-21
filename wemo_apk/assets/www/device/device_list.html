@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<!--
+    device_list.html 
+
+    Created by Belkin International, Software Engineering on 10/04/2013. 
+    Copyright (c) 2012-2013 Belkin International, Inc. and/or its affiliates. All rights reserved. 
+    
+    Belkin International, Inc. retains all right, title and interest (including all 
+    intellectual property rights) in and to this computer program, which is 
+    protected by applicable intellectual property laws.  Unless you have obtained 
+    a separate written license from Belkin International, Inc., you are not authorized 
+    to utilize all or a part of this computer program for any purpose (including 
+    reproduction, distribution, modification, and compilation into object code), 
+    and you must immediately destroy or return to Belkin International, Inc. all copies 
+    of this computer program.  If you are licensed by Belkin International, Inc., your 
+    rights to utilize this computer program are limited by the terms of that license.  
+
+    To obtain a license, please contact Belkin International, Inc. 
+  
+    This computer program contains trade secrets owned by Belkin International, Inc. 
+    and, unless unauthorized by Belkin International, Inc. in writing, you agree to 
+    maintain the confidentiality of this computer program and related information 
+    and to not disclose this computer program and related information to any 
+    other person or entity. 
+  
+    THIS COMPUTER PROGRAM IS PROVIDED AS IS WITHOUT ANY WARRANTIES, AND BELKIN INTERNATIONAL, INC. 
+    EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF 
+    MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. 
+-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>wemo tab</title>
+    <meta name="description" content="">
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.2.min.css"/>
+    <link rel="stylesheet" href="../css/AndroidHoloDarkLight.css"/>
+    <link rel="stylesheet" href="../css/font-awesome.css" />
+    <link rel="stylesheet" href="../css/devicelist.css"/>
+    <link rel="stylesheet" href="../css/owl.carousel.css" >
+    <link rel="stylesheet" href="../css/jquery.minicolors.css" >
+    <link rel="stylesheet" href="../css/farbtastic.css" >
+    <link rel="stylesheet" href="../css/style.css"/>
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../js/smartFramework/libs/require.js"></script>
+    <script type="text/javascript" src="../lang/en.js"></script>
+    <script type="text/javascript" src="../lang/ru.js"></script>
+    <script type="text/javascript" src="../lang/fr.js"></script>
+    <script type="text/javascript" src="../lang/zh.js"></script>
+    <script type="text/javascript" src="../lang/de.js"></script>
+    <script type="text/javascript" src="../lang/es.js"></script>
+    <script type="text/javascript" src="../lang/ko.js"></script>
+    <script type="text/javascript" src="../lang/ja.js"></script>
+</head>
+
+<body class="splash_screen_img">
+
+<div data-role="page" id="wemo_light" style="display: none" class="overflow isDeviceList">
+<header id="header_id" data-role="header" class="main_header" data-position="fixed" data-tap-toggle="false">
+    <span class="wemo_logo">
+        <span class="more_tab_icon action_bar_button headerBtns">
+               <img src="../img/actionbar/ic_more_2x.png"/>
+        </span>
+        <span class="headerBtns">
+           <span id="modify_device" class="modify_icon action_bar_button">
+               <img src="../img/actionbar/icon-modify.png"/>
+           </span>
+           <span id="refresh_device_list" class="refresh_icon action_bar_button">
+               <img src="../img/actionbar/btn_ac_refresh.png"/>
+           </span>
+           <span id="new_fw_available" class="firmware_icon action_bar_button">
+               <img src="../img/actionbar/btn_ac_firmware.png"/>
+           </span>
+        </span>
+       <span class="reachabilityIcon"></span>
+    </span>
+</header>
+
+<div id="more_drawer" class="more_tab">
+    <ul>
+        <li id="menu_fw" localString="true" _key="NewFirmwareAvailable"></li>
+        <li id="edit_device" localString="true" _key="EditDevice_Title"></li>
+        <li localString="true" _key="SetUpAnotherDevice"></li>
+        <li localString="true" _key="RemoteAccess"></li>
+        <li localString="true" _key="ConnectToIFTTT"></li>
+        <li localString="true" _key="SettingsAndAbout"></li>
+        <li localString="true" _key="TellUsWhatYouThink"></li>
+        <li localString="true" _key="HelpCenter"></li>
+        <li localString="true" _key="WeMoCommunity"></li>
+        <li localString="true" _key="SupportArticles"></li>
+        <li id="find_and_pair_Newdevice" localString="true" _key="findandpairNewdevice"></li>
+    </ul>
+</div>
+
+<div data-role="content" class="device_list_content networkMsgContainer">
+
+    <!-- Bridge Unavailable div-->
+
+    <div id="bridgeunavailable">
+        <div class="bridgeunavailablefirst">
+        </div>
+
+        <div class="bridgeunavailablesecond">
+            <p class="bridge_unavailable_text" localString="true" _key="checkWemoLinkNew"></p>
+                <p class="font-detail" localString="true" _key="notRespondingNew"></p>
+            <br/>
+        </div>
+
+        <div class="bridgeunavailablethrid">
+            <span class="device_page_close" id="closemsg" name="closemsg"></span>
+        </div>
+    </div>
+
+    <!-- Bridge Unavailable div ends-->
+
+    <div id="device_scroller" style="display:block;">
+
+        <div id="device_container" class="device_container">
+
+            <ul class="device_list_ul first" style="margin-top: 0px !important;" id="device_list_container" data-category="bridge"
+                data-role="listview">
+            </ul>
+
+            <ul class="device_list_ul" style="clear:left;" id="device_list_bridge_container" data-role="listview">
+            </ul>
+
+            <ul class="device_list_ul" style="clear:left;" id="group_list_bridge_container" data-role="listview">
+            </ul>
+
+
+            <div id="question_mark_position" class="question_mark_button">
+                <div id="question_mart_text" style="text-align: center;font-size: larger;" localString="true"
+                     _key="Devices_LookingForDevices"></div>
+                <span id="question_mark_image"> <img src="../img/actionbar/question_mark_83.png"/></span>
+
+            </div>
+
+
+            <ul id="startWidget" class="widget" data-aura-widget=""></ul>
+
+        </div>
+    </div>
+
+</div>
+
+<div id="footer_id" data-role="footer" class="bottom_nav ui-grid-a device_list_footer" data-position="fixed"
+     data-tap-toggle="false" style="position: fixed" data-theme="b">
+    <div class="ui-block-a" id="device_btn_container">
+        <a name="bottom_nav_btn" id="device_btn" class="device_btn" style="text-decoration: none;" localString="true"
+           _key="Devices"></a>
+    </div>
+    <div class="ui-block-b" id="rules_btn_container">
+        <a name="bottom_nav_btn" id="rules_btn" class="rules_btn" style="text-decoration: none;" localString="true"
+           _key="RulesListTitle"></a>
+    </div>
+    <div class="done_btn" style="display: none">
+        <span localString="true" _key="Done"></span>
+    </div>
+</div>
+
+<div id="led_wt_confirmdialog" data-role="popup" class="confirmdialog" data-overlay-theme="a" data-dismissible="false">
+    <div class="confirmdialog_title"><span localString="true" _key="LedWalkthroughTitle"></span></div>
+    <div class="confirmdialog_content"><span localString="true" _key="LedWalkthroughContent"></span></div>
+    <div class="confirmdialog_controls">
+        <div data-id="notnow"><span localString="true" _key="LedWalkthroughNotNow"></span></div>
+        <div data-id="showme"><span localString="true" _key="LedWalkthroughShowMe"></span></div>
+    </div>
+</div>
+    
+<div id="led_wt_carousel" class="led-wt-container">
+    <div id="slides"  class="owl-carousel">
+        <div class="led-wt-s groupSlide">
+            <img src="../img/led_walkthrough/Walkthrough_Slide_No1_Android.png" class="led-wt-img">
+            <div class="led-wt-sc">
+                <div class="led-wt-sc-title" localString="true" _key="LedWalkthroughSlideTitle"></div>
+                <div class="led-wt-sc-desc" localString="true" _key="LedWalkthroughSlide1"></div>
+            </div>
+        </div>
+        <div class="led-wt-s groupSlide">
+            <img src="../img/led_walkthrough/Walkthrough_Slide_No2_Android.png" class="led-wt-img">
+            <div class="led-wt-sc">
+                <div class="led-wt-sc-title" localString="true" _key="LedWalkthroughSlideTitle"></div>
+                <div class="led-wt-sc-desc" localString="true" _key="LedWalkthroughSlide2"></div>
+            </div>
+        </div>
+        <div class="led-wt-s groupSlide">
+            <img src="../img/led_walkthrough/Walkthrough_Slide_No3_Android.png" class="led-wt-img">
+            <div class="led-wt-sc">
+                <div class="led-wt-sc-title" localString="true" _key="LedWalkthroughSlideTitle"></div>
+                <div class="led-wt-sc-desc" localString="true" _key="LedWalkthroughSlide3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="led-wt-s singleSlide">
+        <img src="../img/led_walkthrough/Walkthrough_Slide_No4_Android.png" class="led-wt-img">
+        <div class="led-wt-sc">
+            <div class="led-wt-sc-title" localString="true" _key="LedWalkthroughAddDeviceSlideTitle"></div>
+            <div class="led-wt-sc-desc" localString="true" _key="LedWalkthroughSlide4"></div>
+        </div>
+    </div>
+    <a href="#" data-id="cloz" class="led-wt-cloz"><img src="../img/StandardFormat_X_Dark.png"></a>
+</div>
+
+<!-- Delete device popup Start  -->
+<div id="delete_device" data-role="popup" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+    <div class="popup_head"><span localString="true" _key="DeleteDeviceHeader"></span></div>
+    <div class="popup_content"><span localString="true" _key="DeleteDeviceContent"></span></div>
+    <div class="popup_footer">
+        <div id="delete_device_no_button"><span localString="true" _key="Cancel"></span></div>
+        <div id="delete_device_yes_button"><span localString="true" _key="Yes"></span></div>
+    </div>
+</div>
+<!-- Delete device popup Ends-->
+
+<!-- New Firmware popup Start  -->
+<div id="new_firmware" data-role="popup" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+    <div class="popup_head"><span localString="true" _key="NewFirmwareAvailable"></span></div>
+    <div class="popup_content"><span localString="true" _key="NewFirmwareAvailableContent"></span></div>
+    <div class="popup_footer">
+        <div id="new_firmware_not_now_button"><span localString="true" _key="NotNow"></span></div>
+        <div id="new_firmware_yes_button"><span localString="true" _key="Yes"></span></div>
+    </div>
+</div>
+<!-- New Firmware popup Ends-->
+
+ <!--firmware upgrade popup for 2176 & 2725 popup Start -->
+<div id="old_firmware_upgrade_popup" data-role="popup" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+    <div class="popup_head"><span localString="true" _key="UpdateFirmwareRequired"></span></div>
+    <div class="popup_content"><span localString="true" _key="EditableNotSupportingForOldFirmware"></span></div>
+    <div class="popup_footer">
+      <div id="old_firmware_upgrade_later" class="popup_cnl_100_btn"><span localString="true" _key="OK"></span></div>
+        
+    </div>
+</div>
+  <!--firmware upgrade popup for 2176 & 2725  popup Ends-->
+
+<!-- Reload DeviceList poopup Start  -->
+<div id="reload_device" data-role="popup" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+    <div class="popup_head"><span localString="true" _key="ReloadDevice"></span></div>
+    <div class="popup_content"><span localString="true" _key="ReloadDeviceContent"></span></div>
+    <div class="popup_footer">
+        <div id="reload_device_cancel_button"><span localString="true" _key="Cancel"></span></div>
+        <div id="reload_device_yes_button"><span localString="true" _key="Yes"></span></div>
+    </div>
+</div>
+<!-- Reload DeviceList popup Ends-->
+<!-- Weak Signal popup Start -->
+<div id="weakSignal" data-role="popup" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+    <header data-role="header" data-theme="a">
+        <h3 localString="true"><span localString="true" _key="WeakSignalAlertTitle"></span></h3>
+    </header>
+    <article data-role="content" data-theme="b">
+        <p><span id="WeakSignalAlertMessage" localString="true"></span></p>
+        <fieldset>
+            <a href="#" id="weak_singnal_ok_button" class="full_length" data-role="button" data-theme="b"
+               localString="true"><span localString="true" _key="AlertOK"></span></a>
+        </fieldset>
+    </article>
+</div>
+<!-- Weak Signal popup Ends-->
+
+<!-- Device not detected popup Start -->
+<div id="hide_device" data-role="popup" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+    <div class="popup_head"><span localString="true" _key="HideThis"></span></div>
+    <div class="popup_content"><span localString="true" _key="HideDevicePopupMessage"></span></div>
+    <div class="popup_footer">
+        <div id="hide_device_cnl" class="popup_cnl_btn"><span localString="true" _key="Cancel"></span></div>
+        <div id="hide_device_hide" class="popup_ok_btn"><span localString="true" _key="Hide"></span></div>
+    </div>
+</div>
+<!-- Device not detected popup End  -->
+
+
+<!-- Device not detected popup Start -->
+<div id="kitkat_warning" data-role="popup" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+    <div class="popup_head"><span localString="true" _key="KitKatWarningTitle"></span></div>
+    <div class="popup_content"><span localString="true" _key="KitKatWarningMessage"></span></div>
+    <div class="popup_footer">
+        <div id="kitkat_warning_ok" class="popup_cnl_100_btn"><span localString="true" _key="AlertOK"></span></div>
+    </div>
+</div>
+<!-- Device not detected popup End  -->
+
+<!-- Different Group Capability -->
+<div id="different_capability" data-role="popup" class="pop_up" data-overlay-theme="a" data-position-to="window"
+     data-dismissible="false" data-go-forward="false">
+    <header data-role="header" data-theme="a">
+        <h3 id="groupfoHeader"></h3>
+    </header>
+    <article data-role="content" data-theme="b">
+        <p id="groupText"></p>
+        <fieldset>
+            <a id="group_ok_btn" data-role="button"><span localString="true" _key="AlertOK"></span></a>
+        </fieldset>
+    </article>
+</div>
+<!--Different Group Capability-->
+
+<!-- Remove individual device success popup -->
+
+<div id="removedevice_status_popup" data-role="popup" class="pop_up" data-overlay-theme="a" data-position-to="window"
+     data-dismissible="false" data-go-forward="false">
+    <header data-role="header" data-theme="a">
+        <h3 id="removedevice_status_header"></h3>
+    </header>
+    <article data-role="content" data-theme="b">
+        <p id="removedevice_status_body"></p>
+        <a href="#" id="removedevice_ok_btn" class="full_length" data-role="button" data-theme="b"
+           localString="true"><span localString="true" _key="AlertOK"></span></a>
+    </article>
+</div>
+
+<!-- End Remove individual device success popup -->
+
+
+<!-- Error Handling popup Start  -->
+    <div id="errorhandlingpopup" data-role="popup" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+        <div class="popup_head" id="errorhandlingpopup_title"><span localString="true" _key="LedWalkthroughSlideTitle"></span></div>
+        <div class="popup_content" id="errorhandlingpopup_desc"><span localString="true" _key="LEDGrpcreationFails"></span></div>
+        <div class="popup_footer">
+            <div id="error_handling_ok_btn" class="popup_cnl_100_btn"><span localString="true" _key="AlertOK"></span></div>
+        </div>
+    </div>
+<!--  Error Handling popup Ends-->
+
+
+<!-- COLOR TEMPERATURE POPUP -->
+
+<div class="overlayScrollPicker led_timer_popup" style="display: none" id="colortemp" data-selectedtype="">
+    <div class="display_table">
+        <div class="display_cell">
+            <div class="scrollPickerContainer picker">
+                <div class="picker_header_ScrollPicker">
+                     <div id="cnl_colortemp_btn">
+                        <span class="backArrow"></span>
+                        <div localString="true" _key="ColorTemperatureTitle" class="colortemperatureTitle"></div>
+                     </div>
+                     <div id="colortemptab"><span localString="true" id="color" _key="Color" class="selected"></span><span localString="true" _key="Temperature" id="temperature"></span></div>
+                </div>
+                
+                <div id="boxscroll">
+                	
+					<!--- ColorPicker  -->
+					
+					<div id="colorpicker_content">
+		                	<div class="colorDisplay" data-selectedcolor="#ff9aec"></div>
+		                	
+		                	<div class="demos">
+	    						<div id="wheel" class="colorpicker1 colorPicker"></div> 
+							</div>
+							
+		        			 <ul class="prefixColors">
+							    <li class="colorBox" id="colorBox1" data-color="#ff0000"></li>
+							    <li class="colorBox" id="colorBox2" data-color="#f7f12d"></li>
+							    <li class="colorBox" id="colorBox3" data-color="#0000ff"></li>
+							    <li class="colorBox" id="colorBox4" data-color="#fffed6"></li>
+							    <li class="colorBox" id="colorBox5" data-color="#fdf5fe"></li>
+							    <li class="colorBox" id="colorBox6" data-color="#ffb400"></li>
+							    <li class="colorBox" id="colorBox7" data-color="#00ff00"></li>
+							    <li class="colorBox" id="colorBox8" data-color="#c04ee6"></li>
+							    <li class="colorBox" id="colorBox9" data-color="#ebffff"></li>
+							    <li class="colorBox" id="colorBox10" data-color="#ffffff"></li>
+							</ul>
+					 </div>
+					 <!--- Temperature  -->
+					 
+					 <div id="tempColorPickerPopup_content">
+						   <div class="tempColorDisplay"></div>
+   						   <div id="picker" data-selectedTemperature="2700"></div> 
+						    <ul class="prefixTemps">
+						        <li class="tempBox" id="tempBox1" data-temp="2700" data-color="#ffb400"></li>
+						        <li class="tempBox" id="tempBox2" data-temp="3550" data-color="#fffaa1"></li>
+						        <li class="tempBox" id="tempBox3" data-temp="4000" data-color="#ffffff"></li>
+						        <li class="tempBox" id="tempBox4" data-temp="4500" data-color="#ebffff"></li>
+						        <li class="tempBox" id="tempBox5" data-temp="6500" data-color="#739cff"></li>
+						    </ul>
+    				 </div>
+					 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>     
+<div class="overlayScrollPickerTemp led_timer_popup" style="display: none" id="temperaturePopup" data-selectedtype="">
+    <div class="display_table">
+        <div class="display_cell">
+            <div class="tempColorPickerPopup_content picker" id="tempPickerPopup_content">
+						<div class="picker_header_ScrollPicker">
+							<div id="cnl_temp_btn">
+								<span class="backArrow"></span>
+								<div localString="true" _key="TTBTemperatureTitle"
+									class="ttbTemperatureTitle"></div>
+							</div>
+						</div>
+
+						<div id="ttbTempPicker_content">
+						   <div class="tempColorDisplay"></div>
+   						   <div id="pickerTTB" data-selectedTemperature="2700"></div> 
+						    <ul class="prefixTemps">
+						        <li class="tempBox" id="tempBox1" data-temp="2700" data-color="#ffb400"></li>
+						        <li class="tempBox" id="tempBox2" data-temp="3550" data-color="#fffaa1"></li>
+						        <li class="tempBox" id="tempBox3" data-temp="4000" data-color="#ffffff"></li>
+						        <li class="tempBox" id="tempBox4" data-temp="4500" data-color="#ebffff"></li>
+						        <li class="tempBox" id="tempBox5" data-temp="6500" data-color="#739cff"></li>
+						    </ul>
+				    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+ <!-- <div id="tempPickerPopup" data-role="popup" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+    <div class="popup_head"><span localString="true" _key="Temperature" ></span></div>
+    <div class="popup_content" id="tempPickerPopup_content">
+    <span id="temp_slider_value"></span>
+    <div class="sliderRow" style="margin-top:28%;"> </div>    
+    <span class="temperature_preset_value preset_temp_1" data-kelvinVal="2700"></span>
+    <span class="temperature_preset_value preset_temp_2" data-kelvinVal="3600"></span>
+    <span class="temperature_preset_value preset_temp_3" data-kelvinVal="4500"></span>
+    <span class="temperature_preset_value preset_temp_4" data-kelvinVal="5500"></span>
+    <span class="temperature_preset_value preset_temp_5" data-kelvinVal="6500"></span>
+    </div>
+    <div class="popup_footer">
+        <div id="temp_device_cnl" class="popup_cnl_btn"><span localString="true" _key="Cancel"></span></div>
+        <div id="temp_device_Set" class="popup_ok_btn"><span localString="true" _key="Done" ></span></div>
+    </div>
+</div> -->
+  
+
+<!-- COLOR TEMPERATURE POPUP -->
+
+<!-- delete group popup -->
+
+<div id="deletegroup_status_popup" data-role="popup" class="pop_up" data-overlay-theme="a" data-position-to="window"
+     data-dismissible="false" data-go-forward="false">
+    <header data-role="header" data-theme="a">
+        <h3 id="deletegroup_status_header"></h3>
+    </header>
+    <article data-role="content" data-theme="b">
+        <p id="deletegroup_status_body"></p>
+        <fieldset>
+            <a href="#" id="deletegroup_cancel_btn" class="group_popup_drawer_cancel" data-role="button" data-theme="b"
+               localString="true"><span localString="true" _key="Cancel"></span></a>
+            <a href="#" id="deletegroup_ok_btn" class="group_popup_drawer_ok" data-role="button" data-theme="b"
+               localString="true"><span localString="true" _key="remove"></span></a>
+        </fieldset>
+    </article>
+</div>
+
+<!-- End delete group -->
+
+<div id="loadingGIF" class="devicelist_GIF" style="">
+    <div class="devicelist_GIF_div" style="">
+        <img class="devicelist_GIF_img" style="" src="../img/insight-loader.gif"> <br>
+        <span class="devicelist_GIF_span" style="" localString="true" _key="Devices_LookingForDevices"></span>
+    </div>
+</div>
+
+<!-- LED Fader Custom Popup -->
+
+</div>
+
+<script>
+window.isCrosswalk = true;
+    var remoteResult;
+
+    function checkJqueryUI() {
+        if (typeof jQuery.ui != 'undefined') {
+            console.log('JQuery UI - loaded');
+            jqieryUI_loaded();
+        }
+        else {
+            window.setTimeout(checkJqueryUI, 100);
+        }
+    }
+
+    requirejs(['../js/app'], function () {
+        $(document).ready(function () {
+            console.log('JQuery - loaded');
+            requirejs(['../js/vendor/jquery-ui.min.js'], function () {
+                requirejs(['../js/vendor/jquery.mobile-1.4.2.js','../js/vendor/eventemitter2.js',  '../lang/lang.js'], function () {
+                    checkJqueryUI();
+                });
+            });
+        });
+    });
+
+    function jqieryUI_loaded() {
+        requirejs(['../js/vendor/pointer.js', '../js/vendor/doubletab.js', '../js/vendor/jquery.transit.js', '../js/vendor/jquery.ui.touch-punch.min.js', '../js/vendor/owl.carousel.js', '../js/vendor/jquery.minicolors.js', '../js/vendor/farbtastic.js'], function () {
+            requirejs(['../js/constants.js'], function () {
+                requirejs(['../js/wemo.js', '../js/wemo_util.js', '../js/plugins/wemo_plugin.js', '../js/plugins/setup_plugin.js'], function () {
+                    requirejs(['../js/classes/deviceObject', '../js/classes/remoteAccess', '../js/classes/cloudServices', '../js/device/device_list.js', '../js/vendor/animatePNG.js', '../js/vendor/jquery-dateFormat.min.js'], function () {
+                        requirejs(['../js/led/device_list_bridge.js'], function () {
+                            $('#wemo_light').removeAttr('style');
+                            $(document).ready(function () {
+                                if(wemoUtil){
+                                var w = wemoUtil.getScreenWidth();
+                                $('.wemo_logo').css('background-size', 0.3 * w);
+                            }
+                            });
+                            window.device_list.initialize();
+                        });
+                    });
+                })
+            });
+        });
+    }
+
+</script>
+
+<script type="text/template" id="listTemplate">
+    <li class="device_li <%= device_udn %>" id="<%= device_udn %>" wemo-device-friendly-name="<%= device_name %>"
+        wemo-device-icon-url="<%= device_icon_url %>" wemo-device-type="<%= device_type %>"
+        wemo-device-state="<%= device_state %>">
+    				<span class="device_list_icon_container">
+					<img src="<%= device_icon_url %>">
+				</span>
+        <span class="drawer_icon" id="<%= device_udn %>-drawer_icon"></span>
+			<span class="device_list_friendly_name_container">
+					<label class="device_name"><%= device_name %></label>
+					<label name="sub_title" class="sensorStatus subTitle"><%= sensorStatus %></label>
+					<label name="name_firmware_status"><%= firmwareUpgradeStatus %> </label><br>
+				</span>
+				<span class="power_indicator_container">
+					<span class="edit_device_dots"></span>
+                    <span class="edit_device_arrow_icon"></span>
+				    <span name="name_device_state" wemo-device-state="<%= switchState %>"
+                          class="<%= stateClass %>"></span>
+				    <span name="name_power_state" wemo-power-state="<%= powerState %>"
+                          class="power_indicator <%= powerStateClass %>"></span>
+				</span>
+
+    </li>
+</script>
+
+</body>
+</html>

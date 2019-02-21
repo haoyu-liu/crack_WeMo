@@ -1,0 +1,19 @@
+{
+    "state": {
+        "0": "토글",
+        "1": "순간 연결",
+        "2": "센서가 작동되지 않음",
+        "3": "센서가 작동됨"
+    },
+    "editContext": {
+        "title": {
+            "switchType": "스위치 유형",
+            "toggle": "토글",
+            "momentary": "순간",
+            "sensor": "센서",
+            "yes": "예",
+            "no": "아니요"
+        }
+    },
+    "defaultFriendlyName": "WeMo Maker"
+}

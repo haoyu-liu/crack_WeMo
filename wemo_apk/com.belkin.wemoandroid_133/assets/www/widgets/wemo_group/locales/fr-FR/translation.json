@@ -1,0 +1,22 @@
+{
+    "removeWarningDialog": {
+        "title": "Dissocier?",
+        "message": "Il n'y a que 2 dispositifs dans ce groupe. Supprimer ce dispositif supprimera le groupe de la liste de dispositifs et toute règle associée.",
+        "buttonLabels": "Supprimer,Annuler"
+    },
+    "ungroupedDialog": {
+        "title": "Dispositif dissocié",
+        "message": "a été supprimé du groupe."
+    },
+    "header": {
+        "groupedBulbs": "Groupe d’ampoules"
+    },
+    "buttons": {
+        "ok": "OK",
+        "cancel": "Annuler"
+    },
+    "grouping": {
+        "defaultGroupName": "Éclairage du groupe",
+        "inThisGroup": "Ampoules"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "pageTitle" : "詳細",
+    "menu": {
+        "setupInstructions": "別のデバイスを設定",
+        "firmwareUpdate": "Firmware の更新あり",
+        "remoteAccess": "リモートアクセス",
+        "ifttt": "IFTTTに接続",
+        "alexa": "Alexaに接続",
+        "whatYouThink": "ご意見をお聞かせください！",
+        "helpCenter": "ヘルプセンター",
+        "settingsAbout": "設定 & バージョン情報",
+        "addLinkDevices" : "WeMo Link デバイスを追加",
+        "WeMoCommunity" : "WeMo コミュニティ",
+        "supportArticles" : "サポート記事",
+        "reportaProblem" : "問題を報告する",
+        "rateWeMo" : "WeMoを評価",
+        "help_url" : "http://www.belkin.com/embed/en-us/wemo/android/support",
+        "Enabled" : "有効",
+        "NotEnabled" : "有効になっていません"
+    },
+    "category" : {
+        "settings" : "設定",
+        "addWeMoDevice" : "WEMO デバイスを追加",
+        "supportFeedback" : "サポート & フィードバック"
+    }
+}

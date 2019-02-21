@@ -1,0 +1,19 @@
+{
+    "state": {
+        "0": "Kippschalter",
+        "1": "Kurzzeitige Verbindung",
+        "2": "Sensor nicht ausgelöst",
+        "3": "Sensor ausgelöst"
+    },
+    "editContext": {
+        "title": {
+            "switchType": "Schalter-Typ",
+            "toggle": "Kippschalter",
+            "momentary": "Kurzzeitig",
+            "sensor": "Sensor",
+            "yes": "Ja",
+            "no": "Nein"
+        }
+    },
+    "defaultFriendlyName": "WeMo Maker"
+}

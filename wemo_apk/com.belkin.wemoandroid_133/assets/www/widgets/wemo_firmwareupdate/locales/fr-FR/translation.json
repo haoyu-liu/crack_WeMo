@@ -1,0 +1,43 @@
+{
+    "popup": {
+        "title": "Nouveau micrologiciel disponible",
+        "message": "La mise à niveau assure le fonctionnement optimal de vos dispositifs WeMo.<br><br>Voulez-vous procéder à la mise à niveau?",
+        "labels": "Oui,Pas maintenant"
+    },
+    "completePopup":{
+        "title": "Mise à jour terminée",
+        "message": "Tous vos appareils WeMo sont enfin à jour et peuvent continuer à fonctionner correctement",
+        "button": "Hourra !"
+    },
+    "firmwareupdate": {
+        "title": "Mise à niveau",
+        "updateBtn": "Mettre à niveau maintenant",
+        "header": "Un nouveau micrologiciel est disponible pour votre",
+        "updateWarning": "Veuillez utiliser la dernière version de l’appli sur tous vos smartphones et tablettes.",
+        "inProgress": "Mise à niveau en cours",
+        "inProgressMessage": "Vos dispositifs s'occuperont eux-mêmes de la mise à niveau. N'hésitez pas à fermer cette appli et à jouer à Angry Birds pendant le processus.",
+        "notes1": "Le téléchargement et l'installation de cette mise à jour peuvent prendre quelques minutes. Vous n'avez pas besoin de garder l'appli ouverte pendant la mise à jour.",
+        "notes2": "Si jamais vous ne voyez toujours pas apparaître l'appli sur votre téléphone, c'est que la mise à jour est toujours en cours d'installation. Veuillez patienter.",
+        "notes3": "Vos appareils WeMo vont s’éteindre avant la finalisation de la mise à jour. Il est possible que le voyant s’allume en bleu ou en vert pendant la mise à jour. Lorsque les voyants LED arrêtent de clignoter, cela signifie que l'installation de la mise à jour est terminée.",
+        "ugradeInProgress": "Mise à jour en cours...",
+        "releaseNotes": "Notes de mise à jour:"
+    },
+    "wifistatus": {
+        "0": "Téléchargement en cours...",
+        "1": "Téléchargé",
+        "2": "Téléchargement échoué",
+        "3": "En cours de mise à jour...",
+        "4": "Mis à jour",
+        "5": "Mise à jour échouée",
+        "6": "Mise à jour échouée",
+        "7": "En attente...",
+        "90": "La mise à jour du module Link est en cours de téléchargement...",
+        "91": "La mise à jour du module Link est téléchargé",
+        "92": "Le téléchargement de la mise à jour du module Link a échoué",
+        "93": "Mise à jour du module Link en cours...",
+        "94": "Module Link mis à jour",
+        "95": "L’installation de la mise à jour du module Link a échouée",
+        "96": "L’installation de la mise à jour du module Link a échouée",
+        "97": "Link en attente..."
+    }
+}

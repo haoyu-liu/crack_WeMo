@@ -1,0 +1,36 @@
+
+<polymer-element name="alert-banner" >
+<template>
+    <style>
+        :host {
+            display: none;
+            position: fixed;
+            bottom: 70px;
+            width: 100%;
+            padding: 12px 4%;
+            background: #dc0000;
+            z-index: 4;
+            color: #fff;
+        }
+    </style>
+    <div>{{message}} {{alarmTime}}</div>
+</template>
+
+<script>
+    Polymer('alert-banner',{
+        alarmTime: '7:51PM',
+        ready: function() {
+            var self = this;
+            setTimeout(function(){
+                i18n.init({
+                    lng:  (window.navigator.language.indexOf('_')) ? window.navigator.language.replace('_', '-') : window.navigator.language,
+                    fallbackLng: 'en-US',
+                    resGetPath: "components/polymer/components/wemo/emergency-message/locales/__lng__/__ns__.json"
+                }, function(t) {
+                    self.message = t('banner.message');
+                });
+            }, 500);
+        }
+    });
+</script>
+</polymer-element>

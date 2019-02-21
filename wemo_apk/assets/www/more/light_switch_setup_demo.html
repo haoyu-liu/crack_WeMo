@@ -1,0 +1,106 @@
+<!DOCTYPE html><html>
+<head>
+	<title>Light Switch Setup Demo</title>
+	<meta name="author" content="Code Computerlove - http://www.codecomputerlove.com/" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<link rel="stylesheet" href="../css/style.css" />
+	
+	<link href="../css/photoswipe.css" type="text/css" rel="stylesheet" />
+	
+	<link rel="stylesheet" href="../css/jquery.mobile-1.4.2.min.css">
+	<link rel="stylesheet" href="../css/AndroidHoloDarkLight.css" />
+	<link rel="stylesheet" href="../css/style.css" />
+	<script type="text/javascript" src="../js/vendor/jquery-1.8.3.js"></script>
+	<script src="../js/vendor/jquery.mobile-1.4.2.js"></script><script src="../js/vendor/jquery.transit.js"></script><script src="../js/vendor/pointer.js"></script>
+	<script type="text/javascript" src="../cordova.js"></script>
+	<script type="text/javascript" src="../lang/en.js"></script>
+	<script type="text/javascript" src="../lang/ru.js"></script>
+	<script type="text/javascript" src="../lang/fr.js"></script>
+	<script type="text/javascript" src="../lang/zh.js"></script>
+	<script type="text/javascript" src="../lang/de.js"></script>
+	<script type="text/javascript" src="../lang/es.js"></script>
+	<script type="text/javascript" src="../lang/it.js"></script>
+	<script type="text/javascript" src="../lang/ko.js"></script>
+	<script type="text/javascript" src="../lang/ja.js"></script> 
+	<script type="text/javascript" src="../lang/lang.js"></script>
+	<script type="text/javascript" src="../js/wemo.js"></script>
+	<script type="text/javascript" src="../js/wemo_util.js"></script>
+	<script type="text/javascript" src="../js/constants.js"></script>
+	<script type="text/javascript" src="../js/more/demo_setup_device.js"></script>
+	
+	<!-- PhotoSwip library -->
+	<script type="text/javascript" src="../js/more/klass.min.js"></script>
+	<script type="text/javascript" src="../js/more/code.photoswipe-2.1.2.js"></script>
+	<!-- PhotoSwip library -->
+	
+	<script type="text/javascript">
+
+	(function(window, PhotoSwipe){
+		
+		document.addEventListener('DOMContentLoaded', function(){
+		
+			var	demo,
+			
+			options = {
+					//preventHide: true,
+					captionAndToolbarHide: false,
+					captionAndToolbarAutoHideDelay:0,
+					getImageSource: function(obj){
+						return obj.url;
+					},
+					getImageCaption: function(obj){
+						return obj.caption;
+					},
+					loop:false,
+					backButtonHideEnabled:true,
+					getToolbar: function(){
+						return '<div class="ps-toolbar-close" style="padding-top: 12px;">'+ wemo.items['SetupInstructions_close']+'</div><div class="ps-toolbar-play" style="padding-top: 12px;">'+ wemo.items['SetupInstructions_play']+'</div><div class="ps-toolbar-previous" style="padding-top: 12px;">'+ wemo.items['SetupInstructions_previous']+'</div><div class="ps-toolbar-next" style="padding-top: 12px;">'+ wemo.items['SetupInstructions_next']+'</div><div class="ps-toolbar-demo" style="padding-top: 12px;">'+ wemo.items['SetupInstructions_Demo']+'</div>';
+					}
+				},
+				instance = PhotoSwipe.attach( 
+					[
+						{ url: '../img/sensor_switch_setup_demo_S1.png', caption: wemo.items['SetupInstructions_1_PlugMeIn']},
+						{ url: '../img/sensor_switch_setup_demo_S2.png', caption: wemo.items['SetupInstructions_2_OpenSettings']},
+						{ url: '../img/sensor_switch_setup_demo_S3.png', caption: wemo.items['SetupInstructions_3_TapWiFi']},
+						{ url: '../img/sensor_switch_setup_demo_S4.png', caption: wemo.items['SetupInstructions_4_SelectWeMoNetwork']},
+						{ url: '../img/sensor_switch_setup_demo_S5.png', caption: wemo.items['SetupInstructions_5_OpenWeMoApp']}
+					], 
+					options 
+				);
+				
+				instance.show(0);
+				
+				// onShow - store a reference to our "say hi" button
+				instance.addEventHandler(PhotoSwipe.EventTypes.onShow, function(e){
+					demo = window.document.querySelectorAll('.ps-toolbar-demo')[0];
+				});
+
+				// onToolbarTap - listen out for when the toolbar is tapped
+				instance.addEventHandler(PhotoSwipe.EventTypes.onToolbarTap, function(e){
+					if (e.toolbarAction === PhotoSwipe.Toolbar.ToolbarAction.none){
+						if (e.tapTarget === demo || Util.DOM.isChildOf(e.tapTarget, demo)){
+							wemoUtil.loadUrl(filePath.VIDEO_DEMO);
+						}
+					}
+				});
+
+				// onBeforeHide - clean up
+				instance.addEventHandler(PhotoSwipe.EventTypes.onBeforeHide, function(e){
+					sayHiEl = null;
+				});
+				
+		}, false);
+		
+	}(window, window.Code.PhotoSwipe));
+
+		pageRef = "internalPage";
+		
+	</script>
+	
+</head>
+<body>
+	<!-- <div id="closeDemoPage" class="demo-setup-device-closeMe demo-setup-device-page-close" style="top:50px"></div> -->
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<!--
+    nest_rule.html
+
+    Created by Belkin International, Software Engineering on 10/04/2013. 
+    Copyright (c) 2012-2013 Belkin International, Inc. and/or its affiliates. All rights reserved. 
+    
+    Belkin International, Inc. retains all right, title and interest (including all 
+    intellectual property rights) in and to this computer program, which is 
+    protected by applicable intellectual property laws.  Unless you have obtained 
+    a separate written license from Belkin International, Inc., you are not authorized 
+    to utilize all or a part of this computer program for any purpose (including 
+    reproduction, distribution, modification, and compilation into object code), 
+    and you must immediately destroy or return to Belkin International, Inc. all copies 
+    of this computer program.  If you are licensed by Belkin International, Inc., your 
+    rights to utilize this computer program are limited by the terms of that license.  
+
+    To obtain a license, please contact Belkin International, Inc. 
+  
+    This computer program contains trade secrets owned by Belkin International, Inc. 
+    and, unless unauthorized by Belkin International, Inc. in writing, you agree to 
+    maintain the confidentiality of this computer program and related information 
+    and to not disclose this computer program and related information to any 
+    other person or entity. 
+  
+    THIS COMPUTER PROGRAM IS PROVIDED AS IS WITHOUT ANY WARRANTIES, AND BELKIN INTERNATIONAL, INC. 
+    EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF 
+    MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. 
+--->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="../css/style.css"/>
+    <script type="text/javascript" src="../js/vendor/jquery-1.8.3.js"></script>
+    <script src="../js/vendor/jquery.mobile-1.4.2.js"></script>
+    <script src="../js/vendor/pointer.js"></script>
+    <script type="text/javascript" src="../lang/en.js"></script>
+    <script type="text/javascript" src="../lang/ru.js"></script>
+    <script type="text/javascript" src="../lang/fr.js"></script>
+    <script type="text/javascript" src="../lang/zh.js"></script>
+    <script type="text/javascript" src="../lang/de.js"></script>
+    <script type="text/javascript" src="../lang/es.js"></script>
+    <script type="text/javascript" src="../lang/it.js"></script>
+    <script type="text/javascript" src="../lang/ko.js"></script> 
+	<script type="text/javascript" src="../lang/ja.js"></script> 
+    <script type="text/javascript" src="../lang/lang.js"></script>
+    <script type="text/javascript" src="../js/wemo.js"></script>
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../js/constants.js"></script>
+    <script type="text/javascript" src="../js/plugins/wemo_plugin.js"></script>
+    <script type="text/javascript" src="../js/wemo_util.js"></script>
+    <script type="text/javascript" src="../js/rules/SaveNestRule.js"></script>
+    <script type="text/javascript" src="../js/rules/nest_rule.js"></script>
+    <link rel="stylesheet" href="../css/nanoscroller.css">
+    <script type="text/javascript" src="../js/vendor/overthrow.min.js"></script>
+    <script type="text/javascript" src="../js/vendor/jquery.nanoscroller.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.nano').nanoScroller({
+                preventPageScrolling: true
+            });
+            $(".nano").nanoScroller();
+        });
+    </script>
+</head>
+<body>
+<!-- nest Rule Page Start -->
+<div data-role="page" id="nest_rule" class="gray_page">
+    <header data-role="header" data-theme="b" class="main_header" data-position="fixed" data-tap-toggle="false">
+        <span class="wemo_logo"></span>
+    </header>
+    <div class="more_tab"></div>
+
+    <div class="sub_header">
+        <span id="header_string" localString="true" _key="NewRuleNestRuleTitle"></span>
+    </div>
+
+    <div class="rules_container  content-with-margin rules_container-new-bg" data-role="content">
+        <div>
+            <div class="more_menu">
+
+				<div class="timer-rule-detail turn-on-off sessionHeader">
+                    <span class="label upperCase" localString="true" _key="TurnOnOff"></span>
+                </div>
+
+                <div id="nest_container" class="rules_container device-rules-container">
+                    <div id="device_list">
+                    </div>
+                </div>
+
+				<div class="timer-rule-detail turn-on-off sessionHeader">
+                    <span class="label upperCase" localString="true" _key="If"></span>
+
+                </div>
+
+                <div id="nest_rule_if" class="rules_container device-rules-container">
+                    <div id="nest_list">
+                    </div>
+                </div>
+
+				<div class="timer-rule-detail sessionHeader">
+                    <span class="label upperCase" localString="true" _key="When"></span>
+                </div>
+
+                <div class="rule-when">
+                	<ul>
+	                    <li id="nest_rule_when" class="timer_rule_when_name" >
+	                        <div class="display_table timer-rule-name">
+	                            <div class="display_cell padding_left_right_3_percent">
+	                                    <span class="select_time"></span>
+	                                    <span class="select_day schedule_container"></span>
+	                            </div>
+	                        </div>
+	                    </li>
+                	</ul>
+
+                </div>
+
+                <div class="timer-rule-detail sessionHeader">
+                    <span class="label upperCase" localString="true" _key="RuleName"></span>
+                </div>
+            	<div class="rule-name" id="nest_rule_rule_name">
+	                <ul>
+	                    <li id="rule_name" class="timer_rule_when_name timer_rule_when_name-bord"><div class="timer-rule-name-detail"><span class="rule_name_container timer_rule_name rule_name_custom_container">On/Off Rule No 1</span></div></li>
+	                </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div data-position="fixed" data-tap-toggle="false" class="border_top_gray bottom_btns">
+        <div id="nest_rule_cancel_btn" class="footer_cancel"><span localString="true" _key="Cancel"></span></div>
+        <div id="nest_rule_save_btn" class="footer_save"><span localString="true" _key="Save"></span></div>
+    </div>
+
+    <!-- Rule can not save popup Start -->
+    <div id="rule_can_not_save" data-role="popup" class="pop_up" data-overlay-theme="a">
+        <header data-role="content" data-theme="a">
+            <h3 localString="true" _key="RuleNotSaved"></h3>
+        </header>
+
+        <article data-role="content" data-theme="b">
+            <p localString="true" _key="RuleCantBeSaved"></p>
+            <fieldset>
+                <button id="rule_can_not_save_ok"><span localString="true" _key="AlertOK"></span></button>
+            </fieldset>
+        </article>
+    </div>
+    <!--Rule can not save popup Ends-->
+
+    <!-- Rule Conflict popup Start -->
+    <div id="rule_conflict" data-role="popup" class="pop_up" data-overlay-theme="d" data-dismissible="false">
+        <div class="popup_head"><span localString="true" _key="RuleConflict"></span></div>
+        <div class="popup_content"><span  id="RuleConflictSimpleAndTimer" localString="true" _key="RuleConflictSimpleAndTimer"></span></div>
+        <div class="popup_footer">
+            <div id="learn_more_btn" class="popup_cnl_btn"><span localString="true" _key="learnmorestring"></span></div>
+            <div id="ok_btn" class="popup_ok_btn"><span localString="true" _key="AlertOK"></span></div>
+        </div>
+    </div>
+    <!-- Rule Conflict popup Ends-->
+
+    <!-- Rule Duplication popup Start -->
+    <div id="rule_duplicate" data-role="popup" class="pop_up" data-overlay-theme="d" data-dismissible="false">
+        <div class="popup_head"><span localString="true" _key="RuleDuplicate"></span></div>
+        <div class="popup_content"><span  id="RuleDuplicateText"></span></div>
+        <div class="popup_footer">
+            <div id="rule_duplicate_learn_more_btn" class="popup_cnl_btn"><span localString="true" _key="learnmorestring"></span></div>
+            <div id="rule_duplicate_ok_btn" class="popup_ok_btn"><span localString="true" _key="AlertOK"></span></div>
+        </div>
+    </div>
+    <!--Rule Duplication popup Ends-->
+
+        <!-- Identical On/Off Time popup Start-->
+    <div id="identicalOnOffTime" data-role="popup" class="pop_up" data-overlay-theme="d" data-dismissible="false">
+        <div class="popup_head" id="identicalTimeHeader"></div>
+        <div class="popup_content"><span id="identicalOnOffTimeText"></span></div>
+        <div class="popup_footer">
+            <div id="identicalOnOffTimeOkBtn" class="popup_single_ok_btn"><span localString="true" _key="AlertOK"></span></div>
+        </div>
+    </div>
+
+    <!--No nest detected popup Start-->
+    <div id="nonestDetected" data-role="popup" class="pop_up" data-overlay-theme="d" data-dismissible="false">
+        <div class="popup_head" id="nonestDetectedHeader"></div>
+        <div class="popup_content"><span id="nonestDetectedText"></span></div>
+        <div class="popup_footer">
+            <div id="nonestDetectedOkBtn" class="popup_single_ok_btn"><span localString="true" _key="AlertOK"></span></div>
+        </div>
+    </div>
+     <!--No nest detected popup End-->
+
+    <!--sunrise firmware upgrade popup Start -->
+   <div id="sunrise_firmware_upgrade" data-role="popup" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+     <div class="popup_content"><span localString="true" _key="FirmwareNotSupportingForSunsetAlert"></span></div>
+       <div class="popup_footer">
+        <div id="sunrise_firmware_upgrade_updatenow"><span localString="true" _key="UpdateNow"></span></div>
+        <div id="sunrise_firmware_upgrade_later"><span localString="true" _key="Later"></span></div>
+       </div>
+    </div>
+    <!--sunrise firmware upgrade popup Ends-->
+
+	<!-- Firmware version popup -->
+	 <div id="fw_ver_check" data-role="popup" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+
+    <div class="popup_content"><span localString="true" id = "FirmwareVerCheckText" _key="FirmwareVerCheckText"></span></div>
+    <div class="popup_footer">
+        <div id="update_nw_btn"><span localString="true" _key="UpdateNow"></span></div>
+        <div id="later_btn"><span localString="true" _key="Later"></span></div>
+    </div>
+    </div>
+
+    <!-- Device not selected popup Start  -->
+    <div id="device_not_selected" data-role="popup" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+        <div class="popup_head"><span localString="true" _key="NoDeviceSelectedHeader"></span></div>
+        <div class="popup_content"><span localString="true" _key="NoDeviceSelectedBody"></span></div>
+        <div class="popup_footer">
+            <div id="device_not_selected_ok" class="popup_cnl_100_btn"><span localString="true" _key="AlertOK"></span></div>
+        </div>
+    </div>
+
+    <div id="nest_not_selected" data-role="popup" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+        <div class="popup_head"><span localString="true" _key="NoNestDeviceSelectedHeader"></span></div>
+        <div class="popup_content"><span localString="true" _key="NoNestDeviceSelectedBody"></span></div>
+        <div class="popup_footer">
+            <div id="nest_not_selected_ok" class="popup_cnl_100_btn"><span localString="true" _key="AlertOK"></span></div>
+        </div>
+    </div>
+    <!--  Device not selected popup Ends-->
+
+
+    <!-- Sensor not selected popup Start  -->
+    <div id="sensor_not_selected" data-role="popup" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+        <div class="popup_head"><span localString="true" _key="NoMotionSelectedHeader"></span></div>
+        <div class="popup_content"><span localString="true" _key="NoMotionSelectedBody"></span></div>
+        <div class="popup_footer">
+            <div id="sensor_not_selected_ok" class="popup_cnl_100_btn"><span localString="true" _key="AlertOK"></span></div>
+        </div>
+    </div>
+    <!--  Sensor not selected popup Ends-->
+
+</div>
+<div class="overlay">
+    <div class="picker_container">
+        <div class="picker" data-udn="">
+            <div class="picker_header"><span localString="true" _key="OnThenOff_IfNoMotion"></span></div>
+            <div id="main">
+                <div class="nano">
+                    <div class="overthrow content description">
+                        <ul id="picker">
+                            <li><span>immediately</span><span><input type="radio" name="rad_after_motion"
+                                                                     value="1"></span>
+                            </li>
+                            <li><span>1 min</span><span><input type="radio" name="rad_after_motion"
+                                                               value="00:01"></span>
+                            </li>
+                            <li><span>5 min</span><span><input type="radio" name="rad_after_motion"
+                                                               value="00:05"></span>
+                            </li>
+                            <li><span>10 min</span><span><input type="radio" name="rad_after_motion"
+                                                                value="00:10"></span></span></li>
+                            <li><span>15 min</span><span><input type="radio" name="rad_after_motion" checked
+                                                                value="00:15"></span>
+                            </li>
+                            <li><span>30 min</span><span><input type="radio" name="rad_after_motion"
+                                                                value="00:30"></span>
+                            </li>
+                            <li><span>1 hr</span><span><input type="radio" name="rad_after_motion" value="01:00"></span>
+                            </li>
+                            <li><span>don't turn off</span><span><input type="radio" name="rad_after_motion"
+                                                                        value="0"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="picker_footer">
+                <div class="picker_cnl" id="cnl_after_picker_btn"><span localString="true" _key="Cancel"></span></div>
+                <div data-udn="" class="picker_set" id="set_after_picker_btn"><span localString="true"
+                                                                                    _key="Set"></span></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

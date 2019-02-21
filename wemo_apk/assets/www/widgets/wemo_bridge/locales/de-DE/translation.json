@@ -1,0 +1,11 @@
+{
+    "fwUpdateInProgress": {
+        "header": "WeMo Link wird aktualisiert",
+        "message": "Stecken Sie den WeMo Link nicht ab, bis das Update abgeschlossen ist."
+    },
+    "unavailable": {
+        "header": "Der WeMo Link reagiert nicht.",
+        "message": "Stecken Sie ihn ab und schließen Sie ihn erneut an."
+    },
+    "defaultFriendlyName": "WeMo Link"
+}

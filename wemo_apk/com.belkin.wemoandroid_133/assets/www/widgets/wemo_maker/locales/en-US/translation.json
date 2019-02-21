@@ -1,0 +1,19 @@
+{
+    "state": {
+        "0": "Toggle",
+        "1": "Momentary Connection",
+        "2": "Sensor not triggered",
+        "3": "Sensor triggered"
+    },
+    "editContext": {
+        "title": {
+            "switchType": "Switch Type",
+            "toggle": "Toggle",
+            "momentary": "Momentary",
+            "sensor": "Sensor",
+            "yes": "Yes",
+            "no": "No"
+        }
+    },
+    "defaultFriendlyName": "WeMo Maker"
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wemo</string>
+    <string name="push_message_ticker">WeMo से संदेश</string>
+    <string name="OK">ठीक है</string>
+    <string name="push_crockpot_message_ticker">डिंग!</string>
+    <string name="push_crockpot_warm">कुक टाइमर समाप्त हो गया है. मैं चीजों को गर्म रखूँगा.</string>
+    <string name="push_warmtime_over">गरमाने वाला समय खत्म हो गया है.</string>
+    <string name="push_crockpot_turn_off">मैं अब स्लो कुकर को बंद कर दूंगा.</string>
+</resources>

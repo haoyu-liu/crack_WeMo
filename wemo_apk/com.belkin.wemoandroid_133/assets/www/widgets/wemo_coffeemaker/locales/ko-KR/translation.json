@@ -1,0 +1,48 @@
+{
+    "labels": {
+        "at": "at",
+        "coffeeReady": "Coffee's ready!",
+        "cleanTitle": "Time to refresh!",
+        "cleanMessage": "could use a cleaning!",
+        "filterMessage": "It's time to replace Mr. Coffee® Brewer's water filter",
+        "noRuleMessage": "Disable the schedule or select a day to save",
+        "howto": "How to",
+        "iNeedFilters": "I Need Filters",
+        "time": "5:30 am",
+        "cleanSoon": "(Clean Soon)",
+        "brewSchedule": "BREW SCHEDULE",
+        "waterFilterReminders": "WATER FILTER REMINDERS",
+        "btnReminder": "Water Filter Reminder",
+        "reset": "SET REMINDER",
+        "save": "Save Schedule",
+        "resetting": "Resetting...",
+        "saving": "Saving...",
+        "saveScheduleError": "You need to select at least one day to save a schedule",
+        "resetTitle": "Water Filter Reminder",
+        "remainderTitle": "Get a reminder every 30 brews",
+        "remainderDiscription": "Great tasting coffee starts with great water. The Mr. Coffee® carbon based water filter removes up to 97% of chlorine, and improves the taste of your coffee.",
+        "btnResetTitle": "Reset brew counter when you replace the filter.",
+        "btnOrderTitle": "Need a new filter?",
+        "btnOrder": "Order",
+        "btnReset": "Reset"
+    },
+    "scheduleDays": {
+        "7": "Ready"
+    },
+    "mode": {
+        "0": "Refill Water",
+        "1": "Place Empty Carafe",
+        "3": "Ready",
+        "4": "Brewing",
+        "5": "Brewed",
+        "6": "Cleaning",
+        "7": "Done cleaning",
+        "8": "Place Empty Carafe"
+    },
+    "reminderRules": {
+        "messageCarafe": "__friendlyName__ is scheduled to make coffee tomorrow, but needs you to empty and place the carafe.",
+        "messageRefill": "__friendlyName__ is scheduled to make coffee tomorrow, but needs you to refill the water.",
+        "messageBoth": "__friendlyName__ is scheduled to make coffee tomorrow,but its missing water and carafe."
+    },
+    "defaultFriendlyName": "Mr. Coffee® 브루어"
+}

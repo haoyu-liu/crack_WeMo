@@ -1,0 +1,13 @@
+{
+    "errors": {
+        "notDetected": "Not Detected"
+    },
+    "buttons": {
+        "cancel": "Cancel",
+        "hide": "Hide"
+    },
+    "hide": {
+        "title": "Hide This?",
+        "message": "The device won't appear until it becomes active again."
+    }
+}

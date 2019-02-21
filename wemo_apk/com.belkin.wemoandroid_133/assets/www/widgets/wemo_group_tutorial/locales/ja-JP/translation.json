@@ -1,0 +1,19 @@
+{
+    "popup": {
+        "heading": "その他の機能",
+        "description": "類似の操作ができるよう電球をグループ化します。またはWeMemo Link を通してネットワークにデバイスを追加してください。 こちらは手順ごとの説明です。",
+        "description2": "表示しますか?",
+        "cancelBtn": "後で",
+        "doneBtn": "表示する"
+    },
+    "title": {
+        "1": "LED 電球のグループ化"
+    },
+    "desc": {
+        "1": "オーバーフローメニューで \"デバイスの編集\" を選択。",
+        "2": "電球を他のものにドラッグしてグループ化します。",
+        "3": "電球アイコンの上の数字はグループ化されている電球の数を示します。",
+        "4": "Select Settings in the navigation bar.",
+        "5": "To add a WeMo Link-enabled device, select 'Add WeMo Link Devices' in the More tab."
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "headers": {
+        "editDevice": "Editar Dispositivo",
+        "picture": "Foto",
+        "ID": "ID de WeMo: ",
+        "reset": "Reiniciar opciones",
+        "enterName": "Nombre",
+        "groupIcon": "Icono de Grupo",
+        "groupName": "Nombre de Grupo",
+        "groupSubHeader": "en este Grupo",
+        "alert": "Aviso"
+    },
+    "resetButtons": {
+        "1": "Borrar datos de uso",
+        "2": "Borrar información del producto",
+        "3": "Restablecer Wi-Fi",
+        "4": "Eliminar todo el contenido y los ajustes"
+    },
+    "resetDescriptions": {
+        "1": "Borrar los datos de corriente, tiempo y coste.",
+        "2": "Borrar nombre, icono y reglas.",
+        "3": "¿Borrar la configuración Wi-Fi del dispositivo. (necesitará instalarlo de nuevo)",
+        "4": "Este botón restaurará todos los valores de configuración de fábrica."
+    },
+    "validation": {
+        "friendlyNameRequired": "Se necesita un nombre descriptivo.",
+        "friendlyNameMaxLength": "El nombre descriptivo debe tener menos de 30 caracteres.",
+        "friendlyNameValidation": "Introduzca un nombre de menos de 30 caracteres que contenga solo letras, n&uacute;meros, guiones o guiones bajos.",
+        "groupNameRequired": "El nombre de grupo es requerido.",
+        "groupNameMaxLength": "El nombre de grupo debe tener menos de 30 caracteres."
+    },
+    "iconPopup": {
+        "title": "Cargar una imagen",
+        "option1": "Hacer una foto",
+        "option2": "Elegir una foto de la galería",
+        "option3": "Restablecer foto"
+    },
+    "resetPopupMessage": {
+        "resetUsageData": "¿Desea borrar todos los datos de corriente y tiempo de este dispositivo?",
+        "fnIconRules": "¿Borrar el nombre, icono y las reglas del dispositivo?",
+        "wifi": "¿Borrar la configuración Wi-Fi del dispositivo? (necesitará instalarlo de nuevo)",
+        "all": "¿Desea borrar todos los ajustes y restaurar la configuración de fábrica del dispositivo?"
+    },
+    "messages": {
+        "errorMessageEdit": "No se pudo modificar el nombre y el icono. Vuelva a intentarlo de nuevo.",
+        "errorMessageReset": "Eso no funcionó. Inténtelo de nuevo.",
+        "iconChangeDisabledMessage": "Lo sentimos pero actualmente no existe la opción de iconos personalizados. Consulte el Play Store por actualizaciones."
+    },
+    "buttons": {
+        "okay": "Okay",
+        "ok": "Aceptar",
+        "done": "Finalizado",
+        "cancel": "Cancelar",
+        "save": "Guardar",
+        "hide": "Ocultar",
+        "continue": "Continuar",
+        "reset": "Reiniciar"
+    },
+    "labels": {
+        "confirm": "Confirmar"
+    }
+}

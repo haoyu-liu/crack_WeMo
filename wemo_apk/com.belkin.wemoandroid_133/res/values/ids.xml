@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="done_cancel_bar">false</item>
+    <item type="id" name="crop_image">false</item>
+    <item type="id" name="btn_cancel">false</item>
+    <item type="id" name="btn_done">false</item>
+    <item type="id" name="ProgressDialogLayout">false</item>
+    <item type="id" name="messageForProgressDialog">false</item>
+    <item type="id" name="rate_me_title">false</item>
+    <item type="id" name="rate_me_text">false</item>
+    <item type="id" name="btn_rate_me">false</item>
+    <item type="id" name="btn_rate_no">false</item>
+    <item type="id" name="btn_report_problem">false</item>
+    <item type="id" name="btn_rate_later">false</item>
+    <item type="id" name="plugin_connected_title">false</item>
+    <item type="id" name="btn_wemo_ap_dismiss">false</item>
+    <item type="id" name="btn_wemo_ap_not_again">false</item>
+    <item type="id" name="friendly_name_label">false</item>
+    <item type="id" name="on_off_button_image">false</item>
+    <item type="id" name="progress_bar">false</item>
+    <item type="id" name="wemo_header">false</item>
+    <item type="id" name="dimmer_level_textview">false</item>
+    <item type="id" name="power_button_container">false</item>
+    <item type="id" name="app_launch_container">false</item>
+    <item type="id" name="cancel_button">false</item>
+    <item type="id" name="next_button">false</item>
+    <item type="id" name="device_list_view">false</item>
+    <item type="id" name="no_devices_textview">false</item>
+    <item type="id" name="device_icon">false</item>
+    <item type="id" name="friendly_name">false</item>
+    <item type="id" name="radio_button">false</item>
+    <item type="id" name="not_supported_message">false</item>
+</resources>

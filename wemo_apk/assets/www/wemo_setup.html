@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<!--
+    wemo_setup.html 
+
+    Created by Belkin International, Software Engineering on 10/04/2013. 
+    Copyright (c) 2012-2013 Belkin International, Inc. and/or its affiliates. All rights reserved. 
+    
+    Belkin International, Inc. retains all right, title and interest (including all 
+    intellectual property rights) in and to this computer program, which is 
+    protected by applicable intellectual property laws.  Unless you have obtained 
+    a separate written license from Belkin International, Inc., you are not authorized 
+    to utilize all or a part of this computer program for any purpose (including 
+    reproduction, distribution, modification, and compilation into object code), 
+    and you must immediately destroy or return to Belkin International, Inc. all copies 
+    of this computer program.  If you are licensed by Belkin International, Inc., your 
+    rights to utilize this computer program are limited by the terms of that license.  
+
+    To obtain a license, please contact Belkin International, Inc. 
+  
+    This computer program contains trade secrets owned by Belkin International, Inc. 
+    and, unless unauthorized by Belkin International, Inc. in writing, you agree to 
+    maintain the confidentiality of this computer program and related information 
+    and to not disclose this computer program and related information to any 
+    other person or entity. 
+  
+    THIS COMPUTER PROGRAM IS PROVIDED AS IS WITHOUT ANY WARRANTIES, AND BELKIN INTERNATIONAL, INC. 
+    EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF 
+    MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. 
+--->
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="css/AndroidHoloDarkLight.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vendor/jquery-1.8.3.js"></script>
+    <script src="js/vendor/jquery.mobile-1.4.2.js"></script>
+    <script src="js/vendor/jquery.transit.js"></script>
+    <script src="js/vendor/pointer.js"></script>
+    <script src="cordova.js"></script>
+    <script type="text/javascript" src="js/plugins/setup_plugin.js"></script>
+    <script type="text/javascript" src="js/wemo_setup.js"></script>
+    <script type="text/javascript" src="js/constants.js"></script>
+</head>
+
+<body>
+
+<div id="wemo_setup" data-role="page">
+
+    <header data-role="header" data-theme="a" class="main_header">
+        <h3 id="title">WeMo Setup</h3>
+    </header>
+
+    <article data-role="content" data-theme="b">
+        <p>
+            You are connected to the <span id="device_type"></span>, ID:<span
+                id="device_ssid"></span>
+        </p>
+        <figure class="set_up_img">
+            <img id="device_image" />
+        </figure>
+        <p class="note">Now all you have to do is let the WeMo App Know
+            the name, and password (if required), of your home Wi-Fi network.</p>
+
+        <a href="#" id="wifi_ap_list_btn" data-role="button"
+           class="single_btn" data-theme="b" data-textonly="true"
+           data-textvisible="true"
+           data-html="<span class='ui-bar ui-overlay-c ui-corner-all' ><img src='css/images/ajax-loader.gif' /><h4>Searching Wifi routers near you ...</h4></span>">Select
+            your Wi-Fi Network</a>
+
+    </article>
+
+
+    <!-- Wi-Fi Access Point List popup Start -->
+    <div id="wifi_list_popup" data-role="popup" class="pop_up"
+         data-overlay-theme="a" data-position-to="window" data-dismissible="false" data-go-forward="false">
+
+        <header data-role="content" data-theme="a">
+            <h3>Select your Wi-Fi Network</h3>
+        </header>
+        <article data-role="content" data-theme="b">
+            <ul id="wifi_ap_list" class="wifi_ap_list" data-role="listview" data-theme="b">
+
+            </ul>
+            <div class="type_1_button">
+                <a href="#" id="refresh_ap_list_btn" data-role="button"
+                   class="single_btn" data-theme="b" data-textonly="true"
+                   data-textvisible="true"
+                   data-html="<span class='ui-bar ui-overlay-c ui-corner-all' ><img src='css/images/ajax-loader.gif' /><h4>Searching Wifi routers near you ...</h4></span>">Refresh</a>
+            </div>
+
+        </article>
+
+
+    </div>
+    <!-- Wi-Fi Access Point List popup End -->
+
+    <!-- Password for Access Point popup -->
+
+
+    <div id="ap_password_popup"  data-role="popup" data-overlay-theme="a"
+         data-position-to="window" data-dismissible="false" data-go-forward="false"
+            >
+
+        <header data-role="content" data-theme="a" >
+            <h3 id="ap_password_ssid" ></h3>
+        </header>
+
+        <div data-role="content">
+            <div><label>Security</label>&nbsp;&nbsp;&nbsp;<b><span id="ap_password_security"> </span></b></div>
+            <div><label>Signal strength</label>&nbsp;&nbsp;&nbsp;<b><span id="ap_password_signal_strength"> </span></b></div>
+            <input type="hidden" value="The Value Here" id="ap_password_channel">
+            <br/>
+            <div>
+                <label>Wireless Password</label>
+                <b><input type="password" name="wireless_password" id="ap_password_input" /></b>
+                <div data-role="fieldcontain" class="ui-hide-label">
+                    <fieldset data-role="controlgroup">
+                        <legend>Show Password</legend>
+                        <input id="ap_password_show" type="checkbox" name="show_password" data-theme="b" class="custom" />
+                        <label for="ap_password_show">Show Password</label>
+                    </fieldset>
+                </div>
+                <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <button id="ap_password_connect_btn" data-theme="b" data-textonly="true" data-textvisible="true" data-html="<span class='ui-bar ui-overlay-c ui-corner-all' ><img src='css/images/ajax-loader.gif' /><h4>The WeMo App is trying to Connect... This may take upto 60 seconds</h4></span>">Connect</button>
+                    </div>
+                    <div class="ui-block-b">
+                        <button id="ap_password_cancel_btn"  data-theme="b">Cancel</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="popup" id="connection_unsuccessful_popup" data-theme="a"
+         data-position-to="window" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+
+        <header data-role="content" data-theme="a">
+            <h3>Unsuccessful</h3>
+        </header>
+        <article data-role="content" data-theme="b">
+            <p id="connection_unsuccessful_msg"></p>
+            <div class="bottom_buttons">
+                <a id="connection_unsuccessful_ok_btn" href="#"  data-role="button" data-theme="b">OK</a>
+            </div>
+        </article>
+
+    </div>
+
+
+
+
+    <div data-role="popup" id="pop2" data-theme="a"
+         data-position-to="window">
+        <p class="ui-bar ui-bar-a">Enter password</p>
+
+    </div>
+
+    <a href="#" id="hidden_btn" data-role="button"
+       class="hidden_btn" data-theme="b" data-textonly="false"
+       data-textvisible="true"	data-msgtext="Please Wait. The WeMo App is trying to connect with your default network"></a>
+
+
+
+    <!-- Add Wifi Network popup Start-->
+    <div id="add_wifi_network_popup" data-role="popup" class="pop_up" data-overlay-theme="a" wemo-go-forward="false">
+        <header data-role="content" data-theme="a">
+            <h3>Add Wi-Fi Network</h3>
+        </header>
+
+        <article data-role="content" data-theme="b">
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup">
+                    <div class="input_element_row">
+                        <label class="display_block">Network SSID</label>
+                        <input id="add_wifi_network_ssid" data-theme="b" type="text"/>
+                    </div>
+                    <div class="input_element_row">
+                        <label class="display_block">Security</label>
+                        <select id="security_option" class="wifi_network_security">
+                            <option value="Open">Open</option>
+                            <option value="WEP">WEP</option>
+                            <option value="WPA">WPA</option>
+                            <option value="WPA2">WPA2</option>
+                        </select>
+                    </div>
+                    <div id="password_container" class="input_element_row wireless_password">
+                        <label class="display_block">Wireless Password</label>
+                        <b><input type="password" name="wireless_password" id="add_wifi_password_input" /></b>
+                        <input type="checkbox"  name="show_password" id="checkbox-2" class="custom"/>
+                        <label for="checkbox-2">Show Password</label>
+
+                    </div>
+                </fieldset>
+            </div>
+        </article>
+        <fieldset>
+            <a id="add_wifi_done_btn" href="#" class="half_length" data-role="button" data-theme="b">Connect</a>
+            <a id="add_wifi_cancel_btn" href="#" class="half_length" data-role="button" data-theme="b">Cancel</a>
+        </fieldset>
+    </div>
+    <!-- Add Wifi Network popup Ends-->
+
+    <!-- Connection Failure popup Starts -->
+    <div id="network_failure_popup" data-role="popup" class="pop_up" data-overlay-theme="a" data-position-to="window" data-dismissible="false" data-go-forward="false">
+        <header data-role="content" data-theme="a">
+            <h3>Network error</h3>
+        </header>
+        <article data-role="content" data-theme="b">
+            <p>Network disconnected unexpectedly. Please wait till reconnecting. or try connecting manually and relaunch the app</p>
+
+        </article>
+    </div>
+    <!-- Connection Failure popup Ends -->
+
+
+</div>
+<!-- /page1 -->
+
+</body>
+</html>

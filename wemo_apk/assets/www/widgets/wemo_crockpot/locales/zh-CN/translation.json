@@ -1,0 +1,49 @@
+{
+    "labels": {
+        "mealReady": "Meal ready",
+        "warmTimeLeft": "Warm time left",
+        "onWarm": "On Warm",
+        "onLow": "On Low",
+        "onHigh": "On High"
+    },
+    "mode": {
+        "0": "关",
+        "1": "Idle",
+        "2": "不可用",
+        "50": "Warm",
+        "51": "低",
+        "52": "高"
+    },
+    "summary": {
+        "title": "Cooking Summary",
+        "btnModify": "Modify",
+        "btnReset": "Reset Timer",
+        "onForZero": "<p>一些</p><p>秒</p>"
+    },
+    "staysafe": {
+        "title": "Stay Safe",
+        "message": "To ensure food safety, your slow cooker will begin cooking immediately after the start button is pressed.",
+        "setTimerButton": "Set Timer"
+    },
+    "settings": {
+        "title": "Set Cooking Timer",
+        "cancelButton": "DELETE TIMER",
+        "doneBtn": "开始",
+        "cancelBtn": "Cancel Timer",
+        "mealSetText": "Meal ready at:",
+        "mealFinishedText": "Meal finished at:",
+        "cookTimer": "Cook Timer",
+        "setTimerDialogHeader": "Set time",
+        "confirmMessage": "Please select Start to begin cooking or Cancel to quit.",
+        "clearMessage": "Cancel the timer?",
+        "clearLabels": "是,否",
+        "clearTitle": "Just Checking"
+    },
+    "tile": {
+        "finishedTitle": "Ding!",
+        "finishedMessage": "The Cook Timer has finished.I'll keep things warm.",
+        "failedTitle": "Lost Connection",
+        "failedMessage": "Check the lights on your slow cooker. If it lost power, your food might not be safe to eat."
+    },
+    "defaultFriendlyName": "Crock-Pot®慢燉鍋"
+}

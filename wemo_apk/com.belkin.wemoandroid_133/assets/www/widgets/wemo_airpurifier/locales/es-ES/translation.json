@@ -1,0 +1,69 @@
+{
+    "labels": {
+        "on": "Auto",
+        "saveScheduleError": "You must select at least a day and a Fan mode to save the schedule.",
+        "ionizer": "Ionizer",
+        "fan": "Fan: ",
+        "air": "Air: ",
+        "moreInfo": "More Information"
+    },
+    "mode": {
+        "1": "Bajo",
+        "2": "Medio",
+        "3": "Alto",
+        "4": "Auto"
+    },
+    "filterPresent": {
+        "0": "Filters Not Detected"
+    },
+    "filter": {
+        "text": "Which new aer1® filter did you use in your",
+        "filter0": "I didn't change the filters.",
+        "filter1": "Total Air",
+        "filter2": "Odor Eliminator",
+        "filter3": "Smoke Grabber",
+        "filter4": "Allergen Remover",
+        "filter5": "Performance Plus",
+        "filter6": "HEPA Type",
+        "filter7": "Mostrarme cómo"
+    },
+    "AirQuality": {
+        "0": "Poor",
+        "1": "Moderate",
+        "2": "Good"
+    },
+    "staysafe": {
+        "textFilter": "Filter Life"
+    },
+    "settings": {
+        "title": "Filter",
+        "FilterOut": "NO FILTERS DETECTED",
+        "FilterOutText": "Check to make sure that your filters are properly installed into the Air Purifier.",
+        "timeToOrderNewWickFilter": "TIME TO ORDER NEW FILTERS",
+        "timeToReplaceNewWickFilter": "TIME TO REPLACE FILTERS"
+    },
+    "alertMessages": {
+        "mainTitle": "is in need of Maintenance",
+        "mainMessage": "Clean the Optical Sensor and the Prefilter.",
+        "expiredTitle": "filter life has expired",
+        "expiredMessage": "It's time to replace filters",
+        "soonTitle": "needs new filters soon",
+        "changeTitle": "Filter Change Detected",
+        "missingTitle": "seems to be  missing its filters",
+        "missingMessage": "Check to make sure that your filters are properly installed into the",
+        "showMessage": "Show Me How"
+    },
+    "brands": {
+        "Holmes": "holmesLogo",
+        "Bionaire": "bionaireLogo"
+    },
+    "purchasefilterLink": {
+        "Holmes": "http://www.belkin.com/embed/en-us/wemo-air/filterpurchase",
+        "Bionaire": "http://www.bionairecanada.com/en_CA/air-purification/air-purifiers-filters/"
+    },
+    "changefilterLink": {
+        "Holmes": "http://www.belkin.com/embed/en-us/wemo-air/changefilter",
+        "Bionaire": "http://www.belkin.com/embed/en-ca/wemo/bionaire-airpurifier/moreinfo"
+    },
+    "defaultFriendlyName": "Purificador de aire Holmes®"
+}

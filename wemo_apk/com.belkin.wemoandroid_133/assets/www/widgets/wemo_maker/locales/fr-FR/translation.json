@@ -1,0 +1,19 @@
+{
+    "state": {
+        "0": "Bascule",
+        "1": "Connexion momentanée",
+        "2": "Détecteur non déclenché",
+        "3": "Détecteur déclenché"
+    },
+    "editContext": {
+        "title": {
+            "switchType": "Type d'interrupteur",
+            "toggle": "Bascule",
+            "momentary": "momentanée",
+            "sensor": "Détecteur",
+            "yes": "Oui",
+            "no": "Non"
+        }
+    },
+    "defaultFriendlyName": "WeMo Maker"
+}

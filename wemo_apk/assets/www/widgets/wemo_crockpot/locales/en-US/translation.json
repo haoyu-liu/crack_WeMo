@@ -1,0 +1,65 @@
+{
+    "labels": {
+        "mealReady": "Meal ready",
+        "warmTimeLeft": "Warm time left",
+        "onWarm": "On Warm",
+        "onLow": "On Low",
+        "onHigh": "On High",
+        "temperature": "Temperature",
+        "enable": "Enable",
+        "remaining": "Remaining",
+        "onFor": "On for"
+    },
+    "mode": {
+        "0": "Off",
+        "1": "Idle",
+        "2": "Unavailable",
+        "50": "Warm",
+        "51": "Low",
+        "52": "High"
+    },
+    "summary": {
+        "title": "Cooking Summary",
+        "btnModify": "Modify",
+        "btnReset": "Reset Timer",
+        "onForZero": "<p>a few</p><p>seconds</p>"
+    },
+    "staysafe": {
+        "title": "Stay Safe",
+        "message": "To ensure food safety, your slow cooker will begin cooking immediately after the start button is pressed.",
+        "setTimerButton": "Set Timer"
+    },
+    "settings": {
+        "title": "Set Cooking Timer",
+        "cancelButton": "DELETE TIMER",
+        "doneBtn": "Start",
+        "cancelBtn": "Cancel Timer",
+        "mealSetText": "Meal ready at:",
+        "mealFinishedText": "Meal finished at:",
+        "cookTimer": "Cook Timer",
+        "setTimerDialogHeader": "Set time",
+        "confirmMessage": "Please select Start to begin cooking or Cancel to quit.",
+        "clearMessage": "Cancel the timer?",
+        "clearLabels": "Yes,No",
+        "clearTitle": "Just Checking",
+        "cookingTimerTitle": "Cooking Timer",
+        "cookingTimerMessage": "Please select Start to begin cooking or Cancel to quit."
+    },
+    "buttons": {
+        "ok": "OK",
+        "cancel": "Cancel",
+        "hide": "Hide",
+        "start" : "Start",
+        "modify": "Modify"
+    },
+    "errors": {
+        "notDetected": "Not Detected"
+    },
+    "tile": {
+        "finishedTitle": "Ding!",
+        "finishedMessage": "The Cook Timer has finished. I'll keep things warm.",
+        "failedTitle": "Lost Connection",
+        "failedMessage": "Check the lights on your slow cooker. If it lost power, your food might not be safe to eat."
+    },
+    "defaultFriendlyName": "Crock-Pot® Slow Cooker"
+}

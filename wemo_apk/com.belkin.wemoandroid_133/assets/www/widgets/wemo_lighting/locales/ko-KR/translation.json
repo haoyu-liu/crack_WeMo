@@ -1,0 +1,32 @@
+{
+    "labels": {
+        "sleepFader": "슬립 페이더",
+        "customOption": "맞춤형",
+        "btn": "입력",
+        "sleep": "취침 모드",
+        "color": "색상",
+        "checkBulb": "전구 확인",
+        "custom" : "맞춤형",
+        "temperature": "온도",
+        "remaining": "남은"
+    },
+    "mode": {
+        "off": "끄기",
+        "on": "켜기"
+    },
+    "unavailable": {
+        "devices": "사용 불가능한 기기 __count__",
+        "devices_plural": "사용 불가능한 기기 __count__"
+    },
+    "defaultFriendlyName": {
+        "MZ100": "전구",
+        "iQBR30": "Osram Lightify BR30",
+        "LIGHTIFY A19 Tunable White": "Osram Lightify TW60",
+        "LIGHTIFY Flex RGBW": "Osram Lightify Flex RGBW",
+        "LIGHTIFY Gardenspot RGB": "Osram Lightify Garden RGB",
+        "Classic A60 TW": "Osram Lightify TW60",
+        "Flex RGBW": "Osram Lightify Flex RGBW",
+        "Gardenspot RGB": "Osram Lightify Garden RGB",
+        "Connected A-19 60W Equivalent": "CREE Connected LED bulb"
+    }
+}

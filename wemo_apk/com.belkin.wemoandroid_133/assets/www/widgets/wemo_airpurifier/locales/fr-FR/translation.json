@@ -1,0 +1,115 @@
+{
+    "labels": {
+        "on": "Auto",
+        "saveScheduleError": "Vous devez choisir au moins un jour et un mode de ventilation pour sauvegarder l'horaire.",
+        "ionizer": "Ionisateur",
+        "fan": "Débit: ",
+        "air": "Air: ",
+        "moreInfo": "Plus d'information",
+        "dailySchedule": "Horaire quotidien",
+        "enable": "Activer",
+        "schedule": "Horaire",
+        "onFor": "Activé pour"
+    },
+    "buttons": {
+        "cancel": "Annuler",
+        "save": "Sauvegarder",
+        "reset": "Réinitialiser",
+        "ok": "OK",
+        "hide": "Masquer"
+    },
+    "errors": {
+        "notDetected": "Non détecté"
+    },
+    "mode": {
+        "1": "Mode Bas",
+        "2": "Mode Moyen",
+        "3": "Mode Élevé",
+        "4": "Mode Auto",
+        "off": "Désactivé",
+        "on": "Activé"
+    },
+    "filterPresent": {
+        "0": "Aucun filtre détecté"
+    },
+    "filter": {
+        "text": "Quel nouveau filtre aer1ᴹᴰ avez-vous placé dans votre",
+        "filter0": "Je n'ai pas changé les filtres",
+        "filter1": "Purification totale",
+        "filter2": "Élimination des odeurs",
+        "filter3": "Anti-fumée",
+        "filter4": "Suppression allergènes",
+        "filter5": "Performance Plus",
+        "filter6": "Type HEPA",
+        "filter7": "Je ne sais pas"
+    },
+    "date": {
+        "tomorrow": "Demain",
+        "yesterday": "Yesterday",
+        "today": "Auj",
+        "days": {
+            "0": "Dimanches",
+            "1": "Lundis",
+            "2": "Mardis",
+            "3": "Mercredis",
+            "4": "Jeudis",
+            "5": "Vendredis",
+            "6": "Samedis"
+        },
+        "scheduleDays": {
+            "0": "Dim",
+            "1": "Lun",
+            "2": "Mar",
+            "3": "Mer",
+            "4": "Jeu",
+            "5": "Ven",
+            "6": "Sam"
+        }
+    },
+    "AirQuality": {
+        "0": "Mauvaise",
+        "1": "Modérée",
+        "2": "Bonne"
+    },
+    "staysafe": {
+        "textFilter": "Durée de vie du filtre"
+    },
+    "settings": {
+        "title": "Filtre",
+        "FilterOut": "AUCUN FILTRE DÉTECTÉ",
+        "FilterOutText": "Assurez-vous que vos filtres sont installés de façon appropriée dans le purificateur d'air.",
+        "timeToOrderNewWickFilter": "IL EST TEMPS DE COMMANDER DES FILTRES",
+        "timeToReplaceNewWickFilter": "IL EST TEMPS DE REMPLACER DES FILTRES"
+    },
+    "messages": {
+        "orderNewFilter": "Commandez un nouveau filtre",
+        "replaceFilter": "Remplacez le filtre!",
+        "timeReplaceFilter": "Il est temps de remplacer les filtres...",
+        "timeOrderFilter": "Il est temps de commander des filtres..."
+    },
+    "alertMessages": {
+        "mainTitle": "nécessite un entretien",
+        "mainMessage": "Nettoyez le capteur optique et le préfiltre.",
+        "expiredTitle": "présente un filtre usé",
+        "expiredMessage": "Il est temps de remplacer les filtres",
+        "soonTitle": "aura bientôt besoin de nouveaux filtres",
+        "changeTitle": "Changement de filtre détecté",
+        "missingTitle": "semble manquer de filtres",
+        "missingMessage": "Assurez-vous que vos filtres sont installés de façon appropriée dans votre",
+        "showMessage": "Montrez-moi comment",
+        "newFilter": "Commandez un nouveau filtre"
+    },
+    "brands": {
+        "Holmes": "holmesLogo",
+        "Bionaire": "bionaireLogo"
+    },
+    "purchasefilterLink": {
+        "Holmes": "http://www.belkin.com/embed/en-us/wemo-air/filterpurchase",
+        "Bionaire": "http://www.bionairecanada.com/en_CA/air-purification/air-purifiers-filters/"
+    },
+    "changefilterLink": {
+        "Holmes": "http://www.belkin.com/embed/en-us/wemo-air/changefilter",
+        "Bionaire": "http://www.belkin.com/embed/en-ca/wemo/bionaire-airpurifier/moreinfo"
+    },
+    "defaultFriendlyName": "Purificateur d air Bionaireᴹᴰ"
+}

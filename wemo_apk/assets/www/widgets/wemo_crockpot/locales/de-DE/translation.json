@@ -1,0 +1,49 @@
+{
+    "labels": {
+        "mealReady": "Mahlzeit bereit",
+        "warmTimeLeft": "Rest-Warmhaltezeit",
+        "onWarm": "Warmhaltung",
+        "onLow": "Einst. Niedrig",
+        "onHigh": "Einst. Hoch"
+    },
+    "mode": {
+        "0": "Aus",
+        "1": "Inaktiv",
+        "2": "Nicht verfügbar",
+        "50": "Warm",
+        "51": "Niedrig",
+        "52": "Hoch"
+    },
+    "summary": {
+        "title": "Kochzusammenfassung",
+        "btnModify": "Ändern",
+        "btnReset": "Timer zurücksetzen",
+        "onForZero": "<p>einige</p><p>Sekunden</p>"
+    },
+    "staysafe": {
+        "title": "Sicherheitshinweis",
+        "message": "Zur Gewährleistung der Lebensmittelsicherheit setzt der Garvorgang immer direkt nach Betätigen der Starttaste ein.",
+        "setTimerButton": "Timer einstellen"
+    },
+    "settings": {
+        "title": "Koch-Timer einstellen",
+        "cancelButton": "TIMEREINST. LÖSCHEN",
+        "doneBtn": "Start",
+        "cancelBtn": "Timer abbrechen",
+        "mealSetText": "Mahlzeit bereit um:",
+        "mealFinishedText": "Mahlzeit fertig um:",
+        "cookTimer": "Koch-Timer",
+        "setTimerDialogHeader": "Zeit einstellen",
+        "confirmMessage": "Garvorgang mit Start beginnen oder mit Abbrechen beenden.",
+        "clearMessage": "Timer beenden?",
+        "clearLabels": "Ja,Nein",
+        "clearTitle": "Nur prüfen"
+    },
+    "tile": {
+        "finishedTitle": "Bing!",
+        "finishedMessage": "Der Koch-Timer ist abgelaufen. Die Mahlzeit wird warm gehalten.",
+        "failedTitle": "Verbindung unterbrochen",
+        "failedMessage": "Leuchten am Schongarer prüfen. Wurde die Stromzufuhr unterbrochen, können die Lebensmittel ggf. nicht mehr bedenkenlos verzehrt werden."
+    },
+    "defaultFriendlyName": "Crock-Pot® Schongarer"
+}

@@ -1,0 +1,19 @@
+{
+    "popup": {
+        "heading": "More Features",
+        "description": "Group light bulbs so they behave similarly, or add devices to your network via WeMo Link. Here's a step-by-step how-to.",
+        "description2": "Want to come along?",
+        "cancelBtn": "Not now",
+        "doneBtn": "Show me"
+    },
+    "title": {
+        "1": "Grouping LED Lightbulbs"
+    },
+    "desc": {
+        "1": "Select \"Edit Device\" in the overflow menu.",
+        "2": "Drag one light bulb onto another to group them.",
+        "3": "Numbers above light bulb icons show the number of bulbs in a group.",
+        "4": "Select Settings in the navigation bar.",
+        "5": "To add a WeMo Link-enabled device, select 'Add WeMo Link Devices' in the More tab."
+    }
+}

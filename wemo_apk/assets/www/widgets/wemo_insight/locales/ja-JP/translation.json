@@ -1,0 +1,110 @@
+{
+    "labels": {
+        "onFor": "最終接続:",
+        "onForNow": "接続時間:",
+        "offSince": "接続解除:",
+        "since": "開始日時:",
+        "standby": "スタンバイ:",
+        "onToday": "今日:",
+        "onAvgDay": "平均日数:",
+        "avgDay": "平均日数:",
+        "estimatedMonthly": "予測月平均:",
+        "avg": "平均:",
+        "now": "現在:",
+        "defaultAvg": "- -",
+        "defaultNow": "---",
+        "reset": "リセット",
+        "today": "本日",
+        "autoOff": "Auto-off in"
+    },
+    "timeUnit": {
+        "0": "秒",
+        "1": "分",
+        "2": "時間",
+        "3": "日",
+        "4": "日"
+    },
+    "currency": {
+        "1": "$",
+        "3": "&pound;",
+        "4": "&euro;",
+        "7": "&#8369;",
+        "10": "&yen;",
+        "13": "&#8361;",
+        "15": "&#3647;"
+    },
+    "date": {
+        "tomorrow": "Tomorrow",
+        "yesterday": "Yesterday",
+        "today": "本日"
+    },
+    "editContext": {
+        "title": {
+            "on&standbythreshold": "オン/スタンバイ閾値:",
+            "costPerKwh": "Kwhごとのコスト: ",
+            "dataExport": "データエクスポート",
+            "scheduleExpo": "スケジュール済みエクスポート",
+            "interval": "（10秒の動作を待ちます）",
+            "currency": "通貨",
+            "threshold": "閾値",
+            "powerThreshold": "電源閾値",
+            "enterEmail": "メールアドレスを入力",
+            "confirm": "確認"
+        },
+        "buttons": {
+            "autoReset": "自動リセット",
+            "exportNow": "今すぐ出力します。",
+            "detect&set": "検出&設定",
+            "set": "設定",
+            "send": "送信",
+            "reset": "リセット",
+            "cancel": "キャンセル",
+            "save": "保存",
+            "ok": "確認"
+        },
+        "intros": {
+            "dataExport": "このスイッチの過去30日間の使用量およびエネルギーデータをすべて送信できます。",
+            "cost1": "これにより、デバイスに対し予測されたコストが計算できるようになります。 電気料金の請求書を使用してkWHごとの平均コストを決定します。",
+            "cost2": "これを変更すると、すべてのデバイスに適用されます。",
+            "threshold1": "「現在接続中の電源」が閾値を超える場合デバイスは \"オン\" になります。また閾値以下の場合は\"スタンバイ\" となります。",
+            "threshold2": "現在接続中の電源：",
+            "threshold3": "ステータス："
+        },
+        "intervals": {
+            "1" : "毎日",
+            "2" : "毎週",
+            "3" : "毎月"
+        },
+        "currencyName": {
+            "1": "ドル",
+            "3": "ユーロ",
+            "4": "ポンド",
+            "7": "円",
+            "10": "韓国ウォン",
+            "13": "ビットコイン",
+            "15": "ペソ"
+        },
+        "alertMessage": {
+            "autoSet": "自動設定",
+            "autoReset-desc": "Insightスイッチがオンになっている間、機器をオフにしてください。次に検出&設定をタップします。 ",
+            "reset-desc": "電源の閾値をリセットしますか?",
+            "exportInterval": "エクスポートの間隔をスケジュール",
+            "resetDefault": "このルールを別の時間、センサー又はスイッチに調整して下さい。",
+            "messageResetCost": "パスワードを入力します。 この操作により、Kwhごとのデフォルトのコストをリセットできます。",
+            "messageExport": "データ送信先："
+        },
+        "intervalInfo": {
+            "info": "次のエクスポートメールは__time__以内に送られます。"
+        },
+        "errors": {
+            "notDetected": "検出されませんでした"
+        }
+    },
+    "buttons": {
+        "cancel": "キャンセル",
+        "hide": "非表示",
+        "reset": "リセット",
+        "ok": "確認"
+    },
+    "defaultFriendlyName": "WeMo Insight"
+}

@@ -1,0 +1,25 @@
+{
+    "state": {
+        "0": "Nessun movimento",
+        "1": "Movimento",
+        "2": "Movimento rilevato!",
+        "3": "Movimento rilevato:",
+        "4": "Movimento rilevato: alle %@ di ieri"
+    },
+    "defaultFriendlyName": "WeMo Netcam",
+    "editContext": {
+        "title": {
+            "advanceOptions": "Opzioni avanzate"
+        }
+    },
+    "headers": {
+        "downloadNetcam": "Scarica NetCam"
+    },
+    "descriptions": {
+        "getApp": "Per accedere a questa videocamera, scarica l'app Belkin NetCam",
+        "availablePlayStore": "Disponibile su Play Store."
+    },
+    "buttons": {
+        "getItNow": "Ottienila ora"
+    }
+}

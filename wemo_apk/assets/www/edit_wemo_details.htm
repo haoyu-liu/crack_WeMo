@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<!--
+    edit_wemo_details.html 
+
+    Created by Belkin International, Software Engineering on 10/04/2013. 
+    Copyright (c) 2012-2013 Belkin International, Inc. and/or its affiliates. All rights reserved. 
+    
+    Belkin International, Inc. retains all right, title and interest (including all 
+    intellectual property rights) in and to this computer program, which is 
+    protected by applicable intellectual property laws.  Unless you have obtained 
+    a separate written license from Belkin International, Inc., you are not authorized 
+    to utilize all or a part of this computer program for any purpose (including 
+    reproduction, distribution, modification, and compilation into object code), 
+    and you must immediately destroy or return to Belkin International, Inc. all copies 
+    of this computer program.  If you are licensed by Belkin International, Inc., your 
+    rights to utilize this computer program are limited by the terms of that license.  
+
+    To obtain a license, please contact Belkin International, Inc. 
+  
+    This computer program contains trade secrets owned by Belkin International, Inc. 
+    and, unless unauthorized by Belkin International, Inc. in writing, you agree to 
+    maintain the confidentiality of this computer program and related information 
+    and to not disclose this computer program and related information to any 
+    other person or entity. 
+  
+    THIS COMPUTER PROGRAM IS PROVIDED AS IS WITHOUT ANY WARRANTIES, AND BELKIN INTERNATIONAL, INC. 
+    EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF 
+    MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. 
+--->
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/edit_wemo_details.css"/>
+
+		<script src="js/vendor/jquery-1.8.3.js"></script>
+		<script src="js/vendor/jquery.mobile-1.4.2.js"></script>
+		<script src="cordova.js"></script>
+		<script type="text/javascript" src="lang/en.js"></script>
+		<script type="text/javascript" src="lang/ru.js"></script>
+		<script type="text/javascript" src="lang/fr.js"></script>
+		<script type="text/javascript" src="lang/zh.js"></script>
+		<script type="text/javascript" src="lang/de.js"></script>
+		<script type="text/javascript" src="lang/it.js"></script>
+		<script type="text/javascript" src="lang/es.js"></script>
+		<script type="text/javascript" src="lang/ko.js"></script>
+		<script type="text/javascript" src="lang/ja.js"></script>
+		<script type="text/javascript" src="lang/lang.js"></script>
+		<script type="text/javascript" src="js/plugins/setup_plugin.js"></script>
+		<script type="text/javascript" src="js/constants.js"></script>
+		<script type="text/javascript" src="js/wemo.js"></script>
+		<script type="text/javascript" src="js/wemo_util.js"></script>
+		<script type="text/javascript" src="js/plugins/wemo_plugin.js"></script>
+		<script type="text/javascript" src="js/edit_wemo_details.js"></script>
+	</head>
+
+	<body>
+		<div data-role="page" class="personalize_page adjust_popup">
+			<div class="sub_header">
+				<span name="device_name_container" localString="true" _key="ConfigureDevice"></span>
+				<a class="save_setup" localString="true" _key="SetupInstructions_next" href=""></a>
+			</div>
+
+			<!-- Begin content block -->
+			<div data-role="content">
+				<!-- Message bubble -->
+				<div class="message_bubble">
+					<div class="title" localString="true" _key="SetupInstrctions_PersonalizeGetStartedTitle"></div>
+					<div class="message" localString="true" _key="SetupInstrctions_PersonalizeGetStartedMessage"></div>
+				</div>
+
+				<!-- Device image and name -->
+				<div class="card" id="imageAndName">
+					<div class="device_image_container" id="device_icon_row">
+						<div id="device_thumb"></div>
+						<div class="change_photo_button"></div>
+					</div>
+					<div id="friendlyname_row" class="friendly_name">
+						<input id="friendly_name" class="friendly_name" type="text"/>
+					</div>
+				</div>
+
+				<!-- Maker switchType settings -->
+				<div id="maker_switch_type" class="card">
+					<div  id="maker_switch_lable" localString="true" _key="SwitchType"></div>
+					<ul id="maker_switch_select">
+						<li class="maker_switch_toggle">
+							<span class="maker_switch_select_label" localString="true" _key="SwitchToggle"></span>
+							<span class="radioBtn selected"></span>
+						</li>
+						<li class="maker_switch_momentary">
+							<span class="maker_switch_select_label" localString="true" _key="SwitchMomentary"></span>
+							<span class="radioBtn"></span>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Maker sensor settings -->
+				<div id="maker_sensor" class="card">
+					<div id="maker_sensor_lable" localString="true" _key="Sensor" ></div>
+					<div id="maker_sensor_toggle"></div>
+				</div>
+
+				<!-- Remember WiFi settings -->
+				<div class="card">
+					<div id="save_email_row">
+						<div class="remember_wifi_label" localString="true" _key="RememberWiFiSettings" id="remember_wifi_label"></div>
+						<div id="remember_wifi"></div>
+					</div>
+
+					<div class="remember_wifi_description" localString="true" _key="SwitchinfoLabel"></div>
+				</div>
+
+				<!-- Next button -->
+				<div class="save_setup pageBtn">
+					<span localString="true" _key="SetupInstructions_next" class="button_text"></span>
+				</div>
+			</div>
+			<!-- End content block -->
+
+			<!-- Select Photo popup Start -->
+
+			<div id="select_photo_popup" data-role="popup" class="pop_up" data-overlay-theme="a" data-position-to="window"
+				 data-dismissible="false" data-go-forward="false">
+				<header data-role="header" data-theme="a">
+					<span localString="true" _key="select_photo"></span>
+				</header>
+
+				<ul id="photo_pick_option" data-role="listview" data-theme="d">
+					<li id="take_photo"><span localString="true" _key="IconActionSheet_TakePhoto"></span></li>
+					<li id="select_from_gallery"><span localString="true" _key="IconActionSheet_ChooseExisting"></span></li>
+					<li id="remove_photo"><span localString="true"  _key="IconActionSheet_Restore"></span></li>
+					<li id="cancel_photo_popup"><span localString="true"  _key="Cancel"></span></li>
+				</ul>
+			</div>
+
+			<!-- Select Photo popup Ends -->
+
+			<!-- Connection Failure popup Starts -->
+			<div id="connection_failure_popup" data-role="popup" class="pop_up"
+				 data-overlay-theme="a" data-position-to="window"
+				 data-dismissible="false" data-go-forward="false">
+				<header data-role="header" data-theme="a">
+					<h3>
+						<span localString="true" _key="networkError"></span>
+					</h3>
+				</header>
+				<article data-role="content" data-theme="b">
+					<p>
+						<span localString="true" _key="connectionFailureContent"></span>
+					</p>
+
+				</article>
+			</div>
+			<!-- Connection Failure popup Ends -->
+
+			<!-- Network lost popup Starts -->
+			<div id="network_lost_popup" data-role="popup" class="pop_up"
+				 data-overlay-theme="a" data-position-to="window"
+				 data-dismissible="true" data-go-forward="false">
+				<header data-role="header" data-theme="a">
+					<h3>
+						<span localString="true" _key="networkLost"></span>
+					</h3>
+				</header>
+				<article data-role="content" data-theme="b">
+					<p>
+						<span localString="true" _key="connectionLostContent"></span>
+					</p>
+
+				</article>
+			</div>
+			<!-- Network lost popup Ends -->
+
+			<!-- custom icons are not currently supported popup Starts -->
+			<div id="gosh_message" data-role="popup" class="pop_up" data-overlay-theme="a" data-position-to="window"  data-dismissible="false" data-go-forward="false">
+
+				<div class="popup_content"><span localString="true" _key="DeviceCustomIcons" _innerString="true"></span></div>
+				<div class="popup_footer" id="gosh_message_footer">
+					<div id="gosh_message_ok_btn" class="popup_single_ok_btn"><span localString="true" _key="AlertOK"></span></div>
+				</div>
+			</div>
+
+			<!-- custom icons are not currently supported popup Ends -->
+
+			<!-- Retry setup -->
+			<div id="retry_popup" data-role="popup" class="pop_up"
+				 data-overlay-theme="a" data-position-to="window"
+				 data-dismissible="true" data-go-forward="false">
+				<header data-role="header" data-theme="a">
+					<h3>
+						<span localString="true" _key="networkError"></span>
+					</h3>
+				</header>
+				<article data-role="content" data-theme="b">
+					<p>
+						<span localString="true" _key="setupFailedContent"></span>
+					</p>
+
+				</article>
+			</div>
+
+			<div id="remote_status_popup" data-role="popup" class="pop_up"
+				 data-overlay-theme="a" data-position-to="window"
+				 data-dismissible="false" data-go-forward="false">
+				<header data-role="header" data-theme="a">
+					<h3 id="remote_status_header"></h3>
+				</header>
+				<article data-role="content" data-theme="b">
+					<p id="remote_status_body"></p>
+
+				</article>
+				<div class="ui-grid-a" id="remote_setup_failure_footer">
+					<div class="ui-block-a">
+						<button id="remote_status_ok_btn">
+							<span localString="true" _key="Later"></span>
+						</button>
+					</div>
+					<div class="ui-block-b">
+						<button id="remote_status_try_again_btn">
+							<span localString="true" _key="TryAgain"></span>
+						</button>
+					</div>
+				</div>
+				<div class="ui-grid-solo" id="remote_setup_success_footer">
+					<button id="remote_status_ok_btn_failure">
+						<span localString="true" _key="AlertOK"></span>
+					</button>
+				</div>
+			</div>
+
+			<!-- FriendlyName validation popup -->
+			<div id="tooLongRuleNamePopup" data-role="popup" class="pop_up" data-overlay-theme="b" data-position-to="window"
+				 data-dismissible="false" data-go-forward="false">
+				<div class="popup_head"><span localString="true" _key=""></span></div>
+				<div class="popup_content"><span localString="true" _key="TooLongRuleName_Alert" _innerString="true"></span>
+				</div>
+				<div class="popup_footer">
+					<div id="tooLongRuleNamePopupOK" class="popup_single_ok_btn"><span localString="true" _key="AlertOK"></span></div>
+				</div>
+			</div>
+
+			<div id="invalidNamePopup" data-role="popup" class="pop_up" data-overlay-theme="b" data-position-to="window"
+				 data-dismissible="false" data-go-forward="false">
+				<div class="popup_head"><span localString="true" _key=""></span></div>
+				<div class="popup_content"><span localString="true" _key="InvalidName_AlertMessage" _innerString="true"></span>
+				</div>
+				<div class="popup_footer">
+					<div id="invalidNamePopupOK" class="popup_single_ok_btn"><span localString="true" _key="AlertOK"></span></div>
+				</div>
+			</div>
+			<!-- FriendlyName validation popup -->
+
+		</div>
+	</body>
+</html>
+
+
+
+

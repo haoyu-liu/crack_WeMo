@@ -1,0 +1,19 @@
+{
+    "popup": {
+        "heading": "Fonctionnalités supplémentaires",
+        "description": "Groupez des ampoules pour qu'elles se comportent de manière similaire, ou ajoutez des dispositifs sur votre réseau via WeMo Link. Voici la procédure à suivre.",
+        "description2": "Souhaitez-vous poursuivre?",
+        "cancelBtn": "Pas maintenant",
+        "doneBtn": "Montrez moi"
+    },
+    "title": {
+        "1": "Grouper des ampoules LED"
+    },
+    "desc": {
+        "1": "Sélectionnez \"Modifier le dispositif\" dans le menu de la barre de navigation.",
+        "2": "Faites glisser une ampoule vers une autre pour les regrouper.",
+        "3": "Les chiffres au-dessus des icônes d'ampoules indiquent le nombre d'ampoules dans un groupe.",
+        "4": "Select Settings in the navigation bar.",
+        "5": "To add a WeMo Link-enabled device, select 'Add WeMo Link Devices' in the More tab."
+    }
+}

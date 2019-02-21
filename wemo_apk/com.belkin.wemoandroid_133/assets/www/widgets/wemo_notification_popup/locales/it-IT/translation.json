@@ -1,0 +1,10 @@
+{
+    "header": "If you want to pair your Wemo Dimmer with Alexa…",
+    "descriptions": {
+        "1": "You need to enable the Wemo skill in the Alexa App."
+    },
+    "buttons" : {
+        "connectToAlexa" : "Find Out How"
+    }
+}
+

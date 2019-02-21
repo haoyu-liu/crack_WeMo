@@ -1,0 +1,13 @@
+{
+    "errors": {
+        "notDetected": "Non rilevato"
+    },
+    "buttons": {
+        "cancel": "Annulla",
+        "hide": "Nascondi"
+    },
+    "hide": {
+        "title": "Nascondere?",
+        "message": "Il dispositivo non apparirà fino a quando è di nuovo attivo"
+    }
+}

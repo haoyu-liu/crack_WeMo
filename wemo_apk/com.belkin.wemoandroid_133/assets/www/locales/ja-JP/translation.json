@@ -1,0 +1,102 @@
+{
+    "app": {
+        "name": "test"
+    },
+    "navigation": {
+        "back": "戻る"
+    },
+    "errors": {
+        "title": "WeMo は要求を完了できません",
+        "message": "解決しない場合はアプリを再起動してください",
+        "unavailable": "利用できません",
+        "notDetected": "検出されませんでした",
+        "rulesTitle": "スケジュールが保存できません",
+        "rulesMessage": "現在、スケジュールの保存に問題が生じています。すべての WeMo デバイスの状態をチェックしてからもう一度やり直して下さい。"
+    },
+    "validation": {
+        "title": "エントリを確認してください"
+    },
+    "buttons": {
+        "okay": "Okay",
+        "ok": "確認",
+        "done": "完了",
+        "cancel": "キャンセル",
+        "save": "保存",
+        "hide": "非表示",
+        "continue": "続行",
+        "reset": "リセット"
+    },
+    "hide": {
+        "title": "非表示にしますか？",
+        "message": "再度アクティブになるまでデバイスは表示されなくなります。"
+    },
+    "firmware": {
+        "update": "ファームウェアを更新しています…"
+    },
+    "date": {
+        "tomorrow": "明日",
+        "yesterday": "昨日",
+        "today": "今日",
+        "months": {
+            "0": "1 月",
+            "1": "2 月",
+            "2": "3 月",
+            "3": "4 月",
+            "4": "5 月",
+            "5": "6 月",
+            "6": "7 月",
+            "7": "8 月",
+            "8": "9 月",
+            "9": "10 月",
+            "10": "11 月",
+            "11": "12 月"
+        },
+        "days": {
+            "0": "日曜日",
+            "1": "月曜日",
+            "2": "火曜日",
+            "3": "水曜日",
+            "4": "木曜日",
+            "5": "金曜日",
+            "6": "土曜日"
+        },
+        "scheduleDays": {
+            "0": "日",
+            "1": "月",
+            "2": "火",
+            "3": "水",
+            "4": "木",
+            "5": "金",
+            "6": "土"
+        }
+    },
+    "timeUnits": {
+        "0": "s",
+        "1": "m",
+        "2": "h"
+    },
+    "labels": {
+        "autoOff": "Auto-off in",
+        "onFor": "On for",
+        "enable": "Enable",
+        "schedule": "Schedule",
+        "dailySchedule": "Daily Schedule",
+        "confirm": "確認",
+        "batteryReplace": "Unavailable - Replace battery",
+        "batteryLevel": "Low Battery",
+        "signalStrength": "シグナルが弱い",
+        "ago": "ago",
+        "remaining": "残り",
+        "temperature": "温度"
+    },
+    "mode": {
+        "off": "オフ",
+        "on": "オン"
+    },
+    "messages": {
+        "orderNewFilter": "Order new filters",
+        "replaceFilter": "Replace filter",
+        "timeReplaceFilter": "Time to replace filters...",
+        "timeOrderFilter": "Time to order filters..."
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "labels": {
+        "sleepFader": "УХОД В СОН",
+        "customOption": "Другой",
+        "btn": "Ввод",
+        "sleep": "Режим сна",
+        "color": "Цвет",
+        "checkBulb": "Проверьте лампы",
+        "custom" : "Другой",
+        "temperature": "Температура",
+        "remaining": "Остальной"
+    },
+    "mode": {
+        "off": "Off",
+        "on": "On"
+    },
+    "unavailable": {
+        "devices": "__count__ доступное устройство",
+        "devices_plural": "__count__ недоступные устройства"
+    },
+    "defaultFriendlyName": {
+        "MZ100": "Лампочка",
+        "iQBR30": "Osram Lightify BR30",
+        "LIGHTIFY A19 Tunable White": "Osram Lightify TW60",
+        "LIGHTIFY Flex RGBW": "Osram Lightify Флекс RGBW",
+        "LIGHTIFY Gardenspot RGB": "Osram Lightify Садовый RGB",
+        "Classic A60 TW": "Osram Lightify TW60",
+        "Flex RGBW": "Osram Lightify Флекс RGBW",
+        "Gardenspot RGB": "Osram Lightify Садовый RGB"
+    }
+}

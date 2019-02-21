@@ -1,0 +1,11 @@
+{
+    "fwUpdateInProgress": {
+        "header": "正在更新WeMo Link",
+        "message": "更新结束之前，请勿拔掉WeMo Link的电源插头。"
+    },
+    "unavailable": {
+        "header": "WeMo Link无响应。",
+        "message": "请尝试拔掉电源插头并重新插上。"
+    },
+    "defaultFriendlyName": "WeMo Link"
+}

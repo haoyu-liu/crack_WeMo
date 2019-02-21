@@ -1,0 +1,108 @@
+[{
+    "Information": {
+        "Port": "49153",
+        "ModelName": "Socket",
+        "Type": "urn:Belkin:device:controllee:1",
+        "IP": "192.168.1.140",
+        "HomeID": "",
+        "PluginID": "",
+        "MAC": "EC1A59831AD4",
+        "UDN": "uuid:Socket-1_0-221305K010112D"
+    },
+    "Attributes": {
+        "BinaryState": 0
+    },
+    "Properties": {
+        "FriendlyName": "WeMo Switch12D",
+        "DiscoveryState": "Discovery Success",
+        "State": "0",
+        "FirmwareVersion": "WeMo_WW_2.00.8102.PVT-OWRT-SNS",
+        "HideParameter": "0",
+        "Icon": "\/data\/data\/com.belkin.wemoandroid\/files\/-1864248701.png",
+        "CustomizedState": "",
+        "InActive": "0"
+    }
+}, {
+    "Information": {
+        "Port": "49153",
+        "ModelName": "Humidifier",
+        "Type": "urn:Belkin:device:Humidifier:1",
+        "IP": "192.168.1.112",
+        "HomeID": "",
+        "PluginID": "",
+        "MAC": "94103E5A4338",
+        "UDN": "uuid:Humidifier-1_0-221430S00001C0"
+    },
+    "Attributes": {
+        "DesiredHumidity": "0",
+        "WaterAdvise": "1",
+        "ExpiredFilterTime": "0",
+        "CurrentHumidity": "26.0",
+        "NoWater": "0",
+        "FanMode": "0",
+        "FilterLife": "60477"
+    },
+    "Properties": {
+        "FriendlyName": "Holmes® Humidifier",
+        "DiscoveryState": "Discovery Success",
+        "State": "1",
+        "FirmwareVersion": "WeMo_WW_2.00.8042.DVT-OWRT",
+        "BinaryState": "0",
+        "HideParameter": "0",
+        "Icon": "\/data\/data\/com.belkin.wemoandroid\/files\/-274879674.png",
+        "CustomizedState": "0",
+        "InActive": "0"
+    }
+}, {
+    "Information": {
+        "Port": "49153",
+        "ModelName": "Insight",
+        "Type": "urn:Belkin:device:insight:1",
+        "IP": "192.168.1.140",
+        "HomeID": "",
+        "PluginID": "",
+        "MAC": "EC1A59831AD4",
+        "UDN": "uuid:Insight-1_0-221305K010112D"
+    },
+    "Attributes": {
+        "BinaryState": 0
+    },
+    "Properties": {
+        "GroupID": "Demo",
+        "GroupName": "Demo",
+        "FriendlyName": "WeMo Insight A",
+        "DiscoveryState": "Discovery Success",
+        "State": "0",
+        "FirmwareVersion": "WeMo_WW_2.00.8102.PVT-OWRT-SNS",
+        "HideParameter": "0",
+        "Icon": "\/data\/data\/com.belkin.wemoandroid\/files\/-1864248701.png",
+        "CustomizedState": "",
+        "InActive": "0"
+    }
+}, {
+    "Information": {
+        "Port": "49153",
+        "ModelName": "Insight",
+        "Type": "urn:Belkin:device:insight:1",
+        "IP": "192.168.1.140",
+        "HomeID": "",
+        "PluginID": "",
+        "MAC": "EC1A59831AD4",
+        "UDN": "uuid:Insight-1_0-221305K010132D"
+    },
+    "Attributes": {
+        "BinaryState": 0
+    },
+    "Properties": {
+        "GroupID": "Demo",
+        "GroupName": "Demo",
+        "FriendlyName": "WeMo Insight B",
+        "DiscoveryState": "Discovery Success",
+        "State": "0",
+        "FirmwareVersion": "WeMo_WW_2.00.8102.PVT-OWRT-SNS",
+        "HideParameter": "0",
+        "Icon": "\/data\/data\/com.belkin.wemoandroid\/files\/-1864248701.png",
+        "CustomizedState": "",
+        "InActive": "0"
+    }
+}]

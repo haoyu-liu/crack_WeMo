@@ -1,0 +1,62 @@
+{
+    "headers": {
+        "editDevice": "Edit Device",
+        "picture": "Picture",
+        "ID": "WeMo ID: ",
+        "reset": "Reset Options",
+        "enterName": "Name",
+        "groupIcon": "Group Icon",
+        "groupName": "Group Name",
+        "groupSubHeader": "in this Group",
+        "alert": "Alert"
+    },
+    "resetButtons": {
+        "1": "Clear Usage Data",
+        "2": "Clear Product Info",
+        "3": "Reset Wi-Fi",
+        "4": "Erase All Content and Settings"
+    },
+    "resetDescriptions": {
+        "1": "Clear Power, Time and Cost data.",
+        "2": "Clear Name, Icon and Rules.",
+        "3": "Clear the device’s Wi-Fi settings. (You will need to set it up again)",
+        "4": "This button will restore ALL settings to the factory default values."
+    },
+    "validation": {
+        "friendlyNameRequired": "Friendly name is required.",
+        "friendlyNameMaxLength": "Friendly name must be less than 30 characters.",
+        "friendlyNameValidation": "Please enter a name 30 characters or less that uses only letters, numbers, spaces, dashes, dot or underscores.",
+        "groupNameRequired": "Group name is required.",
+        "groupNameMaxLength": "Group name must be less than 30 characters."
+    },
+    "iconPopup": {
+        "title": "Upload an Image",
+        "option1": "Take a Picture",
+        "option2": "Choose a Photo from Gallery",
+        "option3": "Reset Photo"
+    },
+    "resetPopupMessage": {
+        "resetUsageData": "Clear all energy and time data for this device?",
+        "fnIconRules": "Clear the device's name, icon and rules?",
+        "wifi": "Clear the device's Wi-Fi settings? (You will need to set it up again)",
+        "all": "Clear all settings and restore your device to factory defaults?"
+    },
+    "messages": {
+        "errorMessageEdit": "Could not edit the name and icon. Please try again.",
+        "errorMessageReset": "That didn’t work. Try again.",
+        "iconChangeDisabledMessage": "We're sorry but custom icons are not currently supported. Check Play Store for updates."
+    },
+    "buttons": {
+        "okay": "Okay",
+        "ok": "OK",
+        "done": "Done",
+        "cancel": "Cancel",
+        "save": "Save",
+        "hide": "Hide",
+        "continue": "Continue",
+        "reset": "Reset"
+    },
+    "labels": {
+        "confirm": "Confirm"
+    }
+}

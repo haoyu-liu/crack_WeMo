@@ -1,0 +1,600 @@
+html, body {
+    margin: 0;
+    background: #f1f1f1;
+    font-family: RobotoThin, Helvetica, Arial, sans-serif /*{global-font-family}*/;
+}
+
+* {
+    text-shadow:0 0 0 transparent;
+}
+
+.ui-loader-default,
+.gr__tooltip {
+    display: none;
+}
+
+.wemoTutorialsPage {
+    width: 100%;
+    position: relative;
+    overflow:hidden;
+}
+
+#tutorialsList {
+    transform:translate3d(0,0,0);
+    -webkit-transform:translate3d(0,0,0);
+    transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transition: -webkit-transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+    height: 100%;
+    overflow: auto;
+}
+
+#tutorialsList.slideOut {
+    transform:translate3d(-110%,0,0);
+    -webkit-transform:translate3d(-110%,0,0);
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transition: -webkit-transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.tutorialSlidesWrapper {
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    z-index: 100;
+    height: 100%;
+    transform:translate3d(0,0,0);
+    -webkit-transform:translate3d(0,0,0);
+    transition: transform 600ms cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transition: -webkit-transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.tutorialSlidesWrapper.hiddenSlides {
+    transform: translate3d(110%,0,0);
+    -webkit-transform: translate3d(110%,0,0);
+    transition: transform 600mss cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transition: -webkit-transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.tutorialSlidesWrapper.showSlides {
+    transform:translate3d(0,0,0);
+    -webkit-transform:translate3d(0,0,0);
+    transition: none;
+    -webkit-transition: none;
+}
+
+header.main_header {
+    background: #73d44c !important;
+    font-weight: 400;
+    line-height: 55px;
+    height: 56px;
+    font-size: 17px;
+    padding: 0;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    border: none !important;
+    box-sizing: border-box;
+    top: 0;
+}
+
+.main_header .backbutton {
+    width: 22px;
+    height: 22px;
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-image: url(../img/ic_back_button.png);
+    float: left;
+    margin-top: 16px;
+    margin-left: 15px;
+}
+
+.tutorialsContainer {
+    padding: 66px 10px 10px 10px;
+    color: #444;
+}
+
+
+.tutorialsContainer ul {
+    background-color: #fff;
+    list-style: none;
+    margin: 0 0 10px 0;
+}
+
+.tutorialsContainer .pageSection {
+     padding: 0 15px;
+     box-shadow: 0px 1px 2px #ccc;
+}
+
+.tutorialsContainer .sectionTitle {
+    padding: 20px 0 20px 46px;
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+}
+
+.tutorialsContainer .sectionItem {
+    padding: 17px 0;
+    color: #4a4a4a;
+    border-top: 1px solid #e0e0e0;
+    position: relative;
+}
+
+.tutorialsContainer .sectionItem:after {
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 20px;
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-image: url(../img/light_grey_caret.png);
+    position: absolute;
+    right: 10px;
+}
+
+.pageSection .sectionTitle:before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 0;
+    height: 60px;
+    width: 55px;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 43px auto;
+}
+
+#dimmerTutorial .sectionTitle:before {
+    background-image: url("../img/dimmer.png");
+}
+
+#ledTutorial {
+    display: none;
+}
+
+#ledTutorial .sectionTitle:before {
+    background-image: url("../img/ic_lightbulb.png");
+}
+
+#ruleTutorial .sectionTitle:before {
+    background-image: url("../img/rules_off_icon.png");
+}
+
+#support .sectionTitle:before {
+    background-image: url("../img/webSupport.png");
+}
+
+.slide .flashcard_text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 39%;
+    padding: 20px 8% 30px 8%;
+    background-color: rgb(104, 162, 255);
+    color: #fff;
+    text-align: center;
+    z-index: 0;
+}
+
+.slide .flashcard_text .flashcard_title {
+    margin-bottom: 10px;
+    display: block;
+    font-size: 17px;
+}
+
+.slide .flashcard_text.FAQ_text {
+    padding: 15px 0 25px 0;
+}
+
+
+.flashcard_text .flashcard_FAQ_Header {
+    text-align: left;
+    padding: 0 8% 25px 8%;
+    border-bottom: 1px solid #fff;
+}
+
+.flashcard_text .flashcard_FAQ {
+    padding: 15px 8%;
+    border-bottom: 1px solid #fff;
+    font-weight: 500;
+    font-size: 20px;
+    position:relative;
+}
+
+.flashcard_text .flashcard_FAQ:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 7px;
+    height: 42px;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 25px auto;
+    background-image: url(../img/tutorial_slides/backArrow@3x.png);
+}
+
+.slide .slideImage {
+    background-size: 100%;
+    background-position: 0 80px;
+    width: 260px;
+    height: 350px;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 auto;
+}
+
+@media only screen and (min-height: 680px) {
+    .slide .slideImage {
+        background-position: 0 80px;
+        width: 310px;
+        height: 500px;
+    }
+
+    .slide .flashcard_text {
+        height: 34%;
+    }
+}
+
+.slide .slideImage_fullScreen {
+    background-size: 100%;
+    background-position: 0 0;
+    width: 320px;
+    height: 568px;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slideImage_fullScreen .highlight_circle {
+    position: absolute;
+    background-image: url(../img/tutorial_slides/ring.png);
+    background-size: 80px 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 90px;
+    -webkit-animation: boune-highlight 2s infinite;
+    animation: boune-highlight 2s infinite;
+}
+
+.night_mode_flashcard3 .highlight_circle {
+    left: 36px;
+    top: 156px;
+}
+
+.night_mode_flashcard4 .highlight_circle {
+    right: 26px;
+    top: 94px;
+}
+
+.led_group_flashcard1 .highlight_circle {
+    top: 66px;
+    left: 155px;
+}
+
+.led_group_flashcard3 .highlight_circle {
+    top: 100px;
+    left: 28px;
+}
+
+.led_group_flashcard4 .highlight_circle {
+    top: 66px;
+    right: 7px;
+}
+
+.led_group_flashcard5 .highlight_circle {
+    top: 258px;
+    right: 7px;
+}
+
+
+@keyframes boune-highlight {
+    0 {
+        background-size: 80px 80px;
+    }
+    50% {
+        background-size: 90px 90px;
+    }
+    100% {
+        background-size: 80px 80px;
+    }
+}
+
+@-webkit-keyframes boune-highlight {
+    0 {
+        background-size: 80px 80px;
+    }
+    50% {
+        background-size: 90px 90px;
+    }
+    100% {
+        background-size: 80px 80px;
+    }
+}
+
+
+.slideImage_fullScreen .highlight_circle_large {
+    position: absolute;
+    background-image: url(../img/tutorial_slides/ring.png);
+    background-size: 140px 140px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    top: 187px;
+    right: 12px;
+    -webkit-animation: boune-highlight-large 2s infinite;
+    animation: boune-highlight-large 2s infinite;
+}
+
+@keyframes boune-highlight-large {
+    0 {
+        background-size: 140px 140px;
+    }
+    50% {
+        background-size: 150px 150px;
+    }
+    100% {
+        background-size: 140px 140px;
+    }
+}
+
+@-webkit-keyframes boune-highlight-large {
+    0 {
+        background-size: 140px 140px;
+    }
+    50% {
+        background-size: 150px 150px;
+    }
+    100% {
+        background-size: 140px 140px;
+    }
+}
+
+.long_press_flashcard1 {
+    background-image: url("../img/tutorial_slides/long_press/01_Dimmer_LongPress1.gif");
+}
+
+.long_press_flashcard2 {
+    background-image: url("../img/tutorial_slides/long_press/02_2Sec.gif");
+}
+
+.long_press_flashcard3 {
+    background-image: url("../img/tutorial_slides/long_press/03_Toggle.gif");
+}
+
+.long_press_flashcard4 {
+    background-image: url("../img/tutorial_slides/long_press/04_AllOn.gif");
+}
+
+.long_press_flashcard5 {
+    background-image: url("../img/tutorial_slides/long_press/05_AllOff.gif");
+}
+
+.long_press_flashcard6 {
+    background-image: url("../img/tutorial_slides/long_press/06_AwayMode.gif");
+}
+
+.long_press_flashcard7 {
+    background-image: url("../img/tutorial_slides/long_press/01_Dimmer_LongPress1.gif");
+}
+
+.light_bar_flashcard1 {
+    background-image: url("../img/tutorial_slides/light_bar/group1@3x.png");
+}
+
+.light_bar_flashcard2 {
+    background-image: url("../img/tutorial_slides/light_bar/group2@3x.png");
+}
+
+.light_bar_flashcard3 {
+    background-image: url("../img/tutorial_slides/light_bar/group3@3x.png");
+}
+
+.light_bar_flashcard4 {
+    background-image: url("../img/tutorial_slides/light_bar/group4@3x.png");
+}
+
+.light_bar_flashcard5 {
+    background-image: url("../img/tutorial_slides/light_bar/group5@3x.png");
+}
+
+.dimmer_error_flashcard1 {
+    background-image: url("../img/tutorial_slides/errors/group_error1@3x.png");
+}
+
+.dimmer_error_flashcard2 {
+    background-image: url("../img/tutorial_slides/errors/group_error2@3x.png");
+}
+
+.dimmer_error_flashcard3 {
+    background-image: url("../img/tutorial_slides/errors/group_error3@3x.png");
+}
+
+.night_mode_flashcard1 {
+    background-image: url("../img/tutorial_slides/night_mode/NightMode_Animation1.gif");
+}
+
+.night_mode_flashcard2 {
+    background-image: url("../img/tutorial_slides/night_mode/NightMode_Animation2.gif");
+}
+
+.night_mode_flashcard3 {
+    background-image: url("../img/tutorial_slides/night_mode/walkthrough_night_mode-3_android@3x.png");
+}
+
+.night_mode_flashcard4 {
+    background-image: url("../img/tutorial_slides/night_mode/walkthrough_night_mode-4_android@3x.png");
+}
+
+.night_mode_flashcard5 {
+    background-image: url("../img/tutorial_slides/night_mode/NightMode_Animation2.gif");
+}
+
+.led_group_flashcard1 {
+    background-image: url("../img/tutorial_slides/led_grouping/walkthrough_LEDgroup-1_android@3x.png");
+}
+
+.led_group_flashcard2 {
+    background-image: url("../img/tutorial_slides/led_grouping/walkthrough_LEDgroup-2_android@3x.png");
+}
+
+.led_group_flashcard3 {
+    background-image: url("../img/tutorial_slides/led_grouping/walkthrough_LEDgroup-3_android@3x.png");
+}
+
+.led_group_flashcard4 {
+    background-image: url("../img/tutorial_slides/led_grouping/walkthrough_LEDgroup-4_android@3x.png");
+}
+
+.led_group_flashcard5 {
+    background-image: url("../img/tutorial_slides/led_grouping/walkthrough_LEDgroup-5_android@3x.png");
+}
+
+
+.slide-close {
+    background: url(../img/setupSlides/btn_arrow_white@2x.png) center no-repeat;
+    background-size: 65% 65%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 999;
+}
+
+.flashCardHeader {
+    font-size: 20px;
+    font-weight: 700;
+    top: 20px;
+    left: 20px;
+    color: #444;
+    position: absolute;
+    padding-right: 20px;
+    z-index: 100;
+}
+
+
+.FAQ_wrapper {
+    overflow: auto;
+    position: absolute;
+    background-color: rgb(104, 162, 255);
+    color: #fff;
+    font-size: 17px;
+    top: 0;
+    z-index: 200;
+    height: 100%;
+    padding: 25px 0 20px 0;
+    transform:translate3d(0,0,0);
+    -webkit-transform:translate3d(0,0,0);
+    transition: transform 600ms cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.FAQ_wrapper.hideFAQ {
+    transform: translate3d(0,110%,0);
+    -webkit-transform: translate3d(0,110%,0);
+    transition: transform 600mss cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+
+.FAQ_title,
+.reset_dimmer_title {
+    padding: 0 20px 30px 0;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+.FAQ_title:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 15px;
+    height: 42px;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 25px auto;
+    background-image: url(../img/tutorial_slides/backArrowUp@3x.png);
+}
+
+.reset_dimmer_title:after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 23px;
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px auto;
+    background-image: url(../img/setupSlides/btn_arrow_white@2x.png);
+}
+
+
+.FAQ_page {
+    padding-bottom: 30px;
+}
+
+.navigation .nav_item {
+    padding: 25px 40px 25px 0;
+    margin-left: 30px;
+    border-bottom: 1px solid #4871B2;
+    position: relative;
+}
+
+.nav_item.showItem {
+    border-bottom: none;
+}
+
+.navigation .nav_item:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 24px;
+    height: 24px;
+    width: 42px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 18px auto;
+    background-image: url(../img/tutorial_slides/more@3x.png);
+}
+
+.nav_item.showItem:after {
+    top: 22px;
+    background-image: url(../img/tutorial_slides/moreUp@3x.png);
+}
+
+.navigation .nav_sub_item {
+    background-color: #5D91E5;
+    font-size: 15px;
+    padding: 0 24px;
+    transition: max-height 0.3s cubic-bezier(0, 1, 0.5, 1);
+    overflow: hidden;
+    max-height: 0;
+}
+
+.navigation .nav_sub_item.showSubItem {
+    max-height: 500;
+}
+
+.wemoTutorialsPage .owl-controls {
+    bottom: 15px;
+}
+
+.nav_sub_item span {
+    display: block;
+    padding: 15px 0;
+}
+
+.tutorial_slides {
+    display: none;
+}

@@ -1,0 +1,52 @@
+{
+  "HVAC": {
+    "heating": "Heizung",
+    "cooling": "Kühlung",
+    "fanrunning": "Ventilator in Betrieb",
+    "heat": "Heizen",
+    "cool": "Kühlen",
+    "heatcool": "Heizen / Kühlen",
+    "off": "Aus",
+    "on" : "Ein",
+    "rhrHeader": "Rush Hour Rewards aktiv",
+    "rhrMessage": "Die Anpassung der Temperatur kann Einfluss auf Ihre Ersparnisse haben.",
+    "headerTemperature": "TEMPERATUR EINSTELLEN",
+    "headerHeatTemperature": "Heiztemperatur",
+    "headerCoolTemperature": "Kühltemperatur",
+    "headerMode": "MODUS EINSTELLEN",
+    "drawerLabelCurrent": "Aktuell",
+    "drawerLabelTemp": "Temperatur",
+    "drawerLabelHumidity": "Luftfeuchtigkeit",
+    "drawerLabelTempAway": "Zur Ansicht und Anpassung der Temperatur stellen Sie Ihr Nest-Thermostat auf Zu Hause ein",
+    "serviceUnavailable": "Der Nest-Service ist derzeit nicht verfügbar."
+  },
+
+  "error": {
+    "energy-saving-event-on":{
+      "heading": "Unable to Adjust Remotely",
+      "message": "Ein Rush Hour Reward Event wird ausgeführt. Um Änderungen vorzunehmen, verwenden Sie bitte die Nest-App oder das Nest-Thermostat."
+    },
+    "lock-enabled":{
+      "heading":"Anpassung remote nicht möglich",
+      "message":"Ihr Nest-Thermostat ist gesperrt. Schalten Sie das Nest-Thermostat frei, um Änderungen vorzunehmen."
+    },
+    "emergency-heat-is-on":{
+      "heading":"Abwesenheitsmodus nicht verfügbar",
+      "message":"Notheizung ist derzeit an. Der Abwesenheitsmodus ist zurzeit nicht verfügbar."
+    },
+    "blocked":{
+      "heading":"Nest braucht eine Pause",
+      "message":"Zur Sicherheit Ihres Nest-Systems und Ihrer HLK-Anlage verhindert der Nest-Service zu viele Veränderungen in einem kurzen Zeitraum. Bitte versuchen Sie es in wenigen Minuten erneut oder passen Sie das Nest-Thermostat direkt an."
+    },
+    "default":{
+      "heading":"Fehler",
+      "message":"Es ist ein unerwarteter Fehler aufgetreten. Bitte versuchen Sie es erneut oder nehmen Sie die Änderung in der Nest-App vor."
+    }
+  },
+
+  "nestAlerts":{
+    "notConnected": "Dieses Thermostat ist nicht mehr mit Ihrem Nest-Konto verbunden.",
+    "noInternet": "Zugriff auf den Nest-Service ist derzeit nicht verfügbar. Bitte versuchen Sie es später erneut."
+  }
+}
+

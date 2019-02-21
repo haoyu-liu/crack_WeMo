@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="crop__saving">Fotoğraf kaydediliyor…</string>
+    <string name="crop__wait">Lütfen bekleyin…</string>
+    <string name="crop__pick_error">Fotoğraf bulunamadı</string>
+    <string name="crop__done">TAMAM</string>
+    <string name="crop__cancel">ÇIKIŞ</string>
+</resources>

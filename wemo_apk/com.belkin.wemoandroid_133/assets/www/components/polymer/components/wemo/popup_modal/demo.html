@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <script src="../../webcomponentsjs/webcomponents.js"></script>
+    <link href="popup_modal.html" rel="import">
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family:'Helvetica Neue', Helvetica, Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <paper-button raised>Open the Dialog</paper-button>
+
+    <popup-modal id="dialog" heading="{{heading}}" description="{{description}}" description2 = "{{description2}}" cancelBtn="{{cancelBtn}}" doneBtn="{{doneBtn}}"></popup-modal>
+
+    <script>
+        var button = document.querySelector('paper-button');
+        var dialog =  document.getElementById('dialog');
+        button.addEventListener("click", function(){
+            dialog.toggle();
+        });
+
+        dialog.heading = "More Features";
+        dialog.description = "Group light bulbs so they behave similarly, or add devices to your network via WeMo Link. Here's a step-by-step how-to.";
+        dialog.description2 = 'Want to come along?';
+
+        dialog.cancelBtn = "Not now";
+        dialog.doneBtn = "Show me";
+    </script>
+</body>
+</html>

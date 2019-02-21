@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="crop__saving">Bild speichern…</string>
+    <string name="crop__wait">Bitte warten…</string>
+    <string name="crop__pick_error">Keine Bildquellen verfügbar</string>
+    <string name="crop__done">übernehmen</string>
+    <string name="crop__cancel">abbrechen</string>
+    <string name="rate_me_title">Gefällt Ihnen WeMo?</string>
+    <string name="rate_me_text">Gefällt Ihnen WeMo? Haben Sie ein paar Minuten Zeit, um uns zu bewerten? Vielen Dank für Ihre Unterstützung!</string>
+    <string name="btn_rate_me_now_label">Jetzt bewerten</string>
+    <string name="btn_rate_no_thanks_label">Nein danke</string>
+    <string name="btn_report_problem_label">Ein Problem melden</string>
+    <string name="btn_rate_later_label">Später erinnern</string>
+</resources>

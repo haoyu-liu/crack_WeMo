@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="crop__saving">"Enregistrement de l'image…"</string>
+    <string name="crop__wait">Veuillez patienter…</string>
+    <string name="crop__pick_error">Aucune image disponible</string>
+    <string name="crop__done">ACCEPTER</string>
+    <string name="crop__cancel">ANNULER</string>
+    <string name="app_name">Wemo</string>
+    <string name="push_message_ticker">Message de WeMo</string>
+    <string name="OK">OK</string>
+    <string name="push_crockpot_message_ticker">Ding!</string>
+    <string name="push_crockpot_warm">Le temps est écoulé. Je vais garder le mets à point.</string>
+    <string name="push_warmtime_over">Le temps de réchauffage est écoulé.</string>
+    <string name="push_crockpot_turn_off">"J'éteins la mijoteuse maintenant."</string>
+    <string name="rate_me_title">"Vous aimez l'appli WeMo ?"</string>
+    <string name="rate_me_text">"Si oui, pourriez-vous prendre quelques minutes pour l'évaluer ? Merci de votre soutien !"</string>
+    <string name="btn_rate_me_now_label">"Évaluer l'appli maintenant"</string>
+    <string name="btn_rate_no_thanks_label">Non, merci.</string>
+    <string name="btn_report_problem_label">Signaler un problème</string>
+    <string name="btn_rate_later_label">Me le rappeler ultérieurement</string>
+</resources>

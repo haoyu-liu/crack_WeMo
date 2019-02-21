@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<!--
+    setup_hiddennetwork.html 
+
+    Created by Belkin International, Software Engineering on 10/04/2013. 
+    Copyright (c) 2012-2013 Belkin International, Inc. and/or its affiliates. All rights reserved. 
+    
+    Belkin International, Inc. retains all right, title and interest (including all 
+    intellectual property rights) in and to this computer program, which is 
+    protected by applicable intellectual property laws.  Unless you have obtained 
+    a separate written license from Belkin International, Inc., you are not authorized 
+    to utilize all or a part of this computer program for any purpose (including 
+    reproduction, distribution, modification, and compilation into object code), 
+    and you must immediately destroy or return to Belkin International, Inc. all copies 
+    of this computer program.  If you are licensed by Belkin International, Inc., your 
+    rights to utilize this computer program are limited by the terms of that license.  
+
+    To obtain a license, please contact Belkin International, Inc. 
+  
+    This computer program contains trade secrets owned by Belkin International, Inc. 
+    and, unless unauthorized by Belkin International, Inc. in writing, you agree to 
+    maintain the confidentiality of this computer program and related information 
+    and to not disclose this computer program and related information to any 
+    other person or entity. 
+  
+    THIS COMPUTER PROGRAM IS PROVIDED AS IS WITHOUT ANY WARRANTIES, AND BELKIN INTERNATIONAL, INC. 
+    EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF 
+    MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. 
+--->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Setup Hidden Network</title>
+    <meta name="description" content="">
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="../css/style.css"/>
+    <script type="text/javascript" src="../js/vendor/jquery-1.8.3.js"></script>
+    <script src="../js/vendor/jquery.mobile-1.4.2.js"></script>
+    <script src="../js/vendor/pointer.js"></script>
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../lang/en.js"></script>
+    <script type="text/javascript" src="../lang/ru.js"></script>
+    <script type="text/javascript" src="../lang/fr.js"></script>
+    <script type="text/javascript" src="../lang/zh.js"></script>
+    <script type="text/javascript" src="../lang/de.js"></script>
+    <script type="text/javascript" src="../lang/es.js"></script>
+    <script type="text/javascript" src="../lang/it.js"></script>
+    <script type="text/javascript" src="../lang/ko.js"></script>
+	<script type="text/javascript" src="../lang/ja.js"></script> 
+    <script type="text/javascript" src="../lang/lang.js"></script>
+    <script type="text/javascript" src="../js/wemo.js"></script>
+    <script type="text/javascript" src="../js/constants.js"></script>
+    <script type="text/javascript" src="../js/wemo_util.js"></script>
+    <script type="text/javascript" src="../js/plugins/wemo_plugin.js"></script>
+    <script type="text/javascript" src="../js/setup/setup_hiddennetwork.js"></script>
+</head>
+<body>
+
+<div data-role="page" style="overflow-y: scroll">
+    <header data-role="header" class="main_header" data-position="fixed" data-tap-toggle="false">
+        <span class="more_tab_icon">
+            <img src="../img/actionbar/ic_more.png" />
+        </span>
+        <span class="headerBtns" style="display:none">
+            <span id="pairing_help_link" class="pairing_help_link action_bar_button">
+                <img src="../img/hidden_network/icon_help.png"/>
+            </span>
+        </span>
+        <span class="wemo_logo"></span>
+    </header>
+    <div class="sub_header"><span id="setup_sub_header" localString="true" _key="WeMoSwitchSetUp"></span></div>
+    <div class="more_tab"></div>
+    <div data-role="content" style="padding-bottom: 60px">
+        <label><span class="label upperCase" localString="true" _key="hiddenNetwork"></span></label>
+        <hr class="divider"/>
+        <div>
+            <fieldset class="ui-grid-a">
+                <div class="ui-block-a">
+                    <label localString="true" _key="NetworkName"></label>
+                </div>
+                <div class="ui-block-b">
+                    <b><input type="text" name="hidden_network_text" id="ap_hidden_network_text_input" autocapitalize="none" /></b>
+                </div>
+            </fieldset>
+
+            <fieldset class="ui-grid-a">
+                <div class="ui-block-a">
+                    <label class="display_block" localString="true" _key="Security"></label>
+                </div>
+                <div class="ui-block-b">
+                    <select id="security_option" class="wifi_network_security" placeholder="Name">
+                        <option value="Open">Open</option>
+                        <option value="WEP">WEP</option>
+                        <option value="WPA">WPA</option>
+                        <option value="WPA2">WPA2</option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+            <div class="none" id="ap_hidden_network_password_container">
+
+                <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <label localString="true" _key="Password"></label>
+                    </div>
+                    <div class="ui-block-b">
+                        <b><input type="text" name="ap_show_password_input" id="ap_hidden_network_password_input" autocapitalize="none" /></b>
+                    </div>
+                </fieldset>
+
+                <div data-role="fieldcontain" class="ui-hide-label">
+                    <fieldset data-role="controlgroup" data-iconpos="right">
+                        <legend localString="true" _key="ShowPasswordSwitchText"></legend>
+                        <input id="ap_password_show" type="checkbox" checked name="ap_show_password" data-theme="b"
+                               class="custom"/>
+                        <label for="ap_password_show" id="ap_hideNetwork_password"><span localString="true"
+                                                                                       _key="ShowPasswordSwitchText"></span></label>
+                    </fieldset>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div data-role="footer" class="ui-grid-a bottom_btns" data-position="fixed" data-tap-toggle="false">
+        <div class="ui-block-a">
+            <div id="ap_hideNetwork_cancel_btn" class="bottom_cancel">
+                <span localString="true" _key="Cancel"></span>
+            </div>
+        </div>
+        <div class="ui-block-b">
+            <div id="ap_hideNetwork_save_btn" class="bottom_save">
+                <span localString="true" _key="Save"></span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

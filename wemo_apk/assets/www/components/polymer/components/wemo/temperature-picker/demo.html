@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>color-picker custom element demo</title>
+
+    <!-- import polyfils for browsers without native support -->
+    <!--<script src="platform.js"></script>-->
+    <script src="../../webcomponentsjs/webcomponents.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- import the custom element -->
+    <link rel="import" href="temperature-picker.html"/>
+
+    <style>
+
+    </style>
+
+    <temperature-picker id='temperaturePicker' temperature="2700" color="#ffb400"></temperature-picker>
+
+    <script>
+        var tp = document.getElementById('temperaturePicker');
+
+        tp.addEventListener('selected', function(event) {
+            //output seelected color
+            console.log(event.detail.selectedTemperature);
+            console.log(event.detail.selectedColor);
+        });
+
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>

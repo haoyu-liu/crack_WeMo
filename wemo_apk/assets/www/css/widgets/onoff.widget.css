@@ -1,0 +1,59 @@
+.on_off_widget
+{
+    background-color: #999999;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #999999;
+}
+
+.on_off_widget_off
+{
+    background-color: #595959;
+    position: relative;
+    float: left;
+    text-align: center;
+    display:box;
+    box-pack:center;
+    box-align:center;
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    /* Internet Explorer 10 */
+    display:-ms-flexbox;
+    -ms-flex-pack:center;
+    -ms-flex-align:center;
+
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    border-bottom: 1px solid #595959;
+}
+
+.on_off_widget_on
+{
+    background-color: #73D44C;
+    position: relative;
+    float: left;
+    text-align: center;
+    display:box;
+    box-pack:center;
+    box-align:center;
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    /* Internet Explorer 10 */
+    display:-ms-flexbox;
+    -ms-flex-pack:center;
+    -ms-flex-align:center;
+
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    border-bottom: 1px solid #595959;
+}
+

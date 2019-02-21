@@ -1,0 +1,32 @@
+{
+    "labels": {
+        "sleepFader": "スリープフェーダー",
+        "customOption": "カスタム",
+        "btn": "入力",
+        "sleep": "スリープ状態にする",
+        "color": "カラー",
+        "checkBulb": "電球の確認",
+        "custom" : "カスタム",
+        "temperature": "温度",
+        "remaining": "残り"
+    },
+    "mode": {
+        "off": "オフ",
+        "on": "オン"
+    },
+    "unavailable": {
+        "devices": "__count__件のデバイスが使用できません",
+        "devices_plural": "__count__件のデバイスが使用できません"
+    },
+    "defaultFriendlyName": {
+        "MZ100": "照明",
+        "iQBR30": "Osram Lightify BR30",
+        "LIGHTIFY A19 Tunable White": "Osram Lightify TW60",
+        "LIGHTIFY Flex RGBW": "Osram Lightify Flex RGBW",
+        "LIGHTIFY Gardenspot RGB": "Osram Lightify Garden RGB",
+        "Classic A60 TW": "Osram Lightify TW60",
+        "Flex RGBW": "Osram Lightify Flex RGBW",
+        "Gardenspot RGB": "Osram Lightify Garden RGB",
+        "Connected A-19 60W Equivalent": "CREE Connected LED bulb"
+    }
+}

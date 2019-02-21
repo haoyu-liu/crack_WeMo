@@ -1,0 +1,22 @@
+{
+    "privateKey": "7495d475-6ea9-4fb5-8d81-3198100861eb",
+    "firmwareVersion": "WeMo_WW_2.00.2776.DVT",
+    "firmwareDownloadStartTime": null,
+    "alive": true,
+    "udn": "uuid:coffeemaker-1_0-221322S0000074",
+    "modelCode": null,
+    "uniqueId": null,
+    "state": "ON",
+    "pluginSSID": "WeMo.Coffeemaker.161",
+    "macAddr": "EC1A59C095E7",
+    "serialNumber": "221322S0000074",
+    "plugID": null,
+    "pluginId":4456,
+    "signalStrength": null,
+    "ruleDBPath": null,
+    "friendlyName": "Mr. Coffee® Brewer",
+    "deviceType": "urn:Belkin:device:coffeemaker:1",
+    "iconVersion": null,
+    "iconURL": "/images/ios-switch.png",
+    "firmwareUpgradeStatus": 2
+}

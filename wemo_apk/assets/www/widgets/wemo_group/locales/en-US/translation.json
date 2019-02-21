@@ -1,0 +1,25 @@
+{
+    "removeWarningDialog": {
+        "title": "Break Apart this group?",
+        "message": "There are only 2 devices in this group. Removing this device will remove the group from the device list and delete any associated rules.",
+        "buttonLabels": "Remove,Cancel"
+    },
+    "ungroupedDialog": {
+        "title": "Device Ungrouped",
+        "message": "has been removed from the group"
+    },
+    "header": {
+    	"groupedBulbs": "Grouped Bulbs"
+    },
+    "grouping": {
+        "defaultGroupName": "Lighting Group",
+        "inThisGroup": "Lightbulbs"
+    },
+    "buttons": {
+        "ok": "OK",
+        "cancel": "Cancel"
+    },
+    "label": {
+        "unavailable" : "unavailable"
+    }
+}

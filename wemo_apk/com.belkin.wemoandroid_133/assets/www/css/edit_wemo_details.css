@@ -1,0 +1,327 @@
+/* Header */
+.sub_header{
+	background: #73d44c;
+	font-weight: lighter;
+	text-align: center;
+	line-height: 56px;
+	font-size: 17px;
+	padding: 0;
+	color: white;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
+.sub_header .save_setup {
+	position: absolute;
+	font-weight: inherit;
+	color: white;
+	text-decoration: none;
+	right: 17px;
+	font-weight: 400;
+}
+
+.sub_header .save_setup:visited{
+	color: white;
+}
+
+body.ui-overlay-a{
+	background: #ededed !important;
+}
+
+.personalize_page {
+	overflow: hidden !important;
+}
+
+.personalize_page .ui-content{
+	background: transparent;
+	padding: 8px;
+	padding-top: 68px;
+}
+
+
+/* Message bubble */
+.message_bubble {
+	background: #68a2f6;
+	color: white;
+	padding: 10px 14px;
+	position: relative;
+	z-index: 1;
+	-webkit-filter: drop-shadow(0px 1px 2px rgba(0,0,0,0.3));
+}
+
+.message_bubble:after{
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	width: 0;
+	height: 0;
+	border-top: 14px solid #68a2f6;
+	border-left: 14px solid transparent;
+	transform: translateX(-100%);
+}
+
+.message_bubble .title {
+	font-size: 21px;
+	margin-bottom: 4px;
+}
+
+.message_bubble .message {
+
+}
+
+/* Cards */
+.card{
+	box-shadow: 0 1px 1px #e0e0e0;
+	background: white;
+	margin-top: 6px;
+	padding: 15px 12px 5px 15px;
+}
+
+.card .device_image_container{
+	position: relative;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 6px;
+}
+
+.card #device_thumb{
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 188px;
+	padding-top: 66%;
+	margin: 0 auto;
+}
+
+.card .change_photo_button{
+	position: absolute;
+	bottom: 19px;
+	left: 19px;
+	width: 24px;
+	height: 19px;
+	background-repeat: no-repeat;
+	background-image: url(../img/ic_camera.png);
+  	background-position: center;
+    background-size: 24px 19px;
+}
+
+.card #friendly_name{
+	color: #73d44c;
+	margin: 6px 0;
+}
+
+.card #friendly_name::-webkit-input-placeholder {
+    font-weight: 400;
+}
+
+.card #friendlyname_row {
+  padding: 12px 10px;
+}
+
+.card fieldset.ui-field-contain {
+	padding: 0;
+	margin: 4px 0 12px 0;
+}
+
+.card .ui-checkbox{
+	margin: 0;
+}
+
+.card .ui-checkbox label{
+	background: transparent;
+	border: 0;
+	font-weight: lighter;
+	text-transform: uppercase;
+	padding: 0;
+	height: 34px;
+	line-height: 34px;
+	z-index: 0;
+	position: relative;
+}
+
+.ui-page-theme-a .ui-btn:hover{
+	background-color: transparent;
+}
+
+.card #remember_wifi {
+	content: '';
+	position: absolute;
+  	top: 6px;
+	right: 0;
+	background: #73d44c;
+	width: 60px;
+	height: 34px;
+	border-radius: 17px;
+	z-index: 0;
+	transition: all 0.2s ease;
+}
+
+.card #remember_wifi:after,
+.card #maker_sensor_toggle:after {
+	width: 30px;
+	height: 30px;
+  	content: '';
+	background: #fff;
+	position: absolute;
+	border-radius: 15px;
+	top: 2px;
+	right: 27px;
+	z-index: 1;
+	margin: 0;
+	left: auto;
+	transition: all 0.2s ease;
+	transform: translateX(25px);
+	-webkit-transform: translateX(25px);
+	opacity: 1;
+}
+
+.card #remember_wifi.off,
+.card #maker_sensor_toggle.off {
+	background-color: #e0e0e0;
+}
+
+.card #remember_wifi.off:after,
+.card #maker_sensor_toggle.off:after{
+	transform: translateX(0);
+}
+
+.card .ui-input-text{
+	border: 0;
+	text-shadow: none;
+	box-shadow: none;
+}
+
+.card ::-webkit-input-placeholder{
+	color: #73d44c;
+	font-weight: lighter;
+}
+
+.card input:focus::-webkit-input-placeholder{
+	color: transparent;
+}
+
+.card hr{
+	opacity: 0.5;
+}
+
+.card p{
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	font-weight: lighter;
+	color: #777777;
+}
+
+#enter_email{
+	color: #73d44c;
+	font-weight: lighter;
+	margin: 3px;
+	padding: 0;
+}
+
+.pageBtn.save_setup  {
+	background: #73d44c;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+	border: 0;
+	text-shadow: none;
+	border-radius: 2px;
+	padding: 10px 0;
+	text-align: center;
+	margin: 7px 0;
+}
+
+.pageBtn.save_setup .button_text {
+	color: white;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.card#imageAndName {
+	padding: 0;
+}
+
+#save_email_row {
+	padding: 18px 0;
+     border-bottom: 1px solid #e0e0e0;
+     color: #444;
+     overflow: hidden;
+     position: relative;
+}
+
+.card .remember_wifi_description {
+	padding: 19px 0 15px 0;
+	color: #777;
+}
+
+#remember_wifi_label,
+#maker_sensor_lable,
+#maker_switch_select_label {
+  width: 65%;
+  float: left;
+}
+
+#maker_switch_select {
+	padding: 1px 0 0 8px;
+	margin: 0;
+	list-style: none;
+	color: #838383;
+}
+
+#maker_switch_select .radioBtn {
+	background: url("../img/btn_radio_off.png") no-repeat center center;
+	height: 30px;
+	width: 30px;
+	display: block;
+	background-size: 28px 28px;
+}
+
+#maker_switch_select .radioBtn.selected {
+	background: url("../img/btn_radio_on.png") no-repeat center center;
+	background-size: 28px 28px;
+}
+
+#maker_switch_select li {
+	display: flex;
+	align-items: center;
+	height: 50px;
+}
+
+#maker_switch_select .maker_switch_select_label {
+	flex: 1;
+}
+
+#maker_sensor {
+	overflow: hidden;
+	position: relative;
+  	padding: 22px 15px;
+  	display: none;
+}
+
+#maker_sensor_toggle  {
+	content: '';
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	background: #73d44c;
+	width: 60px;
+	height: 34px;
+	border-radius: 17px;
+	z-index: 0;
+	transition: all 0.2s ease;
+}
+
+#maker_switch_lable {
+	text-transform: uppercase;
+	padding: 10px 0;
+}
+
+#maker_switch_type {
+	padding: 15px 12px 5px 15px;
+	display: none;
+}
+
+
+#maker_switch_select .maker_switch_toggle {
+	border-bottom: 1px solid #e0e0e0;
+}

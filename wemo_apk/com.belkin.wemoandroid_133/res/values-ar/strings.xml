@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="crop__saving">جارى حفظ الصورة …</string>
+    <string name="crop__wait">رجاء الأنتظار …</string>
+    <string name="crop__pick_error">الصورة غير متاحة</string>
+    <string name="crop__done">تم</string>
+    <string name="crop__cancel">الغاء</string>
+</resources>

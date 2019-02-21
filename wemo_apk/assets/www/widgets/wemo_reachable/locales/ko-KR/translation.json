@@ -1,0 +1,7 @@
+{
+    "reachable": {
+        "airplaneMode" : "WeMo를 사용할 수 있도록 비행기 모드를 끄십시오.",
+        "remoteDiabaledMode" : "외출 중에 WeMo를 사용하려면 원격 접속 기능을 켜십시오. 가정 네트워크에서는 원격 접속 기능을 켤 수만 있습니다.",
+        "radiosOffMode" : "WeMo를 사용할 수 있도록 Wi-Fi 또는 전화 데이터 서비스에 연결하십시오."
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="no-js">
+<!--
+// 
+//  enabled_rules.html 
+// 
+//  Created by Belkin International, Software Engineering on 10/04/2013. 
+//  Copyright (c) 2012-2013 Belkin International, Inc. and/or its affiliates. All rights reserved. 
+//
+    
+    
+    Belkin International, Inc. retains all right, title and interest (including all 
+    intellectual property rights) in and to this computer program, which is 
+    protected by applicable intellectual property laws.  Unless you have obtained 
+    a separate written license from Belkin International, Inc., you are not authorized 
+    to utilize all or a part of this computer program for any purpose (including 
+    reproduction, distribution, modification, and compilation into object code), 
+    and you must immediately destroy or return to Belkin International, Inc. all copies 
+    of this computer program.  If you are licensed by Belkin International, Inc., your 
+    rights to utilize this computer program are limited by the terms of that license.  
+
+    To obtain a license, please contact Belkin International, Inc. 
+  
+    This computer program contains trade secrets owned by Belkin International, Inc. 
+    and, unless unauthorized by Belkin International, Inc. in writing, you agree to 
+    maintain the confidentiality of this computer program and related information 
+    and to not disclose this computer program and related information to any 
+    other person or entity. 
+
+  
+    THIS COMPUTER PROGRAM IS PROVIDED AS IS WITHOUT ANY WARRANTIES, AND BELKIN INTERNATIONAL, INC. 
+    EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF 
+    MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. 
+
+-->
+     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>wemo tab</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<link rel="stylesheet" href="../css/jquery.mobile-1.4.2.min.css">
+		<link rel="stylesheet" href="../css/style.css" />
+		<script type="text/javascript" src="../js/vendor/jquery-1.8.3.js"></script>
+		<script src="../js/vendor/jquery.mobile-1.4.2.js"></script>
+		<script type="text/javascript" src="../cordova.js"></script>
+        <script type="text/javascript" src="../js/ready.js"></script>
+        <script type="text/javascript" src="../lang/en.js"></script>
+		<script type="text/javascript" src="../lang/ru.js"></script>
+		<script type="text/javascript" src="../lang/fr.js"></script>
+		<script type="text/javascript" src="../lang/zh.js"></script>
+		<script type="text/javascript" src="../lang/de.js"></script>
+		<script type="text/javascript" src="../lang/es.js"></script>
+		<script type="text/javascript" src="../lang/it.js"></script>
+		<script type="text/javascript" src="../lang/ko.js"></script>
+		<script type="text/javascript" src="../lang/ja.js"></script> 
+		<script type="text/javascript" src="../lang/lang.js"></script>
+         <script type="text/javascript" src="../js/plugins/wemo_plugin.js"></script>
+		<script type="text/javascript" src="../js/wemo.js"></script>
+        <script type="text/javascript" src="../js/constants.js"></script>
+        <script type="text/javascript" src="../js/wemo_util.js"></script>
+		<script type="text/javascript" src="../js/rules/enabled_rules.js"></script>
+	</head>
+	    <body>
+
+			<div data-role="page" id="enabled_rules">						
+					<header data-role="header" class="tab_bg main_header" data-theme="b" data-position="fixed" data-tap-toggle="false">
+						<span class="wemo_logo_canvas"></span>
+                        <span class="headerBtns">
+                            <span class="more_tab_icon">
+                                <img src="../img/ic_more_2x.png"/>
+                            </span>
+                            <span class="add_new_icon">
+                                <a id="add_new_icon"><img src="../img/btn_ac_new.png"/></a>
+                            </span>
+                        </span>
+					    <span class="wemo_logo withIcons"></span>
+                        <span class="reachabilityIcon"></span>
+					</header>
+                    <div class="networkMsgContainer">
+                        <div id="more_tab" class="more_tab"></div>
+                        <div id="enableRuleHeader" >
+                            <span localString="true" _key="EnableRulesSectionTitle"></span>
+                        </div>
+
+                         <div data-role="content" data-theme="b" class="rules_list">
+                             <!-- Enabled Rules List -->
+                              <div class="enabled_rules">
+                                 <ul id="enabled_rules_list" class="enabled_rules_list"></ul>
+                               </div>
+                              <!-- Disabled Rules List -->
+                              <div class="disabled_rules">
+                                  <div id="disableRuleHeader">
+                                     <span localString="true" _key="DisableRulesSectionTitle"></span>
+                                   </div>
+                                   <ul id="disabled_rules_list" class="disabled_rules_list"></ul>
+                              </div>
+                         </div>
+
+                        <footer class="footerComponent" data-tap-toggle="false">
+                            <div class="footer_tab_left footerTabs">
+                                <a class="device_btn" ></a>
+                                <span localString="true" _key="Devices"></span>
+                            </div>
+                            <div class="footer_tab_right footerTabs active">
+                                <a class="rules_btn"></a>
+                                <span localString="true" _key="RulesListTitle"></span>
+                            </div>
+                        </footer>
+                     </div>
+					<div id="rule_duplicate" data-role="popup"
+						class="pop_up ui-corner-all ui-popup ui-body-c ui-overlay-shadow"
+						data-theme="c" data-overlay-theme="a" aria-disabled="false"
+						data-disabled="false" data-shadow="true" data-corners="true"
+						data-transition="none" data-position-to="origin">
+						<div class="popup_head" id="ruleInfoHeader"></div>
+			
+						<article data-role="content" data-theme="b">
+							<p id="RuleDuplicateText"></p>
+							<fieldset>
+								<a id="rule_duplicate_ok_btn" class="away_rule_ok_btn"
+									data-role="button"><span localString="true" _key="AlertOK"></span>
+								</a>
+							</fieldset>
+						</article>
+					</div>
+	</div>
+		</body>
+</html>

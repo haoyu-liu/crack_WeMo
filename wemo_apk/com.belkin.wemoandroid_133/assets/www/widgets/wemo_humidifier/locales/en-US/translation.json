@@ -1,0 +1,111 @@
+{
+    "labels": {
+        "filterTile": "Filters",
+        "wickFilter": "Order Wick Filters",
+        "changeFilter": "How to Change",
+        "waterAdvise": "Refill Water!",
+        "timeToOrderNewWickFilter": "TIME TO ORDER NEW WICK FILTER",
+        "saveScheduleError": "You must select at least a day and a Fan mode to save the schedule",
+        "wickFilterLife": "Wick Filter Life",
+        "replaceFilter": "Replace filter",
+        "schedule": "Schedule",
+        "dailySchedule": "Daily Schedule",
+        "enable": "Enable",
+        "onFor": "On for"
+    },
+    "fanMode": {
+        "5": "Max",
+        "4": "High",
+        "3": "Med",
+        "2": "Low",
+        "1": "Min"
+    },
+    "ruleMode": {
+        "3": "Medium"
+    },
+    "buttons": {
+        "cancel": "Cancel",
+        "save": "Save",
+        "reset": "Reset",
+        "ok": "OK",
+        "hide": "Hide"
+    },
+    "mode": {
+        "off": "Off",
+        "on": "On"
+    },
+    "date": {
+        "tomorrow": "Tomorrow",
+        "yesterday": "Yesterday",
+        "today": "Today",
+        "days": {
+            "0": "Sunday",
+            "1": "Monday",
+            "2": "Tuesday",
+            "3": "Wednesday",
+            "4": "Thursday",
+            "5": "Friday",
+            "6": "Saturday"
+        },
+        "scheduleDays": {
+            "0": "Sun",
+            "1": "Mon",
+            "2": "Tue",
+            "3": "Wed",
+            "4": "Thu",
+            "5": "Fri",
+            "6": "Sat"
+        }
+    },
+    "desireHumidity": {
+        "0": "45%",
+        "1": "50%",
+        "2": "55%",
+        "3": "60%",
+        "4": "Max%"
+    },
+    "staysafe": {
+        "room": "Humidity",
+        "humidistate": "Target humidity",
+        "scheduleTime": {
+            "defaultHour": "5:",
+            "defaultMinute": "58",
+            "am": "am",
+            "pm": "pm"
+        },
+        "off": "OFF"
+    },
+    "errors": {
+        "notDetected": "Not Detected"
+    },
+    "popup": {
+        "titleChange": "needs new wick filters",
+        "titleChangeSoon": "needs a new  wick filter soon",
+        "filterChanged": "Filters Changed",
+        "remindMelater": "Remind me later",
+        "orderNewFilter": "Order new filters"
+    },
+    "messages": {
+        "orderNewFilter": "Order new filters",
+        "replaceFilter": "Replace filter",
+        "timeReplaceFilter": "Time to replace filters...",
+        "timeOrderFilter": "Time to order filters..."
+    },
+    "rules": {
+        "HumidifierLow": "__friendlyName__ is running low on water",
+        "HumidifierRefill": "__friendlyName__ has turned off the fan due to low water levels. Please refill water as soon as possible"
+    },
+    "brands": {
+        "Holmes": "HumidifierIcon",
+        "Bionaire": "bionaireLogo"
+    },
+    "purchasefilterLink": {
+        "Holmes": "http://www.belkin.com/embed/en-us/wemo-humidifier/purchasefilter",
+        "Bionaire": "http://www.bionairecanada.com/en_CA/humidification-and-dehumidification/humidifier-filters-and-wicks/"
+    },
+    "changefilterLink": {
+        "Holmes": "http://www.belkin.com/embed/en-us/wemo-humidifier/changefilter",
+        "Bionaire": "http://www.belkin.com/embed/en-ca/wemo/bionaire-humidifier/moreinfo"
+    },
+    "defaultFriendlyName": "Holmes® Humidifier"
+}

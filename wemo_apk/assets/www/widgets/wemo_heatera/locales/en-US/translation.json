@@ -1,0 +1,68 @@
+{
+    "labels": {
+        "room": "Room",
+        "remaining": "OFF in",
+        "dailySchedule": "Daily Schedule",
+        "enable": "Enable"
+    },
+    "mode":{
+        "0": "Off",
+        "1": "Frost Protect",
+        "2": "High",
+        "3": "Low",
+        "4": "Eco",
+        "off": "Off",
+        "on": "On"
+    },
+    "tempUnit": {
+        "0": "Celsius",
+        "1" : "Fahrenheit"
+    },
+    "buttons": {
+        "cancel": "Cancel",
+        "save": "Save",
+        "reset": "Reset",
+        "continue": "Continue",
+        "hide": "Hide"
+    },
+    "summary": {
+        "thermostat": "Thermostat",
+        "warningMessage": {
+            "title": "Reminder",
+            "message": {
+                "Holmes": "Check your Holmes® Heater daily to ensure safe operating conditions.",
+                "Bionaire": "Check your Bionaire® Heater daily to ensure safe operating conditions."
+            }
+        },
+        "frostProtectActive": "Frost Protect Active"
+    },
+    "errors": {
+        "notDetected": "Not Detected"
+    },
+    "settings": {
+        "labels": {
+            "on": "Start",
+            "off": "End"
+        }
+    },
+    "tile": {
+        "off": "Powered Off",
+        "disabled": "WeMo Disabled"
+    },
+    "popup": {
+        "off": {
+            "title": "This will disable your Heater",
+            "message": "You will need to press the power button at the heater to turn it on"
+        }
+    },
+    "rules": {
+        "HeaterOff": "Your __friendlyName__ has been powered off.",
+        "HeaterDisabled": "__friendlyName__'s WeMo functionality has been disabled.",
+        "Heater90": "Did you know that __friendlyName__ is running, and it's over 90 degrees?"
+    },
+    "brands": {
+        "Holmes": "holmesLogo",
+        "Bionaire": "bionaireLogo"
+    },
+    "defaultFriendlyName": "Holmes® Heater"
+}

@@ -1,0 +1,22 @@
+{
+    "removeWarningDialog": {
+        "title": "¿Desea desmantelar este grupo?",
+        "message": "En este grupo solo hay 2 dispositivos. Si elimina este dispositivo, el grupo se eliminará de la lista de dispositivos junto con posibles reglas.",
+        "buttonLabels": "Eliminar,Cancelar"
+    },
+    "ungroupedDialog": {
+        "title": "Dispositivo desagrupado",
+        "message": "ha sido quitado del grupo."
+    },
+    "header": {
+        "groupedBulbs": "Grupo de bombillas"
+    },
+    "buttons": {
+        "ok": "OK",
+        "cancel": "Cancelar"
+    },
+    "grouping": {
+        "defaultGroupName": "Grupo de Iluminación",
+        "inThisGroup": "Bombillas"
+    }
+}

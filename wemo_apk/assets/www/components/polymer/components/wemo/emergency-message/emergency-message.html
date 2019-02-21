@@ -1,0 +1,31 @@
+<link href="../../polymer/polymer.html" rel="import">
+<script src="../../webcomponentsjs/webcomponents.js"></script>
+<script type="text/javascript" src="../../i18next/i18next.js"></script>
+<link href="alert-banner.html" rel="import">
+<link href="emergency-contact-popup.html" rel="import">
+
+
+<polymer-element name="emergency-message">
+    <template>
+
+        <alert-banner on-tap="{{showContact}}"></alert-banner>
+        <emergency-contact-popup id="contacts"></emergency-contact-popup>
+
+    </template>
+
+    <script>
+
+        (function () {
+            Polymer('emergency-message',{
+                ready: function() {
+
+                },
+                showContact: function() {
+                    this.$.contacts.toggle();
+                }
+            });
+        })();
+
+
+    </script>
+</polymer-element>

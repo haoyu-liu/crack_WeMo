@@ -1,0 +1,31 @@
+{
+    "labels": {
+        "sleepFader": "TAMISAGE",
+        "customOption": "Personnalisé",
+        "btn": "Entrée",
+        "sleep": "Veille",
+        "color": "Couleur",
+        "checkBulb": "Vérifier Ampoule",
+        "custom" : "Personnalisé",
+        "temperature": "Température",
+        "remaining": "Restant"
+    },
+    "mode": {
+        "off": "Désactivé",
+        "on": "Activé"
+    },
+    "unavailable": {
+        "devices": "__count__ unavailable device",
+        "devices_plural": "__count__ unavailable devices"
+    },
+    "defaultFriendlyName": {
+        "MZ100": "Ampoule",
+        "iQBR30": "OSRAM Lightify BR30",
+        "LIGHTIFY A19 Tunable White": "Osram Lightify TW60",
+        "LIGHTIFY Flex RGBW": "Ruban lumineux RVB blanc flexible Lightify",
+        "LIGHTIFY Gardenspot RGB": "Guirlande lumineuse d extérieur RGB Lightify",
+        "Classic A60 TW": "Osram Lightify TW60",
+        "Flex RGBW": "Ruban lumineux RGB blanc flexible",
+        "Gardenspot RGB": "Guirlande lumineuse d extérieur RGB"
+    }
+}

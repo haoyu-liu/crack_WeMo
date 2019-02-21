@@ -1,0 +1,49 @@
+html, body{font-size:100%}
+
+/*--Reset CSS Start---*/
+.ui-dialog .ui-header .ui-btn-icon-notext  { display:none;}
+/* header.ui-header{background:#f3f3f3} */
+.ui-corner-all{	border-radius:5px;}
+.ui-dialog-contain > .ui-content{ border:1px solid #FFFFFF;}
+.ui-popup.ui-content, .ui-popup .ui-content{ border:#FFF solid 1px;}
+.ui-dialog-contain{	background:#FFF;  border:none; }
+.ui-popup-container{ background:#FFF; border:none; border-radius:7px; }
+.ui-body-b, .ui-overlay-b{border:none;}
+.ui-btn-inner{font-size:12px;}
+.ui-header{ border-bottom:1px solid #939393 !important;}
+.ui-navbar .ui-btn{ font-size: 14px; padding: 10px; font-weight: normal;}
+ 
+.Textcenter{
+text-align:center;
+}
+.Textleft{
+text-align:left;
+}
+.light_gray_text{
+	color:#777;	
+}
+.font_weight{
+font-weight:bold;
+}
+.ui-block-b, .ui-block-a{
+color:#999;
+}
+#reset_device_page .ui-btn{
+    background:#fff;
+    font-family: HelveticaNeue-Medium !important;
+    font-weight: normal !important;
+    font-size: 14px !important;
+    color: #000 !important;
+}
+#reset_device_page .ui-btn-inner{
+    color: #000 !important;
+    background:#fff;
+}
+.addbutton{
+color:blue;
+}
+.checkboxFont{
+font-size:12px;
+}
+
+

@@ -1,0 +1,52 @@
+{
+  "HVAC": {
+    "heating": "Calefacción",
+    "cooling": "Refrigeración",
+    "fanrunning": "Ventilador encendido",
+    "heat": "Calor",
+    "cool": "Frío",
+    "heatcool": "Calor / Frío",
+    "off": "Apagado",
+    "on" : "Activado",
+    "rhrHeader": "Rush Hour Rewards activas",
+    "rhrMessage": "Ajustar la temperatura puede afectar a sus recompensas.",
+    "headerTemperature": "ESTABLECER TEMPERATURA",
+    "headerHeatTemperature": "Temp calefacción",
+    "headerCoolTemperature": "Temp refrigeración",
+    "headerMode": "ESTABLECER MODO",
+    "drawerLabelCurrent": "Actual",
+    "drawerLabelTemp": "Temp",
+    "drawerLabelHumidity": "Humedad",
+    "drawerLabelTempAway": "Para ver y ajustar la temperatura configura tu Termostato Nest en el modo Home",
+    "serviceUnavailable": "El servicio Nest no está disponible en este momento."
+  },
+
+  "error": {
+    "energy-saving-event-on":{
+      "heading": "No es posible realizar ajustes de forma remota",
+      "message": "Hay un evento de las Recompensas por horas punta en curso. Para realizar ajustes usa la Nest App o el Termostato Nest."
+    },
+    "lock-enabled":{
+      "heading":"No es posible realizar ajustes de forma remota",
+      "message":"Tu Termostato Nest está bloqueado.  Para realizar cualquier ajuste desbloquea primero el Termostato Nest."
+    },
+    "emergency-heat-is-on":{
+      "heading":"El modo Ausente no está disponible",
+      "message":"La calefacción de emergencia está activada en este momento. El modo Ausente no está disponible actualmente."
+    },
+    "blocked":{
+      "heading":"Nest necesita un descanso",
+      "message":"Para salvaguardar la seguridad de tu sistema Nest y HVAC el servicio Nest evita que se puedan hacer muchos cambios en un periodo corto de tiempo.  Inténtalo de nuevo en unos minutos o realiza los ajustes directamente en el Termostato Nest."
+    },
+    "default":{
+      "heading":"Lo sentimos",
+      "message":"Se ha producido un error inesperado. Inténtalo de nuevo o prueba realizando los ajustes desde la Nest App."
+    }
+  },
+
+  "nestAlerts":{
+    "notConnected": "Este termostato no está conectado ya a tu cuenta Nest.",
+    "noInternet": "El acceso al servicio Nest no está disponible en este momento.  Inténtalo de nuevo más tarde."
+  }
+}
+

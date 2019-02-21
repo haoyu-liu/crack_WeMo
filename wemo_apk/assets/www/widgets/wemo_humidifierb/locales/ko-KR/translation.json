@@ -1,0 +1,60 @@
+{
+    "labels": {
+        "filterTile": "Filters",
+        "wickFilter": "Order Wick Filters",
+        "changeFilter": "How to Change",
+        "waterAdvise": "Refill Water!",
+        "timeToOrderNewWickFilter": "TIME TO ORDER NEW WICK FILTER",
+        "saveScheduleError": "You must select at least a day and a Fan mode to save the schedule",
+        "wickFilterLife": "Wick Filter Life"
+    },
+    "fanMode": {
+        "3": "높음",
+        "2": "중간",
+        "1": "낮음"
+    },
+    "ruleMode": {
+        "2": "중간"
+    },
+    "desireHumidity": {
+        "0": "45%",
+        "1": "50%",
+        "2": "55%",
+        "3": "60%",
+        "4": "Max%"
+    },
+    "staysafe": {
+        "room": "Humidity",
+        "humidistate": "Target humidity",
+        "scheduleTime": {
+            "defaultHour": "5:",
+            "defaultMinute": "58",
+            "am": "오전",
+            "pm": "오후"
+        },
+        "off": "OFF"
+    },
+    "popup": {
+        "titleChange": "needs new wick filters",
+        "titleChangeSoon": "needs a new  wick filter soon",
+        "filterChanged": "Filters Changed",
+        "remindMelater": "Remind me later"
+    },
+    "rules": {
+        "HumidifierLow": "__friendlyName__ is running low on water",
+        "HumidifierRefill": "__friendlyName__ has turned off the fan due to low water levels. Please refill water as soon as possible"
+    },
+    "brands": {
+        "Holmes": "HumidifierIcon",
+        "Bionaire": "bionaireLogo"
+    },
+    "purchasefilterLink": {
+        "Holmes": "http://www.belkin.com/embed/en-us/wemo-humidifier/purchasefilter",
+        "Bionaire": "http://www.bionairecanada.com/en_CA/humidification-and-dehumidification/humidifier-filters-and-wicks/"
+    },
+    "changefilterLink": {
+        "Holmes": "http://www.belkin.com/embed/en-us/wemo-humidifier/changefilter",
+        "Bionaire": "http://www.belkin.com/embed/en-ca/wemo/bionaire-humidifier/moreinfo"
+    },
+    "defaultFriendlyName": "Holmes® 가습기"
+}

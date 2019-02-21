@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<!--
+    timer_rule_when.html
+
+    Created by Belkin International, Software Engineering on 10/04/2013. 
+    Copyright (c) 2012-2013 Belkin International, Inc. and/or its affiliates. All rights reserved. 
+    
+    Belkin International, Inc. retains all right, title and interest (including all 
+    intellectual property rights) in and to this computer program, which is 
+    protected by applicable intellectual property laws.  Unless you have obtained 
+    a separate written license from Belkin International, Inc., you are not authorized 
+    to utilize all or a part of this computer program for any purpose (including 
+    reproduction, distribution, modification, and compilation into object code), 
+    and you must immediately destroy or return to Belkin International, Inc. all copies 
+    of this computer program.  If you are licensed by Belkin International, Inc., your 
+    rights to utilize this computer program are limited by the terms of that license.  
+
+    To obtain a license, please contact Belkin International, Inc. 
+  
+    This computer program contains trade secrets owned by Belkin International, Inc. 
+    and, unless unauthorized by Belkin International, Inc. in writing, you agree to 
+    maintain the confidentiality of this computer program and related information 
+    and to not disclose this computer program and related information to any 
+    other person or entity. 
+  
+    THIS COMPUTER PROGRAM IS PROVIDED AS IS WITHOUT ANY WARRANTIES, AND BELKIN INTERNATIONAL, INC. 
+    EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF 
+    MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. 
+--->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="cache-control" content="no-cache">
+    <title>When</title>
+    <meta name="description" content="">
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="../css/AndroidHoloDarkLight.css"/>
+    <script type="text/javascript" src="../js/vendor/jquery-1.8.3.js"></script>
+    <script src="../js/vendor/jquery.mobile-1.4.2.js"></script>
+    <script src="../js/vendor/jquery.transit.js"></script>
+    <script src="../js/vendor/pointer.js"></script>
+    <script type="text/javascript" src="../lang/en.js"></script>
+    <script type="text/javascript" src="../lang/ru.js"></script>
+    <script type="text/javascript" src="../lang/fr.js"></script>
+    <script type="text/javascript" src="../lang/zh.js"></script>
+    <script type="text/javascript" src="../lang/de.js"></script>
+    <script type="text/javascript" src="../lang/es.js"></script>
+    <script type="text/javascript" src="../lang/it.js"></script>
+    <script type="text/javascript" src="../lang/ko.js"></script>
+	<script type="text/javascript" src="../lang/ja.js"></script> 
+    <script type="text/javascript" src="../lang/lang.js"></script>
+    <script type="text/javascript" src="../js/wemo.js"></script>
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../js/constants.js"></script>
+    <script type="text/javascript" src="../js/wemo_util.js"></script>
+    <script type="text/javascript" src="../js/rules/timer_rule_when.js"></script>
+    <link rel="stylesheet" href="../css/style.css"/>
+
+    <script src="../js/timePicker/mobiscroll.core.js" type="text/javascript"></script>
+    <script src="../js/timePicker/mobiscroll.datetime.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../js/plugins/wemo_plugin.js"></script>
+    <link href="../css/mobiscroll.core.css" rel="stylesheet" type="text/css"/>
+
+    <script src="../js/widgets/picker.widget.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../css/widgets/picker.widget.css"/>
+    <script src="../js/widgets/onoff.widget.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../css/widgets/onoff.widget.css"/>
+
+</head>
+<body class="gray_page">
+<div data-role="page" id="wemo_light" class="sensor_rule_when complex_time_when">
+
+<header data-role="header" data-theme="b" class="main_header" data-position="fixed" data-tap-toggle="false">
+				<span class="wemo_logo">
+				</span>
+</header>
+
+<div class="more_tab"></div>
+<div class="sub_header">
+    <span localString="true" _key="SelectTimeDayTitle"></span>
+</div>
+
+<div data-role="content" id="rules_container" class="rules_container content-with-margin"  style="display:block;height:75%;overflow:auto !important;">
+
+    <div id="sensors_rule_time" class="padding_bottom_50px">
+        <div name="when_both" id="TTicker">
+			<div style="margin:bottom: 10px; width: 100%; position: relative ; height: 43px">
+				<div style="position: absolute; top:0; left:0; margin-top: 12px"><label><span class="label upperCase"  localString="true" _key="On"></span></label></div>
+				<div id="toggleTS_startTime" class="toggleTS">
+					<div class="time active" style="display: table;" data-tab-class="startTime" data-when="time">
+							<span class="time_active"
+								  style="width: 100%; display: table-cell;vertical-align: middle; "></span>
+					</div>
+					<div class="sun " style="display: table;" data-tab-class="startSRSS" data-when="sun">
+							<span class="sun_not_active"
+								  style="width: 100%;  display: table-cell;vertical-align: middle;"></span>
+					</div>
+				</div>
+			</div>			
+			<hr class="divider">
+			<div class="tab-content">
+				<div class="startTime tab" style="width: 100%;">
+					<div class="custom_time">
+						<div class="more_li_clone more_li_clone_no_img" data-role="fieldcontain">
+							<span class="more_li_text_div text_strong" localString="true" _key="OnAt" contentEditable="false"></span>
+
+							<div class="time_picker more_li_subHeader"><input type="text" class="select_time noborder"
+																			  name="start_time" id="start_time"></div>
+						</div>
+					</div>
+					 <div class="margin_top25"></div>
+					<div class="srss">
+										<div class="srss_items sr srss_start">
+											<div><input type="radio" name="rad_srss_start" value="Sunrise" id="startSunrise"></div>  
+											<span class="more_li_text_div text_strong" localString="true" _key="SunRise"></span>
+											<div class="more_li_subHeader"><span localString="true" _key="today"></span><span class="timeSR timeSRSS"></span></div>
+										</div>
+											
+											<div class="drawer_offset">
+												<ul class="sr_offset">
+													<li  style="margin-right:9.5%"><div class="srss_offset_active exactly" value="0"><span localString="true" _key="Exactly"></span></div></li>
+													<li><div class="srss_offset_inactive 15b" value="-900"><span localString="true" _key="FifteenMinsBefore"></span></div></li>
+													<li><div class="srss_offset_inactive 30b" value="-1800"><span localString="true" _key="ThirtyMinsBefore"></span></div></li>
+													<li class="no_margin"><div class="srss_offset_inactive 45b" value="-2700"><span  localString="true" _key="FortyFiveMinsBefore"></span></div></li>
+													<br>							
+													<li><div class="srss_offset_inactive 15a" value="900"><span localString="true" _key="FifteenMinsAfter"></span></div></li>
+													<li><div class="srss_offset_inactive 30a" value="1800"><span localString="true" _key="ThirtyMinsAfter"></span></div></li>
+													<li><div class="srss_offset_inactive 45a" value="2700"><span localString="true" _key="FortyFiveMinsAfter"></span></div></li>	
+													<li class="no_margin" ><div class="srss_offset_inactive custom" id="custom_SR"><span localString="true" _key="Custom"></span></div></li>										
+												</ul>
+											</div>
+										
+										<div class="srss_items ss srss_start">
+											<div><input type="radio" name="rad_srss_start" value="Sunset" id="startSunset"></div>
+											<span class="more_li_text_div text_strong" localString="true" _key="SunSet"></span>
+											<div class="more_li_subHeader"><span id="ss_span" localString="true" _key="today"></span><span class="timeSS timeSRSS"></span></div>
+										</div>
+											
+											<div class="drawer_offset">
+												<ul class="ss_offset">
+													<li  style="margin-right:9.5%"><div class="srss_offset_active exactly" value="0"><span localString="true" _key="Exactly"></span></div></li>
+													<li><div class="srss_offset_inactive 15b" value="-900"><span localString="true" _key="FifteenMinsBefore"></span></div></li>
+													<li><div class="srss_offset_inactive 30b" value="-1800"><span localString="true" _key="ThirtyMinsBefore"></span></div></li>
+													<li class="no_margin"><div class="srss_offset_inactive 45b" value="-2700"><span localString="true" _key="FortyFiveMinsBefore"></span></div></li>
+													<br>							
+													<li><div class="srss_offset_inactive 15a" value="900"><span localString="true" _key="FifteenMinsAfter"></span></div></li>
+													<li><div class="srss_offset_inactive 30a" value="1800"><span localString="true" _key="ThirtyMinsAfter"></span></div></li>
+													<li><div class="srss_offset_inactive 45a" value="2700"><span localString="true" _key="FortyFiveMinsAfter"></span></div></li>	
+													<li class="no_margin" ><div class="srss_offset_inactive custom" id="custom_SS"><span localString="true" _key="Custom"></span></div></li>										
+												</ul>
+											</div>
+					</div>
+				</div>
+			</div> 
+
+			<div class="margin_top25"></div>
+			<div style="margin:bottom: 10px; width: 100%; position: relative ; height: 43px">
+				<div style="position: absolute; top:0; left:0; margin-top: 12px"><label><span class="label upperCase"  localString="true" _key="Off"></span></label></div>
+				<div id="toggleTS_endTime" class="toggleTS">
+					<div class="time active" style="display: table;" data-tab-class="endTime" data-when="time">
+							<span class="time_active"
+								  style="width: 100%; display: table-cell;vertical-align: middle; "></span>
+					</div>
+					<div class="sun " style="display: table;" data-tab-class="endSRSS" data-when="sun">
+							<span class="sun_not_active"
+								  style="width: 100%;  display: table-cell;vertical-align: middle;"></span>
+					</div>
+				</div>
+			</div>
+			<hr class="divider"/>
+			<div class="margin_top25"></div>             
+
+
+			<div class="tab-content2">
+				<div class="endTime tab" style="width: 100%;">
+					<div class="custom_time">
+						<div class="more_li_clone more_li_clone_no_img" data-role="fieldcontain">
+							<span class="more_li_text_div text_strong" localString="true" _key="OffAt"></span>
+
+							<div class="time_picker more_li_subHeader"><input type="text" class="select_time"
+																			  name="end_time" id="end_time"></div>
+						</div>
+					</div>
+					<div class="margin_top25"></div>
+					<div class="srss">
+								<div class="srss_items sr srss_end">
+									<div><input type="radio" name="rad_srss_end" value="Sunrise" id="endSunrise"></div>  
+									<span class="more_li_text_div text_strong" localString="true" _key="SunRise"></span>
+									<div class="more_li_subHeader"><span localString="true" _key="today"></span><span class="timeSR timeSRSS"></span></div>
+								</div>
+								
+									<div class="drawer_offset">
+										<ul class="sr_offset">
+											<li  style="margin-right:9.5%"><div class="srss_offset_active exactly" value="0"><span localString="true" _key="Exactly"></span></div></li>
+											<li><div class="srss_offset_inactive 15b" value="-900"><span localString="true" _key="FifteenMinsBefore"></span></div></li>
+											<li><div class="srss_offset_inactive 30b" value="-1800"><span localString="true" _key="ThirtyMinsBefore"></span></div></li>
+											<li class="no_margin"><div class="srss_offset_inactive 45b" value="-2700"><span localString="true" _key="FortyFiveMinsBefore"></span></div></li>
+											<br>							
+											<li><div class="srss_offset_inactive 15a" value="900"><span localString="true" _key="FifteenMinsAfter"></span></div></li>
+											<li><div class="srss_offset_inactive 30a" value="1800"><span localString="true" _key="ThirtyMinsAfter"></span></div></li>
+											<li><div class="srss_offset_inactive 45a" value="2700"><span localString="true" _key="FortyFiveMinsAfter"></span></div></li>	
+											<li class="no_margin" ><div class="srss_offset_inactive custom" id="custom_SR"><span localString="true" _key="Custom"></span></div></li>										
+										</ul>
+									</div>
+								
+								<div class="srss_items ss srss_end">
+									<div><input type="radio" name="rad_srss_end" value="Sunset" id="endSunset"></div>
+									<span class="more_li_text_div text_strong" localString="true" _key="SunSet"></span>
+									<div class="more_li_subHeader"><span id="ss_span_end" localString="true" _key="today"></span><span class="timeSS timeSRSS"></span></div>
+								</div>
+								
+									<div class="drawer_offset">
+										<ul class="ss_offset">
+											<li  style="margin-right:9.5%"><div class="srss_offset_active exactly" value="0"><span localString="true" _key="Exactly"></span></div></li>
+											<li><div class="srss_offset_inactive 15b" value="-900"><span localString="true" _key="FifteenMinsBefore"></span></div></li>
+											<li><div class="srss_offset_inactive 30b" value="-1800"><span localString="true" _key="ThirtyMinsBefore"></span></div></li>
+											<li class="no_margin"><div class="srss_offset_inactive 45b" value="-2700"><span localString="true" _key="FortyFiveMinsBefore"></span></div></li>
+											<br>							
+											<li><div class="srss_offset_inactive 15a" value="900"><span localString="true" _key="FifteenMinsAfter"></span></div></li>
+											<li><div class="srss_offset_inactive 30a" value="1800"><span localString="true" _key="ThirtyMinsAfter"></span></div></li>
+											<li><div class="srss_offset_inactive 45a" value="2700"><span localString="true" _key="FortyFiveMinsAfter"></span></div></li>	
+											<li class="no_margin" ><div class="srss_offset_inactive custom" id="custom_SS"><span localString="true" _key="Custom"></span></div></li>										
+										</ul>
+									</div>
+					</div>
+							 
+				</div>
+			</div> 
+
+            
+        </div>
+	
+	<div class="margin_top25"></div> 
+	<label><span class="label upperCase" localString="true" _key="Days"></span></label>
+	<hr class="divider"/>
+	<ul id="schedule">
+		<li>
+			<div class="div_bg_green" id="Mon"><span>M</span></div>
+		</li>
+		<li>
+			<div class="div_bg_green" id="Tue"><span>T</span></div>
+		</li>
+		<li>
+			<div class="div_bg_green" id="Wed"><span>W</span></div>
+		</li>
+		<li>
+			<div class="div_bg_green" id="Thu"><span>Th</span></div>
+		</li>
+		<li>
+			<div class="div_bg_green" id="Fri"><span>F</span></div>
+		</li>
+		<li>
+			<div class="div_bg_white" id="Sat"><span>Sa</span></div>
+		</li>
+		<li>
+			<div class="div_bg_white" id="Sun"><span>Su</span></div>
+		</li>
+		<li class="helper"></li>
+	</ul>
+
+
+	</div>
+</div>
+
+<div  data-position="fixed" data-tap-toggle="false" class="border_top_gray bottom_btns">
+    <div class="bottom_single_button" id="timer_rule_when_save_btn"><span localString="true" _key="Done"></span></div>
+</div>
+
+<div id="time_start_selector">
+    <h1><span localString="true" _key="OnAt"></span></h1>
+</div>
+
+<div id="time_end_selector">
+    <h1><span localString="true" _key="OffAt"></span></h1>
+</div>
+
+<div id="custom_offset_selector_start">
+    <h1><span></span></h1>
+</div>
+
+<div id="custom_offset_selector_end">
+    <h1><span></span></h1>
+</div>
+
+<!-- Your Current Location popup Start -->
+
+<div id="your_current_location" data-role="popup" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+    <div class="popup_head"><span localString="true" _key="locationLabel"></span></div>
+    <div class="popup_content"><span localString="true" _key="askAllowAccessLocation"></span></div>
+    <div class="popup_footer">
+        <div id="your_current_location_dont_allow" class="popup_cnl_btn"><span localString="true" _key="dontAllow"></span></div>
+        <div id="your_current_location_ok_btn" class="popup_ok_btn"><span localString="true" _key="AlertOK"></span></div>
+    </div>
+</div>
+<!-- Your Current Location popup Ends-->
+<!--You have Set the Location popup Start -->
+<div id="you_set_the_location" data-role="popup" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+    <div class="popup_head"><span localString="true" _key=""></span></div>
+    <div class="popup_content"><p class="you_set_the_location_bg" id="you_have_set_the_location"></p></div>    
+</div>
+<!--You have Set the Location popup Ends-->
+
+<!--Enable device location settings popup Start -->
+<div id="enable_location_settings" data-role="popup" class="pop_up" data-overlay-theme="a" data-dismissible="false">
+<div class="popup_content"><span localString="true" _key="turnYourDevicesOnOrOff"></span></div>
+<div class="popup_footer">
+    <div id="enable_location_cancel"><span localString="true" _key="Cancel"></span></div>
+    <div id="enable_location_ok"><span localString="true" _key="AlertOK"></span></div>
+</div>
+</div>
+<!--Enable device location settings popup Ends-->
+
+</div>
+<!--</div>-_>
+
+<!--
+<div class="overlay_container picker2" id="SRSS_picker">
+    <div class="picker_container2">
+        <div class="SRSS_picker_container ">
+
+            <div class="picker_header"><span localString="true" _key="OffAt"></span></div>
+            <div>
+                <ul>
+                    <li><span localString="true" _key="SunRise"></span><span><input type="radio" name="rad_srs"
+                                                                                    value="Sunrise" checked></span>
+                    </li>
+                    <li style="border-bottom: none"><span localString="true" _key="SunSet"></span><span><input type="radio" name="rad_srs"
+                                                                                                               value="Sunset"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="picker_footer">
+                <div id="cnl_end_btn" class="popup_cnl_btn"><span localString="true" _key="Cancel"></span></div>
+                <div id="set_end_btn" class="popup_ok_btn"><span localString="true" _key="Set"></span></div>
+            </div>
+
+        </div>
+    </div>
+</div>-->
+</body>
+</html>

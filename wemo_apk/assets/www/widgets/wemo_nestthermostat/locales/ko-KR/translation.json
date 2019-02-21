@@ -1,0 +1,52 @@
+{
+  "HVAC": {
+    "heating": "난방",
+    "cooling": "냉방",
+    "fanrunning": "팬 가동",
+    "heat": "난방",
+    "cool": "냉방",
+    "heatcool": "난방 / 냉방",
+    "off": "끄기",
+    "on" : "켜기",
+    "rhrHeader": "러시 아워 리워드 활성화",
+    "rhrMessage": "온도를 조절하면 리워드에 영향을 줄 수 있습니다.",
+    "headerTemperature": "온도 설정",
+    "headerHeatTemperature": "난방 온도",
+    "headerCoolTemperature": "냉방 온도",
+    "headerMode": "설정 모드",
+    "drawerLabelCurrent": "현재",
+    "drawerLabelTemp": "온도",
+    "drawerLabelHumidity": "습도",
+    "drawerLabelTempAway": "온도를 보고 조절하려면 Nest 온도조절기를 홈으로 설정하십시오.",
+    "serviceUnavailable": "현재 Nest 서비스를 사용할 수 없습니다."
+  },
+
+  "error": {
+    "energy-saving-event-on":{
+      "heading": "원격으로 조절할 수 없음",
+      "message": "러시 아워 리워드 이벤트가 가동 중입니다. 조절하려면 Nest 앱이나 Nest 온도조절기를 사용하십시오."
+    },
+    "lock-enabled":{
+      "heading":"원격으로 조절할 수 없음",
+      "message":"Nest 온도조절기가 잠겨 있습니다. 조절하려면 Nest 온도조절기의 잠금을 해제하십시오."
+    },
+    "emergency-heat-is-on":{
+      "heading":"외출 모드를 사용할 수 없음",
+      "message":"현재 비상 난방 기능이 켜져 있습니다. 이때 외출 모드는 사용할 수 없습니다."
+    },
+    "blocked":{
+      "heading":"Nest에 휴식이 필요함",
+      "message":"Nest 및 HVAC 시스템의 안전을 위해, Nest 서비스는 단기간에 너무 많은 변경을 금지합니다. 몇 분 후에 다시 시도하거나 Nest 온도조절기를 직접 조절하십시오."
+    },
+    "default":{
+      "heading":"죄송합니다.",
+      "message":"무언가 예상치 못한 문제가 발생했습니다. 다시 시도하거나, Nest 앱에서 조정해 보십시오."
+    }
+  },
+
+  "nestAlerts":{
+    "notConnected": "이 온도조절기가 사용자의 Nest 계정에 더 이상 연결되어 있지 않습니다.",
+    "noInternet": "현재 Nest 서비스에 접속할 수 없습니다.  나중에 다시 시도하십시오."
+  }
+}
+

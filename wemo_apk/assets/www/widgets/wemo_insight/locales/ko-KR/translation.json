@@ -1,0 +1,110 @@
+{
+    "labels": {
+        "onFor": "총 켜진 시간:",
+        "onForNow": "켜진 시간:",
+        "offSince": "다음 이후 끄기:",
+        "since": "다음 이후:",
+        "standby": "다음 이후 대기:",
+        "onToday": "오늘 켜기:",
+        "onAvgDay": "평일에 켜기:",
+        "avgDay": "하루 평균:",
+        "estimatedMonthly": "매월 추정치:",
+        "avg": "평균:",
+        "now": "지금:",
+        "defaultAvg": "- -",
+        "defaultNow": "---",
+        "reset": "리셋",
+        "today": "오늘",
+        "autoOff": "Auto-off in"
+    },
+    "timeUnit": {
+        "0": "초",
+        "1": "분",
+        "2": "시간",
+        "3": "하루",
+        "4": "일"
+    },
+    "currency": {
+        "1": "$",
+        "3": "&pound;",
+        "4": "&euro;",
+        "7": "&#8369;",
+        "10": "&yen;",
+        "13": "&#8361;",
+        "15": "&#3647;"
+    },
+    "date": {
+        "tomorrow": "Tomorrow",
+        "yesterday": "Yesterday",
+        "today": "오늘"
+    },
+    "editContext": {
+        "title": {
+            "on&standbythreshold": "켜짐/대기 임계값:",
+            "costPerKwh": "Kwh 당 비용: ",
+            "dataExport": "데이터 내보내기",
+            "scheduleExpo": "예약된 내보내기",
+            "interval": "간격",
+            "currency": "통화",
+            "threshold": "임계값",
+            "powerThreshold": "전원 임계값",
+            "enterEmail": "이메일 주소 입력",
+            "confirm": "확인"
+        },
+        "buttons": {
+            "autoReset": "자동 리셋",
+            "exportNow": "지금 내보내기",
+            "detect&set": "감지 및 설정",
+            "set": "설정",
+            "send": "전송",
+            "reset": "리셋",
+            "cancel": "취소",
+            "save": "저장",
+            "ok": "확인"
+        },
+        "intros": {
+            "dataExport": "최대 30일 이내 이 스위치에 대한 모든 사용 내역과 에너지 데이터를 전송할 수 있습니다.",
+            "cost1": "이렇게 하면 사용자의 기기에 대한 견적가를 산출할 수 있습니다. 전기료 청구서를 사용하여 kWH 당 평균 비용을 산출합니다.",
+            "cost2": "여기에서 변경한 내용은 모든 기기에 적용됩니다.",
+            "threshold1": "전원이 임계값을 초과하고 \"대기\" 모드에 있을 때 사용자의 기기가 \"켜짐\" 상태로 표시됩니다.",
+            "threshold2": "지금 전원 켜기:",
+            "threshold3": "상태:"
+        },
+        "intervals": {
+            "1" : "매일",
+            "2" : "매주",
+            "3" : "매월"
+        },
+        "currencyName": {
+            "1": "달러",
+            "3": "유로",
+            "4": "파운드",
+            "7": "옌",
+            "10": "원",
+            "13": "비트코인",
+            "15": "페소"
+        },
+        "alertMessage": {
+            "autoSet": "자동 설정",
+            "autoReset-desc": "Insight Switch가 켜져 있는 동안 기기의 전원을 끈 후 감지 및 설정을 누릅니다.",
+            "reset-desc": "전원 임계값 리셋?",
+            "exportInterval": "내보내기 간격 예약",
+            "resetDefault": "기본값으로 리셋",
+            "messageResetCost": "계속하시겠습니까? 이 작업을 수행하면 Kwh 당 기본 비용으로 리셋됩니다.",
+            "messageExport": "지금 데이터 보내기"
+        },
+        "intervalInfo": {
+            "info": "다음 내보내기 이메일이 __time__ 이내에 도착합니다."
+        },
+        "errors": {
+            "notDetected": "감지되지 않음"
+        }
+    },
+    "buttons": {
+        "cancel": "취소",
+        "hide": "숨김",
+        "reset": "리셋",
+        "ok": "확인"
+    },
+    "defaultFriendlyName": "WeMo Insight"
+}

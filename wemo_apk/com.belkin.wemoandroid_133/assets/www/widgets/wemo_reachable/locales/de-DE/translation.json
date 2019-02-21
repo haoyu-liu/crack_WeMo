@@ -1,0 +1,7 @@
+{
+    "reachable": {
+        "airplaneMode" : "Schalten Sie den Flugzeugmodus aus, um WeMo verwenden zu können.",
+        "remoteDiabaledMode" : "Schalten Sie den Remotezugriff ein, um WeMo zu verwenden, wenn Sie nicht zu Hause sind. Sie können den Remotezugriff nur innerhalb Ihres Heimnetzwerks einschalten.",
+        "radiosOffMode" : "Stellen Sie eine Verbindung mit einem WLAN oder dem Datendienst Ihres Handys her, um WeMo zu verwenden."
+    }
+}

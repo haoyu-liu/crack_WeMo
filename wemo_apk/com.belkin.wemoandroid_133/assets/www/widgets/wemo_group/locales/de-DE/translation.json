@@ -1,0 +1,22 @@
+{
+    "removeWarningDialog": {
+        "title": "Diese Gruppe auflösen?",
+        "message": "Es gibt nur 2 Geräte in dieser Gruppe. Wenn dieses Gerät aus der Gruppe entfernt wird, wird die Gruppe aus der Geräteliste entfernt und die Regeln werden aufgehoben.",
+        "buttonLabels": "Entfernen,Abbrechen"
+    },
+    "ungroupedDialog": {
+        "title": "Nicht gruppiertes Gerät",
+        "message": "wurde aus der Gruppe entfernt."
+    },
+    "header": {
+        "groupedBulbs": "Gruppierte Lampen"
+    },
+    "buttons": {
+        "ok": "OK",
+        "cancel": "Abbrechen"
+    },
+    "grouping": {
+        "defaultGroupName": "Beleuchtungsgruppe",
+        "inThisGroup": "Lampen"
+    }
+}

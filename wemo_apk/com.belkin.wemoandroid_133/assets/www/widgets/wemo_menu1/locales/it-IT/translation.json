@@ -1,0 +1,26 @@
+{
+    "pageTitle" : "Altro",
+    "menu": {
+        "setupInstructions": "Istruzioni di installazione di WeMo",
+        "firmwareUpdate": "Aggiornamento firmware disponibile",
+        "remoteAccess": "Accesso remoto",
+        "ifttt": "Connetti a IFTTT",
+        "alexa": "Connect to Alexa",
+        "whatYouThink": "Commenti e suggerimenti",
+        "helpCenter": "Centro Assistenza",
+        "settingsAbout": "Impostazioni e Informazioni su",
+        "addLinkDevices" : "Aggiungi dispositivi WeMo Link",
+        "WeMoCommunity" : "Comunità WeMo",
+        "supportArticles" : "Articoli di supporto",
+        "reportaProblem" : "Segnala un problema",
+        "rateWeMo" : "Recensisci WeMo",
+        "help_url" : "http://www.belkin.com/embed/en-us/wemo/android/support",
+        "Enabled" : "Abilitato",
+        "NotEnabled" : "Non abilitato"
+    },
+    "category" : {
+        "settings" : "Impostazioni",
+        "addWeMoDevice" : "Aggiungi un dispositivo WeMo",
+        "supportFeedback" : "Supporto e commenti"
+    }
+}

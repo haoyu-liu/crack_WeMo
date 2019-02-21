@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="crop__saving">사진을 저장중입니다…</string>
+    <string name="crop__wait">잠시만 기다려주세요…</string>
+    <string name="crop__pick_error">이미지가 존재하지 않습니다.</string>
+    <string name="crop__done">확인</string>
+    <string name="crop__cancel">취소</string>
+    <string name="rate_me_title">WeMo를 즐기고 계신가요?</string>
+    <string name="rate_me_text">WeMo를 즐기고 계시다면 잠시 시간을 내어 저희를 평가해 주시겠어요? 지원에 감사합니다!”</string>
+    <string name="btn_rate_me_now_label">지금 평가</string>
+    <string name="btn_rate_no_thanks_label">괜찮습니다</string>
+    <string name="btn_report_problem_label">문제를보고</string>
+    <string name="btn_rate_later_label">나중에 알림</string>
+</resources>
