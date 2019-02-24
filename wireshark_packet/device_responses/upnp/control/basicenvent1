@@ -1,0 +1,5 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body>
+<u:GetIconVersionResponse xmlns:u="urn:Belkin:service:basicevent:1">
+<IconVersion>5</IconVersion>
+</u:GetIconVersionResponse>
+</s:Body> </s:Envelope>
